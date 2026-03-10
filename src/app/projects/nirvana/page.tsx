@@ -130,7 +130,7 @@ export default function Frame() {
       {/* 🚀 Scaling wrapper: origin-top-left keeps it left-anchored, not right-shifted */}
       <div className="relative w-[1440px] h-full transform origin-top-left scale-[0.35] sm:scale-50 md:scale-[0.6] lg:scale-75 xl:scale-95 2xl:scale-100">
 
-        <div className="absolute content-stretch flex flex-col gap-[48px] items-start left-[491px] top-[3920.46px] w-[918.283px]" data-node-id="145:916">
+        <div id="discovery" className="absolute content-stretch flex flex-col gap-[48px] items-start left-[491px] top-[3920.46px] w-[918.283px]" data-node-id="145:916">
           <div className="content-stretch flex flex-col gap-[24px] items-start not-italic relative shrink-0 w-[646px]" data-node-id="145:894">
             <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] place-items-start relative shrink-0" data-node-id="124:1112">
               <p className="col-1 font-sans font-bold tracking-tight font-bold tracking-tight h-[47px] ml-0 mt-[19px] relative row-1 text-[#a78bfa] text-[40px] w-[370px]" data-node-id="108:728">
@@ -437,7 +437,7 @@ export default function Frame() {
             </div>
           </div>
         </div>
-        <div className="absolute content-stretch flex flex-col gap-[48px] items-start left-[491px] top-[1245px] w-[922px]" data-node-id="145:918">
+        <div id="research" className="absolute content-stretch flex flex-col gap-[48px] items-start left-[491px] top-[1245px] w-[922px]" data-node-id="145:918">
           <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] not-italic place-items-start relative shrink-0" data-node-id="124:1113">
             <p className="col-1 font-sans font-normal font-normal leading-[1.6] ml-0 mt-[91px] relative row-1 text-gray-300 text-[16px] w-[601px]" data-node-id="70:687">
               The modified car culture is a very colorful place, and each modified car culture has its origin. Among them, the Japanese modified car culture I am familiar with is heavily modified to increase performance as well as visual impact
@@ -1044,7 +1044,7 @@ export default function Frame() {
             </div>
           </div>
         </div>
-        <div className="absolute content-stretch flex flex-col gap-[48px] items-start left-[491px] top-[7216.36px] w-[921px]" data-node-id="145:906">
+        <div id="design" className="absolute content-stretch flex flex-col gap-[48px] items-start left-[491px] top-[7216.36px] w-[921px]" data-node-id="145:906">
           <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] not-italic place-items-start relative shrink-0" data-node-id="120:1108">
             <p className="col-1 font-sans font-bold tracking-tight font-bold tracking-tight ml-0 mt-[19px] relative row-1 text-[#22c55e] text-[40px] w-[370px]" data-node-id="120:1109">
               Design
@@ -1885,7 +1885,7 @@ export default function Frame() {
             </div>
           </div>
         </div>
-        <div className="absolute content-stretch flex flex-col gap-[48px] items-start left-[491px] top-[5591.46px] w-[924px]" data-node-id="145:914">
+        <div id="explore" className="absolute content-stretch flex flex-col gap-[48px] items-start left-[491px] top-[5591.46px] w-[924px]" data-node-id="145:914">
           <div className="content-stretch flex flex-col gap-[24px] items-start not-italic relative shrink-0 w-[618px]" data-node-id="145:895">
             <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] place-items-start relative shrink-0" data-node-id="109:934">
               <p className="col-1 font-['Inter:Bold',sans-serif] font-bold ml-0 mt-[19px] relative row-1 text-[#ea7e2b] text-[40px] w-[370px]" data-node-id="109:931">
