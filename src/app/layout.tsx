@@ -25,7 +25,7 @@ export default function RootLayout({
         {/* Top Navigation */}
         <header className="w-full absolute top-0 left-0 right-0 z-50">
           <div className="max-w-[1280px] mx-auto w-full px-6 md:px-[80px] pt-12 md:pt-[64px] flex justify-end">
-            <nav className="flex gap-12 font-body text-brand-primary text-sm font-medium">
+            <nav className="flex gap-12 font-body text-white text-sm font-medium">
               <Link href="#about" className="hover:text-brand-accent transition-colors">
                 Me
               </Link>

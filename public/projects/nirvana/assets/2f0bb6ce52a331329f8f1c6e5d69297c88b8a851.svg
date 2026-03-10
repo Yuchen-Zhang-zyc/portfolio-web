@@ -1,0 +1,12 @@
+<svg preserveAspectRatio="none" width="100%" height="100%" overflow="visible" style="display: block;" viewBox="0 0 2.93901 208.707" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Group">
+<path id="-axis-tickline-Internet" d="M2.93901 0.367361H0.00012207" stroke="var(--stroke-0, white)" stroke-width="0.734723"/>
+<path id="-axis-tickline-In person" d="M2.93894 30.0777H4.88281e-05" stroke="var(--stroke-0, white)" stroke-width="0.734723"/>
+<path id="-axis-tickline-Social media" d="M2.93894 59.7883H4.88281e-05" stroke="var(--stroke-0, white)" stroke-width="0.734723"/>
+<path id="-axis-tickline-Car show" d="M2.93894 89.4986H4.88281e-05" stroke="var(--stroke-0, white)" stroke-width="0.734723"/>
+<path id="-axis-tickline-Auto shop" d="M2.93894 119.209H4.88281e-05" stroke="var(--stroke-0, white)" stroke-width="0.734723"/>
+<path id="-axis-tickline-Dealership" d="M2.93889 148.919H0" stroke="var(--stroke-0, white)" stroke-width="0.734723"/>
+<path id="-axis-tickline-Movie" d="M2.93889 178.629H0" stroke="var(--stroke-0, white)" stroke-width="0.734723"/>
+<path id="-axis-tickline-On the street" d="M2.93889 208.34H0" stroke="var(--stroke-0, white)" stroke-width="0.734723"/>
+</g>
+</svg>
