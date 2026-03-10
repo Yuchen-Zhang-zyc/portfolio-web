@@ -133,32 +133,32 @@ export default function Frame() {
         <div className="absolute content-stretch flex flex-col gap-[48px] items-start left-[491px] top-[3920.46px] w-[918.283px]" data-node-id="145:916">
           <div className="content-stretch flex flex-col gap-[24px] items-start not-italic relative shrink-0 w-[646px]" data-node-id="145:894">
             <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] place-items-start relative shrink-0" data-node-id="124:1112">
-              <p className="col-1 font-['Inter:Bold',sans-serif] font-bold h-[47px] ml-0 mt-[19px] relative row-1 text-[#a78bfa] text-[40px] w-[370px]" data-node-id="108:728">
+              <p className="col-1 font-sans font-bold tracking-tight font-bold tracking-tight h-[47px] ml-0 mt-[19px] relative row-1 text-[#a78bfa] text-[40px] w-[370px]" data-node-id="108:728">
                 Discovery
               </p>
-              <p className="col-1 font-['Inter:Medium',sans-serif] font-medium ml-0 mt-0 relative row-1 text-[16px] text-white whitespace-nowrap" data-node-id="108:727">
+              <p className="col-1 font-sans font-medium font-medium ml-0 mt-0 relative row-1 text-[16px] text-white whitespace-nowrap" data-node-id="108:727">
                 PHASE 02
               </p>
             </div>
-            <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.6] min-w-full relative shrink-0 text-[16px] text-white w-[min-content]" data-node-id="108:740">
+            <p className="font-sans font-normal font-normal leading-[1.6] min-w-full relative shrink-0 text-[16px] text-white w-[min-content]" data-node-id="108:740">
               Synthesizing all research into a clear picture — mapping the user journey, defining user archetypes, and distilling the core problems to solve.
             </p>
           </div>
           <div className="content-stretch flex flex-col gap-[8px] items-start not-italic relative shrink-0 w-[429px]" data-node-id="124:1123">
-            <p className="font-['Inter:Medium',sans-serif] font-medium leading-[normal] min-w-full relative shrink-0 text-[#a78bfa] text-[16px] w-[min-content]" data-node-id="108:742">
+            <p className="font-sans font-medium font-medium leading-[normal] min-w-full relative shrink-0 text-[#a78bfa] text-[16px] w-[min-content]" data-node-id="108:742">
               05 — User Journey Map
             </p>
-            <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[1.6] relative shrink-0 text-[24px] text-white whitespace-nowrap" data-node-id="108:741">
+            <p className="font-sans font-semibold font-semibold leading-[1.6] relative shrink-0 text-[24px] text-white whitespace-nowrap" data-node-id="108:741">
               Mapping the Emotional Rollercoaster
             </p>
           </div>
           <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="109:895">
-            <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[1.6] ml-[74px] mt-[432px] not-italic relative row-1 text-[16px] text-white w-[154px]" data-node-id="108:771">{`Clarify personal needs & goals`}</p>
-            <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[1.6] ml-[278px] mt-[432px] not-italic relative row-1 text-[16px] text-white w-[153px]" data-node-id="108:772">{`Simplify & visualize the process`}</p>
-            <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[1.6] ml-[481px] mt-[431px] not-italic relative row-1 text-[16px] text-white w-[143px]" data-node-id="108:773">
+            <p className="col-1 font-sans font-semibold font-semibold leading-[1.6] ml-[74px] mt-[432px] not-italic relative row-1 text-[16px] text-white w-[154px]" data-node-id="108:771">{`Clarify personal needs & goals`}</p>
+            <p className="col-1 font-sans font-semibold font-semibold leading-[1.6] ml-[278px] mt-[432px] not-italic relative row-1 text-[16px] text-white w-[153px]" data-node-id="108:772">{`Simplify & visualize the process`}</p>
+            <p className="col-1 font-sans font-semibold font-semibold leading-[1.6] ml-[481px] mt-[431px] not-italic relative row-1 text-[16px] text-white w-[143px]" data-node-id="108:773">
               Preview results before committing
             </p>
-            <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[1.6] ml-[674px] mt-[432px] not-italic relative row-1 text-[16px] text-white w-[206px]" data-node-id="108:774">
+            <p className="col-1 font-sans font-semibold font-semibold leading-[1.6] ml-[674px] mt-[432px] not-italic relative row-1 text-[16px] text-white w-[206px]" data-node-id="108:774">
               Predict the results of your modification in advance
             </p>
             <div className="col-1 h-0 ml-[46.5px] mt-[279px] relative row-1 w-[852px]" data-node-id="108:779">
@@ -171,51 +171,51 @@ export default function Frame() {
                 <img alt="" className="block max-w-none size-full" src={imgVector1040} />
               </div>
             </div>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[94.5px] mt-[234px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:782">
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[94.5px] mt-[234px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:782">
               Curious
             </p>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[156.5px] mt-[181px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:784">
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[156.5px] mt-[181px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:784">
               Longing
             </p>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[74.5px] mt-[332px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:785">
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[74.5px] mt-[332px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:785">
               Confused
             </p>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[278px] mt-[289px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:786">
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[278px] mt-[289px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:786">
               Difficult
             </p>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[362.5px] mt-[311px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:787">
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[362.5px] mt-[311px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:787">
               Fear
             </p>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[466.5px] mt-[243px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:788">
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[466.5px] mt-[243px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:788">
               Enthusiasm
             </p>
             <div className="col-1 flex h-[15.771px] items-center justify-center ml-[462.42px] mt-[163.85px] relative row-1 w-[63.101px]" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
               <div className="flex-none rotate-[-0.7deg] skew-x-[-0.3deg]">
-                <p className="font-['Inter:Regular',sans-serif] font-normal leading-[normal] not-italic relative text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:789">
+                <p className="font-sans font-normal font-normal leading-[normal] not-italic relative text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:789">
                   Excitement
                 </p>
               </div>
             </div>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[623px] mt-[236px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:790">
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[623px] mt-[236px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:790">
               Worried
             </p>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[727.5px] mt-[203px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:791">
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[727.5px] mt-[203px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:791">
               Satisfied
             </p>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[859.5px] mt-[183px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:792">
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[859.5px] mt-[183px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:792">
               Proud
             </p>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[838px] mt-[335px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:793">
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[838px] mt-[335px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:793">
               Frustration
             </p>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[663px] mt-[304px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:794">
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[663px] mt-[304px] not-italic relative row-1 text-gray-100 text-[12px] whitespace-nowrap" data-node-id="108:794">
               Unsatisfied
             </p>
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[51.4px] mt-px place-items-start relative row-1" data-node-id="109:891">
               <div className="col-1 h-[40px] ml-0 mt-0 relative row-1 w-[140px]" data-node-id="108:746">
                 <img alt="" className="absolute block max-w-none size-full" src={imgRectangle259} />
               </div>
-              <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] ml-[8.87px] mt-[10px] not-italic relative row-1 text-[16px] text-white w-[93.924px]" data-node-id="108:758">
+              <p className="col-1 font-sans font-semibold font-semibold leading-[normal] ml-[8.87px] mt-[10px] not-italic relative row-1 text-[16px] text-white w-[93.924px]" data-node-id="108:758">
                 Motivation
               </p>
             </div>
@@ -223,13 +223,13 @@ export default function Frame() {
               <div className="col-1 h-[40px] ml-0 mt-0 relative row-1 w-[140px]" data-node-id="109:879">
                 <img alt="" className="absolute block max-w-none size-full" src={imgRectangle259} />
               </div>
-              <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] ml-[8.87px] mt-[10px] not-italic relative row-1 text-[16px] text-white w-[113.161px]" data-node-id="108:759">{`Consultation `}</p>
+              <p className="col-1 font-sans font-semibold font-semibold leading-[normal] ml-[8.87px] mt-[10px] not-italic relative row-1 text-[16px] text-white w-[113.161px]" data-node-id="108:759">{`Consultation `}</p>
             </div>
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[413.84px] mt-px place-items-start relative row-1" data-node-id="109:889">
               <div className="col-1 h-[40px] ml-0 mt-0 relative row-1 w-[140px]" data-node-id="109:881">
                 <img alt="" className="absolute block max-w-none size-full" src={imgRectangle259} />
               </div>
-              <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] ml-[8.87px] mt-[10px] not-italic relative row-1 text-[16px] text-white w-[106.372px]" data-node-id="108:760">
+              <p className="col-1 font-sans font-semibold font-semibold leading-[normal] ml-[8.87px] mt-[10px] not-italic relative row-1 text-[16px] text-white w-[106.372px]" data-node-id="108:760">
                 Plan making
               </p>
             </div>
@@ -237,7 +237,7 @@ export default function Frame() {
               <div className="col-1 h-[40px] ml-0 mt-0 relative row-1 w-[140px]" data-node-id="109:883">
                 <img alt="" className="absolute block max-w-none size-full" src={imgRectangle259} />
               </div>
-              <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] ml-[8.87px] mt-[10px] not-italic relative row-1 text-[16px] text-white w-[109.766px]" data-node-id="108:761">
+              <p className="col-1 font-sans font-semibold font-semibold leading-[normal] ml-[8.87px] mt-[10px] not-italic relative row-1 text-[16px] text-white w-[109.766px]" data-node-id="108:761">
                 Modification
               </p>
             </div>
@@ -245,20 +245,20 @@ export default function Frame() {
               <div className="col-1 h-[40px] ml-0 mt-0 relative row-1 w-[140px]" data-node-id="109:885">
                 <img alt="" className="absolute block max-w-none size-full" src={imgRectangle259} />
               </div>
-              <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] ml-[8.87px] mt-[10px] not-italic relative row-1 text-[16px] text-white w-[65.633px]" data-node-id="108:762">
+              <p className="col-1 font-sans font-semibold font-semibold leading-[normal] ml-[8.87px] mt-[10px] not-italic relative row-1 text-[16px] text-white w-[65.633px]" data-node-id="108:762">
                 Testing
               </p>
             </div>
             <div className="col-1 flex h-[73px] items-center justify-center ml-0 mt-0 relative row-1 w-[25.266px]" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
               <div className="-rotate-90 flex-none">
-                <p className="font-['Inter:Bold',sans-serif] font-bold h-[25.266px] leading-[normal] not-italic relative text-[#a78bfa] text-[24px] w-[73px]" data-node-id="108:795">
+                <p className="font-sans font-bold tracking-tight font-bold tracking-tight h-[25.266px] leading-[normal] not-italic relative text-[#a78bfa] text-[24px] w-[73px]" data-node-id="108:795">
                   Phase
                 </p>
               </div>
             </div>
             <div className="col-1 flex h-[77px] items-center justify-center ml-px mt-[84px] relative row-1 w-[58px]" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "38" } as React.CSSProperties}>
               <div className="-rotate-90 flex-none">
-                <div className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative text-[#a78bfa] text-[24px] whitespace-nowrap" data-node-id="109:876">
+                <div className="font-sans font-bold tracking-tight font-bold tracking-tight leading-[normal] not-italic relative text-[#a78bfa] text-[24px] whitespace-nowrap" data-node-id="109:876">
                   <p className="mb-0">Action</p>
                   <p>&nbsp;</p>
                 </div>
@@ -266,7 +266,7 @@ export default function Frame() {
             </div>
             <div className="col-1 flex h-[97px] items-center justify-center ml-0 mt-[223px] relative row-1 w-[29px]" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
               <div className="-rotate-90 flex-none">
-                <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative text-[#a78bfa] text-[24px] whitespace-nowrap" data-node-id="108:797">
+                <p className="font-sans font-bold tracking-tight font-bold tracking-tight leading-[normal] not-italic relative text-[#a78bfa] text-[24px] whitespace-nowrap" data-node-id="108:797">
                   Emotion
                 </p>
               </div>
@@ -298,42 +298,42 @@ export default function Frame() {
             </div>
             <div className="col-1 flex h-[144px] items-center justify-center ml-px mt-[360px] relative row-1 w-[29px]" style={{ "--transform-inner-width": "1200", "--transform-inner-height": "19" } as React.CSSProperties}>
               <div className="-rotate-90 flex-none">
-                <p className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] not-italic relative text-[#a78bfa] text-[24px] whitespace-nowrap" data-node-id="108:813">
+                <p className="font-sans font-bold tracking-tight font-bold tracking-tight leading-[normal] not-italic relative text-[#a78bfa] text-[24px] whitespace-nowrap" data-node-id="108:813">
                   Opportunity
                 </p>
               </div>
             </div>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[57.5px] mt-[105px] not-italic relative row-1 text-gray-300 text-[12px] whitespace-nowrap" data-node-id="108:867">{`Find shops & resources`}</p>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[242.5px] mt-[105px] not-italic relative row-1 text-gray-300 text-[12px] whitespace-nowrap" data-node-id="108:868">{`Learn process & costs`}</p>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[420.5px] mt-[105px] not-italic relative row-1 text-gray-300 text-[12px] whitespace-nowrap" data-node-id="108:870">{`Select parts & finalize`}</p>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[595.5px] mt-[105px] not-italic relative row-1 text-gray-300 text-[12px] whitespace-nowrap" data-node-id="108:872">{`Drop off & track progress`}</p>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[784.5px] mt-[105px] not-italic relative row-1 text-gray-300 text-[12px] whitespace-nowrap" data-node-id="108:873">{`Test drive & delivery`}</p>
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[57.5px] mt-[105px] not-italic relative row-1 text-gray-300 text-[12px] whitespace-nowrap" data-node-id="108:867">{`Find shops & resources`}</p>
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[242.5px] mt-[105px] not-italic relative row-1 text-gray-300 text-[12px] whitespace-nowrap" data-node-id="108:868">{`Learn process & costs`}</p>
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[420.5px] mt-[105px] not-italic relative row-1 text-gray-300 text-[12px] whitespace-nowrap" data-node-id="108:870">{`Select parts & finalize`}</p>
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[595.5px] mt-[105px] not-italic relative row-1 text-gray-300 text-[12px] whitespace-nowrap" data-node-id="108:872">{`Drop off & track progress`}</p>
+            <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[784.5px] mt-[105px] not-italic relative row-1 text-gray-300 text-[12px] whitespace-nowrap" data-node-id="108:873">{`Test drive & delivery`}</p>
           </div>
           <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="145:915">
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 not-italic place-items-start relative row-1" data-node-id="109:944">
               <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 place-items-start relative row-1" data-node-id="109:928">
-                <p className="col-1 font-['Inter:Medium',sans-serif] font-medium leading-[normal] ml-0 mt-0 relative row-1 text-[#a78bfa] text-[16px] w-[185px]" data-node-id="109:921">
+                <p className="col-1 font-sans font-medium font-medium leading-[normal] ml-0 mt-0 relative row-1 text-[#a78bfa] text-[16px] w-[185px]" data-node-id="109:921">
                   07 — Persona
                 </p>
-                <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[1.6] ml-[2px] mt-[27px] relative row-1 text-[24px] text-white w-[427px]" data-node-id="109:922">
+                <p className="col-1 font-sans font-semibold font-semibold leading-[1.6] ml-[2px] mt-[27px] relative row-1 text-[24px] text-white w-[427px]" data-node-id="109:922">
                   Three User Archetypes
                 </p>
               </div>
               <div className="col-1 content-stretch flex flex-col gap-[16px] items-start leading-[normal] ml-0 mt-[89px] relative row-1 w-[481px]" data-node-id="109:920">
-                <p className="font-['Inter:Bold',sans-serif] font-bold relative shrink-0 text-[24px] text-gray-100 w-full" data-node-id="109:896">
+                <p className="font-sans font-bold tracking-tight font-bold tracking-tight relative shrink-0 text-[24px] text-gray-100 w-full" data-node-id="109:896">
                   Tony — Newbie
                 </p>
-                <div className="content-stretch flex flex-col font-['Inter:Regular',sans-serif] font-normal gap-[8px] items-start relative shrink-0 text-[16px] text-gray-300 w-full" data-node-id="120:1103">
+                <div className="content-stretch flex flex-col font-sans font-normal font-normal gap-[8px] items-start relative shrink-0 text-[16px] text-gray-300 w-full" data-node-id="120:1103">
                   <p className="relative shrink-0 w-full" data-node-id="109:903">{`Background: Inspired by Fast & Furious, new to car modification`}</p>
                   <p className="relative shrink-0 w-full" data-node-id="109:909">
                     Goal: Learn modification basics and get guidance
                   </p>
                   <p className="relative shrink-0 w-full" data-node-id="109:912">{`Frustration: Doesn't know where to start or find reliable info`}</p>
                 </div>
-                <p className="font-['Inter:Bold',sans-serif] font-bold relative shrink-0 text-[24px] text-gray-100 w-full" data-node-id="109:897">
+                <p className="font-sans font-bold tracking-tight font-bold tracking-tight relative shrink-0 text-[24px] text-gray-100 w-full" data-node-id="109:897">
                   Lena — Experienced
                 </p>
-                <div className="content-stretch flex flex-col font-['Inter:Regular',sans-serif] font-normal gap-[8px] items-start relative shrink-0 text-[16px] text-gray-300 w-full" data-node-id="120:1104">
+                <div className="content-stretch flex flex-col font-sans font-normal font-normal gap-[8px] items-start relative shrink-0 text-[16px] text-gray-300 w-full" data-node-id="120:1104">
                   <p className="relative shrink-0 w-full" data-node-id="109:902">
                     Background: Active racing fan, regularly modifies cars
                   </p>
@@ -344,10 +344,10 @@ export default function Frame() {
                     Frustration: Limited knowledge leads to unsatisfying results
                   </p>
                 </div>
-                <p className="font-['Inter:Bold',sans-serif] font-bold relative shrink-0 text-[24px] text-gray-100 w-full" data-node-id="109:899">
+                <p className="font-sans font-bold tracking-tight font-bold tracking-tight relative shrink-0 text-[24px] text-gray-100 w-full" data-node-id="109:899">
                   Eric — Expert
                 </p>
-                <div className="content-stretch flex flex-col font-['Inter:Regular',sans-serif] font-normal gap-[8px] items-start relative shrink-0 text-[16px] text-gray-300 w-full" data-node-id="120:1105">
+                <div className="content-stretch flex flex-col font-sans font-normal font-normal gap-[8px] items-start relative shrink-0 text-[16px] text-gray-300 w-full" data-node-id="120:1105">
                   <p className="relative shrink-0 w-full" data-node-id="109:901">
                     Background: 20 years in the field, modifying cars is his life
                   </p>
@@ -362,16 +362,16 @@ export default function Frame() {
             </div>
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[620px] mt-0 place-items-start relative row-1" data-node-id="109:943">
               <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 not-italic place-items-start relative row-1 whitespace-nowrap" data-node-id="109:927">
-                <p className="col-1 font-['Inter:Medium',sans-serif] font-medium leading-[normal] ml-0 mt-0 relative row-1 text-[#a78bfa] text-[16px]" data-node-id="109:924">
+                <p className="col-1 font-sans font-medium font-medium leading-[normal] ml-0 mt-0 relative row-1 text-[#a78bfa] text-[16px]" data-node-id="109:924">
                   08 — Define Problems
                 </p>
-                <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[1.6] ml-[2px] mt-[27px] relative row-1 text-[24px] text-white" data-node-id="109:925">
+                <p className="col-1 font-sans font-semibold font-semibold leading-[1.6] ml-[2px] mt-[27px] relative row-1 text-[24px] text-white" data-node-id="109:925">
                   6 Core Pain Points
                 </p>
               </div>
               <div className="col-1 content-stretch flex flex-col gap-[16px] items-start ml-0 mt-[97px] relative row-1 w-[268px]" data-node-id="120:1106">
                 <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="91:688">
-                  <div className="col-1 flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center ml-[60px] mt-[10px] not-italic relative row-1 text-[20px] text-white whitespace-nowrap" data-node-id="0:250">
+                  <div className="col-1 flex flex-col font-sans font-normal font-normal justify-center ml-[60px] mt-[10px] not-italic relative row-1 text-[20px] text-white whitespace-nowrap" data-node-id="0:250">
                     <p className="leading-[normal]">Technical knowledge</p>
                   </div>
                   <div className="col-1 ml-0 mt-0 relative row-1 size-[44px]" data-node-id="91:679">
@@ -379,7 +379,7 @@ export default function Frame() {
                   </div>
                 </div>
                 <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="91:687">
-                  <div className="col-1 flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center ml-[60px] mt-[10px] not-italic relative row-1 text-[20px] text-white whitespace-nowrap" data-node-id="0:252">
+                  <div className="col-1 flex flex-col font-sans font-normal font-normal justify-center ml-[60px] mt-[10px] not-italic relative row-1 text-[20px] text-white whitespace-nowrap" data-node-id="0:252">
                     <p className="leading-[normal]">Budget overruns</p>
                   </div>
                   <div className="col-1 ml-0 mt-0 relative row-1 size-[44px]" data-node-id="91:681">
@@ -387,7 +387,7 @@ export default function Frame() {
                   </div>
                 </div>
                 <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="91:689">
-                  <div className="col-1 flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center ml-[60px] mt-[9px] not-italic relative row-1 text-[20px] text-white whitespace-nowrap" data-node-id="0:253">
+                  <div className="col-1 flex flex-col font-sans font-normal font-normal justify-center ml-[60px] mt-[9px] not-italic relative row-1 text-[20px] text-white whitespace-nowrap" data-node-id="0:253">
                     <p className="leading-[normal]">Time wasted</p>
                   </div>
                   <div className="col-1 ml-0 mt-0 relative row-1 size-[44px]" data-node-id="91:683">
@@ -398,12 +398,12 @@ export default function Frame() {
                   <div className="col-1 ml-0 mt-0 relative row-1 size-[44px]" data-node-id="91:682">
                     <img alt="" className="absolute block max-w-none size-full" src={imgGroup660} />
                   </div>
-                  <div className="col-1 flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center ml-[60px] mt-[8.44px] not-italic relative row-1 text-[20px] text-white whitespace-nowrap" data-node-id="0:330">
+                  <div className="col-1 flex flex-col font-sans font-normal font-normal justify-center ml-[60px] mt-[8.44px] not-italic relative row-1 text-[20px] text-white whitespace-nowrap" data-node-id="0:330">
                     <p className="leading-[normal]">Information timeliness</p>
                   </div>
                 </div>
                 <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="91:686">
-                  <div className="col-1 flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center ml-[60px] mt-[10px] not-italic relative row-1 text-[20px] text-white whitespace-nowrap" data-node-id="0:254">
+                  <div className="col-1 flex flex-col font-sans font-normal font-normal justify-center ml-[60px] mt-[10px] not-italic relative row-1 text-[20px] text-white whitespace-nowrap" data-node-id="0:254">
                     <p className="leading-[normal]">Extra requirement</p>
                   </div>
                   <div className="col-1 ml-0 mt-0 relative row-1 size-[44px]" data-node-id="91:684">
@@ -411,7 +411,7 @@ export default function Frame() {
                   </div>
                 </div>
                 <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid place-items-start relative shrink-0" data-node-id="91:690">
-                  <div className="col-1 flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center ml-[60px] mt-[10px] not-italic relative row-1 text-[20px] text-white whitespace-nowrap" data-node-id="0:251">
+                  <div className="col-1 flex flex-col font-sans font-normal font-normal justify-center ml-[60px] mt-[10px] not-italic relative row-1 text-[20px] text-white whitespace-nowrap" data-node-id="0:251">
                     <p className="leading-[normal]">Unsatisfied goals</p>
                   </div>
                   <div className="col-1 ml-0 mt-0 relative row-1 size-[44px]" data-node-id="91:680">
@@ -424,13 +424,13 @@ export default function Frame() {
           <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="109:947">
             <div className="bg-[rgba(167,139,250,0.1)] border border-[rgba(167,139,250,0.3)] border-solid col-1 h-[173px] ml-0 mt-0 rounded-[12px] row-1 w-[840px]" data-node-id="109:946" />
             <div className="col-1 content-stretch flex flex-col gap-[8px] items-start ml-[55.4px] mt-[32px] not-italic relative row-1 w-[729.209px]" data-node-id="126:1125">
-              <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold justify-center relative shrink-0 text-[#a78bfa] text-[20px] w-full" data-node-id="109:929">
+              <div className="flex flex-col font-sans font-semibold font-semibold justify-center relative shrink-0 text-[#a78bfa] text-[20px] w-full" data-node-id="109:929">
                 <p className="leading-[normal]">Design Opportunity</p>
               </div>
-              <div className="flex flex-col font-['Inter:Medium',sans-serif] font-medium h-[75.036px] justify-center relative shrink-0 text-[0px] text-white w-full" data-node-id="109:930">
+              <div className="flex flex-col font-sans font-medium font-medium h-[75.036px] justify-center relative shrink-0 text-[0px] text-white w-full" data-node-id="109:930">
                 <p className="text-[18px]">
                   <span className="leading-[1.6]">By combining O</span>
-                  <span className="font-['Inter:Bold_Italic',sans-serif] font-bold italic leading-[1.6]">nline and Offline Interactions</span>
+                  <span className="font-['Inter:Bold_Italic',sans-serif] font-bold tracking-tight italic leading-[1.6]">nline and Offline Interactions</span>
                   <span className="leading-[1.6]">, enthusiasts can more conveniently understand and modify cars — addressing information, planning, and experience gaps in a growing market.</span>
                 </p>
               </div>
@@ -439,28 +439,28 @@ export default function Frame() {
         </div>
         <div className="absolute content-stretch flex flex-col gap-[48px] items-start left-[491px] top-[1245px] w-[922px]" data-node-id="145:918">
           <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] not-italic place-items-start relative shrink-0" data-node-id="124:1113">
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[1.6] ml-0 mt-[91px] relative row-1 text-gray-300 text-[16px] w-[601px]" data-node-id="70:687">
+            <p className="col-1 font-sans font-normal font-normal leading-[1.6] ml-0 mt-[91px] relative row-1 text-gray-300 text-[16px] w-[601px]" data-node-id="70:687">
               The modified car culture is a very colorful place, and each modified car culture has its origin. Among them, the Japanese modified car culture I am familiar with is heavily modified to increase performance as well as visual impact
             </p>
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] ml-0 mt-0 place-items-start relative row-1 whitespace-nowrap" data-node-id="107:692">
-              <p className="col-1 font-['Inter:Bold',sans-serif] font-bold ml-0 mt-[19px] relative row-1 text-[#06b6d4] text-[40px]" data-node-id="0:14">
+              <p className="col-1 font-sans font-bold tracking-tight font-bold tracking-tight ml-0 mt-[19px] relative row-1 text-[#06b6d4] text-[40px]" data-node-id="0:14">
                 Research
               </p>
-              <p className="col-1 font-['Inter:Medium',sans-serif] font-medium ml-0 mt-0 relative row-1 text-[16px] text-white" data-node-id="107:691">
+              <p className="col-1 font-sans font-medium font-medium ml-0 mt-0 relative row-1 text-[16px] text-white" data-node-id="107:691">
                 PHASE 01
               </p>
             </div>
           </div>
           <div className="content-stretch flex flex-col gap-[16px] items-start not-italic relative shrink-0 w-[756px]" data-node-id="124:1117">
             <div className="content-stretch flex flex-col gap-[8px] items-start leading-[normal] relative shrink-0 w-[482px]" data-node-id="124:1115">
-              <p className="font-['Inter:Medium',sans-serif] font-medium relative shrink-0 text-[#9ac1f0] text-[16px] w-full" data-node-id="107:693">
+              <p className="font-sans font-medium font-medium relative shrink-0 text-[#9ac1f0] text-[16px] w-full" data-node-id="107:693">
                 01 — Background
               </p>
-              <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold relative shrink-0 text-[24px] text-white w-full" data-node-id="107:694">
+              <p className="font-sans font-semibold font-semibold relative shrink-0 text-[24px] text-white w-full" data-node-id="107:694">
                 From Personal Passion to Design Problem
               </p>
             </div>
-            <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.6] relative shrink-0 text-gray-300 text-[16px] w-[636px]" data-node-id="107:695">{`Growing up watching Initial D, I later modified my own car in the U.S. and experienced firsthand the difficulties enthusiasts face — fragmented information, unreliable advice, and unpredictable outcomes. This personal frustration became the project's starting point.`}</p>
+            <p className="font-sans font-normal font-normal leading-[1.6] relative shrink-0 text-gray-300 text-[16px] w-[636px]" data-node-id="107:695">{`Growing up watching Initial D, I later modified my own car in the U.S. and experienced firsthand the difficulties enthusiasts face — fragmented information, unreliable advice, and unpredictable outcomes. This personal frustration became the project's starting point.`}</p>
           </div>
           <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="145:917">
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[46px] mt-[177px] place-items-start relative row-1" data-node-id="124:1118">
@@ -519,11 +519,11 @@ export default function Frame() {
                         </div>
                       </div>
                     </div>
-                    <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[32px] leading-[normal] ml-[306px] mt-[104px] not-italic relative row-1 text-[12px] text-white w-[52px]" data-node-id="0:30">{`North America `}</p>
-                    <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[15px] leading-[normal] ml-0 mt-[225px] not-italic relative row-1 text-[12px] text-white w-[47px]" data-node-id="0:31">{`Europe `}</p>
-                    <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[30px] leading-[normal] ml-[4px] mt-[65px] not-italic relative row-1 text-[12px] text-white w-[48px]" data-node-id="0:32">{`Asia Pacific `}</p>
-                    <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[28.206px] leading-[normal] ml-[33.38px] mt-[18.61px] not-italic relative row-1 text-[12px] text-white w-[74.172px]" data-node-id="0:33">{`Middle East & Africa `}</p>
-                    <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[48px] leading-[normal] ml-[143px] mt-0 not-italic relative row-1 text-[12px] text-white w-[125px]" data-node-id="0:34">
+                    <p className="col-1 font-sans font-normal font-normal h-[32px] leading-[normal] ml-[306px] mt-[104px] not-italic relative row-1 text-[12px] text-white w-[52px]" data-node-id="0:30">{`North America `}</p>
+                    <p className="col-1 font-sans font-normal font-normal h-[15px] leading-[normal] ml-0 mt-[225px] not-italic relative row-1 text-[12px] text-white w-[47px]" data-node-id="0:31">{`Europe `}</p>
+                    <p className="col-1 font-sans font-normal font-normal h-[30px] leading-[normal] ml-[4px] mt-[65px] not-italic relative row-1 text-[12px] text-white w-[48px]" data-node-id="0:32">{`Asia Pacific `}</p>
+                    <p className="col-1 font-sans font-normal font-normal h-[28.206px] leading-[normal] ml-[33.38px] mt-[18.61px] not-italic relative row-1 text-[12px] text-white w-[74.172px]" data-node-id="0:33">{`Middle East & Africa `}</p>
+                    <p className="col-1 font-sans font-normal font-normal h-[48px] leading-[normal] ml-[143px] mt-0 not-italic relative row-1 text-[12px] text-white w-[125px]" data-node-id="0:34">
                       South America 6%
                     </p>
                     <div className="col-1 h-[44.5px] ml-[143px] mt-[17px] relative row-1 w-[107px]" data-node-id="0:35">
@@ -531,11 +531,11 @@ export default function Frame() {
                         <img alt="" className="block max-w-none size-full" src={imgVector8} />
                       </div>
                     </div>
-                    <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[146px] mt-[63px] not-italic relative row-1 text-[14px] text-white whitespace-nowrap" data-node-id="0:36">
+                    <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[146px] mt-[63px] not-italic relative row-1 text-[14px] text-white whitespace-nowrap" data-node-id="0:36">
                       6%
                     </p>
                   </div>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[116px] mt-[83px] not-italic relative row-1 text-[14px] text-white whitespace-nowrap" data-node-id="0:37">
+                  <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[116px] mt-[83px] not-italic relative row-1 text-[14px] text-white whitespace-nowrap" data-node-id="0:37">
                     9%
                   </p>
                   <div className="col-1 h-[32px] ml-[34.5px] mt-[51px] relative row-1 w-[79.5px]" data-node-id="0:202">
@@ -546,23 +546,23 @@ export default function Frame() {
                   <p className="col-1 font-['Inter:Black',sans-serif] font-black h-[28px] leading-[normal] ml-[240px] mt-[138px] not-italic relative row-1 text-[23px] text-white w-[56px]" data-node-id="0:203">
                     55%
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[11px] leading-[normal] ml-[65px] mt-[188px] not-italic relative row-1 text-[14px] text-white w-[30px]" data-node-id="0:206">
+                  <p className="col-1 font-sans font-normal font-normal h-[11px] leading-[normal] ml-[65px] mt-[188px] not-italic relative row-1 text-[14px] text-white w-[30px]" data-node-id="0:206">
                     23%
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[84px] mt-[116px] not-italic relative row-1 text-[14px] text-white whitespace-nowrap" data-node-id="0:207">
+                  <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[84px] mt-[116px] not-italic relative row-1 text-[14px] text-white whitespace-nowrap" data-node-id="0:207">
                     9%
                   </p>
                 </div>
-                <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[60px] mt-0 not-italic relative row-1 text-gray-300 text-[16px] text-center w-[239px]" data-node-id="0:211">
+                <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[60px] mt-0 not-italic relative row-1 text-gray-300 text-[16px] text-center w-[239px]" data-node-id="0:211">
                   Regional analysis in 2021
                 </p>
               </div>
               <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 place-items-start relative row-1" data-node-id="96:682">
                 <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[43px] mt-[65px] place-items-start relative row-1" data-node-id="0:74">
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[29.94px] mt-[234.56px] not-italic relative row-1 text-[12px] text-center text-white whitespace-nowrap" data-node-id="0:76">
+                  <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[29.94px] mt-[234.56px] not-italic relative row-1 text-[12px] text-center text-white whitespace-nowrap" data-node-id="0:76">
                     2021
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[147.4px] mt-[234.21px] not-italic relative row-1 text-[12px] text-center text-white whitespace-nowrap" data-node-id="0:77">
+                  <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[147.4px] mt-[234.21px] not-italic relative row-1 text-[12px] text-center text-white whitespace-nowrap" data-node-id="0:77">
                     2029
                   </p>
                   <div className="col-1 h-[151.992px] ml-[7.48px] mt-[78.13px] relative row-1 w-[73.919px]" data-name="Vector" data-node-id="0:78">
@@ -580,14 +580,14 @@ export default function Frame() {
                       </div>
                     </div>
                   </div>
-                  <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] ml-0 mt-[35px] not-italic relative row-1 text-[12px] text-center text-white whitespace-nowrap" data-node-id="0:81">
+                  <p className="col-1 font-sans font-semibold font-semibold leading-[normal] ml-0 mt-[35px] not-italic relative row-1 text-[12px] text-center text-white whitespace-nowrap" data-node-id="0:81">
                     CAGR 3.45%
                   </p>
-                  <div className="col-1 font-['Inter:Bold',sans-serif] font-bold leading-[normal] ml-[26px] mt-[135.8px] not-italic relative row-1 text-[12px] text-center text-white whitespace-nowrap" data-node-id="0:82">
+                  <div className="col-1 font-sans font-bold tracking-tight font-bold tracking-tight leading-[normal] ml-[26px] mt-[135.8px] not-italic relative row-1 text-[12px] text-center text-white whitespace-nowrap" data-node-id="0:82">
                     <p className="mb-0">52.15</p>
                     <p>{`Million `}</p>
                   </div>
-                  <div className="col-1 font-['Inter:Bold',sans-serif] font-bold leading-[normal] ml-[143.6px] mt-[114.8px] not-italic relative row-1 text-[12px] text-center text-white whitespace-nowrap" data-node-id="0:83">
+                  <div className="col-1 font-sans font-bold tracking-tight font-bold tracking-tight leading-[normal] ml-[143.6px] mt-[114.8px] not-italic relative row-1 text-[12px] text-center text-white whitespace-nowrap" data-node-id="0:83">
                     <p className="mb-0">68.40</p>
                     <p>{`Million `}</p>
                   </div>
@@ -597,24 +597,24 @@ export default function Frame() {
                     </div>
                   </div>
                 </div>
-                <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[29.4px] leading-[normal] ml-[43px] mt-[51px] not-italic relative row-1 text-[14px] text-white w-[211.4px]" data-node-id="0:212">
+                <p className="col-1 font-sans font-normal font-normal h-[29.4px] leading-[normal] ml-[43px] mt-[51px] not-italic relative row-1 text-[14px] text-white w-[211.4px]" data-node-id="0:212">
                   Market size in US (USD Million)
                 </p>
-                <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-0 mt-0 not-italic relative row-1 text-gray-300 text-[16px] text-center w-[298px]" data-node-id="70:689">
+                <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-0 mt-0 not-italic relative row-1 text-gray-300 text-[16px] text-center w-[298px]" data-node-id="70:689">
                   Car Modification market size prediction
                 </p>
               </div>
             </div>
             <div className="col-1 content-stretch flex flex-col gap-[16px] items-start ml-0 mt-0 not-italic relative row-1 w-[875px]" data-node-id="124:1116">
               <div className="content-stretch flex flex-col gap-[8px] items-start leading-[normal] relative shrink-0 w-[454px]" data-node-id="124:1114">
-                <p className="font-['Inter:Medium',sans-serif] font-medium relative shrink-0 text-[#9ac1f0] text-[16px] w-full" data-node-id="107:696">
+                <p className="font-sans font-medium font-medium relative shrink-0 text-[#9ac1f0] text-[16px] w-full" data-node-id="107:696">
                   02 — Market Research
                 </p>
-                <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold relative shrink-0 text-[24px] text-white w-full" data-node-id="107:699">
+                <p className="font-sans font-semibold font-semibold relative shrink-0 text-[24px] text-white w-full" data-node-id="107:699">
                   Growing Market, Fragmented Channels
                 </p>
               </div>
-              <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.6] relative shrink-0 text-gray-300 text-[16px] w-[611px]" data-node-id="107:701">
+              <p className="font-sans font-normal font-normal leading-[1.6] relative shrink-0 text-gray-300 text-[16px] w-[611px]" data-node-id="107:701">
                 The U.S. modified car market is projected to grow from $52M to $68M by 2029 (CAGR 3.45%). North America holds 55% of the global aftermarket share — a massive opportunity.
               </p>
             </div>
@@ -631,28 +631,28 @@ export default function Frame() {
                         </div>
                       </div>
                       <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] ml-0 mt-[7.2px] not-italic place-items-start relative row-1 text-right whitespace-nowrap" data-name="Group" data-node-id="0:90" style={{ transform: 'translateX(-15px)' }}>
-                        <p className="col-1 font-['Inter:Bold',sans-serif] font-bold ml-[20.84px] mt-0 relative row-1 text-[12px] text-white" data-node-id="0:91">
+                        <p className="col-1 font-sans font-bold tracking-tight font-bold tracking-tight ml-[20.84px] mt-0 relative row-1 text-[12px] text-white" data-node-id="0:91">
                           Internet
                         </p>
-                        <p className="col-1 font-['Inter:Bold',sans-serif] font-bold ml-[15.4px] mt-[29.71px] relative row-1 text-[12px] text-white" data-node-id="0:92">
+                        <p className="col-1 font-sans font-bold tracking-tight font-bold tracking-tight ml-[15.4px] mt-[29.71px] relative row-1 text-[12px] text-white" data-node-id="0:92">
                           In person
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[2.2px] mt-[59.42px] relative row-1 text-gray-300 text-[11.04px]" data-node-id="0:93">
+                        <p className="col-1 font-sans font-normal font-normal ml-[2.2px] mt-[59.42px] relative row-1 text-gray-300 text-[11.04px]" data-node-id="0:93">
                           Social media
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[20.5px] mt-[89.13px] relative row-1 text-gray-300 text-[11.04px]" data-node-id="0:94">
+                        <p className="col-1 font-sans font-normal font-normal ml-[20.5px] mt-[89.13px] relative row-1 text-gray-300 text-[11.04px]" data-node-id="0:94">
                           Car show
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[15.36px] mt-[118.84px] relative row-1 text-gray-300 text-[11.04px]" data-node-id="0:95">
+                        <p className="col-1 font-sans font-normal font-normal ml-[15.36px] mt-[118.84px] relative row-1 text-gray-300 text-[11.04px]" data-node-id="0:95">
                           Auto shop
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[13.42px] mt-[148.55px] relative row-1 text-gray-300 text-[11.04px]" data-node-id="0:96">
+                        <p className="col-1 font-sans font-normal font-normal ml-[13.42px] mt-[148.55px] relative row-1 text-gray-300 text-[11.04px]" data-node-id="0:96">
                           Dealership
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[37.2px] mt-[207.6px] relative row-1 text-gray-300 text-[11.04px]" data-node-id="0:97">
+                        <p className="col-1 font-sans font-normal font-normal ml-[37.2px] mt-[207.6px] relative row-1 text-gray-300 text-[11.04px]" data-node-id="0:97">
                           Movie
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-0 mt-[178.8px] relative row-1 text-gray-300 text-[11.04px]" data-node-id="0:98">
+                        <p className="col-1 font-sans font-normal font-normal ml-0 mt-[178.8px] relative row-1 text-gray-300 text-[11.04px]" data-node-id="0:98">
                           On the street
                         </p>
                       </div>
@@ -663,7 +663,7 @@ export default function Frame() {
                       </div>
                     </div>
                     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[71.59px] mt-[237.68px] place-items-start relative row-1" data-name="Group" data-node-id="0:108">
-                      <div className="col-1 font-['Inter:Regular',sans-serif] font-normal grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] ml-0 mt-0 not-italic place-items-start relative row-1 text-gray-300 text-[11.04px] text-center whitespace-nowrap" data-name="Group" data-node-id="0:109">
+                      <div className="col-1 font-sans font-normal font-normal grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] ml-0 mt-0 not-italic place-items-start relative row-1 text-gray-300 text-[11.04px] text-center whitespace-nowrap" data-name="Group" data-node-id="0:109">
                         <p className="col-1 ml-0 mt-0 relative row-1" data-node-id="0:110">
                           0
                         </p>
@@ -691,32 +691,32 @@ export default function Frame() {
                   <div className="col-1 flex flex-col font-['Inter:Black',sans-serif] font-black justify-center ml-[315px] mt-[33px] not-italic relative row-1 text-[18px] text-white w-[41px]" data-node-id="0:125">
                     <p className="leading-[normal]">28%</p>
                   </div>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[13.2px] leading-[normal] ml-[250.8px] mt-[67.2px] not-italic relative row-1 text-gray-300 text-[11.04px] w-[27.6px]" data-node-id="0:126">
+                  <p className="col-1 font-sans font-normal font-normal h-[13.2px] leading-[normal] ml-[250.8px] mt-[67.2px] not-italic relative row-1 text-gray-300 text-[11.04px] w-[27.6px]" data-node-id="0:126">
                     17%
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[13.2px] leading-[normal] ml-[229.2px] mt-[97.2px] not-italic relative row-1 text-gray-300 text-[11.04px] w-[27.6px]" data-node-id="0:127">
+                  <p className="col-1 font-sans font-normal font-normal h-[13.2px] leading-[normal] ml-[229.2px] mt-[97.2px] not-italic relative row-1 text-gray-300 text-[11.04px] w-[27.6px]" data-node-id="0:127">
                     15%
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[13.2px] leading-[normal] ml-[219.6px] mt-[126px] not-italic relative row-1 text-gray-300 text-[11.04px] w-[27.6px]" data-node-id="0:128">
+                  <p className="col-1 font-sans font-normal font-normal h-[13.2px] leading-[normal] ml-[219.6px] mt-[126px] not-italic relative row-1 text-gray-300 text-[11.04px] w-[27.6px]" data-node-id="0:128">
                     14%
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[13.2px] leading-[normal] ml-[211.2px] mt-[157.2px] not-italic relative row-1 text-gray-300 text-[11.04px] w-[27.6px]" data-node-id="0:129">
+                  <p className="col-1 font-sans font-normal font-normal h-[13.2px] leading-[normal] ml-[211.2px] mt-[157.2px] not-italic relative row-1 text-gray-300 text-[11.04px] w-[27.6px]" data-node-id="0:129">
                     13%
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[13.2px] leading-[normal] ml-[178.8px] mt-[216px] not-italic relative row-1 text-gray-300 text-[11.04px] w-[27.6px]" data-node-id="0:130">
+                  <p className="col-1 font-sans font-normal font-normal h-[13.2px] leading-[normal] ml-[178.8px] mt-[216px] not-italic relative row-1 text-gray-300 text-[11.04px] w-[27.6px]" data-node-id="0:130">
                     10%
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[13.2px] leading-[normal] ml-[188.4px] mt-[186px] not-italic relative row-1 text-gray-300 text-[11.04px] w-[27.6px]" data-node-id="0:131">
+                  <p className="col-1 font-sans font-normal font-normal h-[13.2px] leading-[normal] ml-[188.4px] mt-[186px] not-italic relative row-1 text-gray-300 text-[11.04px] w-[27.6px]" data-node-id="0:131">
                     11%
                   </p>
                 </div>
-                <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[21.6px] leading-[normal] ml-[93.77px] mt-[139.39px] not-italic relative row-1 text-[8.701px] text-white w-[220.8px]" data-node-id="0:133">{` `}</p>
-                <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[94px] mt-[266.68px] not-italic relative row-1 text-gray-300 text-[12px] text-center w-[214.8px]" data-node-id="0:192">
+                <p className="col-1 font-sans font-normal font-normal h-[21.6px] leading-[normal] ml-[93.77px] mt-[139.39px] not-italic relative row-1 text-[8.701px] text-white w-[220.8px]" data-node-id="0:133">{` `}</p>
+                <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[94px] mt-[266.68px] not-italic relative row-1 text-gray-300 text-[12px] text-center w-[214.8px]" data-node-id="0:192">
                   Where accessorises find inspiration
                 </p>
               </div>
               <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[426.92px] mt-0 place-items-start relative row-1" data-node-id="70:692">
-                <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[62.4px] leading-[normal] ml-[113.97px] mt-[210.19px] not-italic relative row-1 text-[19.2px] text-white w-[196.8px]" data-node-id="0:132">{` `}</p>
+                <p className="col-1 font-sans font-normal font-normal h-[62.4px] leading-[normal] ml-[113.97px] mt-[210.19px] not-italic relative row-1 text-[19.2px] text-white w-[196.8px]" data-node-id="0:132">{` `}</p>
                 <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 place-items-start relative row-1" data-node-id="0:135">
                   <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 place-items-start relative row-1" data-name="Group" data-node-id="0:136">
                     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 place-items-start relative row-1" data-name="Group" data-node-id="0:137">
@@ -726,37 +726,37 @@ export default function Frame() {
                         </div>
                       </div>
                       <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] ml-0 mt-[7.52px] not-italic place-items-start relative row-1 text-[11.046px] text-right whitespace-nowrap" data-name="Group" data-node-id="0:139" style={{ transform: 'translateX(-15px)' }}>
-                        <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold ml-[79.28px] mt-0 relative row-1 text-white" data-node-id="0:140">
+                        <p className="col-1 font-sans font-semibold font-semibold ml-[79.28px] mt-0 relative row-1 text-white" data-node-id="0:140">
                           Wheels/Tires
                         </p>
-                        <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold ml-[78.44px] mt-[29.78px] relative row-1 text-white" data-node-id="0:141">
+                        <p className="col-1 font-sans font-semibold font-semibold ml-[78.44px] mt-[29.78px] relative row-1 text-white" data-node-id="0:141">
                           Exterior Body
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[108.34px] mt-[59.55px] relative row-1 text-gray-300" data-node-id="0:142">
+                        <p className="col-1 font-sans font-normal font-normal ml-[108.34px] mt-[59.55px] relative row-1 text-gray-300" data-node-id="0:142">
                           Interiors
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[109.54px] mt-[89.33px] relative row-1 text-gray-300" data-node-id="0:143">
+                        <p className="col-1 font-sans font-normal font-normal ml-[109.54px] mt-[89.33px] relative row-1 text-gray-300" data-node-id="0:143">
                           Lighting
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-0 mt-[119.11px] relative row-1 text-gray-300" data-node-id="0:144">
+                        <p className="col-1 font-sans font-normal font-normal ml-0 mt-[119.11px] relative row-1 text-gray-300" data-node-id="0:144">
                           Engine Electrical and Ignition
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[3.4px] mt-[148.89px] relative row-1 text-gray-300" data-node-id="0:145">
+                        <p className="col-1 font-sans font-normal font-normal ml-[3.4px] mt-[148.89px] relative row-1 text-gray-300" data-node-id="0:145">
                           Suspension/Brakes/Steering
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[54.03px] mt-[178.66px] relative row-1 text-gray-300" data-node-id="0:146">
+                        <p className="col-1 font-sans font-normal font-normal ml-[54.03px] mt-[178.66px] relative row-1 text-gray-300" data-node-id="0:146">
                           Intake/Exaust/Fuel
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[8.84px] mt-[208.44px] relative row-1 text-gray-300" data-node-id="0:147">
+                        <p className="col-1 font-sans font-normal font-normal ml-[8.84px] mt-[208.44px] relative row-1 text-gray-300" data-node-id="0:147">
                           Engine internal and Cooling
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[45.82px] mt-[238.22px] relative row-1 text-gray-300" data-node-id="0:148">
+                        <p className="col-1 font-sans font-normal font-normal ml-[45.82px] mt-[238.22px] relative row-1 text-gray-300" data-node-id="0:148">
                           Exterior accessories
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[99.6px] mt-[267.28px] relative row-1 text-gray-300" data-node-id="0:149">
+                        <p className="col-1 font-sans font-normal font-normal ml-[99.6px] mt-[267.28px] relative row-1 text-gray-300" data-node-id="0:149">
                           Drivetrain
                         </p>
-                        <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[151.86px] mt-[267.99px] relative row-1 text-white" data-node-id="0:150">{` `}</p>
+                        <p className="col-1 font-sans font-normal font-normal ml-[151.86px] mt-[267.99px] relative row-1 text-white" data-node-id="0:150">{` `}</p>
                       </div>
                       <div className="col-1 h-[267.995px] ml-[155px] mt-[14.89px] relative row-1 w-[3.682px]" data-name="Group" data-node-id="0:151">
                         <div className="absolute inset-[-0.17%_0]">
@@ -765,7 +765,7 @@ export default function Frame() {
                       </div>
                     </div>
                     <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[154.54px] mt-[297.77px] place-items-start relative row-1" data-name="Group" data-node-id="0:162">
-                      <div className="col-1 font-['Inter:Regular',sans-serif] font-normal grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] ml-0 mt-0 not-italic place-items-start relative row-1 text-[11.046px] text-center text-white whitespace-nowrap" data-name="Group" data-node-id="0:163">
+                      <div className="col-1 font-sans font-normal font-normal grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] ml-0 mt-0 not-italic place-items-start relative row-1 text-[11.046px] text-center text-white whitespace-nowrap" data-name="Group" data-node-id="0:163">
                         <p className="col-1 ml-0 mt-0 relative row-1" data-node-id="0:164">
                           0
                         </p>
@@ -796,47 +796,47 @@ export default function Frame() {
                   <div className="col-1 flex flex-col font-['Inter:Black',sans-serif] font-black h-[15px] justify-center ml-[391px] mt-[37px] not-italic relative row-1 text-[18px] text-white w-[43px]" data-node-id="0:183">
                     <p className="leading-[normal]">42%</p>
                   </div>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[13.2px] leading-[normal] ml-[394.8px] mt-[67.2px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:184">
+                  <p className="col-1 font-sans font-normal font-normal h-[13.2px] leading-[normal] ml-[394.8px] mt-[67.2px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:184">
                     36%
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[13.2px] leading-[normal] ml-[374.4px] mt-[97.2px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:185">
+                  <p className="col-1 font-sans font-normal font-normal h-[13.2px] leading-[normal] ml-[374.4px] mt-[97.2px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:185">
                     33%
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[13.2px] leading-[normal] ml-[350.4px] mt-[127.2px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:186">
+                  <p className="col-1 font-sans font-normal font-normal h-[13.2px] leading-[normal] ml-[350.4px] mt-[127.2px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:186">
                     29%
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[13.2px] leading-[normal] ml-[336px] mt-[156px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:187">
+                  <p className="col-1 font-sans font-normal font-normal h-[13.2px] leading-[normal] ml-[336px] mt-[156px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:187">
                     27%
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[13.2px] leading-[normal] ml-[304.8px] mt-[186px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:188">
+                  <p className="col-1 font-sans font-normal font-normal h-[13.2px] leading-[normal] ml-[304.8px] mt-[186px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:188">
                     22%
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[13.2px] leading-[normal] ml-[285.6px] mt-[216px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:189">
+                  <p className="col-1 font-sans font-normal font-normal h-[13.2px] leading-[normal] ml-[285.6px] mt-[216px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:189">
                     19%
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[13.2px] leading-[normal] ml-[277.2px] mt-[246px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:190">
+                  <p className="col-1 font-sans font-normal font-normal h-[13.2px] leading-[normal] ml-[277.2px] mt-[246px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:190">
                     18%
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal h-[13.2px] leading-[normal] ml-[258px] mt-[276px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:191">
+                  <p className="col-1 font-sans font-normal font-normal h-[13.2px] leading-[normal] ml-[258px] mt-[276px] not-italic relative row-1 text-gray-300 text-[11.046px] w-[22.8px]" data-node-id="0:191">
                     15%
                   </p>
                 </div>
-                <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[normal] ml-[124px] mt-[326.77px] not-italic relative row-1 text-gray-300 text-[12px] text-center w-[241.2px]" data-node-id="0:193">
+                <p className="col-1 font-sans font-normal font-normal leading-[normal] ml-[124px] mt-[326.77px] not-italic relative row-1 text-gray-300 text-[12px] text-center w-[241.2px]" data-node-id="0:193">
                   What owners modify on their vehicles
                 </p>
               </div>
             </div>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[1.6] ml-0 mt-[72px] not-italic relative row-1 text-gray-300 text-[16px] w-[614px]" data-node-id="0:196">
+            <p className="col-1 font-sans font-normal font-normal leading-[1.6] ml-0 mt-[72px] not-italic relative row-1 text-gray-300 text-[16px] w-[614px]" data-node-id="0:196">
               In order to understand the thoughts and acquisition channels of car enthusiasts, and at the same time understand the industry information, I made this questionnaire report with 167 people
             </p>
-            <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[1.6] ml-0 mt-[531.77px] not-italic relative row-1 text-[16px] text-gray-300 w-[922px]" data-node-id="0:134">
+            <p className="col-1 font-sans font-normal font-normal leading-[1.6] ml-0 mt-[531.77px] not-italic relative row-1 text-[16px] text-gray-300 w-[922px]" data-node-id="0:134">
               Customers can access information from a variety of sources to stay informed about the latest trends, products, and services in the industry. However, these channels and methods of obtaining information lack credibility and comprehensiveness.
             </p>
             <div className="col-1 content-stretch flex flex-col gap-[8px] items-start leading-[normal] ml-0 mt-0 not-italic relative row-1 w-[406px]" data-node-id="124:1119">
-              <p className="font-['Inter:Medium',sans-serif] font-medium relative shrink-0 text-[#9ac1f0] text-[16px] w-full" data-node-id="107:702">
+              <p className="font-sans font-medium font-medium relative shrink-0 text-[#9ac1f0] text-[16px] w-full" data-node-id="107:702">
                 03 — Questionnaire (n=167)
               </p>
-              <p className="font-['Inter:Semi_Bold',sans-serif] font-semibold relative shrink-0 text-[24px] text-white w-full" data-node-id="107:709">
+              <p className="font-sans font-semibold font-semibold relative shrink-0 text-[24px] text-white w-full" data-node-id="107:709">
                 Where Enthusiasts Get Information
               </p>
             </div>
@@ -851,7 +851,7 @@ export default function Frame() {
                   <div className="col-1 h-[105px] ml-[180px] mt-[102px] relative row-1 w-[140px]" data-name="微信图片_20230502192152 1" data-node-id="0:460">
                     <img alt="" className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" src={img202305021921521} />
                   </div>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal leading-[1.6] ml-0 mt-0 not-italic relative row-1 text-gray-300 text-[16px] w-[337px]" data-node-id="107:717">
+                  <p className="col-1 font-sans font-normal font-normal leading-[1.6] ml-0 mt-0 not-italic relative row-1 text-gray-300 text-[16px] w-[337px]" data-node-id="107:717">
                     I observed the real modification workflow at a shop in Newark, DE — from consultation and planning to modification and delivery.
                   </p>
                 </div>
@@ -927,77 +927,77 @@ export default function Frame() {
                   <p className="col-1 font-['Inter:Extra_Bold',sans-serif] font-extrabold leading-[1.6] ml-[56px] mt-[356px] not-italic relative row-1 text-gray-100 text-[18px] whitespace-nowrap" data-node-id="0:453">{`Delivery `}</p>
                 </div>
               </div>
-              <p className="col-1 font-['Inter:Medium',sans-serif] font-medium leading-[normal] ml-0 mt-0 not-italic relative row-1 text-[#06b6d4] text-[16px] whitespace-nowrap" data-node-id="107:704">
+              <p className="col-1 font-sans font-medium font-medium leading-[normal] ml-0 mt-0 not-italic relative row-1 text-[#06b6d4] text-[16px] whitespace-nowrap" data-node-id="107:704">
                 04 — Field Research
               </p>
-              <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] ml-0 mt-[27px] not-italic relative row-1 text-[24px] text-white whitespace-nowrap" data-node-id="107:712">
+              <p className="col-1 font-sans font-semibold font-semibold leading-[normal] ml-0 mt-[27px] not-italic relative row-1 text-[24px] text-white whitespace-nowrap" data-node-id="107:712">
                 Visiting All Star Auto
               </p>
             </div>
             <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-[398px] mt-0 not-italic place-items-start relative row-1" data-node-id="112:1090">
               <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[106px] place-items-start relative row-1" data-node-id="108:719">
                 <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] ml-0 mt-0 place-items-start relative row-1 text-gray-100" data-node-id="71:698">
-                  <p className="col-1 font-['Inter:Bold',sans-serif] font-bold ml-0 mt-0 relative row-1 text-[24px] w-[128.104px]" data-node-id="0:454">
+                  <p className="col-1 font-sans font-bold tracking-tight font-bold tracking-tight ml-0 mt-0 relative row-1 text-[24px] w-[128.104px]" data-node-id="0:454">
                     Alex
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[352px] mt-[5px] relative row-1 text-[16px] text-right w-[168px]" data-node-id="0:456">{`1993 Nissan GTR `}</p>
+                  <p className="col-1 font-sans font-normal font-normal ml-[352px] mt-[5px] relative row-1 text-[16px] text-right w-[168px]" data-node-id="0:456">{`1993 Nissan GTR `}</p>
                 </div>
-                <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-0 mt-[45px] relative row-1 text-gray-300 text-[16px] w-[524px]" data-node-id="0:461">
+                <p className="col-1 font-sans font-normal font-normal ml-0 mt-[45px] relative row-1 text-gray-300 text-[16px] w-[524px]" data-node-id="0:461">
                   <span className="leading-[normal]">I have been in contact with cars since I was a child, and it has been 22 years now. A car is not just an object but a friend to me.</span>
-                  <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal]">{` `}</span>
-                  <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[#06b6d4]">Now I want more and more people to know about modified cars and car culture, and share my knowledge and ideas</span>
+                  <span className="font-sans font-bold tracking-tight font-bold tracking-tight leading-[normal]">{` `}</span>
+                  <span className="font-sans font-bold tracking-tight font-bold tracking-tight leading-[normal] text-[#06b6d4]">Now I want more and more people to know about modified cars and car culture, and share my knowledge and ideas</span>
                 </p>
               </div>
               <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[412px] place-items-start relative row-1" data-node-id="108:721">
                 <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 place-items-start relative row-1 text-gray-100" data-node-id="71:695">
-                  <div className="col-1 flex flex-col font-['Inter:Regular',sans-serif] font-normal h-[11px] justify-center ml-[409.59px] mt-[12px] relative row-1 text-[16px] text-right w-[110.405px]" data-node-id="0:458">
+                  <div className="col-1 flex flex-col font-sans font-normal font-normal h-[11px] justify-center ml-[409.59px] mt-[12px] relative row-1 text-[16px] text-right w-[110.405px]" data-node-id="0:458">
                     <p className="leading-[normal]">2016 BMW M5</p>
                   </div>
-                  <div className="col-1 flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[34px] justify-center ml-0 mt-0 relative row-1 text-[24px] w-[60.681px]" data-node-id="0:459">
+                  <div className="col-1 flex flex-col font-sans font-bold tracking-tight font-bold tracking-tight h-[34px] justify-center ml-0 mt-0 relative row-1 text-[24px] w-[60.681px]" data-node-id="0:459">
                     <p className="leading-[normal]">Mike</p>
                   </div>
                 </div>
-                <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-0 mt-[50px] relative row-1 text-gray-300 text-[16px] w-[524px]" data-node-id="0:462">
+                <p className="col-1 font-sans font-normal font-normal ml-0 mt-[50px] relative row-1 text-gray-300 text-[16px] w-[524px]" data-node-id="0:462">
                   <span className="leading-[normal]">{`The acceleration and roaring engine of a car make my adrenaline surge. I prefer to `}</span>
-                  <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[#06b6d4]">experience the thrill and extreme speed of racing cars firsthand</span>
+                  <span className="font-sans font-bold tracking-tight font-bold tracking-tight leading-[normal] text-[#06b6d4]">experience the thrill and extreme speed of racing cars firsthand</span>
                   <span className="leading-[normal]">. At the same time, modifications are essential, allowing me to better control the vehicle and improve its performance limits.</span>
                 </p>
               </div>
               <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[251px] place-items-start relative row-1" data-node-id="108:720">
                 <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] ml-0 mt-0 place-items-start relative row-1 text-gray-100" data-node-id="71:697">
-                  <p className="col-1 font-['Inter:Bold',sans-serif] font-bold h-[26px] ml-0 mt-0 relative row-1 text-[24px] w-[107.034px]" data-node-id="0:455">
+                  <p className="col-1 font-sans font-bold tracking-tight font-bold tracking-tight h-[26px] ml-0 mt-0 relative row-1 text-[24px] w-[107.034px]" data-node-id="0:455">
                     Marcos
                   </p>
-                  <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-[376px] mt-[4px] relative row-1 text-[16px] text-right w-[144px]" data-node-id="0:457">
+                  <p className="col-1 font-sans font-normal font-normal ml-[376px] mt-[4px] relative row-1 text-[16px] text-right w-[144px]" data-node-id="0:457">
                     1996 Mazda RX7
                   </p>
                 </div>
-                <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-0 mt-[42px] relative row-1 text-gray-300 text-[16px] w-[524px]" data-node-id="0:463">
+                <p className="col-1 font-sans font-normal font-normal ml-0 mt-[42px] relative row-1 text-gray-300 text-[16px] w-[524px]" data-node-id="0:463">
                   <span className="leading-[normal]">Car racing is one of my hobbies. By participating in and watching famous car races like GT and WRC, I have a deeper understanding of car knowledge and culture. Not only that, but</span>
-                  <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal]">{` `}</span>
-                  <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[#06b6d4]">I also gained insight into the development of car culture and the emotional resonance of car fans.</span>
+                  <span className="font-sans font-bold tracking-tight font-bold tracking-tight leading-[normal]">{` `}</span>
+                  <span className="font-sans font-bold tracking-tight font-bold tracking-tight leading-[normal] text-[#06b6d4]">I also gained insight into the development of car culture and the emotional resonance of car fans.</span>
                 </p>
               </div>
               <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-[581px] place-items-start relative row-1" data-node-id="108:722">
-                <p className="col-1 font-['Inter:Regular',sans-serif] font-normal ml-0 mt-[44px] relative row-1 text-gray-300 text-[16px] w-[524px]" data-node-id="0:466">
+                <p className="col-1 font-sans font-normal font-normal ml-0 mt-[44px] relative row-1 text-gray-300 text-[16px] w-[524px]" data-node-id="0:466">
                   <span className="leading-[normal]">{`I first came into contact with cars in the Fast and Furious movie, where the 1970 Dodge Challenger left a lasting impression on me. As a car novice, `}</span>
-                  <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal] text-[#06b6d4]">I need more channels and resources</span>
+                  <span className="font-sans font-bold tracking-tight font-bold tracking-tight leading-[normal] text-[#06b6d4]">I need more channels and resources</span>
                   <span className="leading-[normal]">{` to better understand cars and car culture.`}</span>
                 </p>
                 <div className="col-1 grid-cols-[max-content] grid-rows-[max-content] inline-grid ml-0 mt-0 place-items-start relative row-1 text-gray-100" data-node-id="71:696">
-                  <div className="col-1 flex flex-col font-['Inter:Regular',sans-serif] font-normal h-[16px] justify-center ml-[263.39px] mt-[6px] relative row-1 text-[16px] text-right w-[256.606px]" data-node-id="0:465">
+                  <div className="col-1 flex flex-col font-sans font-normal font-normal h-[16px] justify-center ml-[263.39px] mt-[6px] relative row-1 text-[16px] text-right w-[256.606px]" data-node-id="0:465">
                     <p className="leading-[normal]">2021 Dodge Challenger Hellcat</p>
                   </div>
-                  <div className="col-1 flex flex-col font-['Inter:Bold',sans-serif] font-bold h-[28px] justify-center ml-0 mt-0 relative row-1 text-[24px] w-[87.099px]" data-node-id="0:467">
+                  <div className="col-1 flex flex-col font-sans font-bold tracking-tight font-bold tracking-tight h-[28px] justify-center ml-0 mt-0 relative row-1 text-[24px] w-[87.099px]" data-node-id="0:467">
                     <p className="leading-[normal]">Sergio</p>
                   </div>
                 </div>
               </div>
-              <p className="col-1 font-['Inter:Medium',sans-serif] font-medium ml-0 mt-0 relative row-1 text-[#06b6d4] text-[16px] whitespace-nowrap" data-node-id="107:706">
+              <p className="col-1 font-sans font-medium font-medium ml-0 mt-0 relative row-1 text-[#06b6d4] text-[16px] whitespace-nowrap" data-node-id="107:706">
                 <span className="leading-[normal]">{`05 — `}</span>
-                <span className="font-['Inter:Bold',sans-serif] font-bold leading-[normal]">Interview</span>
+                <span className="font-sans font-bold tracking-tight font-bold tracking-tight leading-[normal]">Interview</span>
               </p>
-              <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[normal] ml-0 mt-[27px] relative row-1 text-[24px] text-white whitespace-nowrap" data-node-id="107:714">
+              <p className="col-1 font-sans font-semibold font-semibold leading-[normal] ml-0 mt-[27px] relative row-1 text-[24px] text-white whitespace-nowrap" data-node-id="107:714">
                 4 Enthusiasts, 4 Perspectives
               </p>
             </div>
@@ -1005,17 +1005,17 @@ export default function Frame() {
           <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] place-items-start relative shrink-0" data-node-id="127:679">
             <div className="bg-[rgba(6,182,212,0.1)] border border-[rgba(6,182,212,0.3)] border-solid col-1 h-[160px] ml-0 mt-0 rounded-[12px] row-1 w-[840px]" data-node-id="111:1083" />
             <div className="col-1 content-stretch flex flex-col gap-[8px] items-start ml-[52.61px] mt-[22px] not-italic relative row-1 w-[738.402px]" data-node-id="111:1084">
-              <div className="flex flex-col font-['Inter:Semi_Bold',sans-serif] font-semibold h-[20.964px] justify-center relative shrink-0 text-[#06b6d4] text-[20px] w-full" data-node-id="111:1085">
+              <div className="flex flex-col font-sans font-semibold font-semibold h-[20.964px] justify-center relative shrink-0 text-[#06b6d4] text-[20px] w-full" data-node-id="111:1085">
                 <p className="leading-[normal]">Research Insight</p>
               </div>
-              <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center relative shrink-0 text-[18px] text-white w-full" data-node-id="111:1086">
+              <div className="flex flex-col font-sans font-normal font-normal justify-center relative shrink-0 text-[18px] text-white w-full" data-node-id="111:1086">
                 <p className="leading-[1.6]">Information channels for car modification lack credibility and comprehensiveness. Enthusiasts at every level struggle with fragmented knowledge, unclear processes, and unpredictable outcomes.</p>
               </div>
             </div>
           </div>
         </div>
         <div className="absolute content-stretch flex flex-col gap-[32px] items-start left-[491px] top-[243px] w-[954px]" data-node-id="145:893">
-          <div className="content-stretch flex font-['Inter:Medium',sans-serif] font-medium gap-[12px] items-start leading-[normal] not-italic relative shrink-0 text-[16px] text-white whitespace-nowrap" data-node-id="99:690">
+          <div className="content-stretch flex font-sans font-medium font-medium gap-[12px] items-start leading-[normal] not-italic relative shrink-0 text-[16px] text-white whitespace-nowrap" data-node-id="99:690">
             <span className="relative shrink-0 border border-white/30 rounded-full px-[14px] py-[5px] bg-white/10 backdrop-blur-sm" data-node-id="0:7">{`Individual Project`}</span>
             <span className="relative shrink-0 border border-white/30 rounded-full px-[14px] py-[5px] bg-white/10 backdrop-blur-sm" data-node-id="70:683">
               Service Design
@@ -1027,15 +1027,15 @@ export default function Frame() {
               3D Visulization
             </span>
           </div>
-          <div className="font-bold grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] place-items-start relative shrink-0 text-[#9ac1f0]" data-node-id="70:682">
+          <div className="font-bold tracking-tight grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] place-items-start relative shrink-0 text-[#9ac1f0]" data-node-id="70:682">
             <p className="col-1 font-['Inter:Bold_Italic',sans-serif] h-[40px] italic ml-0 mt-[98px] relative row-1 text-[24px] w-[948px]" data-node-id="0:6">
               Designing a more predictable car modification journey
             </p>
-            <p className="col-1 font-['Inter:Bold',sans-serif] ml-0 mt-0 not-italic relative row-1 text-[64px] w-[691.963px]" data-node-id="0:10">
+            <p className="col-1 font-sans font-bold tracking-tight ml-0 mt-0 not-italic relative row-1 text-[64px] w-[691.963px]" data-node-id="0:10">
               ‘Nirvana’ Project
             </p>
           </div>
-          <p className="font-['Inter:Regular',sans-serif] font-normal leading-[1.6] not-italic relative shrink-0 text-gray-300 text-[18px] w-[896px]" data-node-id="0:9">
+          <p className="font-sans font-normal font-normal leading-[1.6] not-italic relative shrink-0 text-gray-300 text-[18px] w-[896px]" data-node-id="0:9">
             Car enthusiasts often rely on fragmented and unreliable information when planning modifications. As a result, they struggle to predict outcomes, choose suitable parts, communicate with shops, and stay within budget. VroomVision is a concept platform that helps users preview modifications before committing, build clearer project plans, and navigate the service process with greater transparency.
           </p>
           <div className="h-[513px] overflow-clip relative shrink-0 w-[921px]" data-node-id="140:681">
@@ -1046,19 +1046,19 @@ export default function Frame() {
         </div>
         <div className="absolute content-stretch flex flex-col gap-[48px] items-start left-[491px] top-[7216.36px] w-[921px]" data-node-id="145:906">
           <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[normal] not-italic place-items-start relative shrink-0" data-node-id="120:1108">
-            <p className="col-1 font-['Inter:Bold',sans-serif] font-bold ml-0 mt-[19px] relative row-1 text-[#22c55e] text-[40px] w-[370px]" data-node-id="120:1109">
+            <p className="col-1 font-sans font-bold tracking-tight font-bold tracking-tight ml-0 mt-[19px] relative row-1 text-[#22c55e] text-[40px] w-[370px]" data-node-id="120:1109">
               Design
             </p>
-            <p className="col-1 font-['Inter:Medium',sans-serif] font-medium ml-0 mt-0 relative row-1 text-[16px] text-white whitespace-nowrap" data-node-id="120:1110">
+            <p className="col-1 font-sans font-medium font-medium ml-0 mt-0 relative row-1 text-[16px] text-white whitespace-nowrap" data-node-id="120:1110">
               PHASE 04
             </p>
           </div>
           <div className="content-stretch flex flex-col gap-[24px] items-start leading-[0] relative shrink-0 w-full" data-node-id="145:903">
             <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid not-italic place-items-start relative shrink-0 whitespace-nowrap" data-node-id="131:694">
-              <p className="col-1 font-['Inter:Medium',sans-serif] font-medium leading-[normal] ml-0 mt-0 relative row-1 text-[#22c55e] text-[16px]" data-node-id="131:695">
+              <p className="col-1 font-sans font-medium font-medium leading-[normal] ml-0 mt-0 relative row-1 text-[#22c55e] text-[16px]" data-node-id="131:695">
                 12 — Design Function
               </p>
-              <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[1.6] ml-[2px] mt-[19px] relative row-1 text-[24px] text-white" data-node-id="131:696">
+              <p className="col-1 font-sans font-semibold font-semibold leading-[1.6] ml-[2px] mt-[19px] relative row-1 text-[24px] text-white" data-node-id="131:696">
                 How it works
               </p>
             </div>
@@ -1069,7 +1069,7 @@ export default function Frame() {
                   <div className="flex flex-col font-['Inter:Black_Italic',sans-serif] font-black italic justify-center relative shrink-0 w-full" data-node-id="131:685">
                     <p className="leading-[normal]">{`Communication & Learn`}</p>
                   </div>
-                  <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center not-italic relative shrink-0 w-full" data-node-id="131:689">
+                  <div className="flex flex-col font-sans font-normal font-normal justify-center not-italic relative shrink-0 w-full" data-node-id="131:689">
                     <p className="leading-[1.6]">Learn and share modification knowledge with the community</p>
                   </div>
                 </div>
@@ -1083,7 +1083,7 @@ export default function Frame() {
                   <div className="flex flex-col font-['Inter:Black_Italic',sans-serif] font-black italic justify-center relative shrink-0 w-full" data-node-id="131:733">
                     <p className="leading-[normal]">Project Planning</p>
                   </div>
-                  <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center not-italic relative shrink-0 w-full" data-node-id="131:734">
+                  <div className="flex flex-col font-sans font-normal font-normal justify-center not-italic relative shrink-0 w-full" data-node-id="131:734">
                     <p className="leading-[1.5]">Plan modifications with budget, parts, and timeline management</p>
                   </div>
                 </div>
@@ -1097,7 +1097,7 @@ export default function Frame() {
                   <div className="flex flex-col font-['Inter:Black_Italic',sans-serif] font-black italic justify-center min-w-full relative shrink-0 w-[min-content]" data-node-id="131:740">
                     <p className="leading-[normal] whitespace-pre-wrap">{`Innovative  Experience`}</p>
                   </div>
-                  <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center not-italic relative shrink-0 w-[276px]" data-node-id="131:741">
+                  <div className="flex flex-col font-sans font-normal font-normal justify-center not-italic relative shrink-0 w-[276px]" data-node-id="131:741">
                     <p className="leading-[1.5]">Preview modifications through 3D visualization and VR simulation</p>
                   </div>
                 </div>
@@ -1111,7 +1111,7 @@ export default function Frame() {
                   <div className="flex flex-col font-['Inter:Black_Italic',sans-serif] font-black italic justify-center relative shrink-0 w-full" data-node-id="131:747">
                     <p className="leading-[normal] whitespace-pre-wrap">{`Information  Database`}</p>
                   </div>
-                  <div className="flex flex-col font-['Inter:Regular',sans-serif] font-normal justify-center not-italic relative shrink-0 w-full" data-node-id="131:748">
+                  <div className="flex flex-col font-sans font-normal font-normal justify-center not-italic relative shrink-0 w-full" data-node-id="131:748">
                     <p className="leading-[1.5]">Access up-to-date parts data and modification references</p>
                   </div>
                 </div>
@@ -1123,7 +1123,7 @@ export default function Frame() {
           </div>
           <div className="content-stretch flex flex-col gap-[24px] items-start relative shrink-0 w-full" data-node-id="145:902">
             <div className="grid-cols-[max-content] grid-rows-[max-content] inline-grid leading-[0] not-italic place-items-start relative shrink-0 whitespace-nowrap" data-node-id="131:752">
-              <p className="col-1 font-['Inter:Medium',sans-serif] font-medium leading-[normal] ml-0 mt-0 relative row-1 text-[#22c55e] text-[16px]" data-node-id="131:753">
+              <p className="col-1 font-sans font-medium font-medium leading-[normal] ml-0 mt-0 relative row-1 text-[#22c55e] text-[16px]" data-node-id="131:753">
                 13 — Final Design
               </p>
               <p className="col-1 font-['Inter:Semi_Bold',sans-serif] font-semibold leading-[1.6] ml-[2px] mt-[19px] relative row-1 text-[24px] text-white" data-node-id="131:754">

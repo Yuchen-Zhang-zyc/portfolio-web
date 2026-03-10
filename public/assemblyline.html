@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assembly Line Y — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;1,300&family=Barlow+Condensed:wght@300;400;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <style>
+    *,
+    *::before,
+    *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --bg: #0A0A08;
+      --bg1: #111108;
+      --bg2: #181814;
+      --amber: #C8962A;
+      --amber-br: #FFB347;
+      --amber-dim: rgba(200, 150, 42, 0.12);
+      --amber-mid: rgba(200, 150, 42, 0.28);
+      --white: #E8E0D0;
+      --dim: #8A8275;
+      --dimmer: #2E2C26;
+      --green: #39FF14;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--white);
+      font-family: 'Barlow', sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    /* ── CURSOR & ACCESSIBILITY ── */
+    * {
+      cursor: crosshair;
+    }
+
+    a,
+    button {
+      cursor: pointer;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--amber);
+      outline-offset: 4px;
+    }
+
+    /* ── REDUCED MOTION ── */
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* ── SKIP LINK ── */
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: var(--amber);
+      color: var(--bg);
+      padding: 8px 16px;
+      z-index: 1000;
+      font-weight: bold;
+      transition: top 0.2s;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    /* ── SCROLLBAR ── */
+    ::-webkit-scrollbar {
+      width: 2px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: var(--bg);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: var(--amber);
+    }
+
+    /* ── NOISE OVERLAY ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+      pointer-events: none;
+      z-index: 999;
+      opacity: 0.4;
+    }
+
+    /* ── NAV ── */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 48px;
+      border-bottom: 1px solid rgba(200, 150, 42, 0.08);
+      background: rgba(10, 10, 8, 0.92);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-logo {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--amber);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      color: var(--dim);
+      text-decoration: none;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--amber-br);
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      padding: 120px 48px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-top: 160px;
+      padding-bottom: 80px;
+      max-width: 100%;
+      padding-left: 48px;
+      padding-right: 48px;
+      position: relative;
+    }
+
+    .hero-eyebrow {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--amber);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.2s forwards;
+    }
+
+    .hero-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(72px, 10vw, 140px);
+      font-weight: 700;
+      line-height: 0.92;
+      letter-spacing: -1px;
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.4s forwards;
+      overflow-wrap: break-word;
+    }
+
+    .hero-title em {
+      font-style: italic;
+      font-weight: 300;
+      color: var(--amber);
+    }
+
+    .hero-sub {
+      font-size: 16px;
+      color: var(--dim);
+      max-width: 560px;
+      margin-bottom: 56px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.6s forwards;
+      line-height: 1.8;
+    }
+
+    .hero-meta {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 32px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.75s forwards;
+    }
+
+    .hero-meta-item {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--dim);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .hero-meta-dot {
+      color: var(--amber);
+      font-size: 12px;
+    }
+
+    .hero-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 64px;
+      opacity: 0;
+      animation: fadeUp 0.8s 0.8s forwards;
+    }
+
+    .tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      color: var(--amber);
+      border: 1px solid var(--amber-mid);
+      padding: 5px 12px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      background: var(--amber-dim);
+    }
+
+    .hero-rule {
+      width: 80px;
+      height: 1px;
+      background: var(--amber);
+      opacity: 0;
+      animation: fadeUp 0.8s 1.0s forwards;
+    }
+
+    /* big background text */
+    .hero-bg-text {
+      position: absolute;
+      right: -20px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(120px, 18vw, 260px);
+      font-weight: 700;
+      color: rgba(200, 150, 42, 0.04);
+      line-height: 1;
+      letter-spacing: -4px;
+      pointer-events: none;
+      user-select: none;
+      white-space: nowrap;
+    }
+
+    /* ── SECTION HEADER ── */
+    .section-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      color: var(--amber);
+      letter-spacing: 4px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .section-label::after {
+      content: '';
+      flex: 1;
+      max-width: 60px;
+      height: 1px;
+      background: var(--amber-mid);
+    }
+
+    .section-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: clamp(36px, 5vw, 56px);
+      font-weight: 600;
+      line-height: 1.05;
+      margin-bottom: 64px;
+      color: var(--white);
+    }
+
+    /* ── OVERVIEW GRID ── */
+    .overview-grid {
+      display: grid;
+      grid-template-columns: 1fr 1px 1fr 1px 1fr;
+      gap: 0;
+      border: 1px solid var(--dimmer);
+    }
+
+    .overview-divider {
+      background: var(--dimmer);
+    }
+
+    .overview-card {
+      padding: 40px 36px;
+      position: relative;
+      transition: background 0.3s;
+    }
+
+    .overview-card:hover {
+      background: rgba(200, 150, 42, 0.04);
+    }
+
+    .overview-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--amber);
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+
+    .overview-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 14px;
+      letter-spacing: 0.5px;
+    }
+
+    .overview-body {
+      font-size: 13.5px;
+      color: var(--dim);
+      line-height: 1.75;
+    }
+
+    /* ── RESEARCH ── */
+    .research-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+
+    .research-intro {
+      font-size: 17px;
+      color: var(--dim);
+      line-height: 1.85;
+      max-width: 780px;
+      border-left: 2px solid var(--amber);
+      padding-left: 28px;
+    }
+
+    .research-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--dimmer);
+      border: 1px solid var(--dimmer);
+    }
+
+    .research-card {
+      background: var(--bg);
+      padding: 36px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      transition: background 0.3s;
+    }
+
+    .research-card:hover {
+      background: var(--bg1);
+    }
+
+    .rc-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8px;
+      color: var(--amber);
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+
+    .rc-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--white);
+      line-height: 1.2;
+    }
+
+    .rc-body {
+      font-size: 13px;
+      color: var(--dim);
+      line-height: 1.75;
+      margin-top: 4px;
+    }
+
+    @media (max-width: 900px) {
+      .research-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ── HIGHLIGHTS ── */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--dimmer);
+      border: 1px solid var(--dimmer);
+    }
+
+    .highlight-item {
+      background: var(--bg);
+      padding: 40px 40px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      transition: background 0.3s;
+    }
+
+    .highlight-item:hover {
+      background: var(--bg1);
+    }
+
+    .highlight-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 28px;
+      font-weight: 500;
+      color: var(--amber);
+      line-height: 1;
+      min-width: 44px;
+      margin-top: 4px;
+    }
+
+    .highlight-content {}
+
+    .highlight-title {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+    }
+
+    .highlight-body {
+      font-size: 13px;
+      color: var(--dim);
+      line-height: 1.7;
+    }
+
+    /* ── TECH ARCHITECTURE ── */
+    .arch-wrap {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 80px;
+      align-items: start;
+    }
+
+    .arch-layers {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .arch-layer {
+      border-left: 2px solid var(--dimmer);
+      padding: 24px 28px;
+      position: relative;
+      transition: border-color 0.25s, background 0.25s;
+    }
+
+    .arch-layer:hover {
+      border-left-color: var(--amber);
+      background: var(--amber-dim);
+    }
+
+    .arch-layer::before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: 32px;
+      width: 8px;
+      height: 8px;
+      background: var(--dimmer);
+      border-radius: 50%;
+      transition: background 0.25s;
+    }
+
+    .arch-layer:hover::before {
+      background: var(--amber);
+    }
+
+    .arch-layer-tag {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8px;
+      color: var(--amber);
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    .arch-layer-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .arch-layer-desc {
+      font-size: 12.5px;
+      color: var(--dim);
+      line-height: 1.6;
+    }
+
+    .arch-scripts {
+      position: sticky;
+      top: 100px;
+    }
+
+    .scripts-header {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      color: var(--amber);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--dimmer);
+    }
+
+    .script-item {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      padding: 8px 0;
+      border-bottom: 1px solid rgba(46, 44, 38, 0.5);
+    }
+
+    .script-dot {
+      width: 4px;
+      height: 4px;
+      background: var(--amber-mid);
+      border-radius: 50%;
+      flex-shrink: 0;
+      margin-bottom: 2px;
+    }
+
+    .script-name {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10.5px;
+      color: var(--amber-br);
+      flex-shrink: 0;
+    }
+
+    .script-role {
+      font-size: 11px;
+      color: var(--dim);
+    }
+
+    /* ── ARIA SECTION ── */
+    .aria-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1px;
+      background: var(--dimmer);
+      border: 1px solid var(--dimmer);
+      margin-bottom: 48px;
+    }
+
+    .aria-left {
+      background: var(--bg);
+      padding: 56px 48px;
+    }
+
+    .aria-right {
+      background: var(--bg1);
+      padding: 56px 48px;
+    }
+
+    .aria-name {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 64px;
+      font-weight: 700;
+      color: var(--amber);
+      line-height: 1;
+      letter-spacing: 2px;
+      margin-bottom: 8px;
+    }
+
+    .aria-fullname {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      color: var(--dim);
+      letter-spacing: 2px;
+      margin-bottom: 28px;
+    }
+
+    .aria-desc {
+      font-size: 14px;
+      color: var(--dim);
+      line-height: 1.8;
+      max-width: 340px;
+    }
+
+    .aria-flow {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .flow-step {
+      display: flex;
+      gap: 20px;
+      align-items: flex-start;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--dimmer);
+    }
+
+    .flow-step:last-child {
+      border-bottom: none;
+    }
+
+    .flow-icon {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 10px;
+      color: var(--amber);
+      min-width: 24px;
+      margin-top: 3px;
+    }
+
+    .flow-text {}
+
+    .flow-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 3px;
+    }
+
+    .flow-desc {
+      font-size: 12px;
+      color: var(--dim);
+    }
+
+    /* ── VIDEO SECTION ── */
+    .video-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .video-placeholder {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: var(--bg1);
+      border: 1px solid var(--dimmer);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .video-placeholder::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(0deg, transparent, transparent 40px,
+          rgba(200, 150, 42, 0.015) 40px, rgba(200, 150, 42, 0.015) 41px);
+    }
+
+    .vp-inner {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+      z-index: 1;
+    }
+
+    .vp-play {
+      width: 64px;
+      height: 64px;
+      border: 1px solid var(--amber-mid);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 22px;
+      color: var(--amber);
+      padding-left: 4px;
+    }
+
+    .vp-label {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 11px;
+      color: var(--amber);
+      letter-spacing: 4px;
+    }
+
+    .vp-sub {
+      font-size: 12px;
+      color: var(--dim);
+      letter-spacing: 1px;
+    }
+
+    video {
+      width: 100%;
+      aspect-ratio: 16/9;
+      background: #000;
+      display: block;
+    }
+
+    .video-meta {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--dimmer);
+      border: 1px solid var(--dimmer);
+    }
+
+    .vm-item {
+      background: var(--bg);
+      padding: 20px 24px;
+    }
+
+    .vm-key {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 8px;
+      color: var(--amber);
+      letter-spacing: 2px;
+      margin-bottom: 6px;
+    }
+
+    .vm-val {
+      font-size: 12px;
+      color: var(--dim);
+    }
+
+    @media (max-width: 900px) {
+      .video-meta {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--dimmer);
+      padding: 40px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .footer-left {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      color: var(--dim);
+      letter-spacing: 2px;
+    }
+
+    .footer-right {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 9px;
+      color: var(--dimmer);
+      letter-spacing: 1px;
+    }
+
+    /* ── SCROLL REVEAL ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 900px) {
+      nav {
+        padding: 16px 24px;
+      }
+
+      section {
+        padding: 80px 24px;
+      }
+
+      #hero {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .overview-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .overview-divider {
+        display: none;
+      }
+
+      .highlights-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .arch-wrap {
+        grid-template-columns: 1fr;
+      }
+
+      .arch-scripts {
+        position: static;
+      }
+
+      .aria-block {
+        grid-template-columns: 1fr;
+      }
+
+      footer {
+        flex-direction: column;
+        gap: 12px;
+        text-align: center;
+      }
+
+      .hero-bg-text {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- SKIP TO CONTENT -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- NAV -->
+  <nav aria-label="Main Navigation">
+    <div class="nav-logo">ALY — Portfolio</div>
+    <ul class="nav-links">
+      <li><a href="#overview">Overview</a></li>
+      <li><a href="#research">Research</a></li>
+      <li><a href="#highlights">Highlights</a></li>
+      <li><a href="#architecture">Architecture</a></li>
+      <li><a href="#aria">ARIA</a></li>
+      <li><a href="#demo">Demo</a></li>
+    </ul>
+  </nav>
+
+  <main id="main-content">
+    <!-- HERO -->
+    <div id="hero">
+      <div class="hero-bg-text" aria-hidden="true">ALY</div>
+      <div class="hero-eyebrow">VR Simulation</div>
+      <h1 class="hero-title">Assembly<br><em>Line Y</em></h1>
+      <p class="hero-sub">A Quest 3 VR training simulation for Tesla Model Y interior assembly, guided by ARIA — an AI
+        assistant powered by the Claude API.</p>
+      <div class="hero-meta">
+        <span class="hero-meta-item">Solo Project</span>
+        <span class="hero-meta-dot" aria-hidden="true">·</span>
+        <span class="hero-meta-item">Built with Vibecoding</span>
+      </div>
+
+      <div class="hero-tags">
+        <span class="tag">Unity XR</span>
+        <span class="tag">Meta Quest 3</span>
+        <span class="tag">Claude API</span>
+        <span class="tag">Voice Input</span>
+      </div>
+      <div class="hero-rule"></div>
+    </div>
+
+    <!-- OVERVIEW -->
+    <section id="overview">
+      <div class="section-label reveal">Project Overview</div>
+      <h2 class="section-title reveal">What is Assembly Line Y?</h2>
+
+      <div class="overview-grid reveal">
+        <div class="overview-card">
+          <div class="overview-num" aria-hidden="true">01</div>
+          <h3 class="overview-title">VR Factory Training</h3>
+          <div class="overview-body">Players step inside a virtual Tesla Model Y assembly environment and install 16
+            interior components across 8 guided steps — from pedals to door panels — in the correct sequence.</div>
+        </div>
+        <div class="overview-divider" aria-hidden="true"></div>
+        <div class="overview-card">
+          <div class="overview-num" aria-hidden="true">02</div>
+          <h3 class="overview-title">AI-Guided Experience</h3>
+          <div class="overview-body">ARIA, an AI assistant built on Claude API, provides real-time voice guidance,
+            answers natural language questions, and adapts to the trainee's progress throughout the session.</div>
+        </div>
+        <div class="overview-divider" aria-hidden="true"></div>
+        <div class="overview-card">
+          <div class="overview-num" aria-hidden="true">03</div>
+          <h3 class="overview-title">Skill Evaluation</h3>
+          <div class="overview-body">Performance is scored across four tiers — Rookie, Apprentice, Expert, Master —
+            based on sequence accuracy and interaction quality, providing actionable feedback at session end.</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <div class="section-label reveal">Background Research</div>
+      <h2 class="section-title reveal">AR/VR in Automotive Assembly</h2>
+
+      <div class="research-grid reveal">
+
+        <div class="research-lead">
+          <p class="research-intro">Automotive interior assembly remains one of the most labor-intensive stages of
+            vehicle production. Unlike engine assembly — increasingly handled by robotic systems — interior fitting
+            depends heavily on human dexterity, spatial judgment, and sequenced procedure. This gap makes it an ideal
+            target for immersive training technology.</p>
+        </div>
+
+        <div class="research-cards">
+
+          <div class="research-card">
+            <div class="rc-tag">Industry Precedent</div>
+            <h3 class="rc-title">A Growing Industry Standard</h3>
+            <div class="rc-body">The automotive AR/VR market was valued at <strong style="color:var(--white)">$21.3
+                billion in 2024</strong> and is projected to reach <strong style="color:var(--white)">$115.8 billion by
+                2032</strong> — a CAGR of 26.6%. Platforms like Scope AR's WorkLink and PTC's Vuforia Expert Capture are
+              already deployed on real factory floors, overlaying step-by-step instructions onto physical components.
+              Volkswagen's AR-driven training programs have been shown to reduce production errors by 30%, while studies
+              indicate AR-guided training helps new hires reach expert assembly speeds up to 40% faster. Assembly Line Y
+              applies this same principle in a fully virtual, zero-risk environment — no physical hardware required on
+              the factory floor.</div>
+          </div>
+
+
+          <div class="research-card">
+            <div class="rc-tag">Design Decision</div>
+            <h3 class="rc-title">Why Interior Assembly?</h3>
+            <div class="rc-body">Engine assembly and battery pack installation are increasingly automated — welding
+              robots and conveyor systems handle the majority of powertrain work. Interior assembly, however, still
+              requires human hands: fitting seat rails, routing wiring harnesses, aligning dashboard panels. The manual
+              nature of this stage makes it both training-critical and well-suited to an immersive, hands-on VR
+              simulation.</div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- HIGHLIGHTS -->
+    <section id="highlights">
+      <div class="section-label reveal">Key Features</div>
+      <h2 class="section-title reveal">Project Highlights</h2>
+
+      <div class="highlights-grid reveal">
+        <div class="highlight-item">
+          <div class="highlight-num" aria-hidden="true">01</div>
+          <div class="highlight-content">
+            <h3 class="highlight-title">Natural Voice Interaction</h3>
+            <div class="highlight-body">Players speak naturally to ARIA using Wit.ai speech recognition. No keyword
+              commands — Claude API understands intent, making the training feel conversational rather than scripted.
+            </div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-num" aria-hidden="true">02</div>
+          <div class="highlight-content">
+            <h3 class="highlight-title">Orientation-Aware Snap Sockets</h3>
+            <div class="highlight-body">Parts must be oriented correctly before they snap into place. Angle tolerance is
+              enforced at the socket level, reflecting real assembly constraints where direction matters.</div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-num" aria-hidden="true">03</div>
+          <div class="highlight-content">
+            <h3 class="highlight-title">Scanner Gun Raycasting</h3>
+            <div class="highlight-body">A scanner gun uses raycasting to identify and confirm parts before installation
+              — adding a realistic process step inspired by actual factory barcode scanning workflows.</div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-num" aria-hidden="true">04</div>
+          <div class="highlight-content">
+            <h3 class="highlight-title">Multi-Modal Interactions</h3>
+            <div class="highlight-body">Grab, poke, press, and voice — each part type uses the interaction that fits it
+              best. Steering wheel requires a poke to lock in, airbag requires press-confirm, doors require careful
+              placement.</div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-num" aria-hidden="true">05</div>
+          <div class="highlight-content">
+            <h3 class="highlight-title">Wrist HUD Interface</h3>
+            <div class="highlight-body">A world-space wrist display shows assembly progress, current step, and ARIA's
+              latest message. Toggle with B button. Designed with a Lazy Follow system to stay comfortably readable.
+            </div>
+          </div>
+        </div>
+        <div class="highlight-item">
+          <div class="highlight-num" aria-hidden="true">06</div>
+          <div class="highlight-content">
+            <h3 class="highlight-title">Guided Lobby System</h3>
+            <div class="highlight-body">A dedicated lobby scene uses ARIA to guide players through four areas before
+              training begins. ARIA detects intent to progress and triggers area lighting and scene transitions
+              automatically.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARCHITECTURE -->
+    <section id="architecture">
+      <div class="section-label reveal">Technical</div>
+      <h2 class="section-title reveal">System Architecture</h2>
+
+      <div class="arch-wrap reveal">
+        <div class="arch-layers">
+
+          <div class="arch-layer">
+            <div class="arch-layer-tag">Layer 1 — Input</div>
+            <h3 class="arch-layer-title">Voice & Controller Input</h3>
+            <div class="arch-layer-desc">VoiceInputManager.cs captures speech via Wit.ai on right-hand A button hold. XR
+              controller bindings handle grab (grip), poke (trigger), scanner confirm (X), HUD toggle (B), and jump (Y)
+              — all bound in code, no Inspector wiring.</div>
+          </div>
+
+          <div class="arch-layer">
+            <div class="arch-layer-tag">Layer 2 — AI Dialogue</div>
+            <h3 class="arch-layer-title">ARIA + Claude API</h3>
+            <div class="arch-layer-desc">ARIAController.cs orchestrates the dialogue pipeline. Transcribed speech passes
+              to ClaudeAPIManager.cs which calls claude-haiku-4-5 with a dynamic system prompt containing the current
+              assembly context. Responses are parsed for ACTION tags before TTS playback via Meta Voice SDK.</div>
+          </div>
+
+          <div class="arch-layer">
+            <div class="arch-layer-tag">Layer 3 — State</div>
+            <h3 class="arch-layer-title">Game State & Assembly Logic</h3>
+            <div class="arch-layer-desc">GameStateContext.cs acts as single source of truth. AssemblyManager.cs listens
+              to socket events from 16 parts across 8 steps, validates sequence, and updates state. ScoreManager.cs
+              tracks timing and accuracy to compute the final tier rating.</div>
+          </div>
+
+          <div class="arch-layer">
+            <div class="arch-layer-tag">Layer 4 — Interaction</div>
+            <h3 class="arch-layer-title">XR Interaction Layer</h3>
+            <div class="arch-layer-desc">LockableGrabInteractable.cs extends Unity's XRI grab system.
+              OrientationSocket.cs validates rotation before accepting a snap. ScannerGun.cs fires raycasts to identify
+              parts. PartHighlighter.cs and PartAudioHandler.cs provide visual and audio feedback on every interaction.
+            </div>
+          </div>
+
+          <div class="arch-layer">
+            <div class="arch-layer-tag">Layer 5 — UI</div>
+            <h3 class="arch-layer-title">HUD & Display</h3>
+            <div class="arch-layer-desc">WristUIManager.cs drives a World Space Canvas on the left wrist with Lazy
+              Follow interpolation and wrist-raise detection. LobbyManager.cs manages lobby state, area lighting
+              sequences, and scene transition with screen fade — all triggered by ARIA's ACTION tags.</div>
+          </div>
+
+        </div>
+
+        <div class="arch-scripts">
+          <div class="scripts-header">Scripts — 17 total</div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">AssemblyManager</span><span
+              class="script-role">Session orchestration</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">ARIAController</span><span class="script-role">AI
+              response pipeline</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">ClaudeAPIManager</span><span class="script-role">API
+              communication</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">GameStateContext</span><span
+              class="script-role">State management</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">ScoreManager</span><span
+              class="script-role">Performance scoring</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">WristUIManager</span><span class="script-role">HUD
+              display</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">ARIASpeaker</span><span class="script-role">TTS
+              output</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">VoiceInputManager</span><span
+              class="script-role">Speech capture</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">AssemblyPart</span><span class="script-role">Part
+              data holder</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">LockableGrabInteractable</span><span
+              class="script-role">XRI grab extension</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">ScannerGun</span><span
+              class="script-role">Raycasting confirm</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">PartHighlighter</span><span
+              class="script-role">Visual feedback</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">OrientationSocket</span><span
+              class="script-role">Angle-aware snap</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">LobbyManager</span><span class="script-role">Lobby +
+              transitions</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">PartAudioHandler</span><span
+              class="script-role">Audio feedback</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">SocketCollisionIgnorer</span><span
+              class="script-role">Physics stability</span>
+          </div>
+          <div class="script-item">
+            <div class="script-dot"></div><span class="script-name">XRJump</span><span class="script-role">Vertical
+              locomotion</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ARIA -->
+    <section id="aria">
+      <div class="section-label reveal">AI System</div>
+      <h2 class="section-title reveal">Meet ARIA</h2>
+
+      <div class="aria-block reveal">
+        <div class="aria-left">
+          <div class="aria-name">ARIA</div>
+          <div class="aria-fullname">ADAPTIVE REAL-TIME INTELLIGENT ASSISTANT</div>
+          <p class="aria-desc">ARIA is the AI core of Assembly Line Y. Powered by Claude API (claude-haiku-4-5), she
+            provides real-time training guidance, answers natural language questions, and adapts her system prompt
+            dynamically as the assembly progresses through each of the 8 steps.</p>
+          <br>
+          <p class="aria-desc">In the lobby, ARIA also acts as the environment guide — detecting intent from free-form
+            speech and triggering area lighting and scene transitions through structured ACTION tags in her responses.
+          </p>
+        </div>
+        <div class="aria-right">
+          <div class="aria-flow">
+            <div class="flow-step">
+              <div class="flow-icon" aria-hidden="true">01</div>
+              <div class="flow-text">
+                <h3 class="flow-title">Player holds A + speaks</h3>
+                <div class="flow-desc">Wit.ai captures audio and transcribes to text in real time</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-icon" aria-hidden="true">02</div>
+              <div class="flow-text">
+                <h3 class="flow-title">Context injected</h3>
+                <div class="flow-desc">Current step, parts installed, and score appended to system prompt</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-icon" aria-hidden="true">03</div>
+              <div class="flow-text">
+                <h3 class="flow-title">Claude API called</h3>
+                <div class="flow-desc">claude-haiku-4-5 responds with [ACTION:xxx] tag + natural language</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-icon" aria-hidden="true">04</div>
+              <div class="flow-text">
+                <h3 class="flow-title">ACTION parsed</h3>
+                <div class="flow-desc">LobbyManager or AssemblyManager handles NEXT / START / HINT / NONE</div>
+              </div>
+            </div>
+            <div class="flow-step">
+              <div class="flow-icon" aria-hidden="true">05</div>
+              <div class="flow-text">
+                <h3 class="flow-title">TTS playback</h3>
+                <div class="flow-desc">Cleaned response text spoken aloud via Meta Voice SDK (Voice: Aria)</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section id="demo">
+      <div class="section-label reveal">Demo</div>
+      <h2 class="section-title reveal">See It In Action</h2>
+
+      <div class="video-wrap reveal">
+        <!-- Replace src with your video file path when ready -->
+        <!-- <video controls playsinline poster="">
+      <source src="demo.mp4" type="video/mp4">
+    </video> -->
+
+        <div class="video-placeholder" aria-label="Demo Video Placeholder">
+          <div class="vp-inner">
+            <div class="vp-play" aria-hidden="true">▶</div>
+            <div class="vp-label">DEMO VIDEO</div>
+            <div class="vp-sub">Assembly Line Y · Quest 3 · 2–3 min</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-left">ASSEMBLY LINE Y</div>
+    <div class="footer-right">Quest 3 · Unity XR · Claude API</div>
+  </footer>
+
+  <script>
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => entry.target.classList.add('visible'), i * 80);
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+
+</html>
