@@ -9,8 +9,8 @@ export default function TopNav() {
     // For Nirvana project page
     if (pathname === "/projects/nirvana") {
         return (
-            <header className="w-full absolute top-0 left-0 right-0 z-50">
-                <div className="max-w-[1280px] mx-auto w-full px-6 md:px-[80px] pt-12 md:pt-[64px] flex justify-end">
+            <header className="w-full fixed top-0 left-0 right-0 z-50 backdrop-blur-xl bg-[#222222]/80 border-b border-white/5 transition-all">
+                <div className="max-w-[1280px] mx-auto w-full px-6 md:px-[80px] py-6 flex justify-center md:justify-end md:pr-[200px]">
                     <nav className="flex gap-12 font-body text-white text-sm font-medium">
                         <Link href="#research" className="hover:text-[#06b6d4] transition-colors">
                             Research
