@@ -1,16 +1,27 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 
 const navItems = [
-    { href: "/#about", label: "About", match: ["/", "/about"] },
-    { href: "/#projects", label: "Projects", match: ["/projects"] },
-    { href: "/#resume", label: "Resume", match: ["/resume"] },
+    { id: "about", href: "/#about", label: "About", match: ["/", "/about"] },
+    { id: "projects", href: "/#projects", label: "Projects", match: ["/projects"] },
+    { id: "resume", href: "/#resume", label: "Resume", match: ["/resume"] },
 ];
 
 export default function TopNav() {
     const pathname = usePathname();
+    const router = useRouter();
+
+    const scrollToSection = (id: string) => {
+        const el = document.getElementById(id);
+        if (!el) return;
+
+        el.scrollIntoView({
+            behavior: "smooth",
+            block: "start",
+        });
+    };
 
     // For Nirvana project page
     if (pathname === "/projects/nirvana") {
@@ -51,19 +62,36 @@ export default function TopNav() {
                             segment === "/projects" ? pathname.startsWith("/projects") : pathname === segment,
                         );
 
+                        const className = `liquid-glass-chip relative flex items-center justify-center rounded-full px-4 py-2.5 md:px-5 md:py-2.5 min-w-[96px] md:min-w-[108px] transition-all duration-300 ${
+                            isActive
+                                ? "liquid-glass-chip-active text-brand-primary"
+                                : "text-brand-primary/72 hover:text-brand-primary"
+                        }`;
+
+                        if (pathname === "/") {
+                            return (
+                                <button
+                                    key={item.label}
+                                    type="button"
+                                    onClick={() => scrollToSection(item.id)}
+                                    className={className}
+                                    aria-current={isActive ? "page" : undefined}
+                                >
+                                    <span className="relative z-10 text-center">{item.label}</span>
+                                </button>
+                            );
+                        }
+
                         return (
-                            <Link
+                            <button
                                 key={item.label}
-                                href={item.href}
+                                type="button"
+                                onClick={() => router.push(item.href)}
+                                className={className}
                                 aria-current={isActive ? "page" : undefined}
-                                className={`liquid-glass-chip relative flex items-center justify-center rounded-full px-4 py-2.5 md:px-5 md:py-2.5 min-w-[96px] md:min-w-[108px] transition-all duration-300 ${
-                                    isActive
-                                        ? "liquid-glass-chip-active text-brand-primary"
-                                        : "text-brand-primary/72 hover:text-brand-primary"
-                                }`}
                             >
                                 <span className="relative z-10 text-center">{item.label}</span>
-                            </Link>
+                            </button>
                         );
                     })}
                 </nav>
