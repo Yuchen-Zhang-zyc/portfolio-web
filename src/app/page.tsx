@@ -314,6 +314,84 @@ export default function Home() {
           </div>
         </section>
 
+        {/* 05 Resume */}
+        <section id="resume" className="w-full grid grid-cols-1 md:grid-cols-12 gap-[24px] py-32 text-brand-primary">
+          <div className="md:col-span-4">
+            <h2 className="text-sm font-bold flex items-center gap-3">
+              <span className="font-mono text-xs opacity-80">05</span>
+              Resume
+            </h2>
+          </div>
+
+          <div className="md:col-span-8 flex flex-col gap-10">
+            <div className="rounded-[24px] border border-white/70 bg-white/78 backdrop-blur-xl p-8 md:p-10 shadow-[0_16px_40px_rgba(27,42,107,0.08)]">
+              <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+                <div className="max-w-[640px] flex flex-col gap-4">
+                  <p className="text-sm font-mono uppercase tracking-[0.18em] text-brand-primary/50">Yuchen Zhang</p>
+                  <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-brand-primary">UX / Product Designer for AI, XR, and Interaction Design</h3>
+                  <p className="text-[16px] md:text-[18px] leading-[1.75] text-brand-primary/76">
+                    Product designer with a background in Computer Science, focused on human-AI interaction, XR experiences, and interaction design. Currently pursuing an MFA in Interactive Design at SCAD and seeking Summer 2026 internship opportunities.
+                  </p>
+                </div>
+                <Link href="/resume" className="inline-flex items-center justify-center rounded-full px-5 py-3 bg-brand-primary text-white text-sm font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
+                  View Resume Page
+                </Link>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
+              <div className="md:col-span-7 rounded-[24px] border border-white/70 bg-white/78 backdrop-blur-xl p-8 shadow-[0_16px_40px_rgba(27,42,107,0.08)]">
+                <h3 className="text-xl md:text-2xl font-bold text-brand-primary mb-8">Education</h3>
+                <div className="flex flex-col gap-8">
+                  <div className="flex flex-col md:flex-row gap-3 md:gap-6">
+                    <div className="md:w-28 flex-shrink-0 text-sm font-mono text-brand-primary/45 pt-1">2024 — Now</div>
+                    <div className="flex flex-col gap-1.5">
+                      <h4 className="text-lg font-bold text-brand-primary">Savannah College of Art and Design</h4>
+                      <p className="text-brand-primary/72">Master of Fine Art in Interactive Design</p>
+                      <p className="text-sm text-brand-primary/50">Savannah, Georgia</p>
+                    </div>
+                  </div>
+                  <div className="flex flex-col md:flex-row gap-3 md:gap-6">
+                    <div className="md:w-28 flex-shrink-0 text-sm font-mono text-brand-primary/45 pt-1">2019 — 2023</div>
+                    <div className="flex flex-col gap-1.5">
+                      <h4 className="text-lg font-bold text-brand-primary">University of Delaware</h4>
+                      <p className="text-brand-primary/72">Bachelor’s Degree in Computer Science</p>
+                      <p className="text-sm text-brand-primary/50">Newark, Delaware</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="md:col-span-5 flex flex-col gap-6">
+                <div className="rounded-[24px] border border-white/70 bg-white/78 backdrop-blur-xl p-8 shadow-[0_16px_40px_rgba(27,42,107,0.08)]">
+                  <h3 className="text-xl md:text-2xl font-bold text-brand-primary mb-6">Core Skills</h3>
+                  <div className="flex flex-wrap gap-2.5">
+                    {["Figma", "User Research", "Usability Testing", "Interaction Design", "Design Systems", "Prototyping", "JavaScript", "Python", "Unity", "AI-assisted Development"].map((skill) => (
+                      <span key={skill} className="px-3 py-1.5 bg-black/5 text-brand-primary/72 text-sm rounded-full border border-black/5">
+                        {skill}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="rounded-[24px] border border-white/70 bg-white/78 backdrop-blur-xl p-8 shadow-[0_16px_40px_rgba(27,42,107,0.08)]">
+                  <h3 className="text-xl md:text-2xl font-bold text-brand-primary mb-6">Languages</h3>
+                  <ul className="flex flex-col gap-3 text-brand-primary/72">
+                    <li className="flex justify-between items-center">
+                      <span>Chinese</span>
+                      <span className="text-sm font-mono text-brand-primary/45">Native</span>
+                    </li>
+                    <li className="flex justify-between items-center">
+                      <span>English</span>
+                      <span className="text-sm font-mono text-brand-primary/45">Proficient</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
       </main>
     </div>
   );

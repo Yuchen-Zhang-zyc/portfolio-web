@@ -4,9 +4,9 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navItems = [
-    { href: "/#about", label: "Me", match: ["/", "/about"] },
-    { href: "/resume", label: "Resume", match: ["/resume"] },
+    { href: "/#about", label: "About", match: ["/", "/about"] },
     { href: "/#projects", label: "Projects", match: ["/projects"] },
+    { href: "/#resume", label: "Resume", match: ["/resume"] },
 ];
 
 export default function TopNav() {
