@@ -28,31 +28,31 @@ export default function Home() {
 
         {/* 01 Hero Section */}
         <section className="relative w-full min-h-screen flex flex-col items-center justify-center pt-20 md:pt-24 text-brand-primary">
-          <div className="font-sans font-medium text-[24px] min-[480px]:text-[28px] md:text-[40px] lg:text-[48px] leading-[1.08] tracking-[-0.035em] flex flex-col gap-4 md:gap-4 text-brand-primary w-full max-w-5xl mx-auto">
+          <div className="font-sans font-medium text-[24px] min-[480px]:text-[28px] md:text-[40px] lg:text-[48px] leading-[1.08] tracking-[-0.035em] flex flex-col gap-4 md:gap-4 text-brand-primary w-full max-w-5xl mx-auto items-center">
 
-            <div className="grid grid-cols-[24px_1fr] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full text-left md:text-center">
+            <div className="grid grid-cols-[24px_minmax(0,1fr)] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full max-w-[320px] min-[480px]:max-w-[380px] md:max-w-none text-left md:text-center">
               <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">01</span>
-              <div className="flex items-start md:items-center justify-start md:justify-center gap-0 md:gap-3 min-w-0">
+              <div className="flex items-start md:items-center justify-center md:justify-center gap-0 md:gap-3 min-w-0 text-center">
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
-                <span className="min-w-0">Hello, I am Yuchen</span>
+                <span className="min-w-0 mx-auto">Hello, I am Yuchen</span>
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&gt;</span>
               </div>
             </div>
 
-            <div className="grid grid-cols-[24px_1fr] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full text-left md:text-center">
+            <div className="grid grid-cols-[24px_minmax(0,1fr)] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full max-w-[320px] min-[480px]:max-w-[380px] md:max-w-none text-left md:text-center">
               <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">02</span>
-              <div className="flex items-start md:items-center justify-start md:justify-center gap-0 md:gap-3 min-w-0">
+              <div className="flex items-start md:items-center justify-center md:justify-center gap-0 md:gap-3 min-w-0 text-center">
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
-                <span className="min-w-0 max-w-[14ch] min-[480px]:max-w-none">UX / Product Designer for AI and XR</span>
+                <span className="min-w-0 max-w-[14ch] min-[480px]:max-w-none mx-auto">UX / Product Designer for AI and XR</span>
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&gt;</span>
               </div>
             </div>
 
-            <div className="grid grid-cols-[24px_1fr] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full text-left md:text-center">
+            <div className="grid grid-cols-[24px_minmax(0,1fr)] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full max-w-[320px] min-[480px]:max-w-[380px] md:max-w-none text-left md:text-center">
               <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">03</span>
-              <div className="flex items-start md:items-center justify-start md:justify-center gap-0 md:gap-3 min-w-0">
+              <div className="flex items-start md:items-center justify-center md:justify-center gap-0 md:gap-3 min-w-0 text-center">
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
-                <span className="min-w-0 max-w-[15ch] min-[480px]:max-w-none">I design human-AI experiences</span>
+                <span className="min-w-0 max-w-[15ch] min-[480px]:max-w-none mx-auto">I design human-AI experiences</span>
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&gt;</span>
               </div>
             </div>
