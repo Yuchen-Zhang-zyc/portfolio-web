@@ -21,23 +21,21 @@ export default function Home() {
             <div className="flex items-center gap-3 w-full justify-center">
               <span className="text-xs md:text-sm font-mono w-6 text-right select-none opacity-80">01</span>
               <span className="font-light font-mono opacity-80">&lt;</span>
-              <span>Hello, I am Yuchen</span>
+              <span>Yuchen Zhang</span>
               <span className="font-light font-mono opacity-80">&gt;</span>
             </div>
 
-            <div className="flex items-center gap-3 w-full justify-center">
+            <div className="flex items-center gap-3 w-full justify-center text-center">
               <span className="text-xs md:text-sm font-mono w-6 text-right select-none opacity-80">02</span>
               <span className="font-light font-mono opacity-80">&lt;</span>
-              <span>I craft</span>
-              <span className="text-xl pb-1">◆</span>
-              <span>Human & AI experiences</span>
+              <span>UX / Product Designer for AI, XR, and Interactive Systems</span>
               <span className="font-light font-mono opacity-80">&gt;</span>
             </div>
 
-            <div className="flex items-center gap-3 w-full justify-center">
+            <div className="flex items-center gap-3 w-full justify-center text-center">
               <span className="text-xs md:text-sm font-mono w-6 text-right select-none opacity-80">03</span>
               <span className="font-light font-mono opacity-80">&lt;</span>
-              <span>I build the systems behind them</span>
+              <span>I design human-AI experiences grounded in research, interaction, and prototyping</span>
               <span className="font-light font-mono opacity-80">&gt;</span>
             </div>
 
@@ -58,10 +56,13 @@ export default function Home() {
           </div>
           <div className="md:col-span-8 text-base text-brand-primary leading-[1.65] flex flex-col gap-6 font-body">
             <p>
+              MFA candidate in Interactive Design at SCAD with a background in Computer Science, focused on UX, AI product experiences, XR, and human-AI collaboration.
+            </p>
+            <p>
               I started in computer science, writing code that worked — but felt incomplete. When I saw how fast AI was advancing, I realized the bottleneck wasn't capability anymore. It was the space between humans and machines.
             </p>
             <p>
-              So I crossed over to design. Not to escape technology, but to shape how people and AI learn to work together. There's no established playbook yet — and that's exactly why it interests me.
+              So I crossed over to design. Not to escape technology, but to shape how people and AI learn to work together.
             </p>
           </div>
         </section>
@@ -139,7 +140,44 @@ export default function Home() {
           </div>
           <div className="md:col-span-8 flex flex-col gap-[40px]">
             {/* Project 1 */}
-            <Link href="/projects/dosecare" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+            <Link href="/assemblyline.html" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+              {/* Mac Window Header */}
+              <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                <div className="flex gap-2 relative z-10">
+                  <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                  <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                  <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                  Assembly Line Y
+                </div>
+              </div>
+
+              <div className="w-full aspect-[16/10] bg-[#0A0A08] relative overflow-hidden flex items-center justify-center">
+                <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml,%3Csvg viewBox=\\'0 0 256 256\\' xmlns=\\'http://www.w3.org/2000/svg\\'%3E%3Cfilter id=\\'noise\\'%3E%3CfeTurbulence type=\\'fractalNoise\\' baseFrequency=\\'0.9\\' numOctaves=\\'4\\' stitchTiles=\\'stitch\\'/%3E%3C/filter%3E%3Crect width=\\'100%25\\' height=\\'100%25\\' filter=\\'url(%23noise)\\' opacity=\\'0.04\\'/%3E%3C/svg%3E')] mix-blend-overlay"></div>
+                <div className="flex flex-col items-center justify-center gap-4 z-10 group-hover:scale-105 transition-transform duration-700">
+                  <span className="font-mono text-[10px] sm:text-xs text-[#C8962A] tracking-[4px] uppercase border border-[#C8962A]/30 bg-[#C8962A]/10 px-4 py-1.5 backdrop-blur-md">VR SIMULATION</span>
+                  <h3 className="text-4xl sm:text-5xl md:text-6xl font-sans font-bold text-[#E8E0D0] tracking-tight">Assembly <span className="italic font-light text-[#C8962A]">Line Y</span></h3>
+                </div>
+              </div>
+
+              <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Assembly Line Y <span className="opacity-60 font-normal text-lg">| VR Developer & Designer</span></h3>
+                  <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
+                    A Quest 3 VR training simulation for Tesla Model Y assembly with an AI guide and multimodal XR interactions.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">VR / XR</span>
+                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI Integration</span>
+                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Unity</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Project 2 */}
+            <Link href="/projects/nest-thermostat" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
               {/* Mac Window Header */}
               <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
                 <div className="flex gap-2 relative z-10">
@@ -160,9 +198,9 @@ export default function Home() {
               {/* Project Info */}
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">DoseCare</h3>
+                  <h3 className="text-2xl font-bold font-sans text-brand-primary">DoseCare <span className="opacity-60 font-normal text-lg">| UX / Product Design</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    A mobile health app designed to help adults 65+ manage their daily medication schedules, reduce missed doses, and stay connected with their healthcare providers.
+                    A mobile health app helping older adults manage medication schedules and stay connected with care providers.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -195,9 +233,9 @@ export default function Home() {
               {/* Project Info */}
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Nirvana <span className="opacity-60 font-normal text-lg">| Team Leader</span></h3>
+                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Nirvana <span className="opacity-60 font-normal text-lg">| Team Lead</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    Led end-to-end service design for a car modification platform, covering market research, user interviews with 4 enthusiasts, and survey of 167 participants. Designed VroomVision — a mobile app for planning and visualizing car modifications in 3D — including information architecture, user flows, and high-fidelity UI. Delivered a complete service blueprint integrating online app with offline shop design. Developed an immersive VR driving simulator in Unity to allow users to preview modification results before committing to a build.
+                    A service design project for car customization, combining research, mobile planning, and immersive VR preview.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -232,7 +270,7 @@ export default function Home() {
                 <div className="flex flex-col gap-2">
                   <h3 className="text-2xl font-bold font-sans text-brand-primary">Agrox <span className="opacity-60 font-normal text-lg">| UX Designer</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    Led user research and UX design for an autonomous pest management robot targeting organic farmers. Conducted field interviews with 5 farmers and secondary research on organic pest control methods, synthesizing findings into personas and product direction. Defined AI-driven product features including visual pest recognition, vacuum/steam control, and IoT connectivity. Delivered high-fidelity tablet dashboard UI with real-time pest heatmaps, device management, and field monitoring.
+                    A research-driven dashboard for an autonomous pest management robot designed for organic farming workflows.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -265,9 +303,9 @@ export default function Home() {
               {/* Project Info */}
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Redesign Nest Thermostat <span className="opacity-60 font-normal text-lg">| Project Lead and UX Design</span></h3>
+                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Nest Thermostat Redesign <span className="opacity-60 font-normal text-lg">| Project Lead, UX Designer</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    Led interface redesign of the Nest Thermostat app, focusing on visual design and interaction patterns. Introduced a coordinate-based scheduling interaction allowing users to set temperature and time simultaneously through drag gestures, and a tag-based setpoint grouping system for cross-day schedule management. Validated design decisions through usability testing with real users. Delivered high-fidelity UI with refined design system.
+                    A thermostat app redesign introducing a clearer scheduling interaction through drag-based control of time and temperature.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -343,7 +381,7 @@ export default function Home() {
                 <div className="flex flex-col gap-2">
                   <h3 className="text-2xl font-bold font-sans text-brand-primary">VR Tire Change Simulation <span className="opacity-60 font-normal text-lg">| Solo Designer & Developer</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    This is a personal VR training simulation designed to help beginners practice the tire-changing procedure in a safe, repeatable environment. I translated a real-world workflow into a guided VR experience with clear steps, tool interactions, and contextual tips. The experience focuses on reducing mistakes, improving confidence, and making the learning curve less intimidating. Built end-to-end by me, from interaction design and UI to implementation and playtesting.
+                    A solo-built VR training simulation that turns tire changing into a guided, repeatable learning experience.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">

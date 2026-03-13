@@ -36,13 +36,13 @@ export default function TopNav() {
             <div className="max-w-[1280px] mx-auto w-full px-6 md:px-[80px] pt-12 md:pt-[64px] flex justify-end">
                 <nav className="flex gap-12 font-body text-white text-sm font-medium">
                     <Link href="/#about" className="hover:text-brand-accent transition-colors">
-                        Me
-                    </Link>
-                    <Link href="/#resume" className="hover:text-brand-accent transition-colors">
-                        Resume
+                        About
                     </Link>
                     <Link href="/#projects" className="hover:text-brand-accent transition-colors">
-                        Project
+                        Projects
+                    </Link>
+                    <Link href="/resume" className="hover:text-brand-accent transition-colors">
+                        Resume
                     </Link>
                 </nav>
             </div>
