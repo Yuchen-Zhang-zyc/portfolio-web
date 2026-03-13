@@ -2,21 +2,54 @@
 
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 
 const navItems = [
-    { id: "about", href: "/#about", label: "About", match: ["/", "/about"] },
-    { id: "projects", href: "/#projects", label: "Projects", match: ["/projects"] },
-    { id: "resume", href: "/#resume", label: "Resume", match: ["/resume"] },
+    { id: "about", href: "/#about", label: "About" },
+    { id: "projects", href: "/#projects", label: "Projects" },
+    { id: "resume", href: "/#resume", label: "Resume" },
 ];
 
 export default function TopNav() {
     const pathname = usePathname();
     const router = useRouter();
+    const [activeSection, setActiveSection] = useState<string>("about");
+
+    useEffect(() => {
+        if (pathname !== "/") return;
+
+        const sections = navItems
+            .map((item) => document.getElementById(item.id))
+            .filter(Boolean) as HTMLElement[];
+
+        const updateActiveSection = () => {
+            const scrollY = window.scrollY;
+            const viewportOffset = 160;
+
+            let current = "about";
+            for (const section of sections) {
+                if (scrollY + viewportOffset >= section.offsetTop) {
+                    current = section.id;
+                }
+            }
+            setActiveSection(current);
+        };
+
+        updateActiveSection();
+        window.addEventListener("scroll", updateActiveSection, { passive: true });
+        window.addEventListener("resize", updateActiveSection);
+
+        return () => {
+            window.removeEventListener("scroll", updateActiveSection);
+            window.removeEventListener("resize", updateActiveSection);
+        };
+    }, [pathname]);
 
     const scrollToSection = (id: string) => {
         const el = document.getElementById(id);
         if (!el) return;
 
+        setActiveSection(id);
         el.scrollIntoView({
             behavior: "smooth",
             block: "start",
@@ -58,9 +91,14 @@ export default function TopNav() {
                     <div className="liquid-glass-orb liquid-glass-orb-right" aria-hidden="true" />
 
                     {navItems.map((item) => {
-                        const isActive = item.match.some((segment) =>
-                            segment === "/projects" ? pathname.startsWith("/projects") : pathname === segment,
-                        );
+                        const isActive =
+                            pathname === "/"
+                                ? activeSection === item.id
+                                : item.id === "projects"
+                                  ? pathname.startsWith("/projects")
+                                  : item.id === "resume"
+                                    ? pathname === "/resume"
+                                    : pathname === "/about";
 
                         const className = `liquid-glass-chip relative flex items-center justify-center rounded-full px-4 py-2.5 md:px-5 md:py-2.5 min-w-[96px] md:min-w-[108px] transition-all duration-300 ${
                             isActive
