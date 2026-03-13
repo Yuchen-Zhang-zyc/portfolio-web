@@ -56,13 +56,13 @@ export default function TopNav() {
                                 key={item.label}
                                 href={item.href}
                                 aria-current={isActive ? "page" : undefined}
-                                className={`liquid-glass-chip relative rounded-full px-4 py-2.5 md:px-5 md:py-2.5 transition-all duration-300 ${
+                                className={`liquid-glass-chip relative flex items-center justify-center rounded-full px-4 py-2.5 md:px-5 md:py-2.5 min-w-[96px] md:min-w-[108px] transition-all duration-300 ${
                                     isActive
                                         ? "liquid-glass-chip-active text-brand-primary"
                                         : "text-brand-primary/72 hover:text-brand-primary"
                                 }`}
                             >
-                                <span className="relative z-10">{item.label}</span>
+                                <span className="relative z-10 text-center">{item.label}</span>
                             </Link>
                         );
                     })}
