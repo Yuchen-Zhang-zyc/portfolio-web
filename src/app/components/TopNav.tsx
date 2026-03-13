@@ -3,6 +3,12 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+const navItems = [
+    { href: "/#about", label: "Me", match: ["/", "/about"] },
+    { href: "/resume", label: "Resume", match: ["/resume"] },
+    { href: "/#projects", label: "Projects", match: ["/projects"] },
+];
+
 export default function TopNav() {
     const pathname = usePathname();
 
@@ -30,20 +36,36 @@ export default function TopNav() {
         );
     }
 
-    // Default header for all other pages
     return (
-        <header className="w-full absolute top-0 left-0 right-0 z-50">
-            <div className="max-w-[1280px] mx-auto w-full px-6 md:px-[80px] pt-12 md:pt-[64px] flex justify-end">
-                <nav className="flex gap-12 font-body text-white text-sm font-medium">
-                    <Link href="/#about" className="hover:text-brand-accent transition-colors">
-                        About
-                    </Link>
-                    <Link href="/#projects" className="hover:text-brand-accent transition-colors">
-                        Projects
-                    </Link>
-                    <Link href="/resume" className="hover:text-brand-accent transition-colors">
-                        Resume
-                    </Link>
+        <header className="pointer-events-none fixed top-0 left-0 right-0 z-50">
+            <div className="max-w-[1280px] mx-auto w-full px-4 pt-5 md:px-[56px] md:pt-7 flex justify-center">
+                <nav
+                    aria-label="Primary"
+                    className="liquid-glass-nav pointer-events-auto relative flex items-center gap-1 p-1.5 md:p-2 rounded-[999px] text-[13px] md:text-sm font-medium text-brand-primary/88"
+                >
+                    <div className="liquid-glass-orb liquid-glass-orb-left" aria-hidden="true" />
+                    <div className="liquid-glass-orb liquid-glass-orb-right" aria-hidden="true" />
+
+                    {navItems.map((item) => {
+                        const isActive = item.match.some((segment) =>
+                            segment === "/projects" ? pathname.startsWith("/projects") : pathname === segment,
+                        );
+
+                        return (
+                            <Link
+                                key={item.label}
+                                href={item.href}
+                                aria-current={isActive ? "page" : undefined}
+                                className={`liquid-glass-chip relative rounded-full px-4 py-2.5 md:px-5 md:py-2.5 transition-all duration-300 ${
+                                    isActive
+                                        ? "liquid-glass-chip-active text-brand-primary"
+                                        : "text-brand-primary/72 hover:text-brand-primary"
+                                }`}
+                            >
+                                <span className="relative z-10">{item.label}</span>
+                            </Link>
+                        );
+                    })}
                 </nav>
             </div>
         </header>
