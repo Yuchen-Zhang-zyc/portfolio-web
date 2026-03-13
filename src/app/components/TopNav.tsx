@@ -82,7 +82,7 @@ export default function TopNav() {
 
     return (
         <header className="pointer-events-none fixed top-0 left-0 right-0 z-50">
-            <div className="max-w-[1280px] mx-auto w-full px-4 pt-5 md:px-[56px] md:pt-7 flex justify-center">
+            <div className="max-w-[1280px] mx-auto w-full px-4 pt-4 md:px-[56px] md:pt-7 flex justify-center">
                 <nav
                     aria-label="Primary"
                     className="liquid-glass-nav pointer-events-auto relative flex items-center gap-1 p-1.5 md:p-2 rounded-[999px] text-[13px] md:text-sm font-medium text-brand-primary/88"
