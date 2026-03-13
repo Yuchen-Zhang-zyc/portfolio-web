@@ -15,6 +15,10 @@ export default function TopNav() {
     const router = useRouter();
     const [activeSection, setActiveSection] = useState<string>("");
 
+    if (pathname.startsWith("/projects/")) {
+        return null;
+    }
+
     useEffect(() => {
         if (pathname !== "/") return;
 
