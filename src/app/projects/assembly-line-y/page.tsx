@@ -50,35 +50,35 @@ export default function AssemblyLineYProject() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#090907] text-[#E8E0D0] relative overflow-x-hidden">
-      <div className="fixed inset-0 pointer-events-none z-0 opacity-30 bg-[radial-gradient(circle_at_top_left,rgba(200,150,42,0.18),transparent_30%),radial-gradient(circle_at_bottom_right,rgba(255,179,71,0.08),transparent_24%)]" />
-      <div className="fixed inset-0 pointer-events-none z-0 opacity-[0.06] bg-[url('data:image/svg+xml,%3Csvg viewBox=%270_0_256_256%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter id=%27noise%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.9%27 numOctaves=%274%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23noise)%27 opacity=%270.9%27/%3E%3C/svg%3E')]" />
+    <div className="min-h-screen bg-[#0D1117] text-[#E5E7EB] relative overflow-x-hidden">
+      <div className="fixed inset-0 pointer-events-none z-0 bg-[linear-gradient(180deg,#0D1117_0%,#0F141B_100%)]" />
+      <div className="fixed inset-0 pointer-events-none z-0 opacity-[0.035] bg-[url('data:image/svg+xml,%3Csvg viewBox=%270_0_256_256%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter id=%27noise%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.9%27 numOctaves=%274%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23noise)%27 opacity=%270.9%27/%3E%3C/svg%3E')]" />
 
-      <main className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-[80px] pt-32 md:pt-36 pb-24 md:pb-32 flex flex-col gap-24 md:gap-32">
-        <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end min-h-[72vh]">
+      <main className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-[80px] pt-32 md:pt-36 pb-24 md:pb-32 flex flex-col gap-24 md:gap-28">
+        <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end min-h-[68vh]">
           <div className="lg:col-span-5 flex flex-col gap-6 md:gap-7">
-            <div className="flex flex-wrap gap-3 text-[12px] uppercase tracking-[0.18em] text-[#C8962A]">
-              <span className="px-3 py-1.5 rounded-full border border-[#C8962A]/25 bg-[#C8962A]/8">XR Training</span>
-              <span className="px-3 py-1.5 rounded-full border border-[#C8962A]/25 bg-[#C8962A]/8">AI Guidance</span>
-              <span className="px-3 py-1.5 rounded-full border border-[#C8962A]/25 bg-[#C8962A]/8">Unity</span>
+            <div className="flex flex-wrap gap-3 text-[11px] uppercase tracking-[0.18em] text-[#93A1B2]">
+              <span className="px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.03]">XR Training</span>
+              <span className="px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.03]">AI Guidance</span>
+              <span className="px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.03]">Enterprise Workflow</span>
             </div>
 
             <div className="flex flex-col gap-4">
-              <p className="text-sm font-mono uppercase tracking-[0.22em] text-[#8A8275]">Assembly Line Y</p>
-              <h1 className="text-[56px] sm:text-[72px] md:text-[92px] leading-[0.9] tracking-[-0.04em] font-bold text-[#E8E0D0]">
+              <p className="text-sm font-mono uppercase tracking-[0.22em] text-[#7B8794]">Assembly Line Y</p>
+              <h1 className="text-[52px] sm:text-[68px] md:text-[84px] leading-[0.92] tracking-[-0.04em] font-bold text-[#F3F4F6]">
                 Assembly
-                <span className="block italic font-light text-[#C8962A]">Line Y</span>
+                <span className="block text-[#C7D0DB] font-medium">Line Y</span>
               </h1>
-              <p className="text-[17px] md:text-[19px] leading-[1.8] text-[#B8B1A6] max-w-[620px]">
+              <p className="text-[17px] md:text-[19px] leading-[1.8] text-[#A8B3C2] max-w-[620px]">
                 A Quest 3 VR training simulation for Tesla Model Y interior assembly, enhanced with ARIA — an AI assistant designed to guide trainees through complex physical tasks with real-time support.
               </p>
             </div>
 
-            <div className="flex flex-wrap items-center gap-3 text-sm text-[#8A8275]">
+            <div className="flex flex-wrap items-center gap-3 text-sm text-[#7B8794]">
               <span>Solo Project</span>
-              <span className="text-[#C8962A]">•</span>
+              <span className="text-[#4B5563]">•</span>
               <span>VR Developer & Designer</span>
-              <span className="text-[#C8962A]">•</span>
+              <span className="text-[#4B5563]">•</span>
               <span>Quest 3 + Unity</span>
             </div>
 
@@ -86,7 +86,7 @@ export default function AssemblyLineYProject() {
               {stack.map((item) => (
                 <span
                   key={item}
-                  className="px-3 py-1.5 rounded-full border border-white/10 bg-white/[0.04] text-[13px] text-[#D2C9BB]"
+                  className="px-3 py-1.5 rounded-full border border-white/8 bg-white/[0.025] text-[13px] text-[#C7D0DB]"
                 >
                   {item}
                 </span>
@@ -95,31 +95,30 @@ export default function AssemblyLineYProject() {
           </div>
 
           <div className="lg:col-span-7">
-            <div className="rounded-[28px] border border-white/10 overflow-hidden bg-[linear-gradient(180deg,rgba(255,255,255,0.03)_0%,rgba(255,255,255,0.015)_100%)] shadow-[0_24px_80px_rgba(0,0,0,0.35)]">
-              <div className="h-11 w-full border-b border-white/10 flex items-center px-4 relative bg-black/20">
+            <div className="rounded-[20px] border border-white/10 overflow-hidden bg-[#11161D] shadow-[0_20px_60px_rgba(0,0,0,0.28)]">
+              <div className="h-11 w-full border-b border-white/8 flex items-center px-4 relative bg-[#0E1319]">
                 <div className="flex gap-2 relative z-10">
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/20"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/20"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/20"></div>
+                  <div className="w-[10px] h-[10px] rounded-full bg-[#5B6673]"></div>
+                  <div className="w-[10px] h-[10px] rounded-full bg-[#5B6673]"></div>
+                  <div className="w-[10px] h-[10px] rounded-full bg-[#5B6673]"></div>
                 </div>
-                <div className="absolute inset-0 flex items-center justify-center text-xs font-medium text-[#8A8275] tracking-[0.12em] uppercase">
-                  XR Simulation Overview
+                <div className="absolute inset-0 flex items-center justify-center text-[11px] font-medium text-[#7B8794] tracking-[0.14em] uppercase">
+                  Training System Overview
                 </div>
               </div>
 
-              <div className="aspect-[16/10] bg-[#0B0B08] relative overflow-hidden flex items-center justify-center px-8 py-10">
-                <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(200,150,42,0.12),transparent_42%)]" />
-                <div className="absolute inset-0 opacity-20 bg-[linear-gradient(180deg,transparent_0%,rgba(200,150,42,0.04)_100%)]" />
-                <div className="relative z-10 flex flex-col items-center text-center gap-5">
-                  <span className="font-mono text-[10px] sm:text-xs text-[#C8962A] tracking-[4px] uppercase border border-[#C8962A]/30 bg-[#C8962A]/10 px-4 py-1.5 backdrop-blur-md">
-                    AI-GUIDED VR TRAINING
+              <div className="aspect-[16/10] bg-[linear-gradient(180deg,#10151C_0%,#0C1117_100%)] relative overflow-hidden flex items-center justify-center px-8 py-10">
+                <div className="absolute inset-x-0 top-0 h-px bg-white/10" />
+                <div className="relative z-10 flex flex-col items-start text-left gap-5 max-w-[620px]">
+                  <span className="font-mono text-[10px] sm:text-xs text-[#8FA3BF] tracking-[3px] uppercase border border-[#8FA3BF]/20 bg-[#8FA3BF]/8 px-4 py-1.5">
+                    AI-ASSISTED TRAINING ENVIRONMENT
                   </span>
-                  <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#E8E0D0]">
+                  <h2 className="text-4xl sm:text-5xl md:text-[54px] font-semibold tracking-tight text-[#F3F4F6] leading-[1.02]">
                     Tesla Model Y
-                    <span className="block text-[#C8962A] italic font-light">Interior Assembly</span>
+                    <span className="block text-[#C7D0DB] font-medium">Interior Assembly Workflow</span>
                   </h2>
-                  <p className="max-w-[560px] text-sm md:text-base leading-[1.8] text-[#AAA293]">
-                    An immersive training environment where players learn assembly procedures through AI guidance, embodied interaction, and step-based task feedback.
+                  <p className="max-w-[560px] text-sm md:text-base leading-[1.8] text-[#98A4B3]">
+                    An XR training environment designed to support procedural learning through AI guidance, embodied interaction, and clear step-by-step task feedback.
                   </p>
                 </div>
               </div>
@@ -129,28 +128,28 @@ export default function AssemblyLineYProject() {
 
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12">
           <div className="lg:col-span-4">
-            <p className="text-sm font-mono uppercase tracking-[0.22em] text-[#8A8275] mb-3">Overview</p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#E8E0D0]">What this project is</h2>
+            <p className="text-sm font-mono uppercase tracking-[0.22em] text-[#7B8794] mb-3">Overview</p>
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-[#F3F4F6]">What this project is</h2>
           </div>
-          <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-5">
-            <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-7">
-              <p className="text-[12px] uppercase tracking-[0.16em] text-[#C8962A] mb-3">01</p>
-              <h3 className="text-xl font-bold text-[#E8E0D0] mb-3">VR factory training</h3>
-              <p className="text-[15px] leading-[1.75] text-[#B8B1A6]">
+          <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div className="rounded-[18px] border border-white/8 bg-white/[0.025] p-7">
+              <p className="text-[12px] uppercase tracking-[0.16em] text-[#8FA3BF] mb-3">01</p>
+              <h3 className="text-xl font-semibold text-[#F3F4F6] mb-3">VR factory training</h3>
+              <p className="text-[15px] leading-[1.75] text-[#A8B3C2]">
                 Trainees step into a simulated Tesla Model Y assembly environment and complete interior installation tasks in sequence.
               </p>
             </div>
-            <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-7">
-              <p className="text-[12px] uppercase tracking-[0.16em] text-[#C8962A] mb-3">02</p>
-              <h3 className="text-xl font-bold text-[#E8E0D0] mb-3">AI-guided experience</h3>
-              <p className="text-[15px] leading-[1.75] text-[#B8B1A6]">
+            <div className="rounded-[18px] border border-white/8 bg-white/[0.025] p-7">
+              <p className="text-[12px] uppercase tracking-[0.16em] text-[#8FA3BF] mb-3">02</p>
+              <h3 className="text-xl font-semibold text-[#F3F4F6] mb-3">AI-guided experience</h3>
+              <p className="text-[15px] leading-[1.75] text-[#A8B3C2]">
                 ARIA supports the experience with contextual voice guidance, helping users ask questions and stay oriented during the workflow.
               </p>
             </div>
-            <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-7">
-              <p className="text-[12px] uppercase tracking-[0.16em] text-[#C8962A] mb-3">03</p>
-              <h3 className="text-xl font-bold text-[#E8E0D0] mb-3">Skill evaluation</h3>
-              <p className="text-[15px] leading-[1.75] text-[#B8B1A6]">
+            <div className="rounded-[18px] border border-white/8 bg-white/[0.025] p-7">
+              <p className="text-[12px] uppercase tracking-[0.16em] text-[#8FA3BF] mb-3">03</p>
+              <h3 className="text-xl font-semibold text-[#F3F4F6] mb-3">Skill evaluation</h3>
+              <p className="text-[15px] leading-[1.75] text-[#A8B3C2]">
                 The simulation captures progress and task quality to turn practice into a measurable learning experience.
               </p>
             </div>
@@ -159,11 +158,11 @@ export default function AssemblyLineYProject() {
 
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12">
           <div className="lg:col-span-4 flex flex-col gap-4">
-            <p className="text-sm font-mono uppercase tracking-[0.22em] text-[#8A8275]">Why it matters</p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#E8E0D0]">Training for complex physical work</h2>
+            <p className="text-sm font-mono uppercase tracking-[0.22em] text-[#7B8794]">Why it matters</p>
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-[#F3F4F6]">Training for complex physical work</h2>
           </div>
-          <div className="lg:col-span-8 rounded-[28px] border border-white/10 bg-white/[0.03] p-8 md:p-10">
-            <p className="text-[16px] md:text-[18px] leading-[1.9] text-[#B8B1A6] max-w-[860px]">
+          <div className="lg:col-span-8 rounded-[20px] border border-white/8 bg-white/[0.025] p-8 md:p-10">
+            <p className="text-[16px] md:text-[18px] leading-[1.9] text-[#A8B3C2] max-w-[860px]">
               Automotive interior assembly still depends on human dexterity, spatial judgment, and procedural accuracy. Assembly Line Y explores how immersive simulation and AI guidance can reduce learning friction for this kind of task by making steps visible, interactive, and repeatable in a safe virtual environment.
             </p>
           </div>
@@ -171,15 +170,15 @@ export default function AssemblyLineYProject() {
 
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12">
           <div className="lg:col-span-4">
-            <p className="text-sm font-mono uppercase tracking-[0.22em] text-[#8A8275] mb-3">Highlights</p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#E8E0D0]">Key experience features</h2>
+            <p className="text-sm font-mono uppercase tracking-[0.22em] text-[#7B8794] mb-3">Highlights</p>
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-[#F3F4F6]">Key experience features</h2>
           </div>
-          <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className="lg:col-span-8 grid grid-cols-1 md:grid-cols-2 gap-4">
             {highlights.map((item, index) => (
-              <div key={item.title} className="rounded-[24px] border border-white/10 bg-white/[0.03] p-7 md:p-8">
-                <p className="text-[12px] uppercase tracking-[0.16em] text-[#C8962A] mb-3">0{index + 1}</p>
-                <h3 className="text-xl font-bold text-[#E8E0D0] mb-3">{item.title}</h3>
-                <p className="text-[15px] leading-[1.75] text-[#B8B1A6]">{item.body}</p>
+              <div key={item.title} className="rounded-[18px] border border-white/8 bg-white/[0.025] p-7 md:p-8">
+                <p className="text-[12px] uppercase tracking-[0.16em] text-[#8FA3BF] mb-3">0{index + 1}</p>
+                <h3 className="text-xl font-semibold text-[#F3F4F6] mb-3">{item.title}</h3>
+                <p className="text-[15px] leading-[1.75] text-[#A8B3C2]">{item.body}</p>
               </div>
             ))}
           </div>
@@ -187,25 +186,25 @@ export default function AssemblyLineYProject() {
 
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 md:gap-12 items-start">
           <div className="lg:col-span-4">
-            <p className="text-sm font-mono uppercase tracking-[0.22em] text-[#8A8275] mb-3">System Design</p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#E8E0D0]">How the experience is structured</h2>
+            <p className="text-sm font-mono uppercase tracking-[0.22em] text-[#7B8794] mb-3">System Design</p>
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-[#F3F4F6]">How the experience is structured</h2>
           </div>
           <div className="lg:col-span-8 flex flex-col gap-4">
             {architecture.map((item) => (
-              <div key={item.title} className="rounded-[24px] border border-white/10 bg-white/[0.03] p-7 md:p-8">
-                <p className="text-[12px] uppercase tracking-[0.16em] text-[#C8962A] mb-3">{item.label}</p>
-                <h3 className="text-xl font-bold text-[#E8E0D0] mb-3">{item.title}</h3>
-                <p className="text-[15px] leading-[1.75] text-[#B8B1A6]">{item.body}</p>
+              <div key={item.title} className="rounded-[18px] border border-white/8 bg-white/[0.025] p-7 md:p-8">
+                <p className="text-[12px] uppercase tracking-[0.16em] text-[#8FA3BF] mb-3">{item.label}</p>
+                <h3 className="text-xl font-semibold text-[#F3F4F6] mb-3">{item.title}</h3>
+                <p className="text-[15px] leading-[1.75] text-[#A8B3C2]">{item.body}</p>
               </div>
             ))}
           </div>
         </section>
 
-        <section className="rounded-[30px] border border-white/10 bg-[linear-gradient(180deg,rgba(255,255,255,0.04)_0%,rgba(255,255,255,0.02)_100%)] p-8 md:p-12 shadow-[0_20px_60px_rgba(0,0,0,0.24)]">
+        <section className="rounded-[24px] border border-white/8 bg-white/[0.025] p-8 md:p-12 shadow-[0_18px_44px_rgba(0,0,0,0.18)]">
           <div className="max-w-[860px] flex flex-col gap-5">
-            <p className="text-sm font-mono uppercase tracking-[0.22em] text-[#8A8275]">Reflection</p>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-[#E8E0D0]">What this project demonstrates</h2>
-            <p className="text-[16px] md:text-[18px] leading-[1.9] text-[#B8B1A6]">
+            <p className="text-sm font-mono uppercase tracking-[0.22em] text-[#7B8794]">Reflection</p>
+            <h2 className="text-3xl md:text-4xl font-semibold tracking-tight text-[#F3F4F6]">What this project demonstrates</h2>
+            <p className="text-[16px] md:text-[18px] leading-[1.9] text-[#A8B3C2]">
               Assembly Line Y shows how I approach XR products that sit between interaction design, technical implementation, and AI-assisted guidance. Rather than treating VR as a visual demo, this project focuses on training flow, embodied interaction, and system feedback — making a complex industrial process easier to learn and easier to trust.
             </p>
           </div>
