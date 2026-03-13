@@ -13,7 +13,7 @@ const navItems = [
 export default function TopNav() {
     const pathname = usePathname();
     const router = useRouter();
-    const [activeSection, setActiveSection] = useState<string>("about");
+    const [activeSection, setActiveSection] = useState<string>("");
 
     useEffect(() => {
         if (pathname !== "/") return;
@@ -26,7 +26,7 @@ export default function TopNav() {
             const scrollY = window.scrollY;
             const viewportOffset = 160;
 
-            let current = "about";
+            let current = "";
             for (const section of sections) {
                 if (scrollY + viewportOffset >= section.offsetTop) {
                     current = section.id;
