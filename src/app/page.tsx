@@ -27,33 +27,39 @@ export default function Home() {
       <main className="w-full max-w-[1280px] mx-auto px-6 md:px-[80px] flex flex-col z-10">
 
         {/* 01 Hero Section */}
-        <section className="relative w-full min-h-screen flex flex-col items-center justify-center pt-24 text-brand-primary">
-          <div className="font-sans font-medium text-[28px] md:text-[40px] lg:text-[48px] leading-[1.08] tracking-[-0.03em] flex flex-col gap-3 md:gap-4 text-brand-primary w-full max-w-5xl mx-auto">
+        <section className="relative w-full min-h-screen flex flex-col items-center justify-center pt-20 md:pt-24 text-brand-primary">
+          <div className="font-sans font-medium text-[24px] min-[480px]:text-[28px] md:text-[40px] lg:text-[48px] leading-[1.08] tracking-[-0.035em] flex flex-col gap-4 md:gap-4 text-brand-primary w-full max-w-5xl mx-auto">
 
-            <div className="flex items-center justify-center gap-2 md:gap-3 w-full text-center">
-              <span className="text-[11px] md:text-sm font-mono w-6 text-right select-none opacity-70 shrink-0">01</span>
-              <span className="font-light font-mono opacity-70 shrink-0">&lt;</span>
-              <span>Hello, I am Yuchen</span>
-              <span className="font-light font-mono opacity-70 shrink-0">&gt;</span>
+            <div className="grid grid-cols-[24px_1fr] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full text-left md:text-center">
+              <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">01</span>
+              <div className="flex items-start md:items-center justify-start md:justify-center gap-0 md:gap-3 min-w-0">
+                <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
+                <span className="min-w-0">Hello, I am Yuchen</span>
+                <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&gt;</span>
+              </div>
             </div>
 
-            <div className="flex items-center justify-center gap-2 md:gap-3 w-full text-center">
-              <span className="text-[11px] md:text-sm font-mono w-6 text-right select-none opacity-70 shrink-0">02</span>
-              <span className="font-light font-mono opacity-70 shrink-0">&lt;</span>
-              <span>UX / Product Designer for AI and XR</span>
-              <span className="font-light font-mono opacity-70 shrink-0">&gt;</span>
+            <div className="grid grid-cols-[24px_1fr] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full text-left md:text-center">
+              <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">02</span>
+              <div className="flex items-start md:items-center justify-start md:justify-center gap-0 md:gap-3 min-w-0">
+                <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
+                <span className="min-w-0 max-w-[14ch] min-[480px]:max-w-none">UX / Product Designer for AI and XR</span>
+                <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&gt;</span>
+              </div>
             </div>
 
-            <div className="flex items-center justify-center gap-2 md:gap-3 w-full text-center">
-              <span className="text-[11px] md:text-sm font-mono w-6 text-right select-none opacity-70 shrink-0">03</span>
-              <span className="font-light font-mono opacity-70 shrink-0">&lt;</span>
-              <span>I design human-AI experiences</span>
-              <span className="font-light font-mono opacity-70 shrink-0">&gt;</span>
+            <div className="grid grid-cols-[24px_1fr] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full text-left md:text-center">
+              <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">03</span>
+              <div className="flex items-start md:items-center justify-start md:justify-center gap-0 md:gap-3 min-w-0">
+                <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
+                <span className="min-w-0 max-w-[15ch] min-[480px]:max-w-none">I design human-AI experiences</span>
+                <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&gt;</span>
+              </div>
             </div>
 
           </div>
 
-          <div className="absolute bottom-16 text-xs font-mono opacity-60 tracking-widest uppercase text-brand-primary">
+          <div className="absolute bottom-12 md:bottom-16 text-[10px] md:text-xs font-mono opacity-45 tracking-[0.22em] uppercase text-brand-primary">
             Load More
           </div>
         </section>

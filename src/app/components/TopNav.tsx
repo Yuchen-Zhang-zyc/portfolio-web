@@ -86,10 +86,10 @@ export default function TopNav() {
 
     return (
         <header className="pointer-events-none fixed top-0 left-0 right-0 z-50">
-            <div className="max-w-[1280px] mx-auto w-full px-4 pt-4 md:px-[56px] md:pt-7 flex justify-center">
+            <div className="max-w-[1280px] mx-auto w-full px-4 pt-3 md:px-[56px] md:pt-7 flex justify-center">
                 <nav
                     aria-label="Primary"
-                    className="liquid-glass-nav pointer-events-auto relative flex items-center gap-1 p-1.5 md:p-2 rounded-[999px] text-[13px] md:text-sm font-medium text-brand-primary/88"
+                    className="liquid-glass-nav pointer-events-auto relative flex items-center gap-1 p-1 min-[480px]:p-1.5 md:p-2 rounded-[999px] text-[12px] min-[480px]:text-[13px] md:text-sm font-medium text-brand-primary/88 max-w-[280px] min-[480px]:max-w-none w-full min-[480px]:w-auto"
                 >
                     <div className="liquid-glass-orb liquid-glass-orb-left" aria-hidden="true" />
                     <div className="liquid-glass-orb liquid-glass-orb-right" aria-hidden="true" />
@@ -104,7 +104,7 @@ export default function TopNav() {
                                     ? pathname === "/resume"
                                     : pathname === "/about";
 
-                        const className = `liquid-glass-chip relative flex items-center justify-center rounded-full px-4 py-2.5 md:px-5 md:py-2.5 min-w-[96px] md:min-w-[108px] transition-all duration-300 ${
+                        const className = `liquid-glass-chip relative flex items-center justify-center rounded-full px-3 py-2 md:px-4 md:py-2.5 min-w-0 flex-1 min-[480px]:flex-none min-[480px]:min-w-[96px] md:min-w-[108px] transition-all duration-300 ${
                             isActive
                                 ? "liquid-glass-chip-active text-brand-primary"
                                 : "text-brand-primary/72 hover:text-brand-primary"
