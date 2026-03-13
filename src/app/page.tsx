@@ -201,7 +201,7 @@ export default function Home() {
                 <div className="flex flex-col gap-2">
                   <h3 className="text-2xl font-bold font-sans text-brand-primary">DoseCare <span className="opacity-60 font-normal text-lg">| UX / Product Design</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    A mobile health app helping older adults manage medication schedules and stay connected with care providers.
+                    A medication management app for older adults, designed to reduce missed doses and make daily care easier.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -236,7 +236,7 @@ export default function Home() {
                 <div className="flex flex-col gap-2">
                   <h3 className="text-2xl font-bold font-sans text-brand-primary">Nirvana <span className="opacity-60 font-normal text-lg">| Team Lead</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    A service design project for car customization, combining research, mobile planning, and immersive VR preview.
+                    A service design concept for car customization, combining mobile planning, 3D visualization, and a VR preview experience.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -271,7 +271,7 @@ export default function Home() {
                 <div className="flex flex-col gap-2">
                   <h3 className="text-2xl font-bold font-sans text-brand-primary">Agrox <span className="opacity-60 font-normal text-lg">| UX Designer</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    A research-driven dashboard for an autonomous pest management robot designed for organic farming workflows.
+                    An AI-powered farm robotics dashboard for organic pest management, focused on field monitoring and decision support.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -306,7 +306,11 @@ export default function Home() {
                 <div className="flex flex-col gap-2">
                   <h3 className="text-2xl font-bold font-sans text-brand-primary">Nest Thermostat Redesign <span className="opacity-60 font-normal text-lg">| Project Lead, UX Designer</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
+<<<<<<< HEAD
                     A thermostat app redesign introducing a clearer scheduling interaction through drag-based control of time and temperature.
+=======
+                    A redesign of the Nest Thermostat app, focused on clearer scheduling interactions and a more usable control experience.
+>>>>>>> 6564d8e (Shorten homepage project card descriptions)
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -347,7 +351,7 @@ export default function Home() {
                 <div className="flex flex-col gap-2">
                   <h3 className="text-2xl font-bold font-sans text-brand-primary">Assembly Line Y <span className="opacity-60 font-normal text-lg">| VR Developer & Designer</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    A Quest 3 VR training simulation for Tesla Model Y interior assembly, guided by ARIA — an AI assistant powered by the Claude API. Players step inside a virtual assembly environment and install components across guided steps with natural language interactions and multi-modal XR inputs.
+                    A Quest 3 VR training simulation for Tesla Model Y assembly, enhanced with an AI assistant for guided task support.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -382,7 +386,11 @@ export default function Home() {
                 <div className="flex flex-col gap-2">
                   <h3 className="text-2xl font-bold font-sans text-brand-primary">VR Tire Change Simulation <span className="opacity-60 font-normal text-lg">| Solo Designer & Developer</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
+<<<<<<< HEAD
                     A solo-built VR training simulation that turns tire changing into a guided, repeatable learning experience.
+=======
+                    A VR training experience that helps beginners practice tire changing through guided, repeatable interaction.
+>>>>>>> 6564d8e (Shorten homepage project card descriptions)
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
