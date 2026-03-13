@@ -1,6 +1,18 @@
+"use client";
+
+import { useEffect } from "react";
 import Link from "next/link";
 
 export default function Home() {
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+
+    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+  }, []);
   return (
     <div className="flex flex-col w-full min-h-screen font-body relative overflow-x-hidden">
 
