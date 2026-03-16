@@ -59,9 +59,10 @@ export default function Home() {
 
           </div>
 
-          <div className="absolute bottom-12 md:bottom-16 text-[10px] md:text-xs font-mono opacity-45 tracking-[0.22em] uppercase text-brand-primary">
-            Load More
-          </div>
+          <a href="#about" className="absolute bottom-12 md:bottom-16 flex flex-col items-center gap-2 opacity-40 hover:opacity-70 transition-opacity text-brand-primary">
+            <span className="text-[10px] font-mono tracking-[0.22em] uppercase">Scroll</span>
+            <span className="text-base leading-none">↓</span>
+          </a>
         </section>
 
         {/* 02 About Me */}
@@ -351,9 +352,9 @@ export default function Home() {
                     Product designer with a background in Computer Science, focused on human-AI interaction, XR experiences, and interaction design. Currently pursuing an MFA in Interactive Design at SCAD and seeking Summer 2026 internship opportunities.
                   </p>
                 </div>
-                <Link href="/resume" className="inline-flex items-center justify-center rounded-full px-5 py-3 bg-brand-primary text-white text-sm font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
-                  View Resume Page
-                </Link>
+                <a href="/Yuchen_Zhang_Resume_AI_XR.pdf" download className="inline-flex items-center justify-center rounded-full px-5 py-3 bg-brand-primary text-white text-sm font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
+                  Download Resume
+                </a>
               </div>
             </div>
 
@@ -411,6 +412,21 @@ export default function Home() {
         </section>
 
       </main>
+
+      <footer className="w-full border-t border-brand-primary/10 z-10">
+        <div className="w-full max-w-[1280px] mx-auto px-6 md:px-[80px] py-16 flex flex-col md:flex-row md:items-end justify-between gap-10">
+          <div className="flex flex-col gap-2">
+            <p className="text-xs font-mono uppercase tracking-[0.18em] text-brand-primary/40">Let&apos;s connect</p>
+            <a href="mailto:zyc1108@outlook.com" className="text-lg font-medium text-brand-primary hover:opacity-60 transition-opacity">
+              zyc1108@outlook.com
+            </a>
+          </div>
+          <div className="flex flex-col items-start md:items-end gap-1">
+            <span className="text-base font-medium text-brand-primary">Yuchen Zhang</span>
+            <span className="text-xs font-mono text-brand-primary/40">UX / Product Designer · © 2026</span>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 }

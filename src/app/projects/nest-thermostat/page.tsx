@@ -99,7 +99,7 @@ export default function NestThermostatProject() {
 
             {/* 1. Old thermostat device */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ background: '#141414', borderRadius: '20px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 114px', height: '512px' }}>
+              <div style={{ background: '#141414', borderRadius: '20px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 clamp(16px, 8vw, 114px)', height: '512px' }}>
                 <div style={{ width: '260px', height: '100%', position: 'relative', flexShrink: 0 }}>
                   <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '360px', height: '360px', overflow: 'hidden' }}>
                     <img src="/projects/nest-thermostat/thermo_schedule.png" alt="Original Nest thermostat — horizontal schedule" style={{ position: 'absolute', top: 0, left: 0, height: '100%', width: '168.78%', maxWidth: 'none' }} />
@@ -117,7 +117,7 @@ export default function NestThermostatProject() {
 
             {/* 2. Old energy history */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
-              <div style={{ background: '#141414', borderRadius: '20px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 144px', height: '512px' }}>
+              <div style={{ background: '#141414', borderRadius: '20px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 clamp(16px, 10vw, 144px)', height: '512px' }}>
                 <div style={{ width: '200px', height: '433px', borderRadius: '28px', overflow: 'hidden', boxShadow: '0 20px 48px rgba(0,0,0,0.2)', flexShrink: 0 }}>
                   <img src="/projects/nest-thermostat/old_energy.jpg" alt="Original app — energy history" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
@@ -386,7 +386,7 @@ export default function NestThermostatProject() {
               <div className="reveal d1">
                 <div className="duo">
                   <img className="img-device" src="/projects/nest-thermostat/hifi_01_device.png" alt="Heating state device" />
-                  <img src="/projects/nest-thermostat/hifi_01_phone.png" alt="Heating state phone" style={{ width: '185px', display: 'block', boxShadow: '0 40px 80px rgba(0,0,0,0.65)' }} />
+                  <img src="/projects/nest-thermostat/hifi_01_phone.png" alt="Heating state phone" style={{ width: 'clamp(100px, 25vw, 185px)', display: 'block', boxShadow: '0 40px 80px rgba(0,0,0,0.65)' }} />
                 </div>
               </div>
             </div>
@@ -765,7 +765,7 @@ export default function NestThermostatProject() {
             </div>
             <div className="dev-col">
               <span className="dev-col-label">Mobile Application</span>
-              <div className="phone-wrap" style={{ width: '210px' }}><img src="/projects/nest-thermostat/Homepage 72 to 68-2.png" alt="Phone heating" /></div>
+              <div className="phone-wrap" style={{ width: 'clamp(120px, 28vw, 210px)' }}><img src="/projects/nest-thermostat/Homepage 72 to 68-2.png" alt="Phone heating" /></div>
               <div className="shared-pts">
                 <span className="spt">Orange accent = heating state</span>
                 <span className="spt">Same single-input model</span>

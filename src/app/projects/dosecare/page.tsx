@@ -115,7 +115,7 @@ const CSS = `
   .dc-ia-desc { font-size: 13px; color: #9B9690; }
 
   /* Journey map */
-  .dc-journey-wrap { border: 1px solid #E4E0DB; background: #FFFFFF; padding: 32px 24px 24px; margin-top: 32px; }
+  .dc-journey-wrap { border: 1px solid #E4E0DB; background: #FFFFFF; padding: 32px 24px 24px; margin-top: 32px; overflow-x: auto; -webkit-overflow-scrolling: touch; }
   .dc-journey-title { font-family: var(--font-dm-mono, 'DM Mono', monospace); font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #9B9690; margin-bottom: 24px; display: flex; gap: 24px; align-items: center; }
   .dc-journey-legend { display: flex; gap: 16px; }
   .dc-legend-item { display: flex; align-items: center; gap: 6px; font-size: 10px; color: #4A4740; }
@@ -403,7 +403,7 @@ function JourneyMap() {
       <svg
         viewBox={`0 0 ${W} ${H}`}
         width="100%"
-        style={{ display: "block", overflow: "visible" }}
+        style={{ display: "block", overflow: "hidden" }}
         aria-label="User journey map showing Mrs. Eleanor's emotional experience before and after DoseCare. Before: consistently negative and declining. After: improving trajectory from stage 3 onwards."
         role="img"
       >

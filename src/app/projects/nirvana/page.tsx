@@ -507,7 +507,7 @@ export default function NirvanaPage() {
                 width="900"
                 height="420"
                 viewBox="0 0 900 420"
-                style={{ display: "block", minWidth: 640, width: "100%" }}
+                style={{ display: "block", width: "100%" }}
                 role="img"
                 aria-label="User journey map showing 5 phases of car modification experience. Emotional curve starts curious, drops to confused during consultation, rises with excitement during planning, then experiences mixed emotions through modification and testing."
               >
