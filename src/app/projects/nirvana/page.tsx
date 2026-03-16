@@ -260,7 +260,7 @@ export default function NirvanaPage() {
 
       {/* ── Back link ── */}
       <div style={{ padding: "14px 48px" }}>
-        <a href="/" style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", textDecoration: "none", fontFamily: "monospace", letterSpacing: "0.06em" }}>← Home</a>
+        <a href="/" style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", textDecoration: "none", fontFamily: "monospace", letterSpacing: "0.06em" }}>← Home</a>
       </div>
 
       {/* ── Sticky Subnav ── */}

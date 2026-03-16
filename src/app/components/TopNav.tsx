@@ -4,20 +4,31 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-const navItems = [
+const navItemsEn = [
     { id: "about", href: "/#about", label: "About" },
     { id: "projects", href: "/#projects", label: "Projects" },
     { id: "resume", href: "/#resume", label: "Resume" },
+];
+
+const navItemsZh = [
+    { id: "about", href: "/zh#about", label: "关于" },
+    { id: "projects", href: "/zh#projects", label: "项目" },
+    { id: "resume", href: "/zh#resume", label: "简历" },
 ];
 
 export default function TopNav() {
     const pathname = usePathname();
     const router = useRouter();
     const [activeSection, setActiveSection] = useState<string>("");
-    const isProjectPage = pathname.startsWith("/projects/");
+
+    const isZh = pathname === "/zh" || pathname.startsWith("/zh/");
+    const isProjectPage = pathname.startsWith("/projects/") || pathname.startsWith("/zh/projects/");
+    const isHome = pathname === "/" || pathname === "/zh";
+
+    const navItems = isZh ? navItemsZh : navItemsEn;
 
     useEffect(() => {
-        if (pathname !== "/") return;
+        if (!isHome) return;
 
         const sections = navItems
             .map((item) => document.getElementById(item.id))
@@ -44,7 +55,7 @@ export default function TopNav() {
             window.removeEventListener("scroll", updateActiveSection);
             window.removeEventListener("resize", updateActiveSection);
         };
-    }, [pathname]);
+    }, [pathname, isHome, navItems]);
 
     const scrollToSection = (id: string) => {
         const el = document.getElementById(id);
@@ -66,28 +77,26 @@ export default function TopNav() {
             <div className="max-w-[1280px] mx-auto w-full px-4 pt-3 md:px-[56px] md:pt-7 flex justify-center">
                 <nav
                     aria-label="Primary"
-                    className="liquid-glass-nav pointer-events-auto relative flex items-center gap-1 p-1 min-[480px]:p-1.5 md:p-2 rounded-[999px] text-[12px] min-[480px]:text-[13px] md:text-sm font-medium text-brand-primary/88 max-w-[280px] min-[480px]:max-w-none w-full min-[480px]:w-auto"
+                    className="liquid-glass-nav pointer-events-auto relative flex items-center gap-1 p-1 min-[480px]:p-1.5 md:p-2 rounded-[999px] text-[12px] min-[480px]:text-[13px] md:text-sm font-medium text-brand-primary/88 max-w-[320px] min-[480px]:max-w-none w-full min-[480px]:w-auto"
                 >
                     <div className="liquid-glass-orb liquid-glass-orb-left" aria-hidden="true" />
                     <div className="liquid-glass-orb liquid-glass-orb-right" aria-hidden="true" />
 
                     {navItems.map((item) => {
                         const isActive =
-                            pathname === "/"
+                            isHome
                                 ? activeSection === item.id
                                 : item.id === "projects"
-                                  ? pathname.startsWith("/projects")
-                                  : item.id === "resume"
-                                    ? pathname === "/resume"
-                                    : pathname === "/about";
+                                  ? pathname.startsWith("/projects") || pathname.startsWith("/zh/projects")
+                                  : false;
 
-                        const className = `liquid-glass-chip relative flex items-center justify-center rounded-full px-3 py-2 md:px-4 md:py-2.5 min-w-0 flex-1 min-[480px]:flex-none min-[480px]:min-w-[96px] md:min-w-[108px] transition-all duration-300 ${
+                        const className = `liquid-glass-chip relative flex items-center justify-center rounded-full px-3 py-2 md:px-4 md:py-2.5 min-w-0 flex-1 min-[480px]:flex-none min-[480px]:min-w-[80px] md:min-w-[96px] transition-all duration-300 ${
                             isActive
                                 ? "liquid-glass-chip-active text-brand-primary"
                                 : "text-brand-primary/72 hover:text-brand-primary"
                         }`;
 
-                        if (pathname === "/") {
+                        if (isHome) {
                             return (
                                 <button
                                     key={item.label}
@@ -113,6 +122,35 @@ export default function TopNav() {
                             </button>
                         );
                     })}
+
+                    {/* Language toggle */}
+                    <div className="flex items-center ml-1 border-l border-brand-primary/15 pl-2 gap-1">
+                        {isZh ? (
+                            <>
+                                <Link
+                                    href="/"
+                                    className="px-2 py-1.5 rounded-full text-[11px] font-mono text-brand-primary/50 hover:text-brand-primary transition-colors"
+                                >
+                                    EN
+                                </Link>
+                                <span className="px-2 py-1.5 rounded-full text-[11px] font-mono text-brand-primary font-semibold">
+                                    中
+                                </span>
+                            </>
+                        ) : (
+                            <>
+                                <span className="px-2 py-1.5 rounded-full text-[11px] font-mono text-brand-primary font-semibold">
+                                    EN
+                                </span>
+                                <Link
+                                    href="/zh"
+                                    className="px-2 py-1.5 rounded-full text-[11px] font-mono text-brand-primary/50 hover:text-brand-primary transition-colors"
+                                >
+                                    中
+                                </Link>
+                            </>
+                        )}
+                    </div>
                 </nav>
             </div>
         </header>

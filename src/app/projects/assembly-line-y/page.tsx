@@ -56,16 +56,11 @@ export default function AssemblyLineYProject() {
       <div className="fixed inset-0 pointer-events-none z-0 bg-[linear-gradient(180deg,#0D1117_0%,#0F141B_100%)]" />
       <div className="fixed inset-0 pointer-events-none z-0 opacity-[0.035] bg-[url('data:image/svg+xml,%3Csvg viewBox=%270_0_256_256%27 xmlns=%27http://www.w3.org/2000/svg%27%3E%3Cfilter id=%27noise%27%3E%3CfeTurbulence type=%27fractalNoise%27 baseFrequency=%270.9%27 numOctaves=%274%27 stitchTiles=%27stitch%27/%3E%3C/filter%3E%3Crect width=%27100%25%27 height=%27100%25%27 filter=%27url(%23noise)%27 opacity=%270.9%27/%3E%3C/svg%3E')]" />
 
-      <main className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-[80px] pt-20 md:pt-24 pb-24 md:pb-32 flex flex-col gap-24 md:gap-28">
-        <div className="pt-6 md:pt-8">
-          <Link
-            href="/"
-            className="inline-flex items-center gap-2 text-sm font-medium text-[#A8B3C2] hover:text-[#F3F4F6] transition-colors"
-          >
-            <span aria-hidden="true">←</span>
-            <span>Back to Home</span>
-          </Link>
-        </div>
+      <div style={{ padding: "14px 48px" }}>
+        <a href="/" style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", textDecoration: "none", fontFamily: "monospace", letterSpacing: "0.06em" }}>← Home</a>
+      </div>
+
+      <main className="relative z-10 w-full max-w-[1280px] mx-auto px-6 md:px-[80px] pt-6 md:pt-8 pb-24 md:pb-32 flex flex-col gap-24 md:gap-28">
         <section className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-end min-h-[68vh] scroll-mt-32 md:scroll-mt-24">
           <div className="lg:col-span-5 flex flex-col gap-6 md:gap-7">
             <div className="flex flex-wrap gap-3 text-[11px] uppercase tracking-[0.18em] text-[#93A1B2]">

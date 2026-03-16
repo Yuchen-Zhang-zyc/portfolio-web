@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 
 const CSS = `
   /* Base Variables - Glassmorphism / Spatial UI */
@@ -433,8 +433,8 @@ export default function AgroxProject() {
         <div className="ag-page-bg"></div>
 
         {/* ── Back link ── */}
-        <div style={{ padding: '14px 0 0', position: 'relative', zIndex: 10 }} className="ag-container">
-          <a href="/" style={{ fontSize: '12px', color: 'rgba(100,116,139,0.7)', textDecoration: 'none', fontFamily: 'monospace', letterSpacing: '0.06em' }}>← Home</a>
+        <div style={{ padding: '14px 48px' }}>
+          <a href="/" style={{ fontSize: 12, color: 'rgba(100,116,139,0.7)', textDecoration: 'none', fontFamily: 'monospace', letterSpacing: '0.06em' }}>← Home</a>
         </div>
 
         {/* ── HERO SECTION ── */}
@@ -525,7 +525,7 @@ export default function AgroxProject() {
           <div className="ag-grid-2">
             <div>
               <div className="ag-quote">
-                "I want something that just works. I don't have time to learn another complicated app."
+                "I want something that just works. I don&apos;t have time to learn another complicated app."
               </div>
               <div style={{ marginTop: "40px", padding: "32px", background: "rgba(14, 165, 233, 0.05)", borderRadius: "24px", border: "1px solid rgba(14, 165, 233, 0.2)" }}>
                 <h3 style={{ fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: 600, color: "#0EA5E9", marginBottom: "16px" }}>How Might We</h3>
@@ -646,7 +646,7 @@ export default function AgroxProject() {
               <div className="ag-feature-text">
                 <h3 style={{ fontSize: "28px", fontWeight: 600, marginBottom: "16px", color: "#0F172A" }}>A.I. Visual Pest Recognition</h3>
                 <p style={{ fontSize: "16px", color: "var(--text-muted)", lineHeight: 1.6 }}>
-                  The robot's onboard cameras scan crops in real-time. The AI model identifies pest types and severity, logging the data to the farmer's dashboard without requiring manual field walks.
+                  The robot&apos;s onboard cameras scan crops in real-time. The AI model identifies pest types and severity, logging the data to the farmer&apos;s dashboard without requiring manual field walks.
                 </p>
               </div>
               <div className="ag-feature-visual">
@@ -676,7 +676,7 @@ export default function AgroxProject() {
               <div className="ag-feature-text">
                 <h3 style={{ fontSize: "28px", fontWeight: 600, marginBottom: "16px", color: "#0F172A" }}>Pest Heatmap Dashboard</h3>
                 <p style={{ fontSize: "16px", color: "var(--text-muted)", lineHeight: 1.6 }}>
-                  Data collected by the robot is visualized on a simple mobile and web app. Farmers can instantly see which areas of the farm have high pest pressure and track the effectiveness of the robot's interventions over time.
+                  Data collected by the robot is visualized on a simple mobile and web app. Farmers can instantly see which areas of the farm have high pest pressure and track the effectiveness of the robot&apos;s interventions over time.
                 </p>
               </div>
               <div className="ag-feature-visual">

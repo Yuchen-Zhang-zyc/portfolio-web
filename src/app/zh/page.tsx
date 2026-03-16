@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import Link from "next/link";
 
-export default function Home() {
+export default function HomeZh() {
   useEffect(() => {
     if (typeof window === "undefined") return;
 
@@ -34,7 +34,7 @@ export default function Home() {
               <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">01</span>
               <div className="flex items-start md:items-center justify-center md:justify-center gap-0 md:gap-3 min-w-0 text-center">
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
-                <span className="min-w-0 mx-auto">Hello, I am Yuchen</span>
+                <span className="min-w-0 mx-auto">你好，我是 Yuchen</span>
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&gt;</span>
               </div>
             </div>
@@ -43,7 +43,7 @@ export default function Home() {
               <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">02</span>
               <div className="flex items-start md:items-center justify-center md:justify-center gap-0 md:gap-3 min-w-0 text-center">
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
-                <span className="min-w-0 max-w-[14ch] min-[480px]:max-w-none mx-auto">UX / Product Designer for AI and XR</span>
+                <span className="min-w-0 max-w-[14ch] min-[480px]:max-w-none mx-auto">AI 与 XR 方向 UX / 产品设计师</span>
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&gt;</span>
               </div>
             </div>
@@ -52,7 +52,7 @@ export default function Home() {
               <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">03</span>
               <div className="flex items-start md:items-center justify-center md:justify-center gap-0 md:gap-3 min-w-0 text-center">
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
-                <span className="min-w-0 max-w-[15ch] min-[480px]:max-w-none mx-auto">I design human-AI experiences</span>
+                <span className="min-w-0 max-w-[15ch] min-[480px]:max-w-none mx-auto">我设计人与 AI 交互的体验</span>
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&gt;</span>
               </div>
             </div>
@@ -60,7 +60,7 @@ export default function Home() {
           </div>
 
           <a href="#about" className="absolute bottom-12 md:bottom-16 flex flex-col items-center gap-2 opacity-40 hover:opacity-70 transition-opacity text-brand-primary">
-            <span className="text-[10px] font-mono tracking-[0.22em] uppercase">Scroll</span>
+            <span className="text-[10px] font-mono tracking-[0.22em] uppercase">滚动</span>
             <span className="text-base leading-none">↓</span>
           </a>
         </section>
@@ -70,15 +70,15 @@ export default function Home() {
           <div className="md:col-span-4">
             <h2 className="text-sm font-bold flex items-center gap-3">
               <span className="font-mono text-xs opacity-80">02</span>
-              About me
+              关于我
             </h2>
           </div>
           <div className="md:col-span-8 text-base text-brand-primary leading-[1.65] flex flex-col gap-6 font-body">
             <p>
-              I started in computer science, writing code that worked — but felt incomplete. When I saw how fast AI was advancing, I realized the bottleneck wasn't capability anymore. It was the space between humans and machines.
+              我的起点是计算机科学——写出来的代码能跑，但总觉得差点什么。当我看到 AI 进化的速度，我意识到瓶颈不再是技术能力本身，而是人与机器之间那道还没被设计好的空间。
             </p>
             <p>
-              So I crossed over to design. Not to escape technology, but to shape how people and AI learn to work together. There's no established playbook yet — and that's exactly why it interests me.
+              于是我转向设计。不是为了逃离技术，而是想亲手塑造人与 AI 协作的方式。这条路还没有现成的剧本——这正是它吸引我的地方。
             </p>
           </div>
         </section>
@@ -88,39 +88,39 @@ export default function Home() {
           <div className="md:col-span-4">
             <h2 className="text-sm font-bold flex items-center gap-3">
               <span className="font-mono text-xs opacity-80">03</span>
-              Capabilities
+              专业能力
             </h2>
           </div>
           <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-[20px] md:gap-[24px]">
             <div className="capability-card capability-card-primary p-7 md:p-8 rounded-[18px]">
-              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">Human-AI Design</h3>
+              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">人机协同设计</h3>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/78">
-                <li className="flex gap-2"><span className="opacity-45">✦</span> Design human-AI workflows, not just interfaces</li>
-                <li className="flex gap-2"><span className="opacity-45">✦</span> Define interaction patterns for emerging AI products</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 设计人与 AI 协作的工作流，而不只是界面</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 为新兴 AI 产品定义交互范式</li>
               </ul>
             </div>
 
             <div className="capability-card p-7 md:p-8 rounded-[18px]">
-              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">UX & Interaction</h3>
+              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">UX 与交互设计</h3>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/78">
-                <li className="flex gap-2"><span className="opacity-45">✦</span> Build end-to-end flows from research to prototype</li>
-                <li className="flex gap-2"><span className="opacity-45">✦</span> Design state-driven interactions with clear feedback</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 从研究到原型的完整端到端流程</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 设计带有清晰反馈的状态驱动交互</li>
               </ul>
             </div>
 
             <div className="capability-card p-7 md:p-8 rounded-[18px]">
-              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">Systems Thinking</h3>
+              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">系统思维</h3>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/78">
-                <li className="flex gap-2"><span className="opacity-45">✦</span> Turn ambiguous problems into structured product decisions</li>
-                <li className="flex gap-2"><span className="opacity-45">✦</span> Map user flows, edge cases, and system logic</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 将模糊问题转化为结构化的产品决策</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 梳理用户流程、边界情况与系统逻辑</li>
               </ul>
             </div>
 
             <div className="capability-card p-7 md:p-8 rounded-[18px]">
-              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">Prototyping with Code</h3>
+              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">代码原型</h3>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/78">
-                <li className="flex gap-2"><span className="opacity-45">✦</span> Translate concepts into functional prototypes</li>
-                <li className="flex gap-2"><span className="opacity-45">✦</span> Bridge design intent and technical feasibility</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 将概念落地为可运行的功能原型</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 桥接设计意图与技术可行性</li>
               </ul>
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function Home() {
           <div className="md:col-span-4">
             <h2 className="text-sm font-bold flex items-center gap-3">
               <span className="font-mono text-xs opacity-80">04</span>
-              Projects
+              项目
             </h2>
           </div>
           <div className="md:col-span-8 flex flex-col gap-[40px]">
@@ -158,9 +158,9 @@ export default function Home() {
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Assembly Line Y <span className="opacity-60 font-normal text-lg">| VR Developer & Designer</span></h3>
+                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Assembly Line Y <span className="opacity-60 font-normal text-lg">| VR 开发者 & 设计师</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    A Quest 3 VR training simulation for Tesla Model Y assembly, enhanced with an AI assistant for guided task support.
+                    为特斯拉 Model Y 装配线设计的 Quest 3 VR 培训模拟系统，集成 AI 助手提供任务引导支持。
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -190,9 +190,9 @@ export default function Home() {
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Redesign Nest Thermostat <span className="opacity-60 font-normal text-lg">| Project Lead and UX Design</span></h3>
+                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Nest 温控器重设计 <span className="opacity-60 font-normal text-lg">| 项目负责人 & UX 设计</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    A redesign of the Nest Thermostat app, focused on clearer scheduling interactions and a more usable control experience.
+                    对 Nest 温控器 App 进行重设计，专注于优化日程交互逻辑与控制体验的易用性。
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -224,7 +224,7 @@ export default function Home() {
                 <div className="flex flex-col gap-2">
                   <h3 className="text-2xl font-bold font-sans text-brand-primary">DoseCare</h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    A medication management app for older adults, designed to reduce missed doses and make daily care easier.
+                    专为老年人设计的用药管理 App，帮助减少漏服并让日常护理更加轻松。
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -254,9 +254,9 @@ export default function Home() {
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Agrox <span className="opacity-60 font-normal text-lg">| UX Designer</span></h3>
+                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Agrox <span className="opacity-60 font-normal text-lg">| UX 设计师</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    An AI-powered farm robotics dashboard for organic pest management, focused on field monitoring and decision support.
+                    面向有机农业的 AI 驱动农田机器人管理平台，专注于田间监控与决策支持。
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -286,9 +286,9 @@ export default function Home() {
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Nirvana <span className="opacity-60 font-normal text-lg">| Team Leader</span></h3>
+                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Nirvana <span className="opacity-60 font-normal text-lg">| 团队负责人</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    A service design concept for car customization, combining mobile planning, 3D visualization, and a VR preview experience.
+                    一个汽车改装服务设计概念，融合移动端规划、3D 可视化与 VR 预览体验。
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -318,9 +318,9 @@ export default function Home() {
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">VR Tire Change Simulation <span className="opacity-60 font-normal text-lg">| Solo Designer & Developer</span></h3>
+                  <h3 className="text-2xl font-bold font-sans text-brand-primary">VR 换胎模拟训练 <span className="opacity-60 font-normal text-lg">| 独立设计师 & 开发者</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    A VR training experience that helps beginners practice tire changing through guided, repeatable interaction.
+                    一个帮助初学者通过引导式、可重复交互练习换胎操作的 VR 培训体验。
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
@@ -338,7 +338,7 @@ export default function Home() {
           <div className="md:col-span-4">
             <h2 className="text-sm font-bold flex items-center gap-3">
               <span className="font-mono text-xs opacity-80">05</span>
-              Resume
+              简历
             </h2>
           </div>
 
@@ -347,35 +347,35 @@ export default function Home() {
               <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
                 <div className="max-w-[640px] flex flex-col gap-4">
                   <p className="text-sm font-mono uppercase tracking-[0.18em] text-brand-primary/50">Yuchen Zhang</p>
-                  <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-brand-primary">UX / Product Designer for AI, XR, and Interaction Design</h3>
+                  <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-brand-primary">AI、XR 与交互设计方向 UX / 产品设计师</h3>
                   <p className="text-[16px] md:text-[18px] leading-[1.75] text-brand-primary/76">
-                    Product designer with a background in Computer Science, focused on human-AI interaction, XR experiences, and interaction design. Currently pursuing an MFA in Interactive Design at SCAD and seeking Summer 2026 internship opportunities.
+                    具有计算机科学背景的产品设计师，专注于人机交互、XR 体验与交互设计。目前就读于萨凡纳艺术设计学院互动设计 MFA，正在寻找 2026 年暑期实习机会。
                   </p>
                 </div>
                 <a href="/Yuchen_Zhang_Resume_AI_XR.pdf" download className="inline-flex items-center justify-center rounded-full px-5 py-3 bg-brand-primary text-white text-sm font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
-                  Download Resume
+                  下载简历
                 </a>
               </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
               <div className="md:col-span-7 rounded-[24px] border border-white/70 bg-white/78 backdrop-blur-xl p-8 shadow-[0_16px_40px_rgba(27,42,107,0.08)]">
-                <h3 className="text-xl md:text-2xl font-bold text-brand-primary mb-8">Education</h3>
+                <h3 className="text-xl md:text-2xl font-bold text-brand-primary mb-8">教育经历</h3>
                 <div className="flex flex-col gap-8">
                   <div className="flex flex-col md:flex-row gap-3 md:gap-6">
-                    <div className="md:w-28 flex-shrink-0 text-sm font-mono text-brand-primary/45 pt-1">2024 — Now</div>
+                    <div className="md:w-28 flex-shrink-0 text-sm font-mono text-brand-primary/45 pt-1">2024 — 至今</div>
                     <div className="flex flex-col gap-1.5">
-                      <h4 className="text-lg font-bold text-brand-primary">Savannah College of Art and Design</h4>
-                      <p className="text-brand-primary/72">Master of Fine Art in Interactive Design</p>
-                      <p className="text-sm text-brand-primary/50">Savannah, Georgia</p>
+                      <h4 className="text-lg font-bold text-brand-primary">萨凡纳艺术设计学院</h4>
+                      <p className="text-brand-primary/72">互动设计艺术硕士（MFA）</p>
+                      <p className="text-sm text-brand-primary/50">佐治亚州，萨凡纳</p>
                     </div>
                   </div>
                   <div className="flex flex-col md:flex-row gap-3 md:gap-6">
                     <div className="md:w-28 flex-shrink-0 text-sm font-mono text-brand-primary/45 pt-1">2019 — 2023</div>
                     <div className="flex flex-col gap-1.5">
-                      <h4 className="text-lg font-bold text-brand-primary">University of Delaware</h4>
-                      <p className="text-brand-primary/72">Bachelor’s Degree in Computer Science</p>
-                      <p className="text-sm text-brand-primary/50">Newark, Delaware</p>
+                      <h4 className="text-lg font-bold text-brand-primary">特拉华大学</h4>
+                      <p className="text-brand-primary/72">计算机科学学士</p>
+                      <p className="text-sm text-brand-primary/50">特拉华州，纽瓦克</p>
                     </div>
                   </div>
                 </div>
@@ -383,9 +383,9 @@ export default function Home() {
 
               <div className="md:col-span-5 flex flex-col gap-6">
                 <div className="rounded-[24px] border border-white/70 bg-white/78 backdrop-blur-xl p-8 shadow-[0_16px_40px_rgba(27,42,107,0.08)]">
-                  <h3 className="text-xl md:text-2xl font-bold text-brand-primary mb-6">Core Skills</h3>
+                  <h3 className="text-xl md:text-2xl font-bold text-brand-primary mb-6">核心技能</h3>
                   <div className="flex flex-wrap gap-2.5">
-                    {["Figma", "User Research", "Usability Testing", "Interaction Design", "Design Systems", "Prototyping", "JavaScript", "Python", "Unity", "AI-assisted Development"].map((skill) => (
+                    {["Figma", "用户研究", "可用性测试", "交互设计", "设计系统", "原型设计", "JavaScript", "Python", "Unity", "AI 辅助开发"].map((skill) => (
                       <span key={skill} className="px-3 py-1.5 bg-black/5 text-brand-primary/72 text-sm rounded-full border border-black/5">
                         {skill}
                       </span>
@@ -394,15 +394,15 @@ export default function Home() {
                 </div>
 
                 <div className="rounded-[24px] border border-white/70 bg-white/78 backdrop-blur-xl p-8 shadow-[0_16px_40px_rgba(27,42,107,0.08)]">
-                  <h3 className="text-xl md:text-2xl font-bold text-brand-primary mb-6">Languages</h3>
+                  <h3 className="text-xl md:text-2xl font-bold text-brand-primary mb-6">语言能力</h3>
                   <ul className="flex flex-col gap-3 text-brand-primary/72">
                     <li className="flex justify-between items-center">
-                      <span>Chinese</span>
-                      <span className="text-sm font-mono text-brand-primary/45">Native</span>
+                      <span>中文</span>
+                      <span className="text-sm font-mono text-brand-primary/45">母语</span>
                     </li>
                     <li className="flex justify-between items-center">
-                      <span>English</span>
-                      <span className="text-sm font-mono text-brand-primary/45">Proficient</span>
+                      <span>英文</span>
+                      <span className="text-sm font-mono text-brand-primary/45">熟练</span>
                     </li>
                   </ul>
                 </div>
@@ -416,14 +416,14 @@ export default function Home() {
       <footer className="w-full border-t border-brand-primary/10 z-10">
         <div className="w-full max-w-[1280px] mx-auto px-6 md:px-[80px] py-16 flex flex-col md:flex-row md:items-end justify-between gap-10">
           <div className="flex flex-col gap-2">
-            <p className="text-xs font-mono uppercase tracking-[0.18em] text-brand-primary/40">Let&apos;s connect</p>
+            <p className="text-xs font-mono uppercase tracking-[0.18em] text-brand-primary/40">联系我</p>
             <a href="mailto:zyc1108@outlook.com" className="text-lg font-medium text-brand-primary hover:opacity-60 transition-opacity">
               zyc1108@outlook.com
             </a>
           </div>
           <div className="flex flex-col items-start md:items-end gap-1">
             <span className="text-base font-medium text-brand-primary">Yuchen Zhang</span>
-            <span className="text-xs font-mono text-brand-primary/40">UX / Product Designer · © 2026</span>
+            <span className="text-xs font-mono text-brand-primary/40">UX / 产品设计师 · © 2026</span>
             <span className="text-xs font-mono text-brand-primary/25">Built with vibe coding + Claude</span>
           </div>
         </div>
