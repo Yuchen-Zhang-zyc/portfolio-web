@@ -432,6 +432,11 @@ export default function AgroxProject() {
         {/* Background Blobs */}
         <div className="ag-page-bg"></div>
 
+        {/* ── Back link ── */}
+        <div style={{ padding: '14px 0 0', position: 'relative', zIndex: 10 }} className="ag-container">
+          <a href="/" style={{ fontSize: '12px', color: 'rgba(100,116,139,0.7)', textDecoration: 'none', fontFamily: 'monospace', letterSpacing: '0.06em' }}>← Home</a>
+        </div>
+
         {/* ── HERO SECTION ── */}
         <section className="ag-hero ag-container">
           <h1 className="ag-hero-title">Agrox</h1>

@@ -23,6 +23,11 @@ export default function NestThermostatProject() {
     <link rel="stylesheet" href="/projects/nest-thermostat/nest-styles.css" />
     <div className="nest-page">
 
+      {/* ── Back link ── */}
+      <div style={{ padding: '14px 48px 0', position: 'relative', zIndex: 10 }}>
+        <a href="/" style={{ fontSize: '12px', color: 'rgba(255,255,255,0.45)', textDecoration: 'none', fontFamily: 'monospace', letterSpacing: '0.06em' }}>← Home</a>
+      </div>
+
       {/* ══ HERO ══ */}
       <div className="hero">
         <span className="hero-label">UX / Product Redesign · SCAD · 2026</span>

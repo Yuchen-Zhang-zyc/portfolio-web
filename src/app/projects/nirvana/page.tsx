@@ -258,6 +258,11 @@ export default function NirvanaPage() {
 
       <a href="#research" className="nv-skip">Skip to main content</a>
 
+      {/* ── Back link ── */}
+      <div style={{ padding: "14px 48px" }}>
+        <a href="/" style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", textDecoration: "none", fontFamily: "monospace", letterSpacing: "0.06em" }}>← Home</a>
+      </div>
+
       {/* ── Sticky Subnav ── */}
       <nav className="nv-subnav" aria-label="Case study sections">
         <span className="nv-subnav-brand">&lsquo;Nirvana&rsquo;</span>
@@ -732,7 +737,7 @@ export default function NirvanaPage() {
                 <div className="nv-tag-group">
                   <div className="nv-tag-group-label">Online</div>
                   <div className="nv-tags">
-                    {["Forum", "Blog", "Magazine", "Simulation", "Test Drive", "APP"].map((t) => (
+                    {["Forum", "Blog", "Magazine", "Simulation", "Test Drive", "APP", "YouTube", "Social Media", "Live Stream", "AR Preview", "Community", "Review"].map((t) => (
                       <span className="nv-tag" key={t}>{t}</span>
                     ))}
                   </div>
@@ -742,7 +747,7 @@ export default function NirvanaPage() {
                 <div className="nv-tag-group">
                   <div className="nv-tag-group-label">Offline</div>
                   <div className="nv-tags">
-                    {["Technician", "Family", "Friend"].map((t) => (
+                    {["Technician", "Family", "Friend", "Car Show", "Auto Parts Store", "Workshop", "Dealership", "Car Club", "Showroom", "Expert Consultation", "Test Drive Event", "Community Meetup"].map((t) => (
                       <span className="nv-tag" key={t}>{t}</span>
                     ))}
                   </div>

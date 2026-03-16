@@ -185,7 +185,7 @@ export default function Home() {
               </div>
 
               <div className="w-full aspect-[16/10] bg-[#1E1E1E] relative overflow-hidden">
-                <div className="w-full h-full bg-[url('/nest-mockup.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
+                <div className="w-full h-full bg-[url('/nest-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
               </div>
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
@@ -217,7 +217,7 @@ export default function Home() {
               </div>
 
               <div className="w-full aspect-[16/10] bg-white relative overflow-hidden">
-                <div className="w-full h-full bg-[url('/dosecare-mockup.png')] bg-contain bg-no-repeat bg-center group-hover:scale-105 transition-transform duration-700"></div>
+                <div className="w-full h-full bg-[url('/dosecare-homepage.png')] bg-contain bg-no-repeat bg-center group-hover:scale-105 transition-transform duration-700"></div>
               </div>
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
@@ -249,7 +249,7 @@ export default function Home() {
               </div>
 
               <div className="w-full aspect-[16/10] bg-[#EAE3DB] relative overflow-hidden">
-                <div className="w-full h-full bg-[url('/agrox-mockup.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
+                <div className="w-full h-full bg-[url('/agrox-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
               </div>
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
@@ -281,7 +281,7 @@ export default function Home() {
               </div>
 
               <div className="w-full aspect-[16/10] bg-[#EAE3DB] relative overflow-hidden">
-                <div className="w-full h-full bg-[url('/nirvana-mockup.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
+                <div className="w-full h-full bg-[url('/nirvana-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
               </div>
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
@@ -313,7 +313,7 @@ export default function Home() {
               </div>
 
               <div className="w-full aspect-[16/10] bg-[#898989] relative overflow-hidden">
-                <div className="w-full h-full bg-[url('/vr-sim-mockup.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
+                <div className="w-full h-full bg-[url('/vr-simulation-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
               </div>
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
