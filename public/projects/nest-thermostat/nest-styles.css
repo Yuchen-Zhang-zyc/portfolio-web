@@ -3,8 +3,8 @@
   --bg: #0A0A0A;
   --bg2: #0E0E0E;
   --white: #F5F5F5;
-  --gray: rgba(255,255,255,0.42);
-  --gray2: rgba(255,255,255,0.22);
+  --gray: rgba(255,255,255,0.62);
+  --gray2: rgba(255,255,255,0.50);
   --border: rgba(255,255,255,0.08);
   --orange: #E8420A;
   --orange-dim: rgba(232,66,10,0.12);
@@ -238,6 +238,12 @@ footer.nest-footer { border-top: 1px solid var(--border); padding: 48px 40px; di
   color: var(--white);
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal { transition: none; opacity: 1; transform: none; }
+  .hero-label, .hero h1, .hero-sub, .hero-images, .hero-meta { animation: none; opacity: 1; transform: none; }
+  .hero-glow-heat, .hero-glow-cool { animation: none; }
 }
 
 @media (max-width: 860px) {

@@ -1,5 +1,5 @@
 "use client";
-import { useEffect } from 'react';
+import React, { useEffect } from 'react';
 
 export default function NestThermostatProject() {
   useEffect(() => {
@@ -25,13 +25,13 @@ export default function NestThermostatProject() {
 
       {/* ══ HERO ══ */}
       <div className="hero">
-        <span className="hero-label">UX / Product Redesign · SCAD · 2024</span>
+        <span className="hero-label">UX / Product Redesign · SCAD · 2026</span>
         <h1>Simplifying smart<br />temperature <em>control.</em></h1>
         <p className="hero-sub">A redesign of the Nest thermostat ecosystem — removing cognitive friction, making system states legible, and unifying the experience across devices.</p>
 
         <div className="hero-images" style={{ position: 'relative' }}>
-          <div className="hero-glow hero-glow-heat"></div>
-          <div className="hero-glow hero-glow-cool"></div>
+          <div className="hero-glow hero-glow-heat" aria-hidden="true"></div>
+          <div className="hero-glow hero-glow-cool" aria-hidden="true"></div>
           <img src="/projects/nest-thermostat/hero_phones.png" alt="Nest app redesign" style={{ height: '100%', objectFit: 'contain', position: 'relative', zIndex: 1 }} />
         </div>
 
@@ -244,55 +244,61 @@ export default function NestThermostatProject() {
           {/* 10 guideline cards, 2-col grid */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '16px', marginTop: '56px' }} className="reveal d2">
 
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 28px', background: '#141414', border: '1px solid var(--border)', borderRadius: '16px' }}>
-              <span style={{ fontSize: '15px', fontWeight: 400, color: 'var(--white)' }}>Dark Theme</span>
-              <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: '#1A1A1A', border: '1px solid rgba(255,255,255,0.15)' }}></div>
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 28px', background: '#141414', border: '1px solid var(--border)', borderRadius: '16px' }}>
-              <span style={{ fontSize: '15px', fontWeight: 400, color: 'var(--white)' }}>Minimalist Font</span>
-              <span style={{ fontSize: '22px', fontWeight: 800, color: 'var(--white)', letterSpacing: '-0.02em' }}>ABC</span>
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 28px', background: '#141414', border: '1px solid var(--border)', borderRadius: '16px' }}>
-              <span style={{ fontSize: '15px', fontWeight: 400, color: 'var(--white)' }}>Rounded Icons</span>
-              <img src="/projects/nest-thermostat/icon_rounded_icons.svg" width={40} height={40} alt="Rounded Icons" style={{ display: 'block' }} />
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 28px', background: '#141414', border: '1px solid var(--border)', borderRadius: '16px' }}>
-              <span style={{ fontSize: '15px', fontWeight: 400, color: 'var(--white)' }}>Rounded Corners</span>
-              <img src="/projects/nest-thermostat/icon_rounded_corners.svg" width={40} height={40} alt="Rounded Corners" style={{ display: 'block' }} />
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 28px', background: '#141414', border: '1px solid var(--border)', borderRadius: '16px' }}>
-              <span style={{ fontSize: '15px', fontWeight: 400, color: 'var(--white)' }}>Warm-Neutral Color</span>
-              <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: '#E8420A' }}></div>
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 28px', background: '#141414', border: '1px solid var(--border)', borderRadius: '16px' }}>
-              <span style={{ fontSize: '15px', fontWeight: 400, color: 'var(--white)' }}>Gradient Elements</span>
-              <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: 'radial-gradient(circle at 35% 35%, #666, #1A1A1A)' }}></div>
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 28px', background: '#141414', border: '1px solid var(--border)', borderRadius: '16px' }}>
-              <span style={{ fontSize: '15px', fontWeight: 400, color: 'var(--white)' }}>Average Information Density</span>
-              <img src="/projects/nest-thermostat/icon_info_density.svg" width={44} height={44} alt="Average Information Density" style={{ display: 'block' }} />
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 28px', background: '#141414', border: '1px solid var(--border)', borderRadius: '16px' }}>
-              <span style={{ fontSize: '15px', fontWeight: 400, color: 'var(--white)' }}>Card Elements</span>
-              <img src="/projects/nest-thermostat/icon_card_elements.svg" width={44} height={44} alt="Card Elements" style={{ display: 'block' }} />
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 28px', background: '#141414', border: '1px solid var(--border)', borderRadius: '16px' }}>
-              <span style={{ fontSize: '15px', fontWeight: 400, color: 'var(--white)' }}>Monochrome</span>
-              <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: 'linear-gradient(to right, #888 50%, #1A1A1A 50%)' }}></div>
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '24px 28px', background: '#141414', border: '1px solid var(--border)', borderRadius: '16px' }}>
-              <span style={{ fontSize: '15px', fontWeight: 400, color: 'var(--white)' }}>Focal Point</span>
-              <img src="/projects/nest-thermostat/icon_focal_point.svg" width={44} height={44} alt="Focal Point" style={{ display: 'block' }} />
-            </div>
+            {([
+              {
+                title: 'Dark Theme',
+                visual: (
+                  <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: '#1a1a1a', border: '1.5px solid rgba(255,255,255,0.4)', flexShrink: 0 }} />
+                ),
+              },
+              {
+                title: 'Minimalist Font',
+                visual: <span style={{ fontSize: '22px', fontWeight: 800, color: '#f5f5f5', letterSpacing: '-0.44px', flexShrink: 0, lineHeight: 1 }}>ABC</span>,
+              },
+              {
+                title: 'Rounded Linear Icons',
+                visual: <img src="/projects/nest-thermostat/gl_linear_icons.svg" width={44} height={44} alt="Rounded Linear Icons" style={{ display: 'block', flexShrink: 0 }} />,
+              },
+              {
+                title: 'Rounded Corners',
+                visual: <img src="/projects/nest-thermostat/gl_rounded_corners.svg" width={40} height={40} alt="Rounded Corners" style={{ display: 'block', flexShrink: 0 }} />,
+              },
+              {
+                title: 'Transparent',
+                visual: (
+                  <div style={{ position: 'relative', width: '44px', height: '44px', borderRadius: '12px', background: '#ff7b35', flexShrink: 0, overflow: 'hidden' }}>
+                    <div style={{ position: 'absolute', top: 0, right: 0, width: '50%', height: '100%', background: 'rgba(255,255,255,0.5)' }} />
+                  </div>
+                ),
+              },
+              {
+                title: 'Gradient Elements',
+                visual: (
+                  <div style={{ width: '44px', height: '44px', borderRadius: '22px', flexShrink: 0, background: 'linear-gradient(180deg, #ffa719 0%, #de4e00 51%, #9a0000 100%)' }} />
+                ),
+              },
+              {
+                title: 'Average Information Density',
+                visual: <img src="/projects/nest-thermostat/gl_info_density.svg" width={44} height={44} alt="Average Information Density" style={{ display: 'block', flexShrink: 0 }} />,
+              },
+              {
+                title: 'Card Elements',
+                visual: <img src="/projects/nest-thermostat/gl_card_elements.svg" width={44} height={44} alt="Card Elements" style={{ display: 'block', flexShrink: 0 }} />,
+              },
+              {
+                title: 'Monochrome',
+                visual: <img src="/projects/nest-thermostat/gl_monochrome.svg" width={42} height={42} alt="Monochrome" style={{ display: 'block', flexShrink: 0 }} />,
+              },
+              {
+                title: 'Focal Point',
+                visual: <img src="/projects/nest-thermostat/gl_focal_point.svg" width={35} height={35} alt="Focal Point" style={{ display: 'block', flexShrink: 0 }} />,
+              },
+            ] as { title: string; visual: React.ReactNode }[]).map(({ title, visual }) => (
+              <div key={title} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 29px', height: '90px', background: '#141414', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '16px' }}>
+                <span style={{ fontSize: '15px', fontWeight: 400, color: '#f5f5f5', whiteSpace: 'nowrap' }}>{title}</span>
+                {visual}
+              </div>
+            ))}
 
           </div>
 
@@ -362,44 +368,6 @@ export default function NestThermostatProject() {
 
             </div>
 
-            {/* Buttons */}
-            <div style={{ marginTop: '48px' }} className="reveal d2">
-              <p style={{ fontSize: '13px', fontWeight: 500, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--gray)', marginBottom: '24px' }}>Buttons</p>
-              <div style={{ display: 'flex', gap: '16px', flexWrap: 'wrap' }}>
-                <div style={{ border: '1px solid var(--border)', borderRadius: '12px', padding: '20px 24px', display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '10px' }}>
-                  <div style={{ display: 'flex', gap: '12px', alignItems: 'center' }}>
-                    <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: 'rgba(255,255,255,0.2)', border: '1px solid rgba(255,255,255,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v5M5 4.27A5 5 0 1 0 8 3" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>
-                    </div>
-                    <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: 'rgba(255,255,255,1)', border: '1px solid rgba(255,255,255,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2v5M5 4.27A5 5 0 1 0 8 3" stroke="#0A0A0A" strokeWidth="1.5" strokeLinecap="round"/></svg>
-                    </div>
-                  </div>
-                  <div style={{ display: 'flex', gap: '20px' }}>
-                    <div style={{ textAlign: 'center' }}><span style={{ fontSize: '10px', color: 'var(--gray)', display: 'block' }}>#FAFAFA</span><span style={{ fontSize: '10px', color: 'var(--gray)' }}>20%</span></div>
-                    <div style={{ textAlign: 'center' }}><span style={{ fontSize: '10px', color: 'var(--gray)', display: 'block' }}>#FAFAFA</span><span style={{ fontSize: '10px', color: 'var(--gray)' }}>100%</span></div>
-                  </div>
-                </div>
-                <div style={{ border: '1px solid var(--border)', borderRadius: '12px', padding: '20px 24px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '6px' }}>
-                  <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: 'rgba(255,255,255,0.15)', border: '1px solid rgba(255,255,255,0.25)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                    <span style={{ fontSize: '16px', fontWeight: 600, color: 'white' }}>S</span>
-                  </div>
-                  <span style={{ fontSize: '10px', color: 'var(--gray)' }}>Weight – 1pt</span>
-                  <span style={{ fontSize: '10px', color: 'var(--gray)' }}>Corner – 30</span>
-                </div>
-                <div style={{ border: '1px solid var(--border)', borderRadius: '12px', padding: '20px 24px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                    <div style={{ width: '44px', height: '44px', borderRadius: '12px', background: 'rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                      <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 3c3.87 0 7 3.13 7 7s-3.13 7-7 7-7-3.13-7-7 3.13-7 7-7zm0 3v4l3 1.5" stroke="white" strokeWidth="1.5" strokeLinecap="round"/></svg>
-                    </div>
-                    <div style={{ display: 'flex', flexDirection: 'column', gap: '3px' }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><div style={{ width: '40px', height: '2px', background: 'rgba(255,255,255,0.3)', borderRadius: '1px' }}></div><span style={{ fontSize: '10px', color: 'var(--gray)' }}>70px</span></div>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><div style={{ width: '20px', height: '2px', background: 'rgba(255,255,255,0.3)', borderRadius: '1px' }}></div><span style={{ fontSize: '10px', color: 'var(--gray)' }}>20px</span></div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -418,7 +386,7 @@ export default function NestThermostatProject() {
               <div className="reveal d1">
                 <div className="duo">
                   <img className="img-device" src="/projects/nest-thermostat/hifi_01_device.png" alt="Heating state device" />
-                  <div className="phone-wrap"><img src="/projects/nest-thermostat/hifi_01_phone.png" alt="Heating state phone" /></div>
+                  <img src="/projects/nest-thermostat/hifi_01_phone.png" alt="Heating state phone" style={{ width: '185px', display: 'block', boxShadow: '0 40px 80px rgba(0,0,0,0.65)' }} />
                 </div>
               </div>
             </div>
@@ -489,82 +457,183 @@ export default function NestThermostatProject() {
       {/* ══ SECTION 08: USABILITY TESTING ══ */}
       <section className="section alt bordered" id="testing">
         <div className="wrap">
-          <div className="reveal"><div className="eyebrow">08 — Usability Testing</div></div>
-          <div className="reveal d1"><h2 className="ttl">Testing the first<br />version with real users.</h2></div>
-          <div className="reveal d2"><p className="bod">After completing the initial HiFi prototype, we conducted a usability test to evaluate core interaction flows and identify friction before final iteration.</p></div>
+          <div className="reveal"><div className="eyebrow">08 — Evaluative Study</div></div>
+          <div className="reveal d1"><h2 className="ttl">Testing the redesign<br />with real users.</h2></div>
+          <div className="reveal d2"><p className="bod">A moderated usability study with 6 digitally-fluent participants evaluated both the thermostat hardware prototype and the mobile app across 9 tasks total.</p></div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '48px', marginTop: '64px' }}>
+          {/* Method pills */}
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '40px' }} className="reveal d1">
+            {['Moderated Think-Aloud', 'SEQ Ratings', 'System Usability Scale', 'A/B Testing'].map(m => (
+              <span key={m} style={{ fontSize: '12px', fontWeight: 500, color: 'var(--gray)', border: '1px solid var(--border)', borderRadius: '100px', padding: '6px 16px' }}>{m}</span>
+            ))}
+          </div>
 
-            {/* Test setup */}
-            <div className="reveal d1">
-              <p style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '20px' }}>Test Setup</p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '1px', border: '1px solid var(--border)', borderRadius: '14px', overflow: 'hidden' }}>
-                <div style={{ padding: '18px 22px', background: 'var(--bg2)', display: 'grid', gridTemplateColumns: '100px 1fr', gap: '16px' }}>
-                  <span style={{ fontSize: '12px', color: 'var(--gray2)' }}>Participants</span>
-                  <span style={{ fontSize: '14px', fontWeight: 500 }}>5 users</span>
-                </div>
-                <div style={{ padding: '18px 22px', background: 'var(--bg2)', display: 'grid', gridTemplateColumns: '100px 1fr', gap: '16px', borderTop: '1px solid var(--border)' }}>
-                  <span style={{ fontSize: '12px', color: 'var(--gray2)' }}>Method</span>
-                  <span style={{ fontSize: '14px', fontWeight: 500 }}>Think-aloud protocol</span>
-                </div>
-                <div style={{ padding: '18px 22px', background: 'var(--bg2)', display: 'grid', gridTemplateColumns: '100px 1fr', gap: '16px', borderTop: '1px solid var(--border)' }}>
-                  <span style={{ fontSize: '12px', color: 'var(--gray2)' }}>Platform</span>
-                  <span style={{ fontSize: '14px', fontWeight: 500 }}>Figma prototype</span>
-                </div>
-                <div style={{ padding: '18px 22px', background: 'var(--bg2)', display: 'grid', gridTemplateColumns: '100px 1fr', gap: '16px', borderTop: '1px solid var(--border)' }}>
-                  <span style={{ fontSize: '12px', color: 'var(--gray2)' }}>Duration</span>
-                  <span style={{ fontSize: '14px', fontWeight: 500 }}>~30 min / session</span>
+          {/* Task results — two tables */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginTop: '56px' }} className="reveal d1">
+
+            {/* Thermostat */}
+            <div>
+              <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '14px' }}>Thermostat Hardware</p>
+              <div style={{ border: '1px solid var(--border)', borderRadius: '14px', overflow: 'hidden' }}>
+                {[
+                  { task: 'T1', label: 'Adjust temperature', unassisted: 100, time: '3.6s' },
+                  { task: 'T2', label: 'Create schedule', unassisted: 100, time: '53s' },
+                  { task: 'T3', label: 'Modify schedule', unassisted: 100, time: '57s' },
+                ].map((row, i) => (
+                  <div key={row.task} style={{ display: 'grid', gridTemplateColumns: '32px 1fr 56px 52px', gap: '12px', alignItems: 'center', padding: '14px 18px', background: 'var(--bg2)', borderTop: i > 0 ? '1px solid var(--border)' : undefined }}>
+                    <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--orange)' }}>{row.task}</span>
+                    <span style={{ fontSize: '13px', fontWeight: 500 }}>{row.label}</span>
+                    <span style={{ fontSize: '12px', color: '#6DCF9E', fontWeight: 600 }}>{row.unassisted}%</span>
+                    <span style={{ fontSize: '12px', color: 'var(--gray2)', textAlign: 'right' }}>{row.time}</span>
+                  </div>
+                ))}
+                <div style={{ padding: '8px 18px', background: '#0E0E0E', borderTop: '1px solid var(--border)', display: 'flex', gap: '20px' }}>
+                  <span style={{ fontSize: '10px', color: 'var(--gray2)' }}><span style={{ color: '#6DCF9E', fontWeight: 600 }}>%</span> unassisted</span>
+                  <span style={{ fontSize: '10px', color: 'var(--gray2)' }}>avg time</span>
                 </div>
               </div>
             </div>
 
-            {/* Tasks */}
-            <div className="reveal d2">
-              <p style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '20px' }}>Test Tasks</p>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-                <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', padding: '18px 20px', border: '1px solid var(--border)', borderRadius: '12px', background: 'var(--bg2)' }}>
-                  <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--orange)', flexShrink: 0 }}>T1</span>
-                  <div><div style={{ fontSize: '14px', fontWeight: 600, marginBottom: '4px' }}>Set a target temperature</div><div style={{ fontSize: '13px', color: 'var(--gray)' }}>Can users adjust temperature without understanding heating/cooling modes?</div></div>
-                </div>
-                <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', padding: '18px 20px', border: '1px solid var(--border)', borderRadius: '12px', background: 'var(--bg2)' }}>
-                  <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--orange)', flexShrink: 0 }}>T2</span>
-                  <div><div style={{ fontSize: '14px', fontWeight: 600, marginBottom: '4px' }}>Create a weekly schedule</div><div style={{ fontSize: '13px', color: 'var(--gray)' }}>Can users set up Sleep, Away, Wake Up events across multiple days?</div></div>
-                </div>
-                <div style={{ display: 'flex', gap: '16px', alignItems: 'flex-start', padding: '18px 20px', border: '1px solid var(--border)', borderRadius: '12px', background: 'var(--bg2)' }}>
-                  <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--orange)', flexShrink: 0 }}>T3</span>
-                  <div><div style={{ fontSize: '14px', fontWeight: 600, marginBottom: '4px' }}>Activate and read Eco mode</div><div style={{ fontSize: '13px', color: 'var(--gray)' }}>Do users understand the energy savings feedback and what it means?</div></div>
+            {/* Mobile App */}
+            <div>
+              <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '14px' }}>Mobile App</p>
+              <div style={{ border: '1px solid var(--border)', borderRadius: '14px', overflow: 'hidden' }}>
+                {[
+                  { task: 'T1', label: 'Adjust temperature',       unassisted: 100, time: '4.5s' },
+                  { task: 'T2', label: 'Create schedule',           unassisted: 83,  time: '29s'  },
+                  { task: 'T3', label: 'Customize mode',            unassisted: 33,  time: '48s'  },
+                  { task: 'T4', label: 'Apply mode to days',        unassisted: 50,  time: '33s'  },
+                  { task: 'T5', label: 'Modify schedule',           unassisted: 50,  time: '22s'  },
+                  { task: 'T6', label: 'Set Work Mode timer',       unassisted: 50,  time: '34s'  },
+                ].map((row, i) => (
+                  <div key={row.task} style={{ display: 'grid', gridTemplateColumns: '32px 1fr 56px 52px', gap: '12px', alignItems: 'center', padding: '14px 18px', background: 'var(--bg2)', borderTop: i > 0 ? '1px solid var(--border)' : undefined }}>
+                    <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--orange)' }}>{row.task}</span>
+                    <span style={{ fontSize: '13px', fontWeight: 500 }}>{row.label}</span>
+                    <span style={{ fontSize: '12px', fontWeight: 600, color: row.unassisted === 100 ? '#6DCF9E' : row.unassisted >= 80 ? '#8FD4A8' : row.unassisted >= 50 ? '#E8B96A' : '#E87A74' }}>{row.unassisted}%</span>
+                    <span style={{ fontSize: '12px', color: 'var(--gray2)', textAlign: 'right' }}>{row.time}</span>
+                  </div>
+                ))}
+                <div style={{ padding: '8px 18px', background: '#0E0E0E', borderTop: '1px solid var(--border)', display: 'flex', gap: '20px' }}>
+                  <span style={{ fontSize: '10px', color: 'var(--gray2)' }}><span style={{ color: '#6DCF9E', fontWeight: 600 }}>%</span> unassisted</span>
+                  <span style={{ fontSize: '10px', color: 'var(--gray2)' }}>avg time</span>
                 </div>
               </div>
             </div>
           </div>
 
-          {/* Key Findings */}
-          <div style={{ marginTop: '64px' }} className="reveal d2">
-            <p style={{ fontSize: '13px', fontWeight: 600, letterSpacing: '0.06em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '20px' }}>Key Findings</p>
-
-            <div style={{ background: 'var(--bg2)', border: '2px dashed rgba(255,255,255,0.1)', borderRadius: '20px', padding: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '12px', marginBottom: '32px', minHeight: '200px' }}>
-              <svg width="32" height="32" viewBox="0 0 32 32" fill="none"><rect x="2" y="2" width="28" height="28" rx="6" stroke="rgba(255,255,255,0.2)" strokeWidth="1.5" strokeDasharray="4 3"/><line x1="16" y1="10" x2="16" y2="22" stroke="rgba(255,255,255,0.2)" strokeWidth="1.5" strokeLinecap="round"/><line x1="10" y1="16" x2="22" y2="16" stroke="rgba(255,255,255,0.2)" strokeWidth="1.5" strokeLinecap="round"/></svg>
-              <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.2)', textAlign: 'center' }}>Test session photos / affinity diagram<br />Upload when available</p>
-            </div>
-
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3,1fr)', gap: '1px', background: 'var(--border)', border: '1px solid var(--border)', borderRadius: '14px', overflow: 'hidden' }}>
-              <div style={{ background: 'var(--bg2)', padding: '28px 24px' }}>
-                <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--orange)', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '12px' }}>Finding 01</div>
-                <div style={{ fontSize: '15px', fontWeight: 600, marginBottom: '8px' }}>Temperature input was intuitive</div>
-                <p style={{ fontSize: '13px', color: 'var(--gray)', lineHeight: 1.65 }}>All 5 users successfully set a target temperature without hesitation. No one asked about heating/cooling mode.</p>
-              </div>
-              <div style={{ background: 'var(--bg2)', padding: '28px 24px', borderLeft: '1px solid var(--border)' }}>
-                <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--orange)', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '12px' }}>Finding 02</div>
-                <div style={{ fontSize: '15px', fontWeight: 600, marginBottom: '8px' }}>Schedule event naming caused confusion</div>
-                <p style={{ fontSize: '13px', color: 'var(--gray)', lineHeight: 1.65 }}>3 of 5 users were unsure what &quot;Away&quot; meant as a temperature event. Labels needed clearer context.</p>
-              </div>
-              <div style={{ background: 'var(--bg2)', padding: '28px 24px', borderLeft: '1px solid var(--border)' }}>
-                <div style={{ fontSize: '11px', fontWeight: 700, color: 'var(--orange)', letterSpacing: '0.08em', textTransform: 'uppercase', marginBottom: '12px' }}>Finding 03</div>
-                <div style={{ fontSize: '15px', fontWeight: 600, marginBottom: '8px' }}>Eco savings data was compelling</div>
-                <p style={{ fontSize: '13px', color: 'var(--gray)', lineHeight: 1.65 }}>Users responded positively to the dollar savings display. 4 of 5 said it would change how they use the thermostat.</p>
-              </div>
+          {/* 6 Insights */}
+          <div style={{ marginTop: '72px' }} className="reveal d2">
+            <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '24px' }}>Key Insights &amp; Solutions</p>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1px', background: 'var(--border)', border: '1px solid var(--border)', borderRadius: '18px', overflow: 'hidden' }}>
+              {[
+                {
+                  id: '01', scope: 'Thermostat · T2',
+                  title: 'No confirmation after schedule save',
+                  stat: '33% of users were uncertain the schedule had been set.',
+                  fix: 'Add a clear confirmation state — visual message, animation, or return to home showing the updated schedule.',
+                },
+                {
+                  id: '02', scope: 'Thermostat · T3',
+                  title: 'Unclear time→temperature transition',
+                  stat: '50% couldn\'t re-identify the previously set time; 50% confused by the step change.',
+                  fix: 'Auto-focus the dial on the previous time on entry. Animate the transition from time to temperature editing.',
+                },
+                {
+                  id: '03', scope: 'App · T2',
+                  title: 'Tap vs drag gestures not discoverable',
+                  stat: 'Users did not know how to interact with schedule time slots.',
+                  fix: 'Provide just-in-time visual gesture hints: "Hold to add · Drag to adjust" on first entry.',
+                },
+                {
+                  id: '04', scope: 'App · T3',
+                  title: 'Mode customisation entry hidden',
+                  stat: '83% could not locate where to edit a mode due to unclear entry cues.',
+                  fix: '"Tap" onboarding tooltip on the mode card to surface the edit entry point.',
+                },
+                {
+                  id: '05', scope: 'App · T4',
+                  title: 'Applying modes to days unclear',
+                  stat: '66% confused by the top-right icon; unsure how to assign a mode to specific days.',
+                  fix: 'Add an explicit day-selection step before mode assignment, supporting both single and multi-day views.',
+                },
+                {
+                  id: '06', scope: 'App · T6',
+                  title: 'Timer and schedule modes conflated',
+                  stat: '50% confused the timer feature with the recurring schedule.',
+                  fix: 'Let users set a timer duration directly without first selecting a mode. A/B test: 75% preferred this direct flow.',
+                },
+              ].map((ins, i) => (
+                <div key={ins.id} style={{ background: 'var(--bg2)', padding: '30px 28px' }}>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: '14px' }}>
+                    <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--orange)', letterSpacing: '0.08em', textTransform: 'uppercase' }}>Insight {ins.id}</span>
+                    <span style={{ fontSize: '10px', color: 'var(--gray2)', background: 'rgba(255,255,255,0.05)', padding: '3px 10px', borderRadius: '100px', border: '1px solid var(--border)' }}>{ins.scope}</span>
+                  </div>
+                  <div style={{ fontSize: '15px', fontWeight: 600, marginBottom: '10px', lineHeight: 1.3 }}>{ins.title}</div>
+                  <p style={{ fontSize: '13px', color: 'var(--gray)', lineHeight: 1.65, marginBottom: '14px' }}>{ins.stat}</p>
+                  <div style={{ display: 'flex', gap: '8px', alignItems: 'flex-start', paddingTop: '14px', borderTop: '1px solid var(--border)' }}>
+                    <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--orange)', flexShrink: 0, marginTop: '1px' }}>→</span>
+                    <p style={{ fontSize: '13px', color: 'var(--gray)', lineHeight: 1.6 }}>{ins.fix}</p>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
+
+          {/* SUS Score + A/B */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginTop: '32px' }} className="reveal d2">
+
+            {/* SUS */}
+            <div style={{ border: '1px solid var(--border)', borderRadius: '16px', padding: '32px 28px', background: 'var(--bg2)' }}>
+              <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '20px' }}>SUS Score</p>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', marginBottom: '8px' }}>
+                <span style={{ fontSize: '56px', fontWeight: 800, letterSpacing: '-0.05em', lineHeight: 1, color: '#E8B96A' }}>47.5</span>
+                <span style={{ fontSize: '14px', color: 'var(--gray)' }}>/ 100</span>
+              </div>
+              <p style={{ fontSize: '13px', color: 'var(--gray)', lineHeight: 1.6, marginBottom: '20px' }}>Below average threshold (68). Basic tasks worked smoothly — advanced features drove the score down.</p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+                {[
+                  { label: 'Mean', val: '47.5' },
+                  { label: 'Std deviation', val: '13.9' },
+                  { label: '95% CI', val: '33.6 – 61.4' },
+                  { label: 'T-value', val: '2.57' },
+                ].map(r => (
+                  <div key={r.label} style={{ display: 'flex', justifyContent: 'space-between', fontSize: '12px', padding: '6px 0', borderBottom: '1px solid var(--border)' }}>
+                    <span style={{ color: 'var(--gray2)' }}>{r.label}</span>
+                    <span style={{ fontWeight: 600 }}>{r.val}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* A/B */}
+            <div style={{ border: '1px solid var(--border)', borderRadius: '16px', padding: '32px 28px', background: 'var(--bg2)' }}>
+              <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '20px' }}>A/B Test — Timer Feature</p>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '20px' }}>
+                <div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
+                    <span style={{ fontSize: '13px', fontWeight: 600 }}>Version A — Direct timer</span>
+                    <span style={{ fontSize: '13px', fontWeight: 700, color: '#6DCF9E' }}>75%</span>
+                  </div>
+                  <div style={{ height: '6px', background: 'var(--border)', borderRadius: '3px', overflow: 'hidden' }}>
+                    <div style={{ width: '75%', height: '100%', background: '#6DCF9E', borderRadius: '3px' }} />
+                  </div>
+                  <p style={{ fontSize: '12px', color: 'var(--gray)', marginTop: '6px' }}>Set duration directly without selecting a mode first. Clearer separation of timer vs schedule.</p>
+                </div>
+                <div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
+                    <span style={{ fontSize: '13px', fontWeight: 600 }}>Version B — Mode-first</span>
+                    <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--gray2)' }}>25%</span>
+                  </div>
+                  <div style={{ height: '6px', background: 'var(--border)', borderRadius: '3px', overflow: 'hidden' }}>
+                    <div style={{ width: '25%', height: '100%', background: 'rgba(255,255,255,0.2)', borderRadius: '3px' }} />
+                  </div>
+                  <p style={{ fontSize: '12px', color: 'var(--gray)', marginTop: '6px' }}>Select mode, then set duration. Preferred by users who valued long-term scalability.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </section>
 
@@ -583,7 +652,7 @@ export default function NestThermostatProject() {
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '10px' }}>Before</p>
                 <div style={{ background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: '14px', padding: '24px', minHeight: '140px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '8px' }}>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="1" y="1" width="22" height="22" rx="4" stroke="rgba(255,255,255,0.15)" strokeWidth="1.2" strokeDasharray="3 2"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="4" stroke="rgba(255,255,255,0.15)" strokeWidth="1.2" strokeDasharray="3 2"/></svg>
                   <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.2)', textAlign: 'center' }}>Before screenshot<br />Upload when available</p>
                 </div>
                 <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Schedule event labels — &quot;Sleep&quot;, &quot;Away&quot;, &quot;Wake Up&quot; — shown without temperature context, leaving users uncertain about what each event controls.</p>
@@ -591,7 +660,7 @@ export default function NestThermostatProject() {
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--orange)', marginBottom: '10px' }}>After</p>
                 <div style={{ background: 'var(--bg2)', border: '1px solid rgba(232,66,10,0.2)', borderRadius: '14px', padding: '24px', minHeight: '140px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '8px' }}>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="1" y="1" width="22" height="22" rx="4" stroke="rgba(232,66,10,0.3)" strokeWidth="1.2" strokeDasharray="3 2"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="4" stroke="rgba(232,66,10,0.3)" strokeWidth="1.2" strokeDasharray="3 2"/></svg>
                   <p style={{ fontSize: '12px', color: 'rgba(232,66,10,0.3)', textAlign: 'center' }}>After screenshot<br />Upload when available</p>
                 </div>
                 <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Each event now displays its associated temperature inline. Users immediately see what &quot;Away&quot; means in practice — 65°F, Eco active.</p>
@@ -604,7 +673,7 @@ export default function NestThermostatProject() {
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '10px' }}>Before</p>
                 <div style={{ background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: '14px', padding: '24px', minHeight: '140px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '8px' }}>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="1" y="1" width="22" height="22" rx="4" stroke="rgba(255,255,255,0.15)" strokeWidth="1.2" strokeDasharray="3 2"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="4" stroke="rgba(255,255,255,0.15)" strokeWidth="1.2" strokeDasharray="3 2"/></svg>
                   <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.2)', textAlign: 'center' }}>Before screenshot<br />Upload when available</p>
                 </div>
                 <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Upload your before/after iteration screenshots to replace these placeholders.</p>
@@ -612,7 +681,7 @@ export default function NestThermostatProject() {
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--orange)', marginBottom: '10px' }}>After</p>
                 <div style={{ background: 'var(--bg2)', border: '1px solid rgba(232,66,10,0.2)', borderRadius: '14px', padding: '24px', minHeight: '140px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '8px' }}>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="1" y="1" width="22" height="22" rx="4" stroke="rgba(232,66,10,0.3)" strokeWidth="1.2" strokeDasharray="3 2"/></svg>
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="4" stroke="rgba(232,66,10,0.3)" strokeWidth="1.2" strokeDasharray="3 2"/></svg>
                   <p style={{ fontSize: '12px', color: 'rgba(232,66,10,0.3)', textAlign: 'center' }}>After screenshot<br />Upload when available</p>
                 </div>
                 <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Describe the second iteration change here once you have the before/after screenshots ready.</p>
@@ -713,47 +782,230 @@ export default function NestThermostatProject() {
         <div className="wrap">
           <div className="reveal"><div className="eyebrow">12 — Design System</div></div>
           <div className="reveal d1"><h2 className="ttl">Tokens built for<br />two platforms.</h2></div>
-          <div className="reveal d2"><p className="bod">A unified design system ensures scalability and consistency across the ecosystem. Shared color tokens, typography scale, and component states mean design decisions propagate across hardware and mobile without drift.</p></div>
+          <div className="reveal d2"><p className="bod">A unified design system ensures scalability and consistency across the ecosystem. Shared tokens, typography scale, and component states mean design decisions propagate across hardware and mobile without drift.</p></div>
 
-          <div className="token-grid reveal d2">
-            <div className="tk" style={{ background: '#C43830' }}><span style={{ color: 'rgba(255,255,255,0.6)' }}>Heating</span></div>
-            <div className="tk" style={{ background: '#4A7FD4' }}><span style={{ color: 'rgba(255,255,255,0.6)' }}>Cooling</span></div>
-            <div className="tk" style={{ background: '#3DA870' }}><span style={{ color: 'rgba(255,255,255,0.6)' }}>Eco</span></div>
-            <div className="tk" style={{ background: '#E8420A' }}><span style={{ color: 'rgba(255,255,255,0.6)' }}>Accent</span></div>
-            <div className="tk" style={{ background: '#1A1A1A', border: '1px solid #2A2A2A' }}><span style={{ color: 'rgba(255,255,255,0.25)' }}>Device</span></div>
-            <div className="tk" style={{ background: '#111', border: '1px solid #222' }}><span style={{ color: 'rgba(255,255,255,0.2)' }}>Surface</span></div>
-            <div className="tk" style={{ background: 'rgba(255,255,255,0.07)', border: '1px solid #222' }}><span style={{ color: 'rgba(255,255,255,0.25)' }}>Overlay</span></div>
-            <div className="tk" style={{ background: '#F5F5F5', border: '1px solid #ddd' }}><span style={{ color: 'rgba(0,0,0,0.35)' }}>White</span></div>
-          </div>
+          {/* ── Token Tables ── */}
+          <div className="reveal d2" style={{ marginTop: '64px', display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '32px', alignItems: 'start' }}>
 
-          <div className="ds-grid reveal d2">
-            <div className="ds-card">
-              <div className="ds-preview">
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', alignItems: 'flex-start' }}>
-                  <div className="state-pill pill-heat"><span className="s-dot"></span>Heating</div>
-                  <div className="state-pill pill-cool"><span className="s-dot"></span>Cooling</div>
-                  <div className="state-pill pill-eco"><span className="s-dot"></span>Eco Active</div>
-                </div>
+            {/* Spacing Scale */}
+            <div>
+              <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '16px' }}>Spacing Scale</p>
+              <div style={{ border: '1px solid var(--border)', borderRadius: '14px', overflow: 'hidden' }}>
+                {([{ px: 4, name: 'xs' }, { px: 8, name: 'sm' }, { px: 12, name: 'md' }, { px: 16, name: 'base' }, { px: 24, name: 'lg' }, { px: 32, name: 'xl' }, { px: 48, name: '2xl' }, { px: 64, name: '3xl' }] as { px: number; name: string }[]).map(({ px, name }, i) => (
+                  <div key={px} style={{ display: 'grid', gridTemplateColumns: '40px 44px 1fr 28px', gap: '0 12px', alignItems: 'center', padding: '9px 16px', borderBottom: i < 7 ? '1px solid var(--border)' : 'none', background: 'var(--bg2)' }}>
+                    <span style={{ fontSize: '11px', fontFamily: 'monospace', color: 'var(--orange)', fontWeight: 600 }}>{name}</span>
+                    <span style={{ fontSize: '11px', fontFamily: 'monospace', color: 'var(--gray2)' }}>{px}px</span>
+                    <div style={{ height: '3px', background: 'rgba(232,66,10,0.15)', borderRadius: '2px' }}>
+                      <div style={{ height: '100%', width: `${(px / 64) * 100}%`, background: 'var(--orange)', borderRadius: '2px', opacity: 0.7 }}></div>
+                    </div>
+                    <span style={{ fontSize: '10px', color: 'rgba(255,255,255,0.2)', fontFamily: 'monospace', textAlign: 'right' }}>{px / 4}u</span>
+                  </div>
+                ))}
               </div>
-              <div className="ds-label">State Indicators<span className="ds-sub">Default · Active · Eco · Error</span></div>
             </div>
 
-            <div className="ds-card">
-              <div className="ds-preview">
-                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', width: '100%' }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '10px 14px', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: '10px' }}>
-                    <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#4A7FD4', flexShrink: 0 }}></span>
-                    <div><div style={{ fontSize: '13px', fontWeight: 500 }}>Sleep</div><div style={{ fontSize: '11px', color: 'var(--gray)' }}>68°F</div></div>
+            {/* Radius Scale */}
+            <div>
+              <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '16px' }}>Border Radius</p>
+              <div style={{ border: '1px solid var(--border)', borderRadius: '14px', overflow: 'hidden' }}>
+                {([{ px: 6, name: 'sm', label: 'Chip, tag' }, { px: 12, name: 'md', label: 'Input, row' }, { px: 20, name: 'lg', label: 'Card' }, { px: 32, name: 'xl', label: 'Panel' }, { px: 100, name: 'pill', label: 'Badge, button' }] as { px: number; name: string; label: string }[]).map(({ px, name, label }, i) => (
+                  <div key={px} style={{ display: 'grid', gridTemplateColumns: '40px 44px 1fr 44px', gap: '0 12px', alignItems: 'center', padding: '13px 16px', borderBottom: i < 4 ? '1px solid var(--border)' : 'none', background: 'var(--bg2)' }}>
+                    <span style={{ fontSize: '11px', fontFamily: 'monospace', color: 'var(--orange)', fontWeight: 600 }}>{name}</span>
+                    <span style={{ fontSize: '11px', fontFamily: 'monospace', color: 'var(--gray2)' }}>{px}px</span>
+                    <span style={{ fontSize: '11px', color: 'rgba(255,255,255,0.3)' }}>{label}</span>
+                    <div style={{ width: '44px', height: '30px', background: 'rgba(255,255,255,0.06)', border: '1px solid rgba(255,255,255,0.1)', borderRadius: `${Math.min(px, 15)}px` }}></div>
                   </div>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '10px 14px', background: 'rgba(232,66,10,0.1)', border: '1px solid rgba(232,66,10,0.25)', borderRadius: '10px' }}>
-                    <span style={{ width: '6px', height: '6px', borderRadius: '50%', background: '#E8420A', flexShrink: 0 }}></span>
-                    <div><div style={{ fontSize: '13px', fontWeight: 500, color: '#F5A07A' }}>Wake Up · Now</div><div style={{ fontSize: '11px', color: '#F5A07A', opacity: 0.7 }}>75°F</div></div>
-                  </div>
-                </div>
+                ))}
               </div>
-              <div className="ds-label">Schedule Events<span className="ds-sub">Reusable · Named · Multi-day</span></div>
             </div>
           </div>
+
+          {/* ── Temperature Control ── */}
+          <div className="reveal" style={{ marginTop: '72px' }}>
+            <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '16px' }}>Temperature Control</p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '12px' }}>
+
+              {/* Idle */}
+              <div style={{ border: '1px solid var(--border)', borderRadius: '16px', overflow: 'hidden' }}>
+                <div style={{ background: 'var(--bg2)', padding: '28px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '160px', gap: '8px' }}>
+                  <div style={{ width: '72px', height: '72px', borderRadius: '50%', border: '2px solid rgba(255,255,255,0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                    <span style={{ fontSize: '20px', fontWeight: 700 }}>70°</span>
+                  </div>
+                  <span style={{ fontSize: '11px', color: 'var(--gray2)' }}>Idle</span>
+                </div>
+                <div style={{ padding: '11px 14px', borderTop: '1px solid var(--border)' }}>
+                  <span style={{ fontSize: '12px', fontWeight: 600 }}>Default</span>
+                  <span style={{ display: 'block', fontSize: '11px', color: 'var(--gray2)', marginTop: '2px' }}>No active mode</span>
+                </div>
+              </div>
+
+              {/* Heating */}
+              <div style={{ border: '1px solid rgba(196,56,48,0.3)', borderRadius: '16px', overflow: 'hidden' }}>
+                <div style={{ background: 'rgba(196,56,48,0.07)', padding: '28px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '160px', gap: '8px' }}>
+                  <div style={{ width: '72px', height: '72px', borderRadius: '50%', border: '2px solid #C43830', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 20px rgba(196,56,48,0.25)' }}>
+                    <span style={{ fontSize: '20px', fontWeight: 700, color: '#E87A74' }}>75°</span>
+                  </div>
+                  <div className="state-pill pill-heat" style={{ fontSize: '11px', padding: '4px 10px' }}><span className="s-dot"></span>Heating</div>
+                </div>
+                <div style={{ padding: '11px 14px', borderTop: '1px solid rgba(196,56,48,0.18)' }}>
+                  <span style={{ fontSize: '12px', fontWeight: 600 }}>Heating</span>
+                  <span style={{ display: 'block', fontSize: '11px', color: 'var(--gray2)', marginTop: '2px' }}>Active warm mode</span>
+                </div>
+              </div>
+
+              {/* Cooling */}
+              <div style={{ border: '1px solid rgba(74,127,212,0.3)', borderRadius: '16px', overflow: 'hidden' }}>
+                <div style={{ background: 'rgba(74,127,212,0.07)', padding: '28px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '160px', gap: '8px' }}>
+                  <div style={{ width: '72px', height: '72px', borderRadius: '50%', border: '2px solid #4A7FD4', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 20px rgba(74,127,212,0.25)' }}>
+                    <span style={{ fontSize: '20px', fontWeight: 700, color: '#7AABEC' }}>68°</span>
+                  </div>
+                  <div className="state-pill pill-cool" style={{ fontSize: '11px', padding: '4px 10px' }}><span className="s-dot"></span>Cooling</div>
+                </div>
+                <div style={{ padding: '11px 14px', borderTop: '1px solid rgba(74,127,212,0.18)' }}>
+                  <span style={{ fontSize: '12px', fontWeight: 600 }}>Cooling</span>
+                  <span style={{ display: 'block', fontSize: '11px', color: 'var(--gray2)', marginTop: '2px' }}>Active cool mode</span>
+                </div>
+              </div>
+
+              {/* Eco */}
+              <div style={{ border: '1px solid rgba(61,168,112,0.3)', borderRadius: '16px', overflow: 'hidden' }}>
+                <div style={{ background: 'rgba(61,168,112,0.07)', padding: '28px 20px', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', minHeight: '160px', gap: '8px' }}>
+                  <div style={{ width: '72px', height: '72px', borderRadius: '50%', border: '2px solid #3DA870', display: 'flex', alignItems: 'center', justifyContent: 'center', boxShadow: '0 0 20px rgba(61,168,112,0.25)' }}>
+                    <span style={{ fontSize: '16px', fontWeight: 700, color: '#6DCF9E' }}>Eco</span>
+                  </div>
+                  <div className="state-pill pill-eco" style={{ fontSize: '11px', padding: '4px 10px' }}><span className="s-dot"></span>Eco Active</div>
+                </div>
+                <div style={{ padding: '11px 14px', borderTop: '1px solid rgba(61,168,112,0.18)' }}>
+                  <span style={{ fontSize: '12px', fontWeight: 600 }}>Eco Mode</span>
+                  <span style={{ display: 'block', fontSize: '11px', color: 'var(--gray2)', marginTop: '2px' }}>Energy saving</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ── Schedule Event ── */}
+          <div className="reveal d1" style={{ marginTop: '48px' }}>
+            <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '16px' }}>Schedule Event</p>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '12px' }}>
+
+              {/* Default */}
+              <div style={{ border: '1px solid var(--border)', borderRadius: '16px', overflow: 'hidden' }}>
+                <div style={{ background: 'var(--bg2)', padding: '24px 20px', minHeight: '168px' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '7px' }}>
+                    {[{ name: 'Wake Up', time: '7:00 AM', temp: '72°F' }, { name: 'Away', time: '9:00 AM', temp: '65°F' }, { name: 'Home', time: '5:00 PM', temp: '70°F' }].map((ev, i) => (
+                      <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '9px 12px', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)', borderRadius: '10px' }}>
+                        <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: 'rgba(255,255,255,0.2)', flexShrink: 0 }}></span>
+                        <div><div style={{ fontSize: '12px', fontWeight: 500 }}>{ev.name}</div><div style={{ fontSize: '11px', color: 'var(--gray2)' }}>{ev.time} · {ev.temp}</div></div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div style={{ padding: '11px 14px', borderTop: '1px solid var(--border)' }}>
+                  <span style={{ fontSize: '12px', fontWeight: 600 }}>Default</span>
+                  <span style={{ display: 'block', fontSize: '11px', color: 'var(--gray2)', marginTop: '2px' }}>Named · reusable events</span>
+                </div>
+              </div>
+
+              {/* Active Now */}
+              <div style={{ border: '1px solid rgba(232,66,10,0.25)', borderRadius: '16px', overflow: 'hidden' }}>
+                <div style={{ background: 'var(--bg2)', padding: '24px 20px', minHeight: '168px' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '7px' }}>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '9px 12px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)', borderRadius: '10px', opacity: 0.45 }}>
+                      <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: 'rgba(255,255,255,0.2)', flexShrink: 0 }}></span>
+                      <div><div style={{ fontSize: '12px', fontWeight: 500 }}>Wake Up</div><div style={{ fontSize: '11px', color: 'var(--gray2)' }}>7:00 AM · 72°F</div></div>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '9px 12px', background: 'rgba(232,66,10,0.12)', border: '1px solid rgba(232,66,10,0.35)', borderRadius: '10px' }}>
+                      <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: '#E8420A', flexShrink: 0, boxShadow: '0 0 5px rgba(232,66,10,0.8)' }}></span>
+                      <div>
+                        <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                          <span style={{ fontSize: '12px', fontWeight: 600, color: '#F5A07A' }}>Away</span>
+                          <span style={{ fontSize: '10px', background: 'rgba(232,66,10,0.2)', color: '#E8420A', padding: '1px 5px', borderRadius: '4px', fontWeight: 700, letterSpacing: '0.04em' }}>NOW</span>
+                        </div>
+                        <div style={{ fontSize: '11px', color: 'rgba(245,160,122,0.75)' }}>9:00 AM · 65°F</div>
+                      </div>
+                    </div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '9px 12px', background: 'rgba(255,255,255,0.03)', border: '1px solid rgba(255,255,255,0.06)', borderRadius: '10px', opacity: 0.45 }}>
+                      <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: 'rgba(255,255,255,0.2)', flexShrink: 0 }}></span>
+                      <div><div style={{ fontSize: '12px', fontWeight: 500 }}>Home</div><div style={{ fontSize: '11px', color: 'var(--gray2)' }}>5:00 PM · 70°F</div></div>
+                    </div>
+                  </div>
+                </div>
+                <div style={{ padding: '11px 14px', borderTop: '1px solid rgba(232,66,10,0.15)' }}>
+                  <span style={{ fontSize: '12px', fontWeight: 600 }}>Active Now</span>
+                  <span style={{ display: 'block', fontSize: '11px', color: 'var(--gray2)', marginTop: '2px' }}>Current event highlighted</span>
+                </div>
+              </div>
+
+              {/* Eco Override */}
+              <div style={{ border: '1px solid rgba(61,168,112,0.25)', borderRadius: '16px', overflow: 'hidden' }}>
+                <div style={{ background: 'var(--bg2)', padding: '24px 20px', minHeight: '168px' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '7px' }}>
+                    {[{ name: 'Wake Up', time: '7:00 AM', temp: '72°F', eco: false }, { name: 'Away', time: '9:00 AM', temp: 'Eco', eco: true }, { name: 'Home', time: '5:00 PM', temp: '70°F', eco: false }].map((ev, i) => (
+                      <div key={i} style={{ display: 'flex', alignItems: 'center', gap: '10px', padding: '9px 12px', background: ev.eco ? 'rgba(61,168,112,0.1)' : 'rgba(255,255,255,0.04)', border: `1px solid ${ev.eco ? 'rgba(61,168,112,0.3)' : 'rgba(255,255,255,0.07)'}`, borderRadius: '10px' }}>
+                        <span style={{ width: '5px', height: '5px', borderRadius: '50%', background: ev.eco ? '#3DA870' : 'rgba(255,255,255,0.2)', flexShrink: 0 }}></span>
+                        <div>
+                          <div style={{ fontSize: '12px', fontWeight: 500, color: ev.eco ? '#6DCF9E' : undefined }}>{ev.name}</div>
+                          <div style={{ fontSize: '11px', color: ev.eco ? 'rgba(109,207,158,0.65)' : 'var(--gray2)' }}>{ev.time} · {ev.temp}</div>
+                        </div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div style={{ padding: '11px 14px', borderTop: '1px solid rgba(61,168,112,0.15)' }}>
+                  <span style={{ fontSize: '12px', fontWeight: 600 }}>Eco Override</span>
+                  <span style={{ display: 'block', fontSize: '11px', color: 'var(--gray2)', marginTop: '2px' }}>Event suspended for savings</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* ── Weekly Navigation ── */}
+          <div className="reveal d2" style={{ marginTop: '48px' }}>
+            <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '16px' }}>Weekly Navigation</p>
+            <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+
+              {/* Default */}
+              <div style={{ border: '1px solid var(--border)', borderRadius: '16px', overflow: 'hidden' }}>
+                <div style={{ background: 'var(--bg2)', padding: '28px 20px', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '120px' }}>
+                  <div style={{ display: 'flex', gap: '5px', width: '100%' }}>
+                    {(['M','T','W','T','F','S','S'] as string[]).map((d, i) => (
+                      <div key={i} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', padding: '8px 0', borderRadius: '8px', background: 'rgba(255,255,255,0.04)', border: '1px solid rgba(255,255,255,0.07)' }}>
+                        <span style={{ fontSize: '10px', color: 'var(--gray2)', fontWeight: 500 }}>{d}</span>
+                        <span style={{ fontSize: '12px', fontWeight: 600 }}>{[14,15,16,17,18,19,20][i]}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+                <div style={{ padding: '11px 14px', borderTop: '1px solid var(--border)' }}>
+                  <span style={{ fontSize: '12px', fontWeight: 600 }}>Default</span>
+                  <span style={{ display: 'block', fontSize: '11px', color: 'var(--gray2)', marginTop: '2px' }}>All days unselected</span>
+                </div>
+              </div>
+
+              {/* Selected + Today */}
+              <div style={{ border: '1px solid rgba(232,66,10,0.2)', borderRadius: '16px', overflow: 'hidden' }}>
+                <div style={{ background: 'var(--bg2)', padding: '28px 20px', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '120px' }}>
+                  <div style={{ display: 'flex', gap: '5px', width: '100%' }}>
+                    {(['M','T','W','T','F','S','S'] as string[]).map((d, i) => {
+                      const isSelected = i === 2;
+                      const isToday = i === 1;
+                      return (
+                        <div key={i} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', padding: '8px 0', borderRadius: '8px', background: isSelected ? 'rgba(232,66,10,0.15)' : isToday ? 'rgba(255,255,255,0.08)' : 'rgba(255,255,255,0.04)', border: isSelected ? '1px solid rgba(232,66,10,0.4)' : isToday ? '1px solid rgba(255,255,255,0.14)' : '1px solid rgba(255,255,255,0.07)' }}>
+                          <span style={{ fontSize: '10px', color: isSelected ? '#E8420A' : isToday ? 'var(--white)' : 'var(--gray2)', fontWeight: isToday ? 700 : 500 }}>{d}</span>
+                          <span style={{ fontSize: '12px', fontWeight: 600, color: isSelected ? '#F5A07A' : 'var(--white)' }}>{[14,15,16,17,18,19,20][i]}</span>
+                        </div>
+                      );
+                    })}
+                  </div>
+                </div>
+                <div style={{ padding: '11px 14px', borderTop: '1px solid rgba(232,66,10,0.15)' }}>
+                  <span style={{ fontSize: '12px', fontWeight: 600 }}>Selected + Today</span>
+                  <span style={{ display: 'block', fontSize: '11px', color: 'var(--gray2)', marginTop: '2px' }}>Active day · today indicator</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </section>
 
@@ -792,7 +1044,7 @@ export default function NestThermostatProject() {
       {/* FOOTER */}
       <footer className="nest-footer">
         <span className="f-logo"><em>nest</em> redesign</span>
-        <span className="f-note">Yuchen · MFA Interaction Design · SCAD · 2024</span>
+        <span className="f-note">Yuchen · MFA Interaction Design · SCAD · 2026</span>
       </footer>
 
     </div>
