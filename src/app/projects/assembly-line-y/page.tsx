@@ -1,4 +1,5 @@
 import Link from "next/link";
+import NextProject from "../../components/NextProject";
 
 export default function AssemblyLineYProject() {
   const highlights = [
@@ -216,6 +217,7 @@ export default function AssemblyLineYProject() {
           </div>
         </section>
       </main>
+      <NextProject href="/projects/nest-thermostat" title="Nest Thermostat Redesign" role="Project Lead & UX Design" theme="dark" />
     </div>
   );
 }

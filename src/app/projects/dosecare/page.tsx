@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import NextProject from "../../components/NextProject";
 
 const CSS = `
   .dc-page { font-family: var(--font-dm-sans, 'DM Sans', sans-serif); background: #FAFAF8; color: #1C1A16; }
@@ -937,6 +938,7 @@ export default function DoseCarePage() {
         </section>
 
       </div>
+      <NextProject href="/projects/agrox" title="Agrox" role="UX Designer" theme="light" />
     </>
   );
 }

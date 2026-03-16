@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import NextProject from "../../components/NextProject";
 
 const CSS = `
   /* Base Variables - Glassmorphism / Spatial UI */
@@ -717,6 +718,7 @@ export default function AgroxProject() {
         </section>
 
       </div>
+      <NextProject href="/projects/nirvana" title="Nirvana" role="Team Leader" theme="light" />
     </>
   );
 }

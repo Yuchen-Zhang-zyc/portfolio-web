@@ -1,5 +1,7 @@
 "use client";
 import React, { useEffect } from 'react';
+import "./nest.css";
+import NextProject from "../../components/NextProject";
 
 export default function NestThermostatProject() {
   useEffect(() => {
@@ -20,7 +22,6 @@ export default function NestThermostatProject() {
 
   return (
     <>
-    <link rel="stylesheet" href="/projects/nest-thermostat/nest-styles.css" />
     <div className="nest-page">
 
       {/* ── Back link ── */}
@@ -37,7 +38,7 @@ export default function NestThermostatProject() {
         <div className="hero-images" style={{ position: 'relative' }}>
           <div className="hero-glow hero-glow-heat" aria-hidden="true"></div>
           <div className="hero-glow hero-glow-cool" aria-hidden="true"></div>
-          <img src="/projects/nest-thermostat/hero_phones.png" alt="Nest app redesign" style={{ height: '100%', objectFit: 'contain', position: 'relative', zIndex: 1 }} />
+          <img src="/projects/nest-thermostat/hero_phones.png" alt="Nest app redesign" style={{ height: '100%', width: '100%', objectFit: 'contain', position: 'relative', zIndex: 1 }} />
         </div>
 
         <div className="hero-meta">
@@ -713,8 +714,8 @@ export default function NestThermostatProject() {
               <p className="ft-body">One target temperature. The system detects heating or cooling automatically — no dual-threshold decision, no mode selection.</p>
             </div>
             <div className="duo">
-              <img className="img-device" src="/projects/nest-thermostat/Home_Heat.png" alt="Heating state" />
-              <div className="phone-wrap"><img src="/projects/nest-thermostat/Homepage 72 to 68-2.png" alt="Heating phone" /></div>
+              <img className="img-device" src="/projects/nest-thermostat/final_tempcontrol_device.png" alt="Nest thermostat temperature control final" />
+              <div className="phone-wrap"><img src="/projects/nest-thermostat/final_tempcontrol_phone.png" alt="Temperature control phone app final" /></div>
             </div>
           </div>
 
@@ -725,8 +726,20 @@ export default function NestThermostatProject() {
               <p className="ft-body">Reusable named events now display their temperature inline. Define once, apply across the week — with full context visible at a glance.</p>
             </div>
             <div className="duo">
-              <img className="img-device" src="/projects/nest-thermostat/Schedule.png" alt="Schedule device" />
-              <img className="img-device" src="/projects/nest-thermostat/Week_menu.png" alt="Week menu" />
+              <div className="phone-wrap"><img src="/projects/nest-thermostat/final_schedule1.png" alt="Schedule single day view" /></div>
+              <div className="phone-wrap"><img src="/projects/nest-thermostat/final_schedule2.png" alt="Schedule multi day view" /></div>
+            </div>
+          </div>
+
+          <div className="feature-inner rev reveal d2" style={{ marginBottom: '80px' }}>
+            <div>
+              <span className="ft-tag">Final · Event</span>
+              <h2 className="ft-title">Named events.<br />Reusable across days.</h2>
+              <p className="ft-body">Define events like Morning, Work, and Sleep once — each with a name, icon, temperature, and schedule. Apply them to any day without re-entering details.</p>
+            </div>
+            <div className="duo">
+              <div className="phone-wrap" style={{ width: '185px' }}><img src="/projects/nest-thermostat/final_event1.png" alt="Event edit view" /></div>
+              <div className="phone-wrap" style={{ width: '185px' }}><img src="/projects/nest-thermostat/final_event2.png" alt="Event list view" /></div>
             </div>
           </div>
 
@@ -736,8 +749,8 @@ export default function NestThermostatProject() {
               <h2 className="ft-title">Energy savings<br />made visible.</h2>
               <p className="ft-body">Eco mode surfaces real-time savings in dollars and percentage — actionable, transparent, and connected to user behavior.</p>
             </div>
-            <div className="phone-wrap lg" style={{ margin: '0 auto' }}>
-              <img src="/projects/nest-thermostat/Eco_Mode_9.png" alt="Eco mode final" />
+            <div className="phone-wrap" style={{ margin: '0 auto', width: '185px' }}>
+              <img src="/projects/nest-thermostat/final_eco.png" alt="Eco mode final" />
             </div>
           </div>
         </div>
@@ -755,12 +768,11 @@ export default function NestThermostatProject() {
           <div className="cross-devices reveal d2">
             <div className="dev-col">
               <span className="dev-col-label">Thermostat Hardware</span>
-              <img className="img-device" src="/projects/nest-thermostat/Home_Heat.png" alt="Device heating" style={{ maxWidth: '340px' }} />
+              <img className="img-device" src="/projects/nest-thermostat/final_crossdevice_device.png" alt="Device heating" style={{ maxWidth: '340px' }} />
               <div className="shared-pts">
                 <span className="spt">Orange glow = heating state</span>
                 <span className="spt">Single temperature target</span>
                 <span className="spt">Vertical time navigation</span>
-                <span className="spt">Eco on-device indicator</span>
               </div>
             </div>
             <div className="sep-col">
@@ -770,19 +782,18 @@ export default function NestThermostatProject() {
             </div>
             <div className="dev-col">
               <span className="dev-col-label">Mobile Application</span>
-              <div className="phone-wrap" style={{ width: 'clamp(120px, 28vw, 210px)' }}><img src="/projects/nest-thermostat/Homepage 72 to 68-2.png" alt="Phone heating" /></div>
+              <div className="phone-wrap" style={{ width: 'clamp(120px, 28vw, 210px)' }}><img src="/projects/nest-thermostat/final_crossdevice_phone.png" alt="Phone heating" /></div>
               <div className="shared-pts">
                 <span className="spt">Orange accent = heating state</span>
                 <span className="spt">Same single-input model</span>
                 <span className="spt">Same vertical schedule</span>
-                <span className="spt">Same eco feedback layer</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* ══ SECTION 12: DESIGN SYSTEM ══ */}
+      {/* ══ SECTION 12: DESIGN SYSTEM ══ — removed
       <section className="section alt" id="system">
         <div className="wrap">
           <div className="reveal"><div className="eyebrow">12 — Design System</div></div>
@@ -1012,7 +1023,7 @@ export default function NestThermostatProject() {
           </div>
 
         </div>
-      </section>
+      */ }
 
       {/* ══ SECTION 13: IMPACT ══ */}
       <section className="section" id="impact">
@@ -1053,6 +1064,7 @@ export default function NestThermostatProject() {
       </footer>
 
     </div>
+    <NextProject href="/projects/dosecare" title="DoseCare" role="Team Lead & UX Designer" theme="dark" />
     </>
   );
 }

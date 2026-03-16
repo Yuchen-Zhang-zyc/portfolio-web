@@ -222,7 +222,7 @@ export default function HomeZh() {
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">DoseCare</h3>
+                  <h3 className="text-2xl font-bold font-sans text-brand-primary">DoseCare <span className="opacity-60 font-normal text-lg">| 团队负责人 & UX 设计师</span></h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
                     专为老年人设计的用药管理 App，帮助减少漏服并让日常护理更加轻松。
                   </p>

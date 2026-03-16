@@ -256,3 +256,15 @@ footer.nest-footer { border-top: 1px solid var(--border); padding: 48px 40px; di
   .token-grid { grid-template-columns: repeat(4, 1fr); }
   .sep-col { display: none; }
 }
+
+@media (max-width: 640px) {
+  .hero { padding: 80px 24px 0; }
+  .hero-images { height: 260px; }
+  .wrap { padding: 0 24px; }
+  .section { padding: 80px 0; }
+  .hero-meta { flex-wrap: wrap; gap: 0; }
+  .mi { padding: 16px 20px; flex: 1 1 50%; border-right: none; border-bottom: 1px solid var(--border); text-align: left; }
+  .mi:nth-child(odd) { border-right: 1px solid var(--border); }
+  .mi:last-child, .mi:nth-last-child(2):nth-child(odd) { border-bottom: none; }
+  .token-grid { grid-template-columns: repeat(2, 1fr); }
+}

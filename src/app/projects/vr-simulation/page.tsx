@@ -1,4 +1,4 @@
-import Link from "next/link";
+import NextProject from "../../components/NextProject";
 
 export default function VRSimulationProject() {
     return (
@@ -10,6 +10,7 @@ export default function VRSimulationProject() {
                 <h1 className="text-4xl md:text-5xl font-bold font-sans text-brand-primary mb-6">VR Tire Change Simulation</h1>
                 <p className="text-lg md:text-xl font-body text-brand-primary/80 mb-12">Project details coming soon...</p>
             </div>
+            <NextProject href="/projects/assembly-line-y" title="Assembly Line Y" role="VR Developer & Designer" theme="light" />
         </div>
     );
 }

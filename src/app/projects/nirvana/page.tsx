@@ -1,5 +1,7 @@
 "use client";
 
+import NextProject from "../../components/NextProject";
+
 // ── Image asset constants ──────────────────────────────────────────────────────
 const imgIphone13MockupPm032 = "/projects/nirvana/assets/c4a2c290c1426f7d36eb0348a3784b5ee4f110c6.png";
 const imgPortraitManLaughing1 = "/projects/nirvana/assets/ec3d268fd7bd600042056bf1a15a6f6a95a292f5.png";
@@ -958,6 +960,7 @@ export default function NirvanaPage() {
         </div>
       </section>
 
+      <NextProject href="/projects/vr-simulation" title="VR Tire Change Simulation" role="Solo Designer & Developer" theme="dark" />
     </div>
   );
 }
