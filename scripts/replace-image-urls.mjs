@@ -28,10 +28,9 @@ for (const file of files) {
 
   let replaced = 0;
   for (const [localPath, cloudinaryUrl] of Object.entries(urlMap)) {
-    // Skip if Cloudinary URL already present (avoid double-replacing)
-    if (content.includes(cloudinaryUrl) || !content.includes(localPath)) continue;
     const escapedPath = localPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-    const regex = new RegExp(escapedPath, 'g');
+    // Only match local path when preceded by a quote — never inside a Cloudinary URL
+    const regex = new RegExp(`(?<=["'])${escapedPath}(?=["'])`, 'g');
     const before = content;
     content = content.replace(regex, cloudinaryUrl);
     if (content !== before) {
