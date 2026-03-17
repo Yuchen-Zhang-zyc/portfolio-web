@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, JetBrains_Mono, DM_Serif_Display, Inter, DM_Sans, DM_Mono } from "next/font/google";
 import "./globals.css";
 import TopNav from "./components/TopNav";
+import BfcacheRepaint from "./components/BfcacheRepaint";
 
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-sans" });
 const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
@@ -26,6 +27,7 @@ export default function RootLayout({
       <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
       <body className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} ${dmSerifDisplay.variable} ${inter.variable} ${dmSans.variable} ${dmMono.variable} font-body antialiased bg-brand-bg text-brand-primary min-h-screen flex flex-col`}>
 
+        <BfcacheRepaint />
         {/* Top Navigation */}
         <TopNav />
 

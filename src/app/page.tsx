@@ -7,11 +7,10 @@ export default function Home() {
   useEffect(() => {
     if (typeof window === "undefined") return;
 
+    // Let the browser restore scroll position naturally on back navigation.
     if ("scrollRestoration" in window.history) {
-      window.history.scrollRestoration = "manual";
+      window.history.scrollRestoration = "auto";
     }
-
-    window.scrollTo({ top: 0, left: 0, behavior: "auto" });
   }, []);
   return (
     <div className="flex flex-col w-full min-h-screen font-body relative overflow-x-hidden">

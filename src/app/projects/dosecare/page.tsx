@@ -58,6 +58,9 @@ const CSS = `
   /* Screen placeholder */
   .dc-screen { background: #FFFFFF; border: 1px solid #E4E0DB; height: 320px; display: flex; align-items: center; justify-content: center; font-family: var(--font-dm-mono, 'DM Mono', monospace); font-size: 12px; color: #9B9690; margin: 20px 0; }
   .dc-screen-tall { height: 380px; }
+  .dc-screen-row { display: flex; flex-wrap: wrap; gap: 16px; margin: 20px 0; align-items: flex-end; }
+  .dc-screen-img { flex-shrink: 0; }
+  .dc-screen-img img { height: 380px; width: auto; display: block; border-radius: 12px; }
 
   /* Stats */
   .dc-stats { display: flex; border: 1px solid #E4E0DB; margin-top: 32px; flex-wrap: wrap; }
@@ -313,18 +316,113 @@ const designChanges = [
 ];
 
 const v1Screens = [
-  { name: "Home", desc: "Initial dose feed concept", bullets: ["Flat list with no time grouping", "Combined confirm + skip into one ambiguous tap", "No visual confirmation state"] },
-  { name: "Add Medication", desc: "Manual-first entry", bullets: ["Required medical terminology upfront", "Scan as secondary option, buried below form", "No auto-fill after scan"] },
-  { name: "Medication Detail", desc: "All info shown at once", bullets: ["Flat dump of warnings, dosage, schedule, side effects", "No progressive disclosure", "Information overload for 65+ users"] },
+  {
+    name: "Home",
+    desc: "Initial dose feed concept",
+    bullets: ["Flat list with no time grouping", "Combined confirm + skip into one ambiguous tap", "No visual confirmation state"],
+    images: [
+      { src: "/projects/dosecare/home.png", alt: "DoseCare home screen v1" },
+      { src: "/projects/dosecare/home1.png", alt: "DoseCare home screen v1 variant" },
+    ],
+  },
+  {
+    name: "Add Medication",
+    desc: "Manual-first entry",
+    bullets: ["Required medical terminology upfront", "Scan as secondary option, buried below form", "No auto-fill after scan"],
+    images: [
+      { src: "/projects/dosecare/Scan.png", alt: "DoseCare scan screen v1" },
+      { src: "/projects/dosecare/scan-confirm.png", alt: "DoseCare scan confirmation v1" },
+      { src: "/projects/dosecare/add.png", alt: "DoseCare add medication v1" },
+    ],
+  },
+  {
+    name: "Medication Detail",
+    desc: "All info shown at once",
+    bullets: ["Flat dump of warnings, dosage, schedule, side effects", "No progressive disclosure", "Information overload for 65+ users"],
+    images: [
+      { src: "/projects/dosecare/medicine.png", alt: "DoseCare medication detail v1" },
+      { src: "/projects/dosecare/refill.png", alt: "DoseCare refill screen v1" },
+    ],
+  },
 ];
 
 const screenGroups = [
-  { name: "Home & Confirmation", desc: "Today-focused dose feed", bullets: ["Today dose cards with confirm / skip", "Time-grouped medications", "Confirmed state stamp with timestamp"] },
-  { name: "Medication List & Detail", desc: "Education, schedules, and warnings", bullets: ["Sortable medication list", "Detail with progressive disclosure", "Warning and refill indicators"] },
-  { name: "Add Medication Flow", desc: "Barcode-first onboarding", bullets: ["Scanner view with barcode detection", "Auto-filled detail form", "Manual entry fallback with plain-language labels"] },
-  { name: "Profile & Settings", desc: "Preferences and caregiver access", bullets: ["Notification preferences", "Caregiver permission controls", "Account and support"] },
-  { name: "Doctor Communication", desc: "Medication-linked messaging", bullets: ["Message thread per medication", "Structured question templates", "Read receipts"] },
-  { name: "Caregiver App", desc: "Exception-only visibility", bullets: ["Missed dose alerts", "Today's adherence summary", "Quick message to patient"] },
+  {
+    name: "Home & Confirmation",
+    desc: "The single source of truth for today's doses",
+    bullets: [
+      "Today-only dose feed — one task at a time, no future complexity",
+      "Confirm or skip directly from the feed, no extra navigation",
+      "Dynamic Island integration for ambient dose reminders without interruption",
+    ],
+    images: [
+      { src: "/projects/dosecare/Home/Dynamic-Island-1.png", alt: "DoseCare dynamic island notification" },
+      { src: "/projects/dosecare/Home/Dynamic-Island-2.png", alt: "DoseCare dynamic island expanded" },
+      { src: "/projects/dosecare/Home/home-2.png", alt: "DoseCare home screen" },
+      { src: "/projects/dosecare/Home/Home-1.png", alt: "DoseCare home variant" },
+    ],
+  },
+  {
+    name: "Medications",
+    desc: "Full medication management with progressive disclosure",
+    bullets: [
+      "Medication list with dosage, schedule, and status at a glance",
+      "Detail view reveals warnings and side effects on demand — not upfront",
+      "Refill flow connects directly to doctor or pharmacy in one tap",
+    ],
+    images: [
+      { src: "/projects/dosecare/Med/Medication-List.png", alt: "DoseCare medication list" },
+      { src: "/projects/dosecare/Med/Medication-List-6.png", alt: "DoseCare medication list variant" },
+      { src: "/projects/dosecare/Med/Medication-Info-2.png", alt: "DoseCare medication info" },
+      { src: "/projects/dosecare/Med/Medication-Enter-Time-2.png", alt: "DoseCare enter time" },
+      { src: "/projects/dosecare/Med/Medication-Enter-Time-1-2.png", alt: "DoseCare enter time variant" },
+      { src: "/projects/dosecare/Med/Medication-refill-2.png", alt: "DoseCare medication refill" },
+      { src: "/projects/dosecare/Med/Medication-refill-Doctor-2.png", alt: "DoseCare refill doctor" },
+      { src: "/projects/dosecare/Med/Medication-refill-Pharma-2.png", alt: "DoseCare refill pharmacy" },
+    ],
+  },
+  {
+    name: "Onboarding",
+    desc: "Scan-first setup that anyone can complete independently",
+    bullets: [
+      "Barcode scan auto-fills pill name, dosage, and instructions — no medical knowledge required",
+      "Schedule confirmation in plain language, no terminology",
+      "DOSE TAG pairing for physical confirmation without unlocking the phone",
+    ],
+    images: [
+      { src: "/projects/dosecare/Onboard/Add-Medicine.png", alt: "Step 1 — Find Your Medicine" },
+      { src: "/projects/dosecare/Onboard/Add-Medicine-1-2.png", alt: "Scan prescription" },
+      { src: "/projects/dosecare/Onboard/Confirm-2.png", alt: "Step 2 — Confirm Medicine" },
+      { src: "/projects/dosecare/Onboard/Add-Medicine-2.png", alt: "Step 3 — Set Time" },
+      { src: "/projects/dosecare/Onboard/Tag-6.png", alt: "Step 4 — Add Tag" },
+    ],
+  },
+  {
+    name: "Trends & History",
+    desc: "Adherence insights without data overload",
+    bullets: [
+      "Weekly adherence score with trend line across medications",
+      "AI-generated insight cards surface patterns the user might miss",
+      "History calendar for reviewing past doses at a glance",
+    ],
+    images: [
+      { src: "/projects/dosecare/Trend/Trend.png", alt: "DoseCare trend insights" },
+      { src: "/projects/dosecare/Trend/History-2.png", alt: "DoseCare history" },
+    ],
+  },
+  {
+    name: "Caregiver & Profile",
+    desc: "Autonomy preserved, support available when needed",
+    bullets: [
+      "Caregiver view shows only missed dose exceptions — not full schedule surveillance",
+      "Profile manages notification preferences and accessibility settings",
+      "Caregiver access is opt-in and controlled entirely by the patient",
+    ],
+    images: [
+      { src: "/projects/dosecare/Caregiver and profile/Caregiver-3.png", alt: "DoseCare caregiver view" },
+      { src: "/projects/dosecare/Caregiver and profile/Profile-3.png", alt: "DoseCare profile settings" },
+    ],
+  },
 ];
 
 const a11yRows = [
@@ -334,6 +432,154 @@ const a11yRows = [
   { label: "Motion", value: "prefers-reduced-motion respected; no parallax or auto-play" },
   { label: "Status states", value: "Icon + label for all states — never color alone" },
 ];
+
+// ── Information Architecture Diagram ─────────────────────────────────────────
+
+function IADiagram() {
+  const LINE = '#C8C6C1';
+
+  const ns = (type: 'root' | 'l1' | 'l2' | 'l3' | 'onboard' | 'sblue' | 'sgreen', extra?: React.CSSProperties): React.CSSProperties => {
+    const base: React.CSSProperties = { borderRadius: 8, textAlign: 'center', whiteSpace: 'nowrap', lineHeight: 1.5 };
+    const map: Record<string, React.CSSProperties> = {
+      root:   { ...base, background: '#fff', border: '2px solid rgba(0,0,0,0.07)', borderRadius: 10, padding: '10px 24px', fontSize: 15, fontWeight: 600 },
+      l1:     { ...base, background: '#fff', border: '2px solid rgba(0,0,0,0.07)', padding: '8px 14px', fontSize: 13, fontWeight: 600 },
+      l2:     { ...base, background: '#fff', border: '1px solid #E4E0DB', padding: '8px 12px', fontSize: 13 },
+      l3:     { ...base, background: '#F1F1F1', border: '1px solid #909090', padding: '7px 10px', fontSize: 12, color: '#4A4740' },
+      onboard:{ ...base, background: '#EEF2F6', border: '1px solid #B8C2CC', padding: '8px 12px', fontSize: 13 },
+      sblue:  { ...base, background: '#E8EFFA', border: '2px solid #2E5AAC', padding: '8px 16px', fontSize: 13, color: '#1C1F24' },
+      sgreen: { ...base, background: '#E8F3EC', border: '2px solid #2E7D5B', padding: '8px 16px', fontSize: 13 },
+    };
+    return extra ? { ...map[type], ...extra } : map[type];
+  };
+
+  const vl = (h = 16) => (
+    <div style={{ width: 1, height: h, background: LINE, margin: '0 auto', flexShrink: 0 }} />
+  );
+
+  const sections = [
+    {
+      name: 'Dashboard',
+      items: [
+        { type: 'l2', label: 'Daily Timeline View' },
+        { type: 'l2', label: 'Priority Section' },
+        { type: 'l2', label: 'Today Overview' },
+        { type: 'l3', label: 'Completed / Total' },
+        { type: 'l3', label: 'Next Dose Countdown' },
+        { type: 'l3', label: 'Missed Indicator' },
+      ],
+    },
+    {
+      name: 'Medications',
+      items: [
+        { type: 'l2', label: 'Search List' },
+        { type: 'l2', label: 'Medication Detail' },
+        { type: 'l3', label: 'Dosage & Schedule' },
+        { type: 'l3', label: 'Instructions' },
+        { type: 'l3', label: 'AI Summary' },
+        { type: 'l3', label: 'Refill Status' },
+      ],
+    },
+    {
+      name: 'Insights',
+      items: [
+        { type: 'l2', label: 'Trend' },
+        { type: 'l3', label: 'Trend Chart' },
+        { type: 'l3', label: 'AI Insight Card' },
+        { type: 'l3', label: 'Weekly Score' },
+        { type: 'l2', label: 'History' },
+        { type: 'l3', label: 'Medicine Breakdown' },
+        { type: 'l3', label: 'History Calendar' },
+      ],
+    },
+    {
+      name: 'Care Network',
+      items: [
+        { type: 'l2', label: 'Caregiver List' },
+        { type: 'l2', label: 'Permission' },
+      ],
+    },
+    {
+      name: 'Profile',
+      items: [
+        { type: 'l2', label: 'Personal Info' },
+        { type: 'l2', label: 'Accessibility' },
+        { type: 'l2', label: 'Notification Settings' },
+        { type: 'l2', label: 'Device Settings' },
+        { type: 'l3', label: 'Watch' },
+        { type: 'l3', label: 'Tag' },
+      ],
+    },
+  ];
+
+  return (
+    <div
+      style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch', background: '#F9F9F6', border: '1px solid #E4E0DB', borderRadius: 8, padding: '36px 28px 28px' }}
+      role="img"
+      aria-label="DoseCare information architecture — Main App branches into Dashboard, Medications, Insights, Care Network, and Profile. Separate Onboarding flow and System Layers shown below."
+    >
+      <div style={{ minWidth: 860 }}>
+
+        {/* Root node */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+          <div style={ns('root')}>Main App</div>
+          {vl(20)}
+        </div>
+
+        {/* Horizontal trunk + columns */}
+        <div style={{ position: 'relative' }}>
+          <div style={{ position: 'absolute', top: 0, left: '10%', right: '10%', height: 1, background: LINE }} />
+          <div style={{ display: 'flex', gap: 12 }}>
+            {sections.map((sec) => (
+              <div key={sec.name} style={{ flex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 4 }}>
+                {vl(20)}
+                <div style={{ ...ns('l1'), width: '100%' }}>{sec.name}</div>
+                {sec.items.map((item, i) => (
+                  <div
+                    key={i}
+                    style={{ ...ns(item.type as 'l2' | 'l3'), width: item.type === 'l3' ? '88%' : '100%' }}
+                  >
+                    {item.label}
+                  </div>
+                ))}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Onboarding flow */}
+        <div style={{ marginTop: 28, border: '1px dashed #909090', borderRadius: 8, padding: '16px 20px' }}>
+          <div style={{ fontFamily: "var(--font-dm-mono,'DM Mono',monospace)", fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#9B9690', marginBottom: 12 }}>
+            Onboarding Flow
+          </div>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 0, flexWrap: 'wrap' }}>
+            {['Role', 'Accessibility Setup', 'Add Medication', 'Reminder Setup', 'DOSE TAG Setup'].map((step, i, arr) => (
+              <div key={step} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 6 }}>
+                <div style={ns('onboard')}>{step}</div>
+                {i < arr.length - 1 && (
+                  <span style={{ color: '#909090', fontSize: 14, padding: '0 4px', fontFamily: "var(--font-dm-mono,'DM Mono',monospace)" }}>→</span>
+                )}
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* System Layers */}
+        <div style={{ marginTop: 10, border: '1px dashed #909090', borderRadius: 8, padding: '16px 20px' }}>
+          <div style={{ fontFamily: "var(--font-dm-mono,'DM Mono',monospace)", fontSize: 10, textTransform: 'uppercase', letterSpacing: '0.08em', color: '#9B9690', marginBottom: 12 }}>
+            System Layers
+          </div>
+          <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
+            <div style={ns('sblue')}>Watch Confirm</div>
+            <div style={ns('sblue')}>Push Reminder</div>
+            <div style={ns('sblue')}>Caregiver Alert</div>
+            <div style={ns('sgreen')}>DOSE TAG</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
+}
 
 // ── Journey Map SVG ───────────────────────────────────────────────────────────
 
@@ -795,8 +1041,12 @@ export default function DoseCarePage() {
                   <span className="dc-screen-group-sep" aria-hidden="true">—</span>
                   <span className="dc-screen-group-desc">{group.desc}</span>
                 </div>
-                <div className="dc-screen" role="img" aria-label={`${group.name} v1 screen placeholder`}>
-                  [ {group.name} — v1 ]
+                <div className="dc-screen-row">
+                  {group.images.map((img) => (
+                    <div className="dc-screen-img" key={img.src}>
+                      <img src={img.src} alt={img.alt} />
+                    </div>
+                  ))}
                 </div>
                 <ul className="dc-screen-bullets">
                   {group.bullets.map((b) => <li key={b}>{b}</li>)}
@@ -857,23 +1107,14 @@ export default function DoseCarePage() {
         {/* ── 10 Information Architecture ── */}
         <section className="dc-section" id="ia">
           <div className="dc-container">
-            <div className="dc-prose">
-              <div className="dc-eyebrow">10 — Information Architecture</div>
-              <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 600, letterSpacing: "-0.02em", color: "#1C1A16", marginBottom: 8 }}>
-                Final app structure
-              </h2>
-              <p style={{ fontSize: 15, color: "#9B9690", marginBottom: 32 }}>
-                Patient app — 5 tabs. Refined after usability testing.
-              </p>
-              <ul className="dc-ia-list" aria-label="App information architecture">
-                {iaItems.map((item) => (
-                  <li className="dc-ia-item" key={item.name}>
-                    <span className="dc-ia-name">{item.name}</span>
-                    <span className="dc-ia-desc">{item.desc}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
+            <div className="dc-eyebrow">10 — Information Architecture</div>
+            <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 600, letterSpacing: "-0.02em", color: "#1C1A16", marginBottom: 8 }}>
+              Final app structure
+            </h2>
+            <p style={{ fontSize: 15, color: "#9B9690", marginBottom: 32 }}>
+              Patient app — 5 tabs. Refined after usability testing.
+            </p>
+            <IADiagram />
           </div>
         </section>
 
@@ -891,9 +1132,19 @@ export default function DoseCarePage() {
                   <span className="dc-screen-group-sep" aria-hidden="true">—</span>
                   <span className="dc-screen-group-desc">{group.desc}</span>
                 </div>
-                <div className="dc-screen" role="img" aria-label={`${group.name} screen placeholder`}>
-                  [ {group.name} ]
-                </div>
+                {"images" in group && group.images ? (
+                  <div className="dc-screen-row">
+                    {(group.images as { src: string; alt: string }[]).map((img) => (
+                      <div className="dc-screen-img" key={img.src}>
+                        <img src={img.src} alt={img.alt} />
+                      </div>
+                    ))}
+                  </div>
+                ) : (
+                  <div className="dc-screen" role="img" aria-label={`${group.name} screen placeholder`}>
+                    [ Design in progress ]
+                  </div>
+                )}
                 <ul className="dc-screen-bullets">
                   {group.bullets.map((b) => <li key={b}>{b}</li>)}
                 </ul>

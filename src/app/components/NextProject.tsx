@@ -7,71 +7,84 @@ interface NextProjectProps {
   theme?: "dark" | "light";
 }
 
-export default function NextProject({ href, title, role, theme = "dark" }: NextProjectProps) {
+export default function NextProject({ href, title, role, theme = "light" }: NextProjectProps) {
   const isDark = theme === "dark";
 
-  return (
-    <Link
-      href={href}
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        padding: "40px 48px",
-        borderTop: `1px solid ${isDark ? "rgba(255,255,255,0.1)" : "rgba(0,0,0,0.08)"}`,
-        textDecoration: "none",
-        transition: "background 0.2s",
-        cursor: "pointer",
-      }}
-      className={`next-project-link ${isDark ? "next-project-dark" : "next-project-light"}`}
-    >
-      <div style={{ display: "flex", flexDirection: "column", gap: 6 }}>
-        <span style={{
-          fontSize: 11,
-          fontFamily: "monospace",
-          letterSpacing: "0.12em",
-          textTransform: "uppercase",
-          color: isDark ? "rgba(255,255,255,0.35)" : "rgba(0,0,0,0.35)",
-        }}>
-          Next Project
-        </span>
-        <span style={{
-          fontSize: 22,
-          fontWeight: 600,
-          color: isDark ? "#ffffff" : "#1a1a1a",
-          lineHeight: 1.2,
-        }}>
-          {title}
-        </span>
-        <span style={{
-          fontSize: 13,
-          color: isDark ? "rgba(255,255,255,0.45)" : "rgba(0,0,0,0.45)",
-        }}>
-          {role}
-        </span>
-      </div>
-      <span style={{
-        fontSize: 28,
-        color: isDark ? "rgba(255,255,255,0.3)" : "rgba(0,0,0,0.2)",
-        lineHeight: 1,
-        flexShrink: 0,
-        marginLeft: 24,
-        transition: "transform 0.2s, color 0.2s",
-      }} className="next-project-arrow">
-        →
-      </span>
+  const bg        = isDark ? "#111110"        : "#F0EFEA";
+  const bgHover   = isDark ? "#1C1B19"        : "#E6E5DF";
+  const border    = isDark ? "rgba(255,255,255,0.08)" : "rgba(0,0,0,0.08)";
+  const labelCol  = isDark ? "rgba(255,255,255,0.38)" : "rgba(0,0,0,0.38)";
+  const titleCol  = isDark ? "#FFFFFF"        : "#111110";
+  const roleCol   = isDark ? "rgba(255,255,255,0.5)"  : "rgba(0,0,0,0.5)";
+  const arrowCol  = isDark ? "rgba(255,255,255,0.28)" : "rgba(0,0,0,0.22)";
+  const arrowHov  = isDark ? "rgba(255,255,255,0.8)"  : "rgba(0,0,0,0.6)";
 
+  return (
+    <>
       <style>{`
-        .next-project-dark:hover { background: rgba(255,255,255,0.04); }
-        .next-project-light:hover { background: rgba(0,0,0,0.03); }
-        .next-project-link:hover .next-project-arrow {
-          transform: translateX(6px);
-          color: ${isDark ? "rgba(255,255,255,0.7)" : "rgba(0,0,0,0.5)"};
+        .np-link {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 44px 48px;
+          background: ${bg};
+          border-top: 1px solid ${border};
+          text-decoration: none;
+          transition: background 0.22s ease;
+          cursor: pointer;
+        }
+        .np-link:hover { background: ${bgHover}; }
+        .np-link:hover .np-arrow {
+          transform: translateX(8px);
+          color: ${arrowHov};
         }
         @media (max-width: 640px) {
-          .next-project-link { padding: 32px 24px !important; }
+          .np-link { padding: 32px 24px; }
         }
       `}</style>
-    </Link>
+
+      <Link href={href} className="np-link">
+        <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
+          <span style={{
+            fontSize: 10,
+            fontFamily: "var(--font-dm-mono, 'DM Mono', monospace)",
+            letterSpacing: "0.14em",
+            textTransform: "uppercase",
+            color: labelCol,
+          }}>
+            Next Project
+          </span>
+          <span style={{
+            fontSize: 22,
+            fontWeight: 600,
+            color: titleCol,
+            lineHeight: 1.2,
+          }}>
+            {title}
+          </span>
+          <span style={{
+            fontSize: 13,
+            color: roleCol,
+          }}>
+            {role}
+          </span>
+        </div>
+
+        <span
+          className="np-arrow"
+          style={{
+            fontSize: 26,
+            color: arrowCol,
+            lineHeight: 1,
+            flexShrink: 0,
+            marginLeft: 24,
+            transition: "transform 0.22s ease, color 0.22s ease",
+          }}
+          aria-hidden="true"
+        >
+          →
+        </span>
+      </Link>
+    </>
   );
 }
