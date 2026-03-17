@@ -688,7 +688,7 @@ export default function AgroxProject() {
           <span className="ag-eyebrow">06 — Design Process</span>
           <h2 className="ag-title">From sketch to reality.</h2>
           
-          <div className="ag-grid-3" style={{ marginTop: "48px" }}>
+          <div className="ag-grid-3" style={{ marginTop: "48px", gap: "48px" }}>
             <div>
               <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A", marginBottom: "16px" }}>01. Sketch</h4>
               <div style={{ display: "flex", gap: "12px" }}>
