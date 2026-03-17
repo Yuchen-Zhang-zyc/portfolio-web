@@ -786,9 +786,7 @@ export default function DoseCarePage() {
               </div>
               {/* Right: visual asset */}
               <div>
-                <div className="dc-screen dc-screen-tall" style={{ margin: 0 }} role="img" aria-label="DoseCare hero mockup placeholder">
-                  [ Hero device mockup ]
-                </div>
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773788345/portfolio/projects/dosecare/hero.jpg" alt="DoseCare app on phone" style={{ width: '100%', borderRadius: '16px', display: 'block' }} />
               </div>
             </div>
           </div>

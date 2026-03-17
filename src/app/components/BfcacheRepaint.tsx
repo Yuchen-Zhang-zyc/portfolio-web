@@ -52,13 +52,17 @@ export default function BfcacheRepaint() {
       microScroll();
     };
 
-    // Restart CSS animations so they don't resume mid-state from bfcache.
+    // Restart CSS animations so they resume from frame 0, not from a frozen
+    // mid-cycle state. Critical for Safari: blob animations use transform, and
+    // Safari can incorrectly apply mid-cycle transform offsets to ALL position:fixed
+    // elements (including TopNav), displacing them from their correct positions.
     const restartAnimations = () => {
       document.querySelectorAll<HTMLElement>('[class*="animate-"]').forEach((el) => {
-        el.style.animationPlayState = "paused";
+        const saved = el.style.animation;
+        el.style.animation = "none";
         // eslint-disable-next-line @typescript-eslint/no-unused-expressions
-        el.offsetWidth; // force reflow
-        el.style.animationPlayState = "";
+        el.offsetWidth; // force reflow — clears the animation state
+        el.style.animation = saved;
       });
     };
 
@@ -74,6 +78,7 @@ export default function BfcacheRepaint() {
     const handlePopState = () => {
       // Give Next.js time to finish restoring the React tree before repainting.
       setTimeout(() => {
+        restartAnimations();
         microScroll();
         forceReveal();
       }, 60);
