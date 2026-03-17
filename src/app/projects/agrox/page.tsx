@@ -702,7 +702,7 @@ export default function AgroxProject() {
             </div>
             <div>
               <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A", marginBottom: "16px" }}>03. Model</h4>
-              <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773790841/portfolio/projects/agrox/model.png" alt="Agrox physical model" style={{ width: "100%", borderRadius: "12px", display: "block" }} />
+              <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773791363/portfolio/projects/agrox/model.png" alt="Agrox physical model" style={{ width: "100%", borderRadius: "12px", display: "block" }} />
             </div>
           </div>
         </section>
