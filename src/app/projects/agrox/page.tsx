@@ -690,8 +690,9 @@ export default function AgroxProject() {
           
           <div className="ag-grid-3" style={{ marginTop: "48px" }}>
             <div>
-              <div className="ag-img-placeholder" style={{ height: "300px", marginBottom: "16px" }}>
-                [ Image: Sketch ]
+              <div style={{ display: "flex", gap: "12px", marginBottom: "16px" }}>
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773790734/portfolio/projects/agrox/sketch-1.png" alt="Agrox sketch 1" style={{ width: "50%", borderRadius: "12px", display: "block" }} />
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773790735/portfolio/projects/agrox/sketch-2.png" alt="Agrox sketch 2" style={{ width: "50%", borderRadius: "12px", display: "block" }} />
               </div>
               <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A" }}>01. Sketch</h4>
             </div>
