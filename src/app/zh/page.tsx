@@ -217,7 +217,7 @@ export default function HomeZh() {
               </div>
 
               <div className="w-full aspect-[16/10] bg-white relative overflow-hidden">
-                <div className="w-full h-full bg-contain bg-no-repeat bg-center group-hover:scale-105 transition-transform duration-700" style={{ backgroundImage: "url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773789623/portfolio/dosecare-homepage.jpg')" }}></div>
+                <div className="w-full h-full bg-contain bg-no-repeat bg-center group-hover:scale-105 transition-transform duration-700" style={{ backgroundImage: "url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773789495/portfolio/dosecare-homepage.png')" }}></div>
               </div>
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
