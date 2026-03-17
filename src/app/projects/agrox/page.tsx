@@ -456,11 +456,11 @@ export default function AgroxProject() {
             </div>
             <div>
               <div className="ag-meta-label">Role</div>
-              <div className="ag-meta-value">UX/UI Design<br/>Hardware Concept</div>
+              <div className="ag-meta-value">UX Design<br/>Hardware Concept</div>
             </div>
             <div>
               <div className="ag-meta-label">Timeline</div>
-              <div className="ag-meta-value">Academic Project<br/>2024</div>
+              <div className="ag-meta-value">Academic Project<br/>2025</div>
             </div>
             <div>
               <div className="ag-meta-label">Domain</div>
