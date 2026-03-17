@@ -28,7 +28,8 @@ for (const file of files) {
 
   let replaced = 0;
   for (const [localPath, cloudinaryUrl] of Object.entries(urlMap)) {
-    // Match both quoted strings and url() CSS references
+    // Skip if already replaced (avoid double-replacing)
+    if (content.includes(cloudinaryUrl)) continue;
     const escapedPath = localPath.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
     const regex = new RegExp(escapedPath, 'g');
     const before = content;

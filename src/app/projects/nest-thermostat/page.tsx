@@ -53,7 +53,7 @@ export default function NestThermostatProject() {
         <div className="hero-images" style={{ position: 'relative' }}>
           <div className="hero-glow hero-glow-heat" aria-hidden="true"></div>
           <div className="hero-glow hero-glow-cool" aria-hidden="true"></div>
-          <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757831/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757831/portfolio/projects/nest-thermostat/hero_phones.png" alt="Nest app redesign" style={{ height: '100%', width: '100%', objectFit: 'contain', position: 'relative', zIndex: 1 }} />
+          <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757831/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757831/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757831/portfolio/projects/nest-thermostat/hero_phones.png" alt="Nest app redesign" style={{ height: '100%', width: '100%', objectFit: 'contain', position: 'relative', zIndex: 1 }} />
         </div>
 
         <div className="hero-meta">
@@ -123,7 +123,7 @@ export default function NestThermostatProject() {
               <div style={{ background: '#141414', borderRadius: '20px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 clamp(16px, 8vw, 114px)', height: '512px' }}>
                 <div style={{ width: '260px', height: '100%', position: 'relative', flexShrink: 0 }}>
                   <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '360px', height: '360px', overflow: 'hidden' }}>
-                    <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757864/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757864/portfolio/projects/nest-thermostat/thermo_schedule.png" alt="Original Nest thermostat — horizontal schedule" style={{ position: 'absolute', top: 0, left: 0, height: '100%', width: '168.78%', maxWidth: 'none' }} />
+                    <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757864/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757864/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757864/portfolio/projects/nest-thermostat/thermo_schedule.png" alt="Original Nest thermostat — horizontal schedule" style={{ position: 'absolute', top: 0, left: 0, height: '100%', width: '168.78%', maxWidth: 'none' }} />
                   </div>
                 </div>
               </div>
@@ -140,7 +140,7 @@ export default function NestThermostatProject() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div style={{ background: '#141414', borderRadius: '20px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 clamp(16px, 10vw, 144px)', height: '512px' }}>
                 <div style={{ width: '200px', height: '433px', borderRadius: '28px', overflow: 'hidden', boxShadow: '0 20px 48px rgba(0,0,0,0.2)', flexShrink: 0 }}>
-                  <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757860/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757860/portfolio/projects/nest-thermostat/old_energy.jpg" alt="Original app — energy history" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757860/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757860/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757860/portfolio/projects/nest-thermostat/old_energy.jpg" alt="Original app — energy history" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
               </div>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
@@ -278,11 +278,11 @@ export default function NestThermostatProject() {
               },
               {
                 title: 'Rounded Linear Icons',
-                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757796/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757796/portfolio/projects/nest-thermostat/gl_linear_icons.svg" width={44} height={44} alt="Rounded Linear Icons" style={{ display: 'block', flexShrink: 0 }} />,
+                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757796/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757796/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757796/portfolio/projects/nest-thermostat/gl_linear_icons.svg" width={44} height={44} alt="Rounded Linear Icons" style={{ display: 'block', flexShrink: 0 }} />,
               },
               {
                 title: 'Rounded Corners',
-                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757800/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757800/portfolio/projects/nest-thermostat/gl_rounded_corners.svg" width={40} height={40} alt="Rounded Corners" style={{ display: 'block', flexShrink: 0 }} />,
+                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757800/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757800/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757800/portfolio/projects/nest-thermostat/gl_rounded_corners.svg" width={40} height={40} alt="Rounded Corners" style={{ display: 'block', flexShrink: 0 }} />,
               },
               {
                 title: 'Transparent',
@@ -300,19 +300,19 @@ export default function NestThermostatProject() {
               },
               {
                 title: 'Average Information Density',
-                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757795/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757795/portfolio/projects/nest-thermostat/gl_info_density.svg" width={44} height={44} alt="Average Information Density" style={{ display: 'block', flexShrink: 0 }} />,
+                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757795/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757795/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757795/portfolio/projects/nest-thermostat/gl_info_density.svg" width={44} height={44} alt="Average Information Density" style={{ display: 'block', flexShrink: 0 }} />,
               },
               {
                 title: 'Card Elements',
-                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757791/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757791/portfolio/projects/nest-thermostat/gl_card_elements.svg" width={44} height={44} alt="Card Elements" style={{ display: 'block', flexShrink: 0 }} />,
+                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757791/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757791/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757791/portfolio/projects/nest-thermostat/gl_card_elements.svg" width={44} height={44} alt="Card Elements" style={{ display: 'block', flexShrink: 0 }} />,
               },
               {
                 title: 'Monochrome',
-                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757798/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757798/portfolio/projects/nest-thermostat/gl_monochrome.svg" width={42} height={42} alt="Monochrome" style={{ display: 'block', flexShrink: 0 }} />,
+                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757798/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757798/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757798/portfolio/projects/nest-thermostat/gl_monochrome.svg" width={42} height={42} alt="Monochrome" style={{ display: 'block', flexShrink: 0 }} />,
               },
               {
                 title: 'Focal Point',
-                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757793/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757793/portfolio/projects/nest-thermostat/gl_focal_point.svg" width={35} height={35} alt="Focal Point" style={{ display: 'block', flexShrink: 0 }} />,
+                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757793/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757793/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757793/portfolio/projects/nest-thermostat/gl_focal_point.svg" width={35} height={35} alt="Focal Point" style={{ display: 'block', flexShrink: 0 }} />,
               },
             ] as { title: string; visual: React.ReactNode }[]).map(({ title, visual }) => (
               <div key={title} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 29px', height: '90px', background: '#141414', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '16px' }}>
@@ -406,8 +406,8 @@ export default function NestThermostatProject() {
               </div>
               <div className="reveal d1">
                 <div className="duo">
-                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757832/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757832/portfolio/projects/nest-thermostat/hifi_01_device.png" alt="Heating state device" />
-                  <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757834/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757834/portfolio/projects/nest-thermostat/hifi_01_phone.png" alt="Heating state phone" style={{ width: 'clamp(100px, 25vw, 185px)', display: 'block', boxShadow: '0 40px 80px rgba(0,0,0,0.65)' }} />
+                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757832/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757832/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757832/portfolio/projects/nest-thermostat/hifi_01_device.png" alt="Heating state device" />
+                  <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757834/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757834/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757834/portfolio/projects/nest-thermostat/hifi_01_phone.png" alt="Heating state phone" style={{ width: 'clamp(100px, 25vw, 185px)', display: 'block', boxShadow: '0 40px 80px rgba(0,0,0,0.65)' }} />
                 </div>
               </div>
             </div>
@@ -426,8 +426,8 @@ export default function NestThermostatProject() {
               </div>
               <div className="reveal d1">
                 <div className="duo">
-                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757840/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757840/portfolio/projects/nest-thermostat/hifi_02_device.png" alt="Schedule on device" />
-                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757841/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757841/portfolio/projects/nest-thermostat/hifi_02_phone.png" alt="Time change on device" />
+                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757840/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757840/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757840/portfolio/projects/nest-thermostat/hifi_02_device.png" alt="Schedule on device" />
+                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757841/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757841/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757841/portfolio/projects/nest-thermostat/hifi_02_phone.png" alt="Time change on device" />
                 </div>
               </div>
             </div>
@@ -446,8 +446,8 @@ export default function NestThermostatProject() {
               </div>
               <div className="reveal d1">
                 <div className="duo">
-                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757842/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757842/portfolio/projects/nest-thermostat/hifi_03_phone1.png" alt="Week menu" />
-                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757843/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757843/portfolio/projects/nest-thermostat/hifi_03_phone2.png" alt="Temp change" />
+                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757842/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757842/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757842/portfolio/projects/nest-thermostat/hifi_03_phone1.png" alt="Week menu" />
+                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757843/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757843/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757843/portfolio/projects/nest-thermostat/hifi_03_phone2.png" alt="Temp change" />
                 </div>
               </div>
             </div>
@@ -466,8 +466,8 @@ export default function NestThermostatProject() {
               </div>
               <div className="reveal d1">
                 <div className="duo">
-                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757847/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757847/portfolio/projects/nest-thermostat/hifi_05_heat_phone.png" alt="Heating state" />
-                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757845/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757845/portfolio/projects/nest-thermostat/hifi_05_cool_phone.png" alt="Cooling state" />
+                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757847/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757847/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757847/portfolio/projects/nest-thermostat/hifi_05_heat_phone.png" alt="Heating state" />
+                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757845/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757845/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757845/portfolio/projects/nest-thermostat/hifi_05_cool_phone.png" alt="Cooling state" />
                 </div>
               </div>
             </div>
@@ -729,7 +729,7 @@ export default function NestThermostatProject() {
               <p className="ft-body">One target temperature. The system detects heating or cooling automatically — no dual-threshold decision, no mode selection.</p>
             </div>
             <div className="duo">
-              <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757790/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757790/portfolio/projects/nest-thermostat/final_tempcontrol_device.png" alt="Nest thermostat temperature control final" />
+              <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757790/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757790/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757790/portfolio/projects/nest-thermostat/final_tempcontrol_device.png" alt="Nest thermostat temperature control final" />
               <div className="phone-wrap"><img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757790/portfolio/projects/nest-thermostat/final_tempcontrol_phone.jpg" alt="Temperature control phone app final" /></div>
             </div>
           </div>
@@ -783,7 +783,7 @@ export default function NestThermostatProject() {
           <div className="cross-devices reveal d2">
             <div className="dev-col">
               <span className="dev-col-label">Thermostat Hardware</span>
-              <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757785/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757785/portfolio/projects/nest-thermostat/final_crossdevice_device.png" alt="Device heating" style={{ maxWidth: '340px' }} />
+              <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757785/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757785/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757785/portfolio/projects/nest-thermostat/final_crossdevice_device.png" alt="Device heating" style={{ maxWidth: '340px' }} />
               <div className="shared-pts">
                 <span className="spt">Orange glow = heating state</span>
                 <span className="spt">Single temperature target</span>
