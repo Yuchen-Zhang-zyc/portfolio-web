@@ -697,7 +697,7 @@ export default function AgroxProject() {
               <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A" }}>01. Sketch</h4>
             </div>
             <div>
-              <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773790922/portfolio/projects/agrox/hifi-overview.png" alt="Agrox hifi overview" style={{ width: "100%", borderRadius: "12px", display: "block", marginBottom: "16px" }} />
+              <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773791068/portfolio/projects/agrox/hifi-overview.png" alt="Agrox hifi overview" style={{ width: "100%", borderRadius: "12px", display: "block", marginBottom: "16px" }} />
               <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A" }}>02. Hifi</h4>
             </div>
             <div>
