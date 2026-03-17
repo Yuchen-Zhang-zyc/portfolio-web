@@ -650,9 +650,7 @@ export default function AgroxProject() {
                 </p>
               </div>
               <div className="ag-feature-visual">
-                <div className="ag-img-placeholder" style={{ height: "400px" }}>
-                  [ Image: AI Visual Recognition UI/Render ]
-                </div>
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773790504/portfolio/projects/agrox/hifi-field.png" alt="AI Visual Pest Recognition" style={{ width: "100%", borderRadius: "16px", display: "block" }} />
               </div>
             </div>
 
@@ -665,9 +663,7 @@ export default function AgroxProject() {
                 </p>
               </div>
               <div className="ag-feature-visual">
-                <div className="ag-img-placeholder" style={{ height: "400px" }}>
-                  [ Image: Robot Hardware Render / Steam Vacuum ]
-                </div>
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773790506/portfolio/projects/agrox/hifi-vacuum.png" alt="Autonomous Pest Management" style={{ width: "100%", borderRadius: "16px", display: "block" }} />
               </div>
             </div>
 
@@ -680,9 +676,7 @@ export default function AgroxProject() {
                 </p>
               </div>
               <div className="ag-feature-visual">
-                <div className="ag-img-placeholder" style={{ height: "400px" }}>
-                  [ Image: Mobile App / Heatmap UI ]
-                </div>
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773790505/portfolio/projects/agrox/hifi-info.png" alt="Pest Heatmap Dashboard" style={{ width: "100%", borderRadius: "16px", display: "block" }} />
               </div>
             </div>
 
