@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+
 import NextProject from "../../components/NextProject";
 
 // ── Image asset constants ──────────────────────────────────────────────────────

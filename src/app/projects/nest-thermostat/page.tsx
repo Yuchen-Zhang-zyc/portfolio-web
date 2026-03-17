@@ -1,4 +1,6 @@
 "use client";
+
+import Link from "next/link";
 import React, { useEffect } from 'react';
 import "./nest.css";
 import NextProject from "../../components/NextProject";
