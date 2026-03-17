@@ -93,7 +93,7 @@ export default function RecoPage() {
       <div className="reco-page">
 
         {/* Nav */}
-        <nav className="reco-nav">
+        <nav className="reco-nav relative z-20">
           <span className="reco-nav-logo">RECO</span>
           <Link href="/" className="reco-nav-back">← Home</Link>
         </nav>

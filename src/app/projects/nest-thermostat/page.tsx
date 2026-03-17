@@ -40,8 +40,8 @@ export default function NestThermostatProject() {
     <div className="nest-page">
 
       {/* ── Back link ── */}
-      <div style={{ padding: '14px 48px' }}>
-        <a href="/" style={{ fontSize: 12, color: 'rgba(255,255,255,0.45)', textDecoration: 'none', fontFamily: 'monospace', letterSpacing: '0.06em' }}>← Home</a>
+      <div className="relative z-20" style={{ padding: '14px 48px' }}>
+        <Link href="/" style={{ fontSize: 12, color: 'rgba(255,255,255,0.45)', textDecoration: 'none', fontFamily: 'monospace', letterSpacing: '0.06em' }}>← Home</Link>
       </div>
 
       {/* ══ HERO ══ */}
