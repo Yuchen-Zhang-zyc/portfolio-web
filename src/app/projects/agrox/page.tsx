@@ -703,9 +703,7 @@ export default function AgroxProject() {
               <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A" }}>02. Hifi</h4>
             </div>
             <div>
-              <div className="ag-img-placeholder" style={{ height: "300px", marginBottom: "16px" }}>
-                [ Image: Physical Model ]
-              </div>
+              <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773790841/portfolio/projects/agrox/model.png" alt="Agrox physical model" style={{ width: "100%", borderRadius: "12px", display: "block", marginBottom: "16px" }} />
               <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A" }}>03. Model</h4>
             </div>
           </div>
