@@ -443,11 +443,8 @@ export default function AgroxProject() {
           <h1 className="ag-hero-title">Agrox</h1>
           <p className="ag-hero-subtitle">Autonomous & Chemical-Free Pest Management</p>
           
-          <div className="ag-img-placeholder" style={{ height: "600px", border: "none", background: "transparent", marginBottom: "64px" }}>
-            {/* TODO: Add Hero Image here */}
-            <div style={{ width: "100%", height: "100%", background: "rgba(255,255,255,0.5)", backdropFilter: "blur(10px)", borderRadius: "24px", display: "flex", alignItems: "center", justifyContent: "center", border: "1px solid rgba(255,255,255,0.8)" }}>
-              [ Hero Image / Product Render Placeholder ]
-            </div>
+          <div style={{ marginBottom: "64px" }}>
+            <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773759935/portfolio/projects/agrox/hero.png" alt="Agrox product render" style={{ width: "100%", borderRadius: "24px", display: "block" }} />
           </div>
 
           <div className="ag-meta-grid">

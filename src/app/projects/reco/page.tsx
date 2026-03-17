@@ -195,7 +195,7 @@ export default function RecoPage() {
             </div>
 
             <img
-              src="/projects/reco/features.png"
+              src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773758102/portfolio/projects/reco/features.jpg"
               alt="RECO feature mockups — VITA AI companion, Smartphone IMU rehabilitation, and home screen widgets"
               className="reco-feature-img"
             />

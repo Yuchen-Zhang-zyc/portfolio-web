@@ -321,8 +321,8 @@ const v1Screens = [
     desc: "Initial dose feed concept",
     bullets: ["Flat list with no time grouping", "Combined confirm + skip into one ambiguous tap", "No visual confirmation state"],
     images: [
-      { src: "/projects/dosecare/home.png", alt: "DoseCare home screen v1" },
-      { src: "/projects/dosecare/home1.png", alt: "DoseCare home screen v1 variant" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757774/portfolio/projects/dosecare/home.png", alt: "DoseCare home screen v1" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757775/portfolio/projects/dosecare/home1.png", alt: "DoseCare home screen v1 variant" },
     ],
   },
   {
@@ -330,9 +330,9 @@ const v1Screens = [
     desc: "Manual-first entry",
     bullets: ["Required medical terminology upfront", "Scan as secondary option, buried below form", "No auto-fill after scan"],
     images: [
-      { src: "/projects/dosecare/Scan.png", alt: "DoseCare scan screen v1" },
-      { src: "/projects/dosecare/scan-confirm.png", alt: "DoseCare scan confirmation v1" },
-      { src: "/projects/dosecare/add.png", alt: "DoseCare add medication v1" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757765/portfolio/projects/dosecare/Scan.png", alt: "DoseCare scan screen v1" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757781/portfolio/projects/dosecare/scan-confirm.png", alt: "DoseCare scan confirmation v1" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757770/portfolio/projects/dosecare/add.png", alt: "DoseCare add medication v1" },
     ],
   },
   {
@@ -340,8 +340,8 @@ const v1Screens = [
     desc: "All info shown at once",
     bullets: ["Flat dump of warnings, dosage, schedule, side effects", "No progressive disclosure", "Information overload for 65+ users"],
     images: [
-      { src: "/projects/dosecare/medicine.png", alt: "DoseCare medication detail v1" },
-      { src: "/projects/dosecare/refill.png", alt: "DoseCare refill screen v1" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757777/portfolio/projects/dosecare/medicine.png", alt: "DoseCare medication detail v1" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757778/portfolio/projects/dosecare/refill.png", alt: "DoseCare refill screen v1" },
     ],
   },
 ];
@@ -356,8 +356,8 @@ const screenGroups = [
       "Dynamic Island integration for ambient dose reminders without interruption",
     ],
     images: [
-      { src: "/projects/dosecare/Home/Dynamic-Island-1.png", alt: "DoseCare dynamic island notification" },
-      { src: "/projects/dosecare/Home/Dynamic-Island-2.png", alt: "DoseCare dynamic island expanded" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757727/portfolio/projects/dosecare/Home/Dynamic-Island-1.png", alt: "DoseCare dynamic island notification" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757728/portfolio/projects/dosecare/Home/Dynamic-Island-2.png", alt: "DoseCare dynamic island expanded" },
       { src: "/projects/dosecare/Home/home-2.png", alt: "DoseCare home screen" },
       { src: "/projects/dosecare/Home/Home-1.png", alt: "DoseCare home variant" },
     ],
@@ -371,14 +371,14 @@ const screenGroups = [
       "Refill flow connects directly to doctor or pharmacy in one tap",
     ],
     images: [
-      { src: "/projects/dosecare/Med/Medication-List.png", alt: "DoseCare medication list" },
-      { src: "/projects/dosecare/Med/Medication-List-6.png", alt: "DoseCare medication list variant" },
-      { src: "/projects/dosecare/Med/Medication-Info-2.png", alt: "DoseCare medication info" },
-      { src: "/projects/dosecare/Med/Medication-Enter-Time-2.png", alt: "DoseCare enter time" },
-      { src: "/projects/dosecare/Med/Medication-Enter-Time-1-2.png", alt: "DoseCare enter time variant" },
-      { src: "/projects/dosecare/Med/Medication-refill-2.png", alt: "DoseCare medication refill" },
-      { src: "/projects/dosecare/Med/Medication-refill-Doctor-2.png", alt: "DoseCare refill doctor" },
-      { src: "/projects/dosecare/Med/Medication-refill-Pharma-2.png", alt: "DoseCare refill pharmacy" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757734/portfolio/projects/dosecare/Med/Medication-List.png", alt: "DoseCare medication list" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757733/portfolio/projects/dosecare/Med/Medication-List-6.png", alt: "DoseCare medication list variant" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757732/portfolio/projects/dosecare/Med/Medication-Info-2.png", alt: "DoseCare medication info" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757731/portfolio/projects/dosecare/Med/Medication-Enter-Time-2.png", alt: "DoseCare enter time" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757730/portfolio/projects/dosecare/Med/Medication-Enter-Time-1-2.png", alt: "DoseCare enter time variant" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757734/portfolio/projects/dosecare/Med/Medication-refill-2.png", alt: "DoseCare medication refill" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757735/portfolio/projects/dosecare/Med/Medication-refill-Doctor-2.png", alt: "DoseCare refill doctor" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757736/portfolio/projects/dosecare/Med/Medication-refill-Pharma-2.png", alt: "DoseCare refill pharmacy" },
     ],
   },
   {
@@ -392,9 +392,9 @@ const screenGroups = [
     images: [
       { src: "/projects/dosecare/Onboard/Add-Medicine.png", alt: "Step 1 — Find Your Medicine" },
       { src: "/projects/dosecare/Onboard/Add-Medicine-1-2.png", alt: "Scan prescription" },
-      { src: "/projects/dosecare/Onboard/Confirm-2.png", alt: "Step 2 — Confirm Medicine" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757753/portfolio/projects/dosecare/Onboard/Confirm-2.png", alt: "Step 2 — Confirm Medicine" },
       { src: "/projects/dosecare/Onboard/Add-Medicine-2.png", alt: "Step 3 — Set Time" },
-      { src: "/projects/dosecare/Onboard/Tag-6.png", alt: "Step 4 — Add Tag" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757763/portfolio/projects/dosecare/Onboard/Tag-6.png", alt: "Step 4 — Add Tag" },
     ],
   },
   {
@@ -406,8 +406,8 @@ const screenGroups = [
       "History calendar for reviewing past doses at a glance",
     ],
     images: [
-      { src: "/projects/dosecare/Trend/Trend.png", alt: "DoseCare trend insights" },
-      { src: "/projects/dosecare/Trend/History-2.png", alt: "DoseCare history" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757769/portfolio/projects/dosecare/Trend/Trend.png", alt: "DoseCare trend insights" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757768/portfolio/projects/dosecare/Trend/History-2.png", alt: "DoseCare history" },
     ],
   },
   {
@@ -419,8 +419,8 @@ const screenGroups = [
       "Caregiver access is opt-in and controlled entirely by the patient",
     ],
     images: [
-      { src: "/projects/dosecare/Caregiver and profile/Caregiver-3.png", alt: "DoseCare caregiver view" },
-      { src: "/projects/dosecare/Caregiver and profile/Profile-3.png", alt: "DoseCare profile settings" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757724/portfolio/projects/dosecare/Caregiver%20and%20profile/Caregiver-3.png", alt: "DoseCare caregiver view" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757725/portfolio/projects/dosecare/Caregiver%20and%20profile/Profile-3.png", alt: "DoseCare profile settings" },
     ],
   },
 ];

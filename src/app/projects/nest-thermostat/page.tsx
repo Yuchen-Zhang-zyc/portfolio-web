@@ -17,7 +17,22 @@ export default function NestThermostatProject() {
       { threshold: 0.08 }
     );
     document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
-    return () => io.disconnect();
+
+    // When navigating back to this page from Next.js router cache, the component
+    // may not re-mount, so useEffect won't re-run. Force-reveal on popstate.
+    const handlePopState = () => {
+      setTimeout(() => {
+        document.querySelectorAll('.reveal:not(.visible)').forEach((el) => {
+          el.classList.add('visible');
+        });
+      }, 0);
+    };
+    window.addEventListener('popstate', handlePopState);
+
+    return () => {
+      io.disconnect();
+      window.removeEventListener('popstate', handlePopState);
+    };
   }, []);
 
   return (
@@ -38,7 +53,7 @@ export default function NestThermostatProject() {
         <div className="hero-images" style={{ position: 'relative' }}>
           <div className="hero-glow hero-glow-heat" aria-hidden="true"></div>
           <div className="hero-glow hero-glow-cool" aria-hidden="true"></div>
-          <img src="/projects/nest-thermostat/hero_phones.png" alt="Nest app redesign" style={{ height: '100%', width: '100%', objectFit: 'contain', position: 'relative', zIndex: 1 }} />
+          <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757831/portfolio/projects/nest-thermostat/hero_phones.png" alt="Nest app redesign" style={{ height: '100%', width: '100%', objectFit: 'contain', position: 'relative', zIndex: 1 }} />
         </div>
 
         <div className="hero-meta">
@@ -108,7 +123,7 @@ export default function NestThermostatProject() {
               <div style={{ background: '#141414', borderRadius: '20px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 clamp(16px, 8vw, 114px)', height: '512px' }}>
                 <div style={{ width: '260px', height: '100%', position: 'relative', flexShrink: 0 }}>
                   <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%,-50%)', width: '360px', height: '360px', overflow: 'hidden' }}>
-                    <img src="/projects/nest-thermostat/thermo_schedule.png" alt="Original Nest thermostat — horizontal schedule" style={{ position: 'absolute', top: 0, left: 0, height: '100%', width: '168.78%', maxWidth: 'none' }} />
+                    <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757864/portfolio/projects/nest-thermostat/thermo_schedule.png" alt="Original Nest thermostat — horizontal schedule" style={{ position: 'absolute', top: 0, left: 0, height: '100%', width: '168.78%', maxWidth: 'none' }} />
                   </div>
                 </div>
               </div>
@@ -125,7 +140,7 @@ export default function NestThermostatProject() {
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
               <div style={{ background: '#141414', borderRadius: '20px', overflow: 'hidden', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0 clamp(16px, 10vw, 144px)', height: '512px' }}>
                 <div style={{ width: '200px', height: '433px', borderRadius: '28px', overflow: 'hidden', boxShadow: '0 20px 48px rgba(0,0,0,0.2)', flexShrink: 0 }}>
-                  <img src="/projects/nest-thermostat/old_energy.jpg" alt="Original app — energy history" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                  <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757860/portfolio/projects/nest-thermostat/old_energy.jpg" alt="Original app — energy history" style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
                 </div>
               </div>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
@@ -140,7 +155,7 @@ export default function NestThermostatProject() {
             {/* 3. Old weekly schedule */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }} className="reveal d2">
               <div style={{ background: '#141414', borderRadius: '20px', overflow: 'hidden', padding: '28px 24px', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '220px' }}>
-                <img src="/projects/nest-thermostat/old_schedule_week.webp" alt="Original app — weekly heat schedule" style={{ width: '100%', borderRadius: '10px', display: 'block', boxShadow: '0 8px 24px rgba(0,0,0,0.15)' }} />
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757862/portfolio/projects/nest-thermostat/old_schedule_week.png" alt="Original app — weekly heat schedule" style={{ width: '100%', borderRadius: '10px', display: 'block', boxShadow: '0 8px 24px rgba(0,0,0,0.15)' }} />
               </div>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--orange)', letterSpacing: '0.06em', textTransform: 'uppercase', flexShrink: 0, marginTop: '2px' }}>P.02</span>
@@ -154,7 +169,7 @@ export default function NestThermostatProject() {
             {/* 4. Old day editing */}
             <div style={{ display: 'flex', flexDirection: 'column', gap: '16px' }} className="reveal d3">
               <div style={{ background: '#141414', borderRadius: '20px', overflow: 'hidden', padding: '28px 24px', display: 'flex', alignItems: 'center', justifyContent: 'center', minHeight: '220px' }}>
-                <img src="/projects/nest-thermostat/old_schedule_day.webp" alt="Original app — single day editing" style={{ width: '100%', borderRadius: '10px', display: 'block', boxShadow: '0 8px 24px rgba(0,0,0,0.15)' }} />
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757861/portfolio/projects/nest-thermostat/old_schedule_day.png" alt="Original app — single day editing" style={{ width: '100%', borderRadius: '10px', display: 'block', boxShadow: '0 8px 24px rgba(0,0,0,0.15)' }} />
               </div>
               <div style={{ display: 'flex', gap: '10px', alignItems: 'flex-start' }}>
                 <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--orange)', letterSpacing: '0.06em', textTransform: 'uppercase', flexShrink: 0, marginTop: '2px' }}>P.02</span>
@@ -263,11 +278,11 @@ export default function NestThermostatProject() {
               },
               {
                 title: 'Rounded Linear Icons',
-                visual: <img src="/projects/nest-thermostat/gl_linear_icons.svg" width={44} height={44} alt="Rounded Linear Icons" style={{ display: 'block', flexShrink: 0 }} />,
+                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757796/portfolio/projects/nest-thermostat/gl_linear_icons.svg" width={44} height={44} alt="Rounded Linear Icons" style={{ display: 'block', flexShrink: 0 }} />,
               },
               {
                 title: 'Rounded Corners',
-                visual: <img src="/projects/nest-thermostat/gl_rounded_corners.svg" width={40} height={40} alt="Rounded Corners" style={{ display: 'block', flexShrink: 0 }} />,
+                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757800/portfolio/projects/nest-thermostat/gl_rounded_corners.svg" width={40} height={40} alt="Rounded Corners" style={{ display: 'block', flexShrink: 0 }} />,
               },
               {
                 title: 'Transparent',
@@ -285,19 +300,19 @@ export default function NestThermostatProject() {
               },
               {
                 title: 'Average Information Density',
-                visual: <img src="/projects/nest-thermostat/gl_info_density.svg" width={44} height={44} alt="Average Information Density" style={{ display: 'block', flexShrink: 0 }} />,
+                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757795/portfolio/projects/nest-thermostat/gl_info_density.svg" width={44} height={44} alt="Average Information Density" style={{ display: 'block', flexShrink: 0 }} />,
               },
               {
                 title: 'Card Elements',
-                visual: <img src="/projects/nest-thermostat/gl_card_elements.svg" width={44} height={44} alt="Card Elements" style={{ display: 'block', flexShrink: 0 }} />,
+                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757791/portfolio/projects/nest-thermostat/gl_card_elements.svg" width={44} height={44} alt="Card Elements" style={{ display: 'block', flexShrink: 0 }} />,
               },
               {
                 title: 'Monochrome',
-                visual: <img src="/projects/nest-thermostat/gl_monochrome.svg" width={42} height={42} alt="Monochrome" style={{ display: 'block', flexShrink: 0 }} />,
+                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757798/portfolio/projects/nest-thermostat/gl_monochrome.svg" width={42} height={42} alt="Monochrome" style={{ display: 'block', flexShrink: 0 }} />,
               },
               {
                 title: 'Focal Point',
-                visual: <img src="/projects/nest-thermostat/gl_focal_point.svg" width={35} height={35} alt="Focal Point" style={{ display: 'block', flexShrink: 0 }} />,
+                visual: <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757793/portfolio/projects/nest-thermostat/gl_focal_point.svg" width={35} height={35} alt="Focal Point" style={{ display: 'block', flexShrink: 0 }} />,
               },
             ] as { title: string; visual: React.ReactNode }[]).map(({ title, visual }) => (
               <div key={title} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 29px', height: '90px', background: '#141414', border: '1px solid rgba(255,255,255,0.08)', borderRadius: '16px' }}>
@@ -391,8 +406,8 @@ export default function NestThermostatProject() {
               </div>
               <div className="reveal d1">
                 <div className="duo">
-                  <img className="img-device" src="/projects/nest-thermostat/hifi_01_device.png" alt="Heating state device" />
-                  <img src="/projects/nest-thermostat/hifi_01_phone.png" alt="Heating state phone" style={{ width: 'clamp(100px, 25vw, 185px)', display: 'block', boxShadow: '0 40px 80px rgba(0,0,0,0.65)' }} />
+                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757832/portfolio/projects/nest-thermostat/hifi_01_device.png" alt="Heating state device" />
+                  <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757834/portfolio/projects/nest-thermostat/hifi_01_phone.png" alt="Heating state phone" style={{ width: 'clamp(100px, 25vw, 185px)', display: 'block', boxShadow: '0 40px 80px rgba(0,0,0,0.65)' }} />
                 </div>
               </div>
             </div>
@@ -411,8 +426,8 @@ export default function NestThermostatProject() {
               </div>
               <div className="reveal d1">
                 <div className="duo">
-                  <img className="img-device" src="/projects/nest-thermostat/hifi_02_device.png" alt="Schedule on device" />
-                  <img className="img-device" src="/projects/nest-thermostat/hifi_02_phone.png" alt="Time change on device" />
+                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757840/portfolio/projects/nest-thermostat/hifi_02_device.png" alt="Schedule on device" />
+                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757841/portfolio/projects/nest-thermostat/hifi_02_phone.png" alt="Time change on device" />
                 </div>
               </div>
             </div>
@@ -431,8 +446,8 @@ export default function NestThermostatProject() {
               </div>
               <div className="reveal d1">
                 <div className="duo">
-                  <img className="img-device" src="/projects/nest-thermostat/hifi_03_phone1.png" alt="Week menu" />
-                  <img className="img-device" src="/projects/nest-thermostat/hifi_03_phone2.png" alt="Temp change" />
+                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757842/portfolio/projects/nest-thermostat/hifi_03_phone1.png" alt="Week menu" />
+                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757843/portfolio/projects/nest-thermostat/hifi_03_phone2.png" alt="Temp change" />
                 </div>
               </div>
             </div>
@@ -451,8 +466,8 @@ export default function NestThermostatProject() {
               </div>
               <div className="reveal d1">
                 <div className="duo">
-                  <img className="img-device" src="/projects/nest-thermostat/hifi_05_heat_phone.png" alt="Heating state" />
-                  <img className="img-device" src="/projects/nest-thermostat/hifi_05_cool_phone.png" alt="Cooling state" />
+                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757847/portfolio/projects/nest-thermostat/hifi_05_heat_phone.png" alt="Heating state" />
+                  <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757845/portfolio/projects/nest-thermostat/hifi_05_cool_phone.png" alt="Cooling state" />
                 </div>
               </div>
             </div>
@@ -714,8 +729,8 @@ export default function NestThermostatProject() {
               <p className="ft-body">One target temperature. The system detects heating or cooling automatically — no dual-threshold decision, no mode selection.</p>
             </div>
             <div className="duo">
-              <img className="img-device" src="/projects/nest-thermostat/final_tempcontrol_device.png" alt="Nest thermostat temperature control final" />
-              <div className="phone-wrap"><img src="/projects/nest-thermostat/final_tempcontrol_phone.png" alt="Temperature control phone app final" /></div>
+              <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757790/portfolio/projects/nest-thermostat/final_tempcontrol_device.png" alt="Nest thermostat temperature control final" />
+              <div className="phone-wrap"><img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757790/portfolio/projects/nest-thermostat/final_tempcontrol_phone.jpg" alt="Temperature control phone app final" /></div>
             </div>
           </div>
 
@@ -726,8 +741,8 @@ export default function NestThermostatProject() {
               <p className="ft-body">Reusable named events now display their temperature inline. Define once, apply across the week — with full context visible at a glance.</p>
             </div>
             <div className="duo">
-              <div className="phone-wrap"><img src="/projects/nest-thermostat/final_schedule1.png" alt="Schedule single day view" /></div>
-              <div className="phone-wrap"><img src="/projects/nest-thermostat/final_schedule2.png" alt="Schedule multi day view" /></div>
+              <div className="phone-wrap"><img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757788/portfolio/projects/nest-thermostat/final_schedule1.jpg" alt="Schedule single day view" /></div>
+              <div className="phone-wrap"><img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757789/portfolio/projects/nest-thermostat/final_schedule2.jpg" alt="Schedule multi day view" /></div>
             </div>
           </div>
 
@@ -738,8 +753,8 @@ export default function NestThermostatProject() {
               <p className="ft-body">Define events like Morning, Work, and Sleep once — each with a name, icon, temperature, and schedule. Apply them to any day without re-entering details.</p>
             </div>
             <div className="duo">
-              <div className="phone-wrap" style={{ width: '185px' }}><img src="/projects/nest-thermostat/final_event1.png" alt="Event edit view" /></div>
-              <div className="phone-wrap" style={{ width: '185px' }}><img src="/projects/nest-thermostat/final_event2.png" alt="Event list view" /></div>
+              <div className="phone-wrap" style={{ width: '185px' }}><img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757787/portfolio/projects/nest-thermostat/final_event1.jpg" alt="Event edit view" /></div>
+              <div className="phone-wrap" style={{ width: '185px' }}><img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757788/portfolio/projects/nest-thermostat/final_event2.jpg" alt="Event list view" /></div>
             </div>
           </div>
 
@@ -750,7 +765,7 @@ export default function NestThermostatProject() {
               <p className="ft-body">Eco mode surfaces real-time savings in dollars and percentage — actionable, transparent, and connected to user behavior.</p>
             </div>
             <div className="phone-wrap" style={{ margin: '0 auto', width: '185px' }}>
-              <img src="/projects/nest-thermostat/final_eco.png" alt="Eco mode final" />
+              <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757786/portfolio/projects/nest-thermostat/final_eco.jpg" alt="Eco mode final" />
             </div>
           </div>
         </div>
@@ -768,7 +783,7 @@ export default function NestThermostatProject() {
           <div className="cross-devices reveal d2">
             <div className="dev-col">
               <span className="dev-col-label">Thermostat Hardware</span>
-              <img className="img-device" src="/projects/nest-thermostat/final_crossdevice_device.png" alt="Device heating" style={{ maxWidth: '340px' }} />
+              <img className="img-device" src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757785/portfolio/projects/nest-thermostat/final_crossdevice_device.png" alt="Device heating" style={{ maxWidth: '340px' }} />
               <div className="shared-pts">
                 <span className="spt">Orange glow = heating state</span>
                 <span className="spt">Single temperature target</span>
@@ -782,7 +797,7 @@ export default function NestThermostatProject() {
             </div>
             <div className="dev-col">
               <span className="dev-col-label">Mobile Application</span>
-              <div className="phone-wrap" style={{ width: 'clamp(120px, 28vw, 210px)' }}><img src="/projects/nest-thermostat/final_crossdevice_phone.png" alt="Phone heating" /></div>
+              <div className="phone-wrap" style={{ width: 'clamp(120px, 28vw, 210px)' }}><img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773757785/portfolio/projects/nest-thermostat/final_crossdevice_phone.jpg" alt="Phone heating" /></div>
               <div className="shared-pts">
                 <span className="spt">Orange accent = heating state</span>
                 <span className="spt">Same single-input model</span>
