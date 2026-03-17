@@ -216,7 +216,7 @@ export default function Home() {
               </div>
 
               <div className="w-full aspect-[16/10] bg-white relative overflow-hidden">
-                <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773789495/portfolio/dosecare-homepage.png')] bg-contain bg-no-repeat bg-center group-hover:scale-105 transition-transform duration-700"></div>
+                <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773789495/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757711/portfolio/dosecare-homepage.png')] bg-contain bg-no-repeat bg-center group-hover:scale-105 transition-transform duration-700"></div>
               </div>
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
