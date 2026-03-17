@@ -185,7 +185,7 @@ export default function HomeZh() {
               </div>
 
               <div className="w-full aspect-[16/10] bg-[#1E1E1E] relative overflow-hidden">
-                <div className="w-full h-full bg-[url('/nest-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
+                <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773760252/portfolio/nest-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
               </div>
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
@@ -217,7 +217,7 @@ export default function HomeZh() {
               </div>
 
               <div className="w-full aspect-[16/10] bg-white relative overflow-hidden">
-                <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773757711/portfolio/dosecare-homepage.png')] bg-contain bg-no-repeat bg-center group-hover:scale-105 transition-transform duration-700"></div>
+                <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773757711/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757711/portfolio/dosecare-homepage.png')] bg-contain bg-no-repeat bg-center group-hover:scale-105 transition-transform duration-700"></div>
               </div>
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
@@ -249,7 +249,7 @@ export default function HomeZh() {
               </div>
 
               <div className="w-full aspect-[16/10] bg-[#EAE3DB] relative overflow-hidden">
-                <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773757710/portfolio/agrox-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
+                <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773757710/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773757710/portfolio/agrox-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
               </div>
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
@@ -313,7 +313,7 @@ export default function HomeZh() {
               </div>
 
               <div className="w-full aspect-[16/10] bg-[#898989] relative overflow-hidden">
-                <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773758106/portfolio/vr-simulation-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
+                <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773758106/portfoliohttps://res.cloudinary.com/dj13he2xu/image/upload/v1773758106/portfolio/vr-simulation-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
               </div>
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
