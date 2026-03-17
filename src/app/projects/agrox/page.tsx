@@ -690,19 +690,19 @@ export default function AgroxProject() {
           
           <div className="ag-grid-3" style={{ marginTop: "48px" }}>
             <div>
-              <div style={{ display: "flex", gap: "12px", marginBottom: "16px" }}>
+              <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A", marginBottom: "16px" }}>01. Sketch</h4>
+              <div style={{ display: "flex", gap: "12px" }}>
                 <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773790734/portfolio/projects/agrox/sketch-1.png" alt="Agrox sketch 1" style={{ width: "50%", borderRadius: "12px", display: "block", border: "1.5px dashed #94A3B8" }} />
                 <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773790735/portfolio/projects/agrox/sketch-2.png" alt="Agrox sketch 2" style={{ width: "50%", borderRadius: "12px", display: "block", border: "1.5px dashed #94A3B8" }} />
               </div>
-              <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A" }}>01. Sketch</h4>
             </div>
             <div>
-              <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773791068/portfolio/projects/agrox/hifi-overview.png" alt="Agrox hifi overview" style={{ width: "100%", borderRadius: "12px", display: "block", marginBottom: "16px" }} />
-              <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A" }}>02. Hifi</h4>
+              <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A", marginBottom: "16px" }}>02. Hifi</h4>
+              <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773791068/portfolio/projects/agrox/hifi-overview.png" alt="Agrox hifi overview" style={{ width: "100%", borderRadius: "12px", display: "block" }} />
             </div>
             <div>
-              <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773790841/portfolio/projects/agrox/model.png" alt="Agrox physical model" style={{ width: "100%", borderRadius: "12px", display: "block", marginBottom: "16px" }} />
-              <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A" }}>03. Model</h4>
+              <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A", marginBottom: "16px" }}>03. Model</h4>
+              <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773790841/portfolio/projects/agrox/model.png" alt="Agrox physical model" style={{ width: "100%", borderRadius: "12px", display: "block" }} />
             </div>
           </div>
         </section>
