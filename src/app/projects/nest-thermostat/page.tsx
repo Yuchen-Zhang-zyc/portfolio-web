@@ -674,12 +674,12 @@ export default function NestThermostatProject() {
               <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--orange)', paddingTop: '4px' }}>01</span>
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '10px' }}>Before</p>
-                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846953/portfolio/projects/nest-thermostat/01before-1773846952582.png" alt="Before: hidden multi-day interaction" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773847220/portfolio/projects/nest-thermostat/01before.png" alt="Before: hidden multi-day interaction" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
                 <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Applying an event to multiple days relied on a hidden interaction (top-right icon), causing 66% of users to fail the task.</p>
               </div>
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--orange)', marginBottom: '10px' }}>After</p>
-                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846953/portfolio/projects/nest-thermostat/01after-1773846952582.png" alt="After: explicit day-selection view modes" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773847221/portfolio/projects/nest-thermostat/01after.png" alt="After: explicit day-selection view modes" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
                 <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Introduced explicit view modes (Single Day, Multi-day, Events). Users now select the weekday first, then adjust the temperature — aligning the mobile app perfectly with the hardware thermostat&apos;s mental model.</p>
               </div>
             </div>
@@ -689,12 +689,12 @@ export default function NestThermostatProject() {
               <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--orange)', paddingTop: '4px' }}>02</span>
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '10px' }}>Before</p>
-                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846954/portfolio/projects/nest-thermostat/02before-1773846952582.png" alt="Before: unclear time to temperature transition" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773847222/portfolio/projects/nest-thermostat/02before.png" alt="Before: unclear time to temperature transition" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
                 <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>On the hardware thermostat, 50% of users were confused by the sudden jump from &quot;setting time&quot; to &quot;setting temperature&quot;, and lacked clear visual confirmation after saving a schedule.</p>
               </div>
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--orange)', marginBottom: '10px' }}>After</p>
-                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846955/portfolio/projects/nest-thermostat/02after-1773846952582.png" alt="After: smooth transition and confirmation state" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773847224/portfolio/projects/nest-thermostat/02after.png" alt="After: smooth transition and confirmation state" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
                 <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Redesigned the hardware UI to mirror the mobile app&apos;s component logic. Added smooth spatial transitions between time and temperature, and introduced explicit visual confirmation states, making system feedback instantly understandable.</p>
               </div>
             </div>
@@ -704,12 +704,12 @@ export default function NestThermostatProject() {
               <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--orange)', paddingTop: '4px' }}>03</span>
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '10px' }}>Before</p>
-                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846956/portfolio/projects/nest-thermostat/03before-1773846952582.png" alt="Before: color semantic confusion" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773847226/portfolio/projects/nest-thermostat/03before.png" alt="Before: color semantic confusion" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
                 <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Orange and blue were used as general accent colors for temperature values, causing confusion since these colors inherently signify "heating" and "cooling" states in HVAC contexts.</p>
               </div>
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--orange)', marginBottom: '10px' }}>After</p>
-                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846957/portfolio/projects/nest-thermostat/03after-1773846952582.png" alt="After: reserved colors for system states only" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773847226/portfolio/projects/nest-thermostat/03after.png" alt="After: reserved colors for system states only" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
                 <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Reserved orange and blue strictly for active system states (heating/cooling). Temperature values now use neutral typography, preventing semantic misinterpretation.</p>
               </div>
             </div>
@@ -719,12 +719,12 @@ export default function NestThermostatProject() {
               <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--orange)', paddingTop: '4px' }}>04</span>
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '10px' }}>Before</p>
-                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846957/portfolio/projects/nest-thermostat/04before-1773846952582.png" alt="Before: mode-first timer flow" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773847227/portfolio/projects/nest-thermostat/04before.png" alt="Before: mode-first timer flow" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
                 <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Users were required to select a specific "mode" before they could set a timer duration, adding unnecessary friction to a quick task.</p>
               </div>
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--orange)', marginBottom: '10px' }}>After</p>
-                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846958/portfolio/projects/nest-thermostat/04after-1773846952582.png" alt="After: direct timer flow" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773847227/portfolio/projects/nest-thermostat/04after.png" alt="After: direct timer flow" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
                 <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Implemented a direct timer flow based on A/B test results (preferred by 75% of users). Users can now set a duration immediately, clearly separating temporary overrides from the long-term schedule.</p>
               </div>
             </div>
