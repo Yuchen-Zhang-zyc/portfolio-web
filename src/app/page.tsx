@@ -365,8 +365,8 @@ export default function Home() {
                 </div>
               </div>
             </Link>
-
-            {/* This Website - Meta Project */}
+            
+            {/* This Website */}
             <Link href="/projects/this-website" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
               <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
                 <div className="flex gap-2 relative z-10">
@@ -379,26 +379,31 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="w-full aspect-[16/10] bg-[#0a0a0f] relative overflow-hidden flex items-center justify-center">
-                <div className="absolute inset-0 opacity-40 bg-[url('data:image/svg+xml,%3Csvg%20viewBox=%220_0_256_256%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter%20id=%22noise%22%3E%3CfeTurbulence%20type=%22fractalNoise%22%20baseFrequency=%220.9%22%20numOctaves=%224%22%20stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect%20width=%22100%25%22%20height=%22100%25%22%20filter=%22url(%23noise)%22%20opacity=%220.05%22/%3E%3C/svg%3E')] mix-blend-overlay"></div>
-                <div className="flex flex-col items-center justify-center gap-3 z-10 group-hover:scale-105 transition-transform duration-700">
-                  <span className="font-mono text-[10px] sm:text-xs text-zinc-400 tracking-[4px] uppercase border border-zinc-700/50 bg-zinc-800/30 px-4 py-1.5 backdrop-blur-md">META PROJECT</span>
-                  <h3 className="text-4xl sm:text-5xl md:text-6xl font-sans font-bold text-zinc-100 tracking-tight">This Website</h3>
-                  <p className="text-zinc-500 text-sm mt-2">Vibe coding with Claude</p>
+              <div className="w-full aspect-[16/10] bg-gradient-to-br from-[#0D1117] via-[#111827] to-[#1F2937] relative overflow-hidden flex items-center justify-center">
+                <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_20%_20%,rgba(125,211,252,0.6),transparent_55%),radial-gradient(circle_at_80%_80%,rgba(167,139,250,0.5),transparent_55%)]" />
+                <div className="relative z-10 flex flex-col items-center justify-center gap-3 group-hover:scale-105 transition-transform duration-700">
+                  <span className="font-mono text-[10px] sm:text-xs text-slate-200/80 tracking-[4px] uppercase border border-slate-200/30 bg-slate-900/40 px-4 py-1.5 backdrop-blur-md">
+                    AI-ASSISTED WORKFLOW
+                  </span>
+                  <h3 className="text-3xl sm:text-4xl md:text-5xl font-sans font-semibold text-slate-50 tracking-tight">
+                    Built with vibe coding
+                  </h3>
                 </div>
               </div>
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
                 <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">This Website <span className="opacity-60 font-normal text-lg">| Designer · Developer</span></h3>
+                  <h3 className="text-2xl font-bold font-sans text-brand-primary">
+                    This website <span className="opacity-60 font-normal text-lg">| AI-assisted workflow</span>
+                  </h3>
                   <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    A meta case study about rebuilding this portfolio through conversational development — exploring how human intention and AI capability shape the final experience.
+                    Most of the site came together through vibe coding sessions with Claude + Figma MCP. Gemini and Codex helped with alternative code paths, sanity checks, and stress‑testing ideas from different model perspectives.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-2">
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Vibe Coding</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Human-AI Collaboration</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Meta</span>
+                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI-assisted Dev</span>
+                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Next.js · Tailwind</span>
+                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Claude · Gemini · Codex</span>
                 </div>
               </div>
             </Link>
