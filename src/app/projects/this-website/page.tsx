@@ -54,7 +54,7 @@ export default function ThisWebsiteProject() {
           {[
             { num: '8', label: 'Project pages' },
             { num: '3', label: 'AI tools used' },
-            { num: '6+', label: 'Weeks building' },
+            { num: '2', label: 'Weeks building' },
             { num: '100%', label: 'Vibe coded' },
           ].map(({ num, label }) => (
             <div key={label} className="rounded-xl border border-white/10 bg-white/5 p-5 text-center">
