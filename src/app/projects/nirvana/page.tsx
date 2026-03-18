@@ -905,7 +905,7 @@ export default function NirvanaPage() {
         </div>
       </section>
 
-      <NextProject href="/projects/vr-simulation" title="VR Tire Change Simulation" role="Solo Designer & Developer" theme="dark" />
+      <NextProject href="/projects/reco" title="RECO" role="UX Designer" theme="dark" />
     </div>
   );
 }

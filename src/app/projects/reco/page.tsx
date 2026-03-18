@@ -302,7 +302,7 @@ export default function RecoPage() {
         </section>
 
       </div>
-      <NextProject href="/projects/dosecare" title="DoseCare" role="Team Lead & UX Designer" theme="dark" />
+      <NextProject href="/projects/this-website" title="This Website" role="Designer & Developer" theme="dark" />
     </>
   );
 }
