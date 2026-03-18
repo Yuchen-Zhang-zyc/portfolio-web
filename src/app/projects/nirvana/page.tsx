@@ -863,27 +863,11 @@ export default function NirvanaPage() {
               <span className="nv-sub-num">13 — Final Design: Hi-Fi</span>
               <h3>High-Fidelity Screens</h3>
             </div>
-            <div className="nv-screen-grid">
-              {[
-                { src: imgCapture1,   alt: "VroomVision screen: main view" },
-                { src: imgG7,         alt: "VroomVision screen: G7 view" },
-                { src: imgG102,       alt: "VroomVision screen: G102 view" },
-                { src: img1232,       alt: "VroomVision screen: 1232 view" },
-                { src: img123123211,  alt: "VroomVision screen: 123123211 view" },
-                { src: img42933721,   alt: "VroomVision screen: 42933721 view" },
-                { src: img31,         alt: "VroomVision screen: 31 view" },
-                { src: img42211201,   alt: "VroomVision screen: 42211201 view" },
-                { src: img51,         alt: "VroomVision screen: 51 view" },
-                { src: img1331,       alt: "VroomVision screen: 1331 view" },
-                { src: img21211,      alt: "VroomVision screen: 21211 view" },
-                { src: img52,         alt: "VroomVision screen: 52 view" },
-                { src: img32,         alt: "VroomVision screen: 32 view" },
-                { src: img34,         alt: "VroomVision screen: 34 view" },
-                { src: img53,         alt: "VroomVision screen: 53 view" },
-              ].map(({ src, alt }) => (
-                <img key={src} src={src} alt={alt} />
-              ))}
-            </div>
+            <img
+              src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773805006/portfolio/projects/nirvana/hifi.png"
+              alt="VroomVision high-fidelity screens"
+              style={{ width: "100%", borderRadius: "12px", display: "block" }}
+            />
           </div>
 
           {/* 13 — Service Blueprint */}
@@ -892,42 +876,11 @@ export default function NirvanaPage() {
               <span className="nv-sub-num">13 — Service Blueprint</span>
               <h3>Service Blueprint</h3>
             </div>
-            <p className="nv-sub-body">
-              The end-to-end service flow connecting customer touchpoints, employee actions, frontstage, and backstage processes — from app planning through test drive and delivery.
-            </p>
-            <div className="nv-blueprint-wrap nv-mt-24">
-              <table className="nv-blueprint">
-                <thead>
-                  <tr>
-                    <th>Phase</th>
-                    <th>Customer Journey</th>
-                    <th>Employee Action</th>
-                    <th>Device / App</th>
-                    <th>Time</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {[
-                    ["Make plan on app",       "Create plan on app",      "—",                  "APP",    "30 min"],
-                    ["Appointment Booking",    "Book appointment",        "Confirm booking",    "APP",    "5 min"],
-                    ["In-store Consultation",  "Consult with staff",      "Discussion",         "—",      "30–60 min"],
-                    ["Simulator Experience",   "Experience simulator",    "Simulator setup",    "Device", "30–60 min"],
-                    ["Schedule Timeline",      "—",                       "Create work schedule","APP",   "10 min"],
-                    ["Check-in",               "Drop off vehicle",        "Record check-in",    "APP",    "5 min"],
-                    ["Modification",           "—",                       "Modifying / tuning", "—",      "Based on plan"],
-                    ["Test & Check Out",       "Test drive & checkout",   "Check-in / out",     "APP",    "15 min"],
-                  ].map(([phase, customer, employee, device, time]) => (
-                    <tr key={phase}>
-                      <td style={{ fontWeight: 600, color: "#fff", whiteSpace: "nowrap" }}>{phase}</td>
-                      <td>{customer}</td>
-                      <td>{employee}</td>
-                      <td style={{ color: "var(--phase-color)", fontWeight: 600 }}>{device}</td>
-                      <td style={{ whiteSpace: "nowrap", color: "#9ca3af" }}>{time}</td>
-                    </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+            <img
+              src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773805178/portfolio/projects/nirvana/service-blueprint.png"
+              alt="Service blueprint showing phases: Make plan on app, Appointment Booking, In-store consultation, Simulator Experience, Schedule timeline, Check-in, Modification, Test and Check out"
+              style={{ width: "100%", borderRadius: "12px", display: "block", marginTop: "24px" }}
+            />
           </div>
 
           {/* 13 — Storyboard */}
@@ -936,21 +889,11 @@ export default function NirvanaPage() {
               <span className="nv-sub-num">13 — Storyboard</span>
               <h3>Storyboard</h3>
             </div>
-            <div className="nv-story-grid">
-              {[
-                "See the app on the ad board",
-                "Creating ideas on VroomVision app",
-                "Go to the car modification shop",
-                "Consultation with staff",
-                "Car modification in mechanic space",
-                "Test drive and check out",
-              ].map((text, i) => (
-                <div className="nv-story-item" key={text}>
-                  <div className="nv-story-num">{String(i + 1).padStart(2, "0")}</div>
-                  <div className="nv-story-text">{text}</div>
-                </div>
-              ))}
-            </div>
+            <img
+              src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773804915/portfolio/projects/nirvana/storyboard.png"
+              alt="Storyboard showing 6 steps: see app on ad board, create ideas, go to shop, consultation, car modification, test drive"
+              style={{ width: "100%", borderRadius: "12px", display: "block" }}
+            />
           </div>
 
           {/* Reflection callout */}
