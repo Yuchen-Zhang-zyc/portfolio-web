@@ -29,7 +29,7 @@ body {
 
 @layer utilities {
   .animate-blob {
-    animation: blob 10s infinite alternate;
+    animation: blob 15s infinite alternate ease-in-out;
   }
   .animation-delay-2000 {
     animation-delay: 2s;
@@ -176,15 +176,15 @@ body {
 
 @keyframes blob {
   0% {
-    transform: translate(0px, 0px) scale(1);
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
   }
   33% {
-    transform: translate(50px, -50px) scale(1.1);
+    transform: translate(15vw, -12vh) scale(1.2) rotate(15deg);
   }
   66% {
-    transform: translate(-40px, 20px) scale(0.9);
+    transform: translate(-12vw, 15vh) scale(0.8) rotate(-15deg);
   }
   100% {
-    transform: translate(0px, 0px) scale(1);
+    transform: translate(0px, 0px) scale(1) rotate(0deg);
   }
 }

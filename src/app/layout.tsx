@@ -23,8 +23,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="scroll-smooth">
-      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-      <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+      <head>
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
+      </head>
       <body className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} ${dmSerifDisplay.variable} ${inter.variable} ${dmSans.variable} ${dmMono.variable} font-body antialiased bg-brand-bg text-brand-primary min-h-screen flex flex-col`}>
 
         <BfcacheRepaint />
