@@ -750,7 +750,7 @@ export default function DoseCarePage() {
             <div className="dc-hero-grid">
               {/* Left: all text content */}
               <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
-                <div className="dc-eyebrow">UX Case Study · iOS · 2024</div>
+                <div className="dc-eyebrow">UX Case Study · iOS · 2025</div>
                 <h1 className="dc-hero-title">
                   <span className="t-light">Medication</span><br />
                   <span className="t-bold">adherence</span><br />
