@@ -365,6 +365,43 @@ export default function Home() {
                 </div>
               </div>
             </Link>
+
+            {/* This Website - Meta Project */}
+            <Link href="/projects/this-website" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+              <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                <div className="flex gap-2 relative z-10">
+                  <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                  <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                  <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                  This Website
+                </div>
+              </div>
+
+              <div className="w-full aspect-[16/10] bg-[#0a0a0f] relative overflow-hidden flex items-center justify-center">
+                <div className="absolute inset-0 opacity-40 bg-[url('data:image/svg+xml,%3Csvg%20viewBox=%220_0_256_256%22%20xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter%20id=%22noise%22%3E%3CfeTurbulence%20type=%22fractalNoise%22%20baseFrequency=%220.9%22%20numOctaves=%224%22%20stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect%20width=%22100%25%22%20height=%22100%25%22%20filter=%22url(%23noise)%22%20opacity=%220.05%22/%3E%3C/svg%3E')] mix-blend-overlay"></div>
+                <div className="flex flex-col items-center justify-center gap-3 z-10 group-hover:scale-105 transition-transform duration-700">
+                  <span className="font-mono text-[10px] sm:text-xs text-zinc-400 tracking-[4px] uppercase border border-zinc-700/50 bg-zinc-800/30 px-4 py-1.5 backdrop-blur-md">META PROJECT</span>
+                  <h3 className="text-4xl sm:text-5xl md:text-6xl font-sans font-bold text-zinc-100 tracking-tight">This Website</h3>
+                  <p className="text-zinc-500 text-sm mt-2">Vibe coding with Claude</p>
+                </div>
+              </div>
+
+              <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                <div className="flex flex-col gap-2">
+                  <h3 className="text-2xl font-bold font-sans text-brand-primary">This Website <span className="opacity-60 font-normal text-lg">| Designer · Developer</span></h3>
+                  <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
+                    A meta case study about rebuilding this portfolio through conversational development — exploring how human intention and AI capability shape the final experience.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-2">
+                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Vibe Coding</span>
+                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Human-AI Collaboration</span>
+                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Meta</span>
+                </div>
+              </div>
+            </Link>
           </div>
         </section>
 
