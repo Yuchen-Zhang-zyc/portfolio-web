@@ -476,7 +476,7 @@ export default function AgroxProject() {
             <div>
               <h2 className="ag-title">Understanding the<br /><strong>core challenges.</strong></h2>
               <p className="ag-desc">
-                Our goal was to understand the challenges small-scale farmers face during the growing process—and how they currently detect and respond to these problems in their day-to-day farming practices.
+                We conducted field interviews with 5 small-scale organic farms — 4 at Forsyth Park Farmers Market and 1 in South Carolina — to understand how farmers actually detect and respond to pest problems day-to-day. We focused on four questions: their current pain points, how they judge crop conditions, what tools they use, and whether they&apos;d accept technological intervention.
               </p>
             </div>
             <div className="ag-glass-grid" style={{ gridTemplateColumns: "1fr 1fr", gap: "24px", marginBottom: 0 }}>
@@ -490,29 +490,50 @@ export default function AgroxProject() {
               </div>
             </div>
           </div>
+
+          <div style={{ marginTop: "48px", display: "flex", flexDirection: "column", gap: "16px" }}>
+            <h3 style={{ fontSize: "18px", fontWeight: 600, color: "#0F172A" }}>What farmers told us</h3>
+            {[
+              { quote: "Yeah. I mean, there's tons of risks, like pests. Sometimes we just… we're just picking bugs off by hand.", insight: "Manual removal is the default — not a choice, but a last resort." },
+              { quote: "We spray organic stuff — neem oil, BT — but when the pest pressure is high, it's hard not to use something stronger.", insight: "Organic methods fail under pressure, putting certification at risk." },
+              { quote: "Tend is super complicated. Too many features. It'd be nice if we could just choose the ones we need.", insight: "Existing software is built for scale, not for small farms with limited bandwidth." },
+              { quote: "Give me the date, what crop it was, what pest we saw, and maybe which garden it happened in. That's all I need.", insight: "Farmers want minimal, structured data — not comprehensive dashboards." },
+            ].map(({ quote, insight }, i) => (
+              <div key={i} className="ag-glass-card" style={{ padding: "24px 32px", display: "flex", flexDirection: "column", gap: "12px" }}>
+                <p style={{ fontSize: "16px", fontStyle: "italic", color: "#334155", lineHeight: 1.6 }}>&ldquo;{quote}&rdquo;</p>
+                <p style={{ fontSize: "14px", color: "#0EA5E9", fontWeight: 500 }}>→ {insight}</p>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* ── 02 THE PROBLEM ── */}
         <section className="ag-section ag-section-border ag-container">
           <span className="ag-eyebrow">02 — The Problem</span>
           <h2 className="ag-title">The burden of<br /><strong>organic pest control.</strong></h2>
-          
+
           <div className="ag-grid-2">
             <div>
               <p className="ag-desc" style={{ marginBottom: "24px" }}>
-                Organic farms face persistent pest threats, but manual monitoring and traditional control methods are time-consuming and inefficient, leading to crop losses and higher costs.
+                Globally, pests destroy 20–40% of crops annually. For organic farms, the constraint is even sharper: they cannot use synthetic pesticides, so when pest pressure spikes, their only options are labor-intensive manual methods or accepting crop loss.
               </p>
               <p className="ag-desc">
-                There is an urgent need for an automated, eco-friendly, and easy-to-deploy pest management solution that enables accurate detection, control, and data tracking.
+                What surprised us was that the problem isn&apos;t just about killing pests — it&apos;s about <strong>knowing where they are</strong> before the damage is visible. By the time a farmer walks the field and spots an outbreak, entire rows are already unmarketable.
               </p>
             </div>
-            <div className="ag-glass-card" style={{ padding: "32px" }}>
-              <h3 style={{ fontSize: "18px", fontWeight: 600, marginBottom: "20px", color: "#0F172A" }}>Interview Insights</h3>
-              <ul className="ag-list">
-                <li><strong>Lack of Systematic ID:</strong> Farmers lack systematic pest identification and record-keeping.</li>
-                <li><strong>High Pressure Failure:</strong> Organic pest control methods present challenges in high pest pressure situations.</li>
-                <li><strong>Software Complexity:</strong> The complexity of farm management software can hinder adoption.</li>
-              </ul>
+            <div style={{ display: "flex", flexDirection: "column", gap: "16px" }}>
+              <div className="ag-glass-card" style={{ padding: "28px 32px" }}>
+                <h3 style={{ fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: 600, color: "#0EA5E9", marginBottom: "12px" }}>Insight 01</h3>
+                <p style={{ fontSize: "16px", color: "#0F172A", lineHeight: 1.6 }}><strong>No systematic tracking.</strong> Pest identification relies on intuition. There&apos;s no consistent record of where outbreaks occur, making prevention nearly impossible.</p>
+              </div>
+              <div className="ag-glass-card" style={{ padding: "28px 32px" }}>
+                <h3 style={{ fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: 600, color: "#F59E0B", marginBottom: "12px" }}>Insight 02</h3>
+                <p style={{ fontSize: "16px", color: "#0F172A", lineHeight: 1.6 }}><strong>Organic methods break down at scale.</strong> Neem oil and BT work at low pressure, but farmers feel forced to choose between their certification and their crop.</p>
+              </div>
+              <div className="ag-glass-card" style={{ padding: "28px 32px" }}>
+                <h3 style={{ fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: 600, color: "#EF4444", marginBottom: "12px" }}>Insight 03</h3>
+                <p style={{ fontSize: "16px", color: "#0F172A", lineHeight: 1.6 }}><strong>Technology adoption fails at complexity.</strong> Tools like Tend are abandoned because the learning curve outweighs the benefit for small operations.</p>
+              </div>
             </div>
           </div>
         </section>
@@ -557,76 +578,43 @@ export default function AgroxProject() {
           </div>
         </section>
 
-        {/* ── 04 TECHNICAL DIRECTION ── */}
+        {/* ── 04 TECHNICAL EXPLORATION ── */}
         <section className="ag-section ag-section-border ag-container">
-          <span className="ag-eyebrow">04 — Technical Direction</span>
-          <h2 className="ag-title">From field research to a<br /><strong>chemical-free</strong> solution.</h2>
+          <span className="ag-eyebrow">04 — Technical Exploration</span>
+          <h2 className="ag-title">Six ideas before<br /><strong>one answer.</strong></h2>
           <p className="ag-desc">
-            To meet the needs of organic farmers, we researched technologies that could replace chemical pesticides while automating the labor-intensive scouting process.
+            We didn&apos;t start with a robot. We began by surveying academic literature and existing technologies to find what was scientifically viable and organically compliant. This produced six distinct concepts — each grounded in a different intervention logic.
           </p>
 
-          <div className="ag-glass-grid">
-            {/* Card 1: AI */}
-            <div className="ag-glass-card">
-              <div className="ag-card-icon">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <rect x="3" y="3" width="18" height="18" rx="4" ry="4"></rect>
-                  <circle cx="8.5" cy="8.5" r="1.5"></circle>
-                  <polyline points="21 15 16 10 5 21"></polyline>
-                </svg>
+          <div style={{ marginTop: "48px", display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "20px" }}>
+            {[
+              { name: "CrawlerVac", tag: "Selected", tagColor: "#10B981", desc: "Tracked robot chassis + vacuum suction. Can autonomously patrol fields and remove surface pests without chemicals. Validated by D-vac research from WSU and California Strawberry Commission.", selected: true },
+              { name: "VibeTrap", tag: "Narrowed out", tagColor: "#94A3B8", desc: "60Hz vibration lures spotted lanternfly toward an electric trap. Effective for one specific pest, but too species-specific for general farm use.", selected: false },
+              { name: "LycormaHunter", tag: "Narrowed out", tagColor: "#94A3B8", desc: "Robotic arm + AI recognition to physically strike individual pests on tree trunks. High precision, but impractical for open field crops at scale.", selected: false },
+              { name: "SteamBerry", tag: "Merged into final", tagColor: "#F59E0B", desc: "Low-temperature steam targets strawberry mites with IoT control. Highly effective (4-hour treatment kills all mite stages), but crop-specific.", selected: false },
+              { name: "SteamSoil", tag: "Selected", tagColor: "#10B981", desc: "High-temperature steam injected into soil kills underground eggs and nematodes. Backed by research showing complete sterilization without chemical residue.", selected: true },
+              { name: "PestVision", tag: "Partially selected", tagColor: "#F59E0B", desc: "Dual-mode detection: image recognition + sound spectrum analysis for early outbreak warning. We implemented the visual layer; sound analysis remains a future direction.", selected: false },
+            ].map(({ name, tag, tagColor, desc, selected }) => (
+              <div key={name} className="ag-glass-card" style={{ padding: "24px", opacity: selected ? 1 : 0.7, border: selected ? "1px solid rgba(16,185,129,0.3)" : undefined }}>
+                <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: "12px" }}>
+                  <h3 style={{ fontSize: "16px", fontWeight: 700, color: "#0F172A" }}>{name}</h3>
+                  <span style={{ fontSize: "11px", fontWeight: 600, color: tagColor, background: `${tagColor}18`, padding: "3px 8px", borderRadius: "20px", whiteSpace: "nowrap" }}>{tag}</span>
+                </div>
+                <p style={{ fontSize: "14px", color: "#64748B", lineHeight: 1.6 }}>{desc}</p>
               </div>
-              <h3 className="ag-card-title">A.I. Visual Recognition</h3>
-              <p className="ag-card-body">
-                Deep learning models continuously monitor and classify pests, making detection faster and less dependent on human experience.
-              </p>
-            </div>
-
-            {/* Card 2: Vacuum */}
-            <div className="ag-glass-card">
-              <div className="ag-card-icon" style={{ color: "#F59E0B" }}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 2v8"></path>
-                  <path d="M12 18v4"></path>
-                  <path d="M4.93 10.93l2.83 2.83"></path>
-                  <path d="M16.24 16.24l2.83 2.83"></path>
-                  <path d="M2 12h8"></path>
-                  <path d="M18 12h4"></path>
-                </svg>
-              </div>
-              <h3 className="ag-card-title">Bug Vacuuming</h3>
-              <p className="ag-card-body">
-                An immediate, physical method to extract surface-level pests without compromising organic certification.
-              </p>
-            </div>
-
-            {/* Card 3: Steam */}
-            <div className="ag-glass-card">
-              <div className="ag-card-icon" style={{ color: "#EF4444" }}>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M12 22v-9"></path>
-                  <path d="M15.5 9.5a3.5 3.5 0 1 0-7 0"></path>
-                  <path d="M8.5 9.5v-3a3.5 3.5 0 0 1 7 0v3"></path>
-                  <path d="M12 13v-3"></path>
-                </svg>
-              </div>
-              <h3 className="ag-card-title">Steam Sterilization</h3>
-              <p className="ag-card-body">
-                High-temperature steam effectively targets pest eggs and soil-borne pathogens, breaking the reproductive cycle.
-              </p>
-            </div>
+            ))}
           </div>
 
-          {/* Convergence Pill */}
-          <div className="ag-convergence-pill">
+          <div className="ag-convergence-pill" style={{ marginTop: "48px" }}>
             <div className="ag-equation">
-              <span>Robot</span>
+              <span>CrawlerVac</span>
               <span className="ag-plus">+</span>
-              <span>A.I.</span>
+              <span>SteamSoil</span>
               <span className="ag-plus">+</span>
-              <span>IoT</span>
+              <span>PestVision</span>
             </div>
             <div className="ag-conv-text">
-              Connected via IoT robotics, these technologies form an autonomous loop: <strong>identify</strong> the threat, <strong>remove</strong> the visible, and <strong>sterilize</strong> the invisible.
+              The three selected concepts converge into one autonomous system: the robot <strong>identifies</strong> pests visually, <strong>vacuums</strong> surface adults, and <strong>sterilizes</strong> soil-level eggs — all without chemicals.
             </div>
           </div>
         </section>
@@ -703,6 +691,35 @@ export default function AgroxProject() {
             <div>
               <h4 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A", marginBottom: "16px" }}>03. Model</h4>
               <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773791363/portfolio/projects/agrox/model.png" alt="Agrox physical model" style={{ width: "100%", borderRadius: "12px", display: "block" }} />
+            </div>
+          </div>
+        </section>
+
+        {/* ── 07 REFLECTION ── */}
+        <section className="ag-section ag-section-border ag-container">
+          <span className="ag-eyebrow">07 — Reflection</span>
+          <h2 className="ag-title">What we learned.<br /><strong>What remains open.</strong></h2>
+
+          <div className="ag-grid-2" style={{ marginTop: "48px" }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+              <div className="ag-glass-card" style={{ padding: "28px 32px" }}>
+                <h3 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A", marginBottom: "12px" }}>Hardware constrains UI design</h3>
+                <p style={{ fontSize: "15px", color: "#64748B", lineHeight: 1.7 }}>The vacuum and steam modules can&apos;t operate simultaneously — this physical constraint directly shaped how we designed the device status UI. Modes needed to be explicit and mutually exclusive, not hidden in settings.</p>
+              </div>
+              <div className="ag-glass-card" style={{ padding: "28px 32px" }}>
+                <h3 style={{ fontSize: "16px", fontWeight: 600, color: "#0F172A", marginBottom: "12px" }}>Tablet over phone — a research-driven call</h3>
+                <p style={{ fontSize: "15px", color: "#64748B", lineHeight: 1.7 }}>We initially prototyped a mobile interface. Field context changed our minds: farmers in muddy gloves need larger targets, better readability in sunlight, and a device they can prop up hands-free. iPad became the primary platform.</p>
+              </div>
+            </div>
+            <div style={{ display: "flex", flexDirection: "column", gap: "24px" }}>
+              <div className="ag-glass-card" style={{ padding: "28px 32px", border: "1px solid rgba(239,68,68,0.2)" }}>
+                <h3 style={{ fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: 600, color: "#EF4444", marginBottom: "12px" }}>Still unresolved</h3>
+                <p style={{ fontSize: "15px", color: "#64748B", lineHeight: 1.7 }}>AI recognition accuracy drops in low light and dense foliage — conditions common in real farms. Sound spectrum analysis (from PestVision) could supplement visual detection, but we didn&apos;t have time to validate the model. This is the most significant open question for a next iteration.</p>
+              </div>
+              <div className="ag-glass-card" style={{ padding: "28px 32px", border: "1px solid rgba(239,68,68,0.2)" }}>
+                <h3 style={{ fontSize: "14px", textTransform: "uppercase", letterSpacing: "0.05em", fontWeight: 600, color: "#EF4444", marginBottom: "12px" }}>User adoption is untested</h3>
+                <p style={{ fontSize: "15px", color: "#64748B", lineHeight: 1.7 }}>We designed for low technical literacy, but never ran usability tests with actual farmers. The gap between &quot;intuitive in research&quot; and &quot;usable in a field&quot; is real — and we know it.</p>
+              </div>
             </div>
           </div>
         </section>
