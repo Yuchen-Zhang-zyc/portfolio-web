@@ -109,8 +109,8 @@ export default function ThisWebsiteProject() {
           <div className="flex flex-col divide-y divide-white/10 border border-white/10 rounded-2xl overflow-hidden">
             {[
               {
-                decision: 'Light background, dark project pages',
-                rationale: 'The home page uses a soft light gradient to feel approachable and editorial. Individual project pages shift to dark backgrounds to let portfolio work take center stage without competing with the UI chrome.',
+                decision: '"Next Project" at the end of every case study',
+                rationale: 'Each project page ends with a persistent next-project link. Readers stay in a reading flow without having to navigate back to the home page — reducing drop-off and encouraging them to see more work.',
               },
               {
                 decision: 'Space Grotesk + DM Serif Display',
