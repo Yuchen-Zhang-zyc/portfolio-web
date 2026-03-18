@@ -656,8 +656,8 @@ function JourneyMap() {
         role="img"
       >
         {/* Y-axis labels */}
-        <text x={PAD_L - 8} y={PAD_T + 6} textAnchor="end" fontSize="9" fill="#9B9690" fontFamily="var(--font-dm-mono,'DM Mono',monospace)">POSITIVE</text>
-        <text x={PAD_L - 8} y={PAD_T + innerH + 6} textAnchor="end" fontSize="9" fill="#9B9690" fontFamily="var(--font-dm-mono,'DM Mono',monospace)">NEGATIVE</text>
+        <text x={PAD_L - 8} y={PAD_T + 14} textAnchor="end" fontSize="9" fill="#9B9690" fontFamily="var(--font-dm-mono,'DM Mono',monospace)">POSITIVE</text>
+        <text x={PAD_L - 8} y={PAD_T + innerH + 18} textAnchor="end" fontSize="9" fill="#9B9690" fontFamily="var(--font-dm-mono,'DM Mono',monospace)">NEGATIVE</text>
 
         {/* Neutral axis */}
         <line x1={PAD_L} y1={neutral} x2={W - PAD_R} y2={neutral} stroke="#E4E0DB" strokeWidth="1" />
