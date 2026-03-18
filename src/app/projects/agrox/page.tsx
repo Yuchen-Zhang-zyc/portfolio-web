@@ -188,7 +188,7 @@ const CSS = `
 
   .ag-grid-2-asym {
     display: grid;
-    grid-template-columns: 1fr 1.5fr;
+    grid-template-columns: 1.2fr 1fr;
     gap: 48px;
   }
 
@@ -237,9 +237,10 @@ const CSS = `
 
   /* Specific Card variants */
   .ag-card-stat {
-    padding: 32px;
+    padding: 24px 32px;
     text-align: center;
     justify-content: center;
+    aspect-ratio: 1 / 1;
   }
 
   .ag-stat-num {
@@ -512,7 +513,7 @@ export default function AgroxProject() {
                 We conducted field interviews with 5 small-scale organic farms — 4 at Forsyth Park Farmers Market and 1 in South Carolina — to understand how farmers actually detect and respond to pest problems day-to-day. We focused on four questions: their current pain points, how they judge crop conditions, what tools they use, and whether they&apos;d accept technological intervention.
               </p>
             </div>
-            <div className="ag-glass-grid" style={{ gridTemplateColumns: "1fr 1fr", gap: "24px", marginBottom: 0 }}>
+            <div className="ag-glass-grid" style={{ gridTemplateColumns: "1fr 1fr", gap: "24px", marginBottom: 0, alignSelf: "center" }}>
               <div className="ag-glass-card ag-card-stat">
                 <div className="ag-stat-num">4</div>
                 <div className="ag-stat-label">Farms at Forsyth Park<br/>Farmers Market</div>
