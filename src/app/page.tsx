@@ -299,7 +299,8 @@ export default function Home() {
             </Link>
 
             {/* Project 6 */}
-            <Link href="/projects/vr-simulation" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+            {/* VR Simulation hidden — content in progress */}
+            {false && <Link href="/projects/vr-simulation" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
               <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
                 <div className="flex gap-2 relative z-10">
                   <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
@@ -328,7 +329,7 @@ export default function Home() {
                   <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX Design</span>
                 </div>
               </div>
-            </Link>
+            </Link>}
 
             {/* RECO */}
             <Link href="/projects/reco" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
@@ -379,16 +380,12 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="w-full aspect-[16/10] bg-gradient-to-br from-[#0D1117] via-[#111827] to-[#1F2937] relative overflow-hidden flex items-center justify-center">
-                <div className="absolute inset-0 opacity-30 bg-[radial-gradient(circle_at_20%_20%,rgba(125,211,252,0.6),transparent_55%),radial-gradient(circle_at_80%_80%,rgba(167,139,250,0.5),transparent_55%)]" />
-                <div className="relative z-10 flex flex-col items-center justify-center gap-3 group-hover:scale-105 transition-transform duration-700">
-                  <span className="font-mono text-[10px] sm:text-xs text-slate-200/80 tracking-[4px] uppercase border border-slate-200/30 bg-slate-900/40 px-4 py-1.5 backdrop-blur-md">
-                    AI-ASSISTED WORKFLOW
-                  </span>
-                  <h3 className="text-3xl sm:text-4xl md:text-5xl font-sans font-semibold text-slate-50 tracking-tight">
-                    Built with vibe coding
-                  </h3>
-                </div>
+              <div className="w-full aspect-[16/10] overflow-hidden">
+                <img
+                  src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773849044/portfolio/projects/this-website/home-v2.png"
+                  alt="Portfolio home page screenshot"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                />
               </div>
 
               <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
