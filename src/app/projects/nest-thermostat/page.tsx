@@ -665,51 +665,70 @@ export default function NestThermostatProject() {
         <div className="wrap">
           <div className="reveal"><div className="eyebrow">09 — Design Iteration</div></div>
           <div className="reveal d1"><h2 className="ttl">What we changed<br />and why.</h2></div>
-          <div className="reveal d2"><p className="bod">Usability findings directly informed three key changes to the design before producing the final version.</p></div>
+          <div className="reveal d2"><p className="bod">Usability findings directly informed four key changes to the design before producing the final version.</p></div>
 
           <div style={{ display: 'flex', flexDirection: 'column', marginTop: '64px' }}>
 
             {/* Iteration 01 */}
-            <div style={{ display: 'grid', gridTemplateColumns: '48px 1fr 1fr', gap: '0 48px', alignItems: 'start', padding: '48px 0', borderBottom: '1px solid var(--border)' }} className="reveal">
+            <div style={{ display: 'grid', gridTemplateColumns: '48px 1fr 1fr', gap: '0 48px', alignItems: 'start', padding: '48px 0', borderBottom: '1px solid var(--border)' }} className="reveal d1">
               <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--orange)', paddingTop: '4px' }}>01</span>
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '10px' }}>Before</p>
-                <div style={{ background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: '14px', padding: '24px', minHeight: '140px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '8px' }}>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="4" stroke="rgba(255,255,255,0.15)" strokeWidth="1.2" strokeDasharray="3 2"/></svg>
-                  <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.2)', textAlign: 'center' }}>Before screenshot<br />Upload when available</p>
-                </div>
-                <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Schedule event labels — &quot;Sleep&quot;, &quot;Away&quot;, &quot;Wake Up&quot; — shown without temperature context, leaving users uncertain about what each event controls.</p>
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846771/portfolio/projects/nest-thermostat/01before-v2.png" alt="Before: hidden multi-day interaction" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Applying an event to multiple days relied on a hidden interaction (top-right icon), causing 66% of users to fail the task.</p>
               </div>
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--orange)', marginBottom: '10px' }}>After</p>
-                <div style={{ background: 'var(--bg2)', border: '1px solid rgba(232,66,10,0.2)', borderRadius: '14px', padding: '24px', minHeight: '140px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '8px' }}>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="4" stroke="rgba(232,66,10,0.3)" strokeWidth="1.2" strokeDasharray="3 2"/></svg>
-                  <p style={{ fontSize: '12px', color: 'rgba(232,66,10,0.3)', textAlign: 'center' }}>After screenshot<br />Upload when available</p>
-                </div>
-                <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Each event now displays its associated temperature inline. Users immediately see what &quot;Away&quot; means in practice — 65°F, Eco active.</p>
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846772/portfolio/projects/nest-thermostat/01after-v2.png" alt="After: explicit day-selection view modes" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Introduced explicit view modes (Single Day, Multi-day, Events). Users now select the weekday first, then adjust the temperature — aligning the mobile app perfectly with the hardware thermostat&apos;s mental model.</p>
               </div>
             </div>
 
             {/* Iteration 02 */}
-            <div style={{ display: 'grid', gridTemplateColumns: '48px 1fr 1fr', gap: '0 48px', alignItems: 'start', padding: '48px 0', borderBottom: '1px solid var(--border)' }} className="reveal d1">
+            <div style={{ display: 'grid', gridTemplateColumns: '48px 1fr 1fr', gap: '0 48px', alignItems: 'start', padding: '48px 0', borderBottom: '1px solid var(--border)' }} className="reveal d2">
               <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--orange)', paddingTop: '4px' }}>02</span>
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '10px' }}>Before</p>
-                <div style={{ background: 'var(--bg2)', border: '1px solid var(--border)', borderRadius: '14px', padding: '24px', minHeight: '140px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '8px' }}>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="4" stroke="rgba(255,255,255,0.15)" strokeWidth="1.2" strokeDasharray="3 2"/></svg>
-                  <p style={{ fontSize: '12px', color: 'rgba(255,255,255,0.2)', textAlign: 'center' }}>Before screenshot<br />Upload when available</p>
-                </div>
-                <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Upload your before/after iteration screenshots to replace these placeholders.</p>
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846773/portfolio/projects/nest-thermostat/02before-v2.png" alt="Before: unclear time to temperature transition" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>On the hardware thermostat, 50% of users were confused by the sudden jump from &quot;setting time&quot; to &quot;setting temperature&quot;, and lacked clear visual confirmation after saving a schedule.</p>
               </div>
               <div>
                 <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--orange)', marginBottom: '10px' }}>After</p>
-                <div style={{ background: 'var(--bg2)', border: '1px solid rgba(232,66,10,0.2)', borderRadius: '14px', padding: '24px', minHeight: '140px', display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: '8px' }}>
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="4" stroke="rgba(232,66,10,0.3)" strokeWidth="1.2" strokeDasharray="3 2"/></svg>
-                  <p style={{ fontSize: '12px', color: 'rgba(232,66,10,0.3)', textAlign: 'center' }}>After screenshot<br />Upload when available</p>
-                </div>
-                <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Describe the second iteration change here once you have the before/after screenshots ready.</p>
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846775/portfolio/projects/nest-thermostat/02after-v2.png" alt="After: smooth transition and confirmation state" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Redesigned the hardware UI to mirror the mobile app&apos;s component logic. Added smooth spatial transitions between time and temperature, and introduced explicit visual confirmation states, making system feedback instantly understandable.</p>
               </div>
             </div>
+
+            {/* Iteration 03 */}
+            <div style={{ display: 'grid', gridTemplateColumns: '48px 1fr 1fr', gap: '0 48px', alignItems: 'start', padding: '48px 0', borderBottom: '1px solid var(--border)' }} className="reveal d3">
+              <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--orange)', paddingTop: '4px' }}>03</span>
+              <div>
+                <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '10px' }}>Before</p>
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846775/portfolio/projects/nest-thermostat/03before-v2.png" alt="Before: color semantic confusion" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Orange and blue were used as general accent colors for temperature values, causing confusion since these colors inherently signify "heating" and "cooling" states in HVAC contexts.</p>
+              </div>
+              <div>
+                <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--orange)', marginBottom: '10px' }}>After</p>
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846776/portfolio/projects/nest-thermostat/03after-v2.png" alt="After: reserved colors for system states only" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Reserved orange and blue strictly for active system states (heating/cooling). Temperature values now use neutral typography, preventing semantic misinterpretation.</p>
+              </div>
+            </div>
+
+            {/* Iteration 04 */}
+            <div style={{ display: 'grid', gridTemplateColumns: '48px 1fr 1fr', gap: '0 48px', alignItems: 'start', padding: '48px 0' }} className="reveal d4">
+              <span style={{ fontSize: '13px', fontWeight: 700, color: 'var(--orange)', paddingTop: '4px' }}>04</span>
+              <div>
+                <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '10px' }}>Before</p>
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846777/portfolio/projects/nest-thermostat/04before-v2.png" alt="Before: mode-first timer flow" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Users were required to select a specific "mode" before they could set a timer duration, adding unnecessary friction to a quick task.</p>
+              </div>
+              <div>
+                <p style={{ fontSize: '11px', fontWeight: 600, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--orange)', marginBottom: '10px' }}>After</p>
+                <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773846778/portfolio/projects/nest-thermostat/04after-v2.png" alt="After: direct timer flow" style={{ width: '100%', borderRadius: '14px', display: 'block' }} />
+                <p style={{ fontSize: '13px', color: 'var(--gray)', marginTop: '12px', lineHeight: 1.6 }}>Implemented a direct timer flow based on A/B test results (preferred by 75% of users). Users can now set a duration immediately, clearly separating temporary overrides from the long-term schedule.</p>
+              </div>
+            </div>
+
 
           </div>
         </div>
@@ -773,11 +792,107 @@ export default function NestThermostatProject() {
         </div>
       </section>
 
-      {/* ══ SECTION 11: CROSS-DEVICE ══ */}
+      {/* ══ SECTION 11: VALIDATION STUDY ══ */}
+      <section className="section alt bordered" id="validation">
+        <div className="wrap">
+          <div className="reveal"><div className="eyebrow">11 — Validation Study</div></div>
+          <div className="reveal d1"><h2 className="ttl">Did the iteration<br />actually work?</h2></div>
+          <div className="reveal d2"><p className="bod">After incorporating design changes from the evaluative study, we ran a second round of moderated usability testing with 5 participants across the same 6 mobile tasks to measure improvement.</p></div>
+
+          {/* Method pills */}
+          <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '40px' }} className="reveal d1">
+            {['Moderated Think-Aloud', 'SEQ Ratings', 'System Usability Scale'].map(m => (
+              <span key={m} style={{ fontSize: '12px', fontWeight: 500, color: 'var(--gray)', border: '1px solid var(--border)', borderRadius: '100px', padding: '6px 16px' }}>{m}</span>
+            ))}
+          </div>
+
+          {/* Before / After task comparison */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginTop: '56px' }} className="reveal d1">
+            <div>
+              <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '14px' }}>Round 1 — Before Iteration</p>
+              <div style={{ border: '1px solid var(--border)', borderRadius: '14px', overflow: 'hidden' }}>
+                {[
+                  { task: 'T1', label: 'Adjust temperature',   unassisted: 100, time: '4.5s' },
+                  { task: 'T2', label: 'Create schedule',       unassisted: 83,  time: '29s'  },
+                  { task: 'T3', label: 'Customize mode',        unassisted: 33,  time: '48s'  },
+                  { task: 'T4', label: 'Apply mode to days',    unassisted: 50,  time: '33s'  },
+                  { task: 'T5', label: 'Modify schedule',       unassisted: 50,  time: '22s'  },
+                  { task: 'T6', label: 'Set Work Mode timer',   unassisted: 50,  time: '34s'  },
+                ].map((row, i) => (
+                  <div key={row.task} style={{ display: 'grid', gridTemplateColumns: '32px 1fr 56px 52px', gap: '12px', alignItems: 'center', padding: '14px 18px', background: 'var(--bg2)', borderTop: i > 0 ? '1px solid var(--border)' : undefined }}>
+                    <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--orange)' }}>{row.task}</span>
+                    <span style={{ fontSize: '13px', fontWeight: 500 }}>{row.label}</span>
+                    <span style={{ fontSize: '12px', fontWeight: 600, color: row.unassisted === 100 ? '#6DCF9E' : row.unassisted >= 80 ? '#8FD4A8' : row.unassisted >= 50 ? '#E8B96A' : '#E87A74' }}>{row.unassisted}%</span>
+                    <span style={{ fontSize: '12px', color: 'var(--gray2)', textAlign: 'right' }}>{row.time}</span>
+                  </div>
+                ))}
+                <div style={{ padding: '8px 18px', background: '#0E0E0E', borderTop: '1px solid var(--border)', display: 'flex', gap: '20px' }}>
+                  <span style={{ fontSize: '10px', color: 'var(--gray2)' }}><span style={{ color: '#6DCF9E', fontWeight: 600 }}>%</span> unassisted</span>
+                  <span style={{ fontSize: '10px', color: 'var(--gray2)' }}>avg time</span>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#6DCF9E', marginBottom: '14px' }}>Round 2 — After Iteration</p>
+              <div style={{ border: '1px solid rgba(109,207,158,0.25)', borderRadius: '14px', overflow: 'hidden' }}>
+                {[
+                  { task: 'T1', label: 'Adjust temperature',   unassisted: 100, time: '3.9s', delta: 0   },
+                  { task: 'T2', label: 'Create schedule',       unassisted: 100, time: '21s',  delta: +17 },
+                  { task: 'T3', label: 'Customize mode',        unassisted: 80,  time: '31s',  delta: +47 },
+                  { task: 'T4', label: 'Apply mode to days',    unassisted: 100, time: '24s',  delta: +50 },
+                  { task: 'T5', label: 'Modify schedule',       unassisted: 80,  time: '16s',  delta: +30 },
+                  { task: 'T6', label: 'Set Work Mode timer',   unassisted: 100, time: '19s',  delta: +50 },
+                ].map((row, i) => (
+                  <div key={row.task} style={{ display: 'grid', gridTemplateColumns: '32px 1fr 56px 52px', gap: '12px', alignItems: 'center', padding: '14px 18px', background: 'var(--bg2)', borderTop: i > 0 ? '1px solid var(--border)' : undefined }}>
+                    <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--orange)' }}>{row.task}</span>
+                    <span style={{ fontSize: '13px', fontWeight: 500 }}>{row.label}</span>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                      <span style={{ fontSize: '12px', fontWeight: 600, color: row.unassisted === 100 ? '#6DCF9E' : '#8FD4A8' }}>{row.unassisted}%</span>
+                      {row.delta > 0 && <span style={{ fontSize: '10px', color: '#6DCF9E' }}>+{row.delta}</span>}
+                    </div>
+                    <span style={{ fontSize: '12px', color: 'var(--gray2)', textAlign: 'right' }}>{row.time}</span>
+                  </div>
+                ))}
+                <div style={{ padding: '8px 18px', background: '#0E0E0E', borderTop: '1px solid var(--border)', display: 'flex', gap: '20px' }}>
+                  <span style={{ fontSize: '10px', color: 'var(--gray2)' }}><span style={{ color: '#6DCF9E', fontWeight: 600 }}>%</span> unassisted</span>
+                  <span style={{ fontSize: '10px', color: 'var(--gray2)' }}>avg time</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* SUS Before / After */}
+          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginTop: '32px' }} className="reveal d2">
+            <div style={{ border: '1px solid var(--border)', borderRadius: '16px', padding: '32px 28px', background: 'var(--bg2)' }}>
+              <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--gray2)', marginBottom: '20px' }}>SUS Score — Round 1</p>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', marginBottom: '8px' }}>
+                <span style={{ fontSize: '56px', fontWeight: 800, letterSpacing: '-0.05em', lineHeight: 1, color: '#E8B96A' }}>47.5</span>
+                <span style={{ fontSize: '14px', color: 'var(--gray)' }}>/ 100</span>
+              </div>
+              <p style={{ fontSize: '13px', color: 'var(--gray)', lineHeight: 1.6 }}>Below average (68). Advanced scheduling and mode features were the primary friction points.</p>
+            </div>
+            <div style={{ border: '1px solid rgba(109,207,158,0.25)', borderRadius: '16px', padding: '32px 28px', background: 'var(--bg2)' }}>
+              <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#6DCF9E', marginBottom: '20px' }}>SUS Score — Round 2</p>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', marginBottom: '8px' }}>
+                <span style={{ fontSize: '56px', fontWeight: 800, letterSpacing: '-0.05em', lineHeight: 1, color: '#6DCF9E' }}>79.2</span>
+                <span style={{ fontSize: '14px', color: 'var(--gray)' }}>/ 100</span>
+              </div>
+              <p style={{ fontSize: '13px', color: 'var(--gray)', lineHeight: 1.6 }}>Above average — rated "Good". Explicit day-selection, gesture hints, and the direct timer flow resolved the majority of friction.</p>
+              <div style={{ marginTop: '16px', padding: '12px 16px', background: 'rgba(109,207,158,0.07)', borderRadius: '10px', border: '1px solid rgba(109,207,158,0.15)' }}>
+                <span style={{ fontSize: '13px', fontWeight: 700, color: '#6DCF9E' }}>+31.7 pts improvement</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      {/* ══ SECTION 12: CROSS-DEVICE ══ */}
       <section className="section bordered" id="crossdevice">
         <div className="wrap">
           <div style={{ textAlign: 'center' }}>
-            <div className="reveal"><div className="eyebrow" style={{ justifyContent: 'center' }}>11 — Cross-Device Experience</div></div>
+            <div className="reveal"><div className="eyebrow" style={{ justifyContent: 'center' }}>12 — Cross-Device Experience</div></div>
             <div className="reveal d1"><h2 className="ttl">One mental model.<br />Two devices.</h2></div>
             <div className="reveal d2"><p className="bod" style={{ margin: '0 auto', textAlign: 'center' }}>Consistency is not achieved by making interfaces identical — it&apos;s achieved by sharing the same logic, color language, and interaction patterns across both surfaces.</p></div>
           </div>
