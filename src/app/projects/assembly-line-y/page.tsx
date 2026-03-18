@@ -101,7 +101,8 @@ export default function AssemblyLineYProject() {
             </div>
           </div>
 
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-7 flex justify-center">
+            <div className="w-full max-w-[600px]">
             <div className="rounded-[20px] border border-white/10 overflow-hidden bg-[#11161D] shadow-[0_20px_60px_rgba(0,0,0,0.28)]">
               <div className="h-11 w-full border-b border-white/8 flex items-center px-4 relative bg-[#0E1319]">
                 <div className="flex gap-2 relative z-10">
@@ -114,22 +115,16 @@ export default function AssemblyLineYProject() {
                 </div>
               </div>
 
-              <div className="aspect-[16/10] bg-[linear-gradient(180deg,#10151C_0%,#0C1117_100%)] relative overflow-hidden flex items-center justify-center px-8 py-10">
-                <div className="absolute inset-x-0 top-0 h-px bg-white/10" />
-                <div className="relative z-10 flex flex-col items-start text-left gap-5 max-w-[620px]">
-                  <span className="font-mono text-[10px] sm:text-xs text-[#8FA3BF] tracking-[3px] uppercase border border-[#8FA3BF]/20 bg-[#8FA3BF]/8 px-4 py-1.5">
-                    AI-ASSISTED TRAINING ENVIRONMENT
-                  </span>
-                  <h2 className="text-4xl sm:text-5xl md:text-[54px] font-semibold tracking-tight text-[#F3F4F6] leading-[1.02]">
-                    Tesla Model Y
-                    <span className="block text-[#C7D0DB] font-medium">Interior Assembly Workflow</span>
-                  </h2>
-                  <p className="max-w-[560px] text-sm md:text-base leading-[1.8] text-[#98A4B3]">
-                    An XR training environment designed to support procedural learning through AI guidance, embodied interaction, and clear step-by-step task feedback.
-                  </p>
-                </div>
+              <div className="aspect-square bg-[#000]">
+                <video
+                  src="https://res.cloudinary.com/dj13he2xu/video/upload/v1773869755/fxfm7hqsi7f2xqtxwcop.mp4"
+                  controls
+                  playsInline
+                  className="w-full h-full object-contain"
+                />
               </div>
             </div>
+          </div>
           </div>
         </section>
 

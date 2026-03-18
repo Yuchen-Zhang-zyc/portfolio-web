@@ -433,7 +433,7 @@ export default function Home() {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8">
-              <div className="md:col-span-7 rounded-[24px] border border-white/70 bg-white/78 backdrop-blur-xl p-8 shadow-[0_16px_40px_rgba(27,42,107,0.08)]">
+              <div className="md:col-span-7 rounded-[24px] border border-white/70 bg-white/78 backdrop-blur-xl p-8 shadow-[0_16px_40px_rgba(27,42,107,0.08)] self-start">
                 <h3 className="text-xl md:text-2xl font-bold text-brand-primary mb-8">Education</h3>
                 <div className="flex flex-col gap-8">
                   <div className="flex flex-col md:flex-row gap-3 md:gap-6">
@@ -459,7 +459,7 @@ export default function Home() {
                 <div className="rounded-[24px] border border-white/70 bg-white/78 backdrop-blur-xl p-8 shadow-[0_16px_40px_rgba(27,42,107,0.08)]">
                   <h3 className="text-xl md:text-2xl font-bold text-brand-primary mb-6">Core Skills</h3>
                   <div className="flex flex-wrap gap-2.5">
-                    {["Figma", "User Research", "Usability Testing", "Interaction Design", "Design Systems", "Prototyping", "JavaScript", "Python", "Unity", "AI-assisted Development"].map((skill) => (
+                    {["Figma", "User Research", "Usability Testing", "Interaction Design", "Design Systems", "Prototyping", "JavaScript", "Python", "Unity", "Vibe Coding"].map((skill) => (
                       <span key={skill} className="px-3 py-1.5 bg-black/5 text-brand-primary/72 text-sm rounded-full border border-black/5">
                         {skill}
                       </span>
