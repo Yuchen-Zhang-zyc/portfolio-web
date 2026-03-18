@@ -837,12 +837,12 @@ export default function NestThermostatProject() {
               <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#6DCF9E', marginBottom: '14px' }}>Round 2 — After Iteration</p>
               <div style={{ border: '1px solid rgba(109,207,158,0.25)', borderRadius: '14px', overflow: 'hidden' }}>
                 {[
-                  { task: 'T1', label: 'Adjust temperature',   unassisted: 100, time: '3.9s', delta: 0   },
-                  { task: 'T2', label: 'Create schedule',       unassisted: 100, time: '21s',  delta: +17 },
-                  { task: 'T3', label: 'Customize mode',        unassisted: 80,  time: '31s',  delta: +47 },
-                  { task: 'T4', label: 'Apply mode to days',    unassisted: 100, time: '24s',  delta: +50 },
-                  { task: 'T5', label: 'Modify schedule',       unassisted: 80,  time: '16s',  delta: +30 },
-                  { task: 'T6', label: 'Set Work Mode timer',   unassisted: 100, time: '19s',  delta: +50 },
+                  { task: 'T1', label: 'Adjust temperature',   unassisted: 100,  time: '3.9s',  delta: 0    },
+                  { task: 'T2', label: 'Create schedule',       unassisted: 100,  time: '21.3s', delta: 17   },
+                  { task: 'T3', label: 'Customize mode',        unassisted: 83.3, time: '31.7s', delta: 50.3 },
+                  { task: 'T4', label: 'Apply mode to days',    unassisted: 100,  time: '24.1s', delta: 50   },
+                  { task: 'T5', label: 'Modify schedule',       unassisted: 83.3, time: '16.4s', delta: 33.3 },
+                  { task: 'T6', label: 'Set Work Mode timer',   unassisted: 100,  time: '19.2s', delta: 50   },
                 ].map((row, i) => (
                   <div key={row.task} style={{ display: 'grid', gridTemplateColumns: '32px 1fr 56px 52px', gap: '12px', alignItems: 'center', padding: '14px 18px', background: 'var(--bg2)', borderTop: i > 0 ? '1px solid var(--border)' : undefined }}>
                     <span style={{ fontSize: '11px', fontWeight: 700, color: 'var(--orange)' }}>{row.task}</span>
@@ -875,12 +875,12 @@ export default function NestThermostatProject() {
             <div style={{ border: '1px solid rgba(109,207,158,0.25)', borderRadius: '16px', padding: '32px 28px', background: 'var(--bg2)' }}>
               <p style={{ fontSize: '11px', fontWeight: 700, letterSpacing: '0.1em', textTransform: 'uppercase', color: '#6DCF9E', marginBottom: '20px' }}>SUS Score — Round 2</p>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: '10px', marginBottom: '8px' }}>
-                <span style={{ fontSize: '56px', fontWeight: 800, letterSpacing: '-0.05em', lineHeight: 1, color: '#6DCF9E' }}>79.2</span>
+                <span style={{ fontSize: '56px', fontWeight: 800, letterSpacing: '-0.05em', lineHeight: 1, color: '#6DCF9E' }}>82.5</span>
                 <span style={{ fontSize: '14px', color: 'var(--gray)' }}>/ 100</span>
               </div>
               <p style={{ fontSize: '13px', color: 'var(--gray)', lineHeight: 1.6 }}>Above average — rated "Good". Explicit day-selection, gesture hints, and the direct timer flow resolved the majority of friction.</p>
               <div style={{ marginTop: '16px', padding: '12px 16px', background: 'rgba(109,207,158,0.07)', borderRadius: '10px', border: '1px solid rgba(109,207,158,0.15)' }}>
-                <span style={{ fontSize: '13px', fontWeight: 700, color: '#6DCF9E' }}>+31.7 pts improvement</span>
+                <span style={{ fontSize: '13px', fontWeight: 700, color: '#6DCF9E' }}>+35.0 pts improvement</span>
               </div>
             </div>
           </div>
