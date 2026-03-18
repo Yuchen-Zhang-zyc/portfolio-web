@@ -446,7 +446,7 @@ export default function AgroxProject() {
           <p className="ag-hero-subtitle">Autonomous & Chemical-Free Pest Management</p>
           
           <div style={{ marginBottom: "64px" }}>
-            <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773759935/portfolio/projects/agrox/hero.png" alt="Agrox product render" style={{ width: "100%", borderRadius: "24px", display: "block" }} />
+            <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773793073/portfolio/projects/agrox/hero.jpg" alt="Agrox product render" style={{ width: "100%", borderRadius: "24px", display: "block" }} />
           </div>
 
           <div className="ag-meta-grid">
