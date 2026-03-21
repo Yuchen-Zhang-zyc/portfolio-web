@@ -172,9 +172,130 @@ export default function HomeZh() {
               </Link>
             </div>
 
+            {/* UX */}
+            <div className="flex flex-col gap-[40px]">
+              <p className="text-xs font-mono tracking-[0.22em] uppercase text-brand-primary/35 pb-3 border-b border-brand-primary/10">UX</p>
+
+              <Link href="/zh/projects/nest-thermostat" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    Nest Thermostat
+                  </div>
+                </div>
+                <div className="w-full aspect-[16/10] bg-[#1E1E1E] relative overflow-hidden">
+                  <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773760252/portfolio/nest-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
+                </div>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">Nest Thermostat 重设计 <span className="opacity-60 font-normal text-lg">| 项目负责人 & UX 设计师</span></h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      对 Nest 恒温器应用进行重设计，聚焦于更清晰的日程设置交互和更易用的控制体验。
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX/UI Design</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Interaction</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Usability Testing</span>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/zh/projects/agrox" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    Agrox
+                  </div>
+                </div>
+                <div className="w-full aspect-[16/10] bg-[#EAE3DB] relative overflow-hidden">
+                  <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773757710/portfolio/agrox-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
+                </div>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">Agrox <span className="opacity-60 font-normal text-lg">| UX 设计师</span></h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      面向有机病虫害管理的 AI 农业机器人控制台，专注于田间监测与决策支持。
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX Research</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UI Design</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI / IoT</span>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/zh/projects/nirvana" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    Nirvana
+                  </div>
+                </div>
+                <div className="w-full aspect-[16/10] bg-[#EAE3DB] relative overflow-hidden">
+                  <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773760297/portfolio/nirvana-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
+                </div>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">Nirvana <span className="opacity-60 font-normal text-lg">| 团队负责人</span></h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      一套汽车定制化服务设计方案，融合移动端规划、3D 可视化与 VR 预览体验。
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Service Design</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX/UI</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">VR / Unity</span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
             {/* AI */}
             <div className="flex flex-col gap-[40px]">
               <p className="text-xs font-mono tracking-[0.22em] uppercase text-brand-primary/35 pb-3 border-b border-brand-primary/10">AI</p>
+
+              <Link href="/zh/projects/dosecare" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    DoseCare
+                  </div>
+                </div>
+                <div className="w-full aspect-[16/10] bg-white relative overflow-hidden">
+                  <div className="w-full h-full bg-contain bg-no-repeat bg-center group-hover:scale-105 transition-transform duration-700" style={{ backgroundImage: "url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773789495/portfolio/dosecare-homepage.png')" }}></div>
+                </div>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">DoseCare <span className="opacity-60 font-normal text-lg">| 团队负责人 & UX 设计师</span></h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      面向老年人的用药管理应用，旨在减少漏服并让日常护理更轻松。
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UI</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI</span>
+                  </div>
+                </div>
+              </Link>
 
               <Link href="/zh/projects/this-website" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
                 <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
@@ -240,127 +361,6 @@ export default function HomeZh() {
                     <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI / LLM</span>
                     <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">API Integration</span>
                     <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Frontend</span>
-                  </div>
-                </div>
-              </Link>
-
-              <Link href="/zh/projects/dosecare" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
-                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
-                  <div className="flex gap-2 relative z-10">
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
-                    DoseCare
-                  </div>
-                </div>
-                <div className="w-full aspect-[16/10] bg-white relative overflow-hidden">
-                  <div className="w-full h-full bg-contain bg-no-repeat bg-center group-hover:scale-105 transition-transform duration-700" style={{ backgroundImage: "url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773789495/portfolio/dosecare-homepage.png')" }}></div>
-                </div>
-                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
-                  <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-bold font-sans text-brand-primary">DoseCare <span className="opacity-60 font-normal text-lg">| 团队负责人 & UX 设计师</span></h3>
-                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
-                      面向老年人的用药管理应用，旨在减少漏服并让日常护理更轻松。
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX</span>
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UI</span>
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI</span>
-                  </div>
-                </div>
-              </Link>
-            </div>
-
-            {/* UX */}
-            <div className="flex flex-col gap-[40px]">
-              <p className="text-xs font-mono tracking-[0.22em] uppercase text-brand-primary/35 pb-3 border-b border-brand-primary/10">UX</p>
-
-              <Link href="/zh/projects/nest-thermostat" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
-                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
-                  <div className="flex gap-2 relative z-10">
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
-                    Nest Thermostat
-                  </div>
-                </div>
-                <div className="w-full aspect-[16/10] bg-[#1E1E1E] relative overflow-hidden">
-                  <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773760252/portfolio/nest-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
-                </div>
-                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
-                  <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-bold font-sans text-brand-primary">Nest Thermostat 重设计 <span className="opacity-60 font-normal text-lg">| 项目负责人 & UX 设计师</span></h3>
-                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
-                      对 Nest 恒温器应用进行重设计，聚焦于更清晰的日程设置交互和更易用的控制体验。
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX/UI Design</span>
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Interaction</span>
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Usability Testing</span>
-                  </div>
-                </div>
-              </Link>
-
-              <Link href="/zh/projects/nirvana" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
-                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
-                  <div className="flex gap-2 relative z-10">
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
-                    Nirvana
-                  </div>
-                </div>
-                <div className="w-full aspect-[16/10] bg-[#EAE3DB] relative overflow-hidden">
-                  <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773760297/portfolio/nirvana-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
-                </div>
-                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
-                  <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-bold font-sans text-brand-primary">Nirvana <span className="opacity-60 font-normal text-lg">| 团队负责人</span></h3>
-                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
-                      一套汽车定制化服务设计方案，融合移动端规划、3D 可视化与 VR 预览体验。
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Service Design</span>
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX/UI</span>
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">VR / Unity</span>
-                  </div>
-                </div>
-              </Link>
-
-              <Link href="/zh/projects/agrox" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
-                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
-                  <div className="flex gap-2 relative z-10">
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
-                    Agrox
-                  </div>
-                </div>
-                <div className="w-full aspect-[16/10] bg-[#EAE3DB] relative overflow-hidden">
-                  <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773757710/portfolio/agrox-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
-                </div>
-                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
-                  <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-bold font-sans text-brand-primary">Agrox <span className="opacity-60 font-normal text-lg">| UX 设计师</span></h3>
-                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
-                      面向有机病虫害管理的 AI 农业机器人控制台，专注于田间监测与决策支持。
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX Research</span>
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UI Design</span>
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI / IoT</span>
                   </div>
                 </div>
               </Link>
