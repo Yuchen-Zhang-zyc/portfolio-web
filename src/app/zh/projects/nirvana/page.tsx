@@ -31,7 +31,7 @@ const CSS = `
   [data-phase="design"]    { --phase-color: #22c55e; --phase-rgb: 34,197,94; }
 
   /* Base */
-  .nv-page { font-family: var(--font-inter, Inter, sans-serif); font-size: 16px; background: #222222; color: #d1d5db; line-height: 1.7; }
+  .nv-page { font-family: var(--font-body, Inter, sans-serif); font-size: 16px; background: #222222; color: #d1d5db; line-height: 1.7; }
   .nv-page *, .nv-page *::before, .nv-page *::after { box-sizing: border-box; margin: 0; padding: 0; }
   .nv-page h1, .nv-page h2, .nv-page h3, .nv-page h4 { text-wrap: balance; }
 
@@ -59,7 +59,7 @@ const CSS = `
   /* Phase header */
   .nv-phase-header { margin-bottom: 60px; }
   .nv-phase-label { font-size: 11px; letter-spacing: 0.18em; text-transform: uppercase; color: var(--phase-color); font-weight: 600; margin-bottom: 12px; }
-  .nv-phase-title { font-size: clamp(48px, 6vw, 80px); font-weight: 800; color: var(--phase-color); line-height: 1; margin-bottom: 20px; }
+  .nv-phase-title { font-family: var(--font-serif, 'DM Serif Display', serif); font-size: clamp(48px, 6vw, 80px); font-weight: 400; color: var(--phase-color); line-height: 1; margin-bottom: 20px; }
   .nv-phase-desc { font-size: 17px; color: #9ca3af; max-width: 640px; line-height: 1.65; }
 
   /* Sub-section label */

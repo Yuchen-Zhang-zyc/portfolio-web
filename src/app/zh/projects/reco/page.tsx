@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import NextProject from "../../components/NextProject";
+import NextProject from "../../../components/NextProject";
 
 const CSS = `
   .reco-page { font-family: var(--font-dm-sans, 'DM Sans', sans-serif); background: #0D0D0F; color: #F0EEE9; min-height: 100vh; }
@@ -79,13 +79,15 @@ const CSS = `
   .reco-pullquote { border-left: 2px solid #5B8CF5; padding-left: 24px; margin: 40px 0; font-size: 18px; font-weight: 300; font-style: italic; color: rgba(240,238,233,0.65); line-height: 1.65; }
 `;
 
-export default function RecoPage() {
+export default function RecoPageZh() {
   const [scrolled, setScrolled] = useState(false);
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  void scrolled;
 
   return (
     <>
@@ -94,7 +96,7 @@ export default function RecoPage() {
 
         {/* Back link */}
         <div className="relative z-20" style={{ padding: "14px 48px" }}>
-          <Link href="/" style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", textDecoration: "none", fontFamily: "monospace", letterSpacing: "0.06em" }}>← Home</Link>
+          <Link href="/zh" style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", textDecoration: "none", fontFamily: "monospace", letterSpacing: "0.06em" }}>← 首页</Link>
         </div>
 
         {/* Nav */}
@@ -105,20 +107,20 @@ export default function RecoPage() {
         {/* 01 Hero */}
         <section className="reco-section reco-section-first" id="main-content">
           <div className="reco-container">
-            <div className="reco-eyebrow">School Competition · iOS · Group Busy BEE · 2024</div>
+            <div className="reco-eyebrow">学校竞赛 · iOS · Group Busy BEE · 2024</div>
             <h1 className="reco-h1">
               <span style={{ color: "rgba(240,238,233,0.9)" }}>RECO</span>
             </h1>
             <p className="reco-lead">
-              An AI-powered rehabilitation companion for athletes recovering from ACL surgery — helping them stay motivated through months of repetitive home exercise with psychological support, smart tracking, and medical-grade guidance.
+              一款面向 ACL 术后康复运动员的 AI 伴侣应用——通过心理支持、智能追踪和专业医学引导，帮助他们在数月枯燥的居家康复训练中保持动力。
             </p>
 
             <div className="reco-meta">
               {[
-                { label: "My Role", value: "API Integration & Frontend" },
-                { label: "Team", value: "Group Busy BEE" },
-                { label: "Type", value: "School Competition" },
-                { label: "Platform", value: "iOS Mobile" },
+                { label: "我的角色", value: "API 集成 & 前端开发" },
+                { label: "团队", value: "Group Busy BEE" },
+                { label: "类型", value: "学校竞赛" },
+                { label: "平台", value: "iOS 移动端" },
               ].map((m) => (
                 <div className="reco-meta-cell" key={m.label}>
                   <div className="reco-meta-label">{m.label}</div>
@@ -134,20 +136,20 @@ export default function RecoPage() {
           <div className="reco-container">
             <div className="reco-grid-2">
               <div>
-                <div className="reco-eyebrow">02 — Problem</div>
-                <h2 className="reco-h2">The biggest challenge isn&apos;t physical — it&apos;s psychological.</h2>
+                <div className="reco-eyebrow">02 — 问题</div>
+                <h2 className="reco-h2">最大的挑战不是身体，而是心理。</h2>
                 <p style={{ fontSize: 15, color: "rgba(240,238,233,0.6)", lineHeight: 1.8, marginBottom: 20 }}>
-                  Teen and college-aged athletes struggle to stay motivated through repetitive, months-long home exercise programs after ACL surgery. Daily stress and negative mood directly correlate with lower exercise adherence.
+                  青少年和大学生运动员在 ACL 手术后，很难在长达数月、枯燥重复的居家康复训练中保持动力。日常压力和负面情绪与训练依从性下降直接相关。
                 </p>
                 <blockquote className="reco-pullquote">
-                  &ldquo;You feel depressed and powerless. Recovery feels endless. Every day you do small, repetitive exercises, but you don&apos;t know if you&apos;re getting better.&rdquo;
+                  &ldquo;你会感到沮丧和无力。康复过程感觉遥遥无期。每天做同样的小动作，却不知道自己是否在好转。&rdquo;
                 </blockquote>
               </div>
               <div>
                 <div className="reco-stats">
                   {[
-                    { num: "41.8%", label: "Athletes experiencing anxiety & depression post-surgery" },
-                    { num: "40%", label: "Reported depression rate during ACL recovery" },
+                    { num: "41.8%", label: "术后出现焦虑与抑郁的运动员比例" },
+                    { num: "40%", label: "ACL 康复期间的抑郁发生率" },
                   ].map((s) => (
                     <div className="reco-stat" key={s.label}>
                       <span className="reco-stat-num">{s.num}</span>
@@ -156,7 +158,7 @@ export default function RecoPage() {
                   ))}
                 </div>
                 <p style={{ fontSize: 12, color: "rgba(240,238,233,0.25)", marginTop: 12, lineHeight: 1.6, fontFamily: "var(--font-dm-mono,'DM Mono',monospace)" }}>
-                  Source: Caumeil et al. — Reinjury Anxiety and Return to Sport After ACL Reconstruction, 162 athletes
+                  数据来源：Caumeil 等 — ACL 重建术后的再损伤焦虑与重返运动，162 名运动员
                 </p>
               </div>
             </div>
@@ -166,28 +168,28 @@ export default function RecoPage() {
         {/* 03 Solution */}
         <section className="reco-section" id="solution">
           <div className="reco-container">
-            <div className="reco-eyebrow">03 — Solution</div>
-            <h2 className="reco-h2">Autonomy, Competence, Relatedness — the three pillars of motivation.</h2>
+            <div className="reco-eyebrow">03 — 解决方案</div>
+            <h2 className="reco-h2">自主、能力、归属——动机的三大支柱。</h2>
             <p style={{ fontSize: 15, color: "rgba(240,238,233,0.6)", lineHeight: 1.8, maxWidth: 640, marginBottom: 40 }}>
-              RECO is an AI chatbot grounded in Self-Determination Theory (SDT). It restores motivation by giving athletes a sense of control over their recovery, clear progress signals, and an emotionally supportive companion — VITA.
+              RECO 是一款基于自我决定理论（SDT）的 AI 聊天伴侣。它通过让运动员重获对康复进程的掌控感、清晰的进步反馈，以及情感支持型 AI 伴侣 VITA，来重建康复动力。
             </p>
 
             <div className="reco-features">
               {[
                 {
                   icon: "🤖",
-                  name: "Character — VITA",
-                  desc: "AI-driven companion with medical knowledge, trained on PubMed research. Provides rehabilitation guidance with expertise in nutrition and recovery science.",
+                  name: "角色——VITA",
+                  desc: "基于 PubMed 医学研究训练的 AI 伴侣，具备专业医学知识，可提供康复指导，涵盖营养和恢复科学领域。",
                 },
                 {
                   icon: "📱",
-                  name: "Smartphone IMU",
-                  desc: "Uses phone sensors to measure the angle of leg lift, speed, and amplitude — giving accurate, quantitative feedback on exercise form and progress.",
+                  name: "手机 IMU 传感器",
+                  desc: "利用手机传感器测量腿部抬起角度、速度和幅度，对运动动作质量和进展给出精准量化反馈。",
                 },
                 {
                   icon: "🟩",
-                  name: "Widgets",
-                  desc: "Home screen widgets showing recovery day count and daily check-ins, increasing utilization and giving athletes a stronger sense of companionship.",
+                  name: "桌面小组件",
+                  desc: "主屏幕小组件显示康复天数和每日打卡，提升使用频率，让运动员更有陪伴感。",
                 },
               ].map((f) => (
                 <div className="reco-feature-card" key={f.name}>
@@ -200,7 +202,7 @@ export default function RecoPage() {
 
             <img
               src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773758102/portfolio/projects/reco/features.jpg"
-              alt="RECO feature mockups — VITA AI companion, Smartphone IMU rehabilitation, and home screen widgets"
+              alt="RECO 功能展示——VITA AI 伴侣、手机 IMU 康复追踪、主屏幕小组件"
               className="reco-feature-img"
             />
           </div>
@@ -209,38 +211,38 @@ export default function RecoPage() {
         {/* 04 My Contribution */}
         <section className="reco-section" id="contribution">
           <div className="reco-container">
-            <div className="reco-eyebrow">04 — My Contribution</div>
+            <div className="reco-eyebrow">04 — 我的贡献</div>
             <div style={{ marginBottom: 16 }}>
               <span className="reco-role-badge">
                 <span className="reco-role-dot" />
-                API Integration &amp; Frontend Development
+                API 集成 &amp; 前端开发
               </span>
             </div>
-            <h2 className="reco-h2">Building the technical layer that made the AI possible.</h2>
+            <h2 className="reco-h2">构建让 AI 成为可能的技术底层。</h2>
             <p style={{ fontSize: 15, color: "rgba(240,238,233,0.6)", lineHeight: 1.8, maxWidth: 600, marginBottom: 40 }}>
-              My focus was on the technical infrastructure — connecting external AI and medical APIs to the frontend, and building the interface components that brought the product to life.
+              我的重心在技术基础设施上——将外部 AI 和医疗 API 连接到前端，并构建让产品真正运转起来的界面组件。
             </p>
             <ul className="reco-contrib-list">
               {[
                 {
                   num: "01",
-                  title: "ChatGPT-4o.mini API Integration",
-                  body: "Integrated OpenAI's GPT-4o.mini as the conversational engine powering VITA. Designed the system prompt to constrain responses to rehabilitation and nutrition domains, reducing hallucination risk in a medical context.",
+                  title: "ChatGPT-4o.mini API 集成",
+                  body: "将 OpenAI 的 GPT-4o.mini 作为驱动 VITA 的对话引擎。设计系统提示词，将模型输出限定在康复和营养领域，降低医疗场景下出现幻觉的风险。",
                 },
                 {
                   num: "02",
-                  title: "Entrez PubMed API — Medical Knowledge Pipeline",
-                  body: "Connected to the NCBI Entrez PubMed API to fetch peer-reviewed research on ACL recovery. This gave VITA access to real medical literature, making responses more credible and evidence-based.",
+                  title: "Entrez PubMed API——医学知识管道",
+                  body: "接入 NCBI Entrez PubMed API，获取关于 ACL 康复的同行评审研究文献。这让 VITA 能够访问真实的医学文献，使回答更具可信度和循证基础。",
                 },
                 {
                   num: "03",
-                  title: "Supabase API Key Encryption",
-                  body: "Implemented server-side API key management using Supabase to prevent key exposure on the client. Ensured OpenAI and PubMed credentials were never accessible in the frontend bundle.",
+                  title: "Supabase API Key 加密",
+                  body: "使用 Supabase 实现服务端 API Key 管理，防止密钥暴露在客户端。确保 OpenAI 和 PubMed 的凭证不会出现在前端打包文件中。",
                 },
                 {
                   num: "04",
-                  title: "Frontend Development",
-                  body: "Built the chat interface, feature screens, and widget components. Focused on creating a calm, approachable visual language that matched the emotional tone needed for a mental health-adjacent recovery product.",
+                  title: "前端开发",
+                  body: "构建聊天界面、功能页面和小组件组件。专注于打造平静、亲切的视觉语言，与这款心理健康相关康复产品所需要的情感基调相匹配。",
                 },
               ].map((c) => (
                 <li className="reco-contrib-item" key={c.num}>
@@ -258,16 +260,16 @@ export default function RecoPage() {
         {/* 05 Tech Stack */}
         <section className="reco-section" id="tech">
           <div className="reco-container">
-            <div className="reco-eyebrow">05 — Tech Stack</div>
-            <h2 className="reco-h2">What we built with.</h2>
+            <div className="reco-eyebrow">05 — 技术栈</div>
+            <h2 className="reco-h2">我们用什么构建的。</h2>
             <div style={{ marginTop: 32 }}>
               <div className="reco-stack">
                 {[
-                  { label: "AI Model", value: "ChatGPT-4o.mini", tag: "OpenAI API" },
-                  { label: "Medical Data", value: "Entrez PubMed API — NCBI peer-reviewed research database", tag: "MED-API" },
-                  { label: "Security", value: "Supabase Key Encryption — server-side API key storage and management", tag: "Encryption" },
-                  { label: "Platform", value: "iOS Mobile Application", tag: "Swift / React Native" },
-                  { label: "SDT Framework", value: "Self-Determination Theory — Autonomy · Competence · Relatedness", tag: "Psychology" },
+                  { label: "AI 模型", value: "ChatGPT-4o.mini", tag: "OpenAI API" },
+                  { label: "医疗数据", value: "Entrez PubMed API——NCBI 同行评审研究数据库", tag: "MED-API" },
+                  { label: "安全加密", value: "Supabase Key 加密——服务端 API Key 存储与管理", tag: "Encryption" },
+                  { label: "平台", value: "iOS 移动端应用", tag: "Swift / React Native" },
+                  { label: "SDT 框架", value: "自我决定理论——自主 · 能力 · 归属", tag: "心理学" },
                 ].map((r) => (
                   <div className="reco-stack-row" key={r.label}>
                     <div className="reco-stack-label">{r.label}</div>
@@ -286,14 +288,14 @@ export default function RecoPage() {
         <section className="reco-section" id="reflection">
           <div className="reco-container">
             <div style={{ maxWidth: 680 }}>
-              <div className="reco-eyebrow">06 — Reflection</div>
-              <h2 className="reco-h2">What I learned from building with AI APIs.</h2>
+              <div className="reco-eyebrow">06 — 项目反思</div>
+              <h2 className="reco-h2">从使用 AI API 构建产品中学到的。</h2>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {[
-                  { mark: "→", text: "Securing API keys server-side is non-negotiable — even in a competition prototype, exposing credentials in a frontend bundle is a real risk." },
-                  { mark: "→", text: "Grounding an LLM with domain-specific data (PubMed) significantly improves response quality for specialized use cases." },
-                  { mark: "→", text: "System prompts are a design artifact — constraining the AI's behavior is as much a design decision as the interface itself." },
-                  { mark: "→", text: "For health-adjacent products, the tone of AI responses matters as much as their accuracy. Designing the model's personality is part of the work." },
+                  { mark: "→", text: "服务端管理 API Key 是不可妥协的底线——即使是竞赛原型，将凭证暴露在前端包中也是真实的安全风险。" },
+                  { mark: "→", text: "用领域专属数据（PubMed）增强 LLM 的知识底座，能显著提升专业场景下的回答质量。" },
+                  { mark: "→", text: "系统提示词是一种设计产出——约束 AI 行为本身就是一个设计决策，和界面设计同等重要。" },
+                  { mark: "→", text: "对于健康相关产品，AI 回应的语气和口吻与内容准确性同样重要。设计模型的人格，是工作的一部分。" },
                 ].map((item, i) => (
                   <li key={i} style={{ borderTop: "1px solid rgba(255,255,255,0.07)", padding: "18px 0", display: "flex", gap: 16, fontSize: 14, color: "rgba(240,238,233,0.6)", lineHeight: 1.7 }}>
                     <span style={{ fontFamily: "var(--font-dm-mono,'DM Mono',monospace)", fontSize: 11, color: "#5B8CF5", flexShrink: 0, paddingTop: 2 }}>{item.mark}</span>
@@ -306,7 +308,7 @@ export default function RecoPage() {
         </section>
 
       </div>
-      <NextProject href="/projects/this-website" title="This Website" role="Designer & Developer" theme="dark" />
+      <NextProject href="/zh/projects/this-website" title="This Website" role="设计师 & 开发者" theme="dark" />
     </>
   );
 }

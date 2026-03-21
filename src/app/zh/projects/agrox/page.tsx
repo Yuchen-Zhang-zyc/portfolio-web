@@ -13,7 +13,7 @@ const CSS = `
     --text-muted: #64748B;
     --accent: #0EA5E9;
     --accent-green: #10B981;
-    font-family: var(--font-inter, 'Inter', sans-serif);
+    font-family: var(--font-body, 'Inter', sans-serif);
     background: var(--bg-gradient);
     color: var(--text-main);
     min-height: 100vh;

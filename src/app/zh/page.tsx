@@ -132,231 +132,239 @@ export default function HomeZh() {
               项目
             </h2>
           </div>
-          <div className="md:col-span-8 flex flex-col gap-[40px]">
+          <div className="md:col-span-8 flex flex-col gap-[64px]">
 
-            {/* Assembly Line Y */}
-            <Link href="/zh/projects/assembly-line-y" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
-              <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
-                <div className="flex gap-2 relative z-10">
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
-                  Assembly Line Y
-                </div>
-              </div>
-              <div className="w-full aspect-[16/10] bg-[#0A0A08] relative overflow-hidden flex items-center justify-center">
-                <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\' opacity=\'0.04\'/%3E%3C/svg%3E')] mix-blend-overlay"></div>
-                <div className="flex flex-col items-center justify-center gap-4 z-10 group-hover:scale-105 transition-transform duration-700">
-                  <span className="font-mono text-[10px] sm:text-xs text-[#C8962A] tracking-[4px] uppercase border border-[#C8962A]/30 bg-[#C8962A]/10 px-4 py-1.5 backdrop-blur-md">VR SIMULATION</span>
-                  <h3 className="text-4xl sm:text-5xl md:text-6xl font-sans font-bold text-[#E8E0D0] tracking-tight">Assembly <span className="italic font-light text-[#C8962A]">Line Y</span></h3>
-                </div>
-              </div>
-              <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Assembly Line Y <span className="opacity-60 font-normal text-lg">| VR 开发者 & 设计师</span></h3>
-                  <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    为特斯拉 Model Y 装配线设计的 Quest 3 VR 培训模拟系统，集成 AI 助手提供任务引导支持。
-                  </p>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">VR / XR</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI Integration</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Unity</span>
-                </div>
-              </div>
-            </Link>
+            {/* XR */}
+            <div className="flex flex-col gap-[40px]">
+              <p className="text-xs font-mono tracking-[0.22em] uppercase text-brand-primary/35 pb-3 border-b border-brand-primary/10">XR</p>
 
-            {/* Nest Thermostat */}
-            <Link href="/zh/projects/nest-thermostat" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
-              <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
-                <div className="flex gap-2 relative z-10">
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+              <Link href="/zh/projects/assembly-line-y" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    Assembly Line Y
+                  </div>
                 </div>
-                <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
-                  Nest Thermostat
+                <div className="w-full aspect-[16/10] bg-[#0A0A08] relative overflow-hidden flex items-center justify-center">
+                  <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\' opacity=\'0.04\'/%3E%3C/svg%3E')] mix-blend-overlay"></div>
+                  <div className="flex flex-col items-center justify-center gap-4 z-10 group-hover:scale-105 transition-transform duration-700">
+                    <span className="font-mono text-[10px] sm:text-xs text-[#C8962A] tracking-[4px] uppercase border border-[#C8962A]/30 bg-[#C8962A]/10 px-4 py-1.5 backdrop-blur-md">VR SIMULATION</span>
+                    <div aria-hidden="true" className="text-4xl sm:text-5xl md:text-6xl font-sans font-bold text-[#E8E0D0] tracking-tight">Assembly <span className="italic font-light text-[#C8962A]">Line Y</span></div>
+                  </div>
                 </div>
-              </div>
-              <div className="w-full aspect-[16/10] bg-[#1E1E1E] relative overflow-hidden">
-                <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773760252/portfolio/nest-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
-              </div>
-              <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Nest Thermostat 重设计 <span className="opacity-60 font-normal text-lg">| 项目负责人 & UX 设计师</span></h3>
-                  <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    对 Nest 恒温器应用进行重设计，聚焦于更清晰的日程设置交互和更易用的控制体验。
-                  </p>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">Assembly Line Y <span className="opacity-60 font-normal text-lg">| VR 开发者 & 设计师</span></h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      为特斯拉 Model Y 装配线设计的 Quest 3 VR 培训模拟系统，集成 AI 助手提供任务引导支持。
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">VR / XR</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI Integration</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Unity</span>
+                  </div>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX/UI Design</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Interaction</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Usability Testing</span>
-                </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
 
-            {/* DoseCare */}
-            <Link href="/zh/projects/dosecare" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
-              <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
-                <div className="flex gap-2 relative z-10">
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
-                </div>
-                <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
-                  DoseCare
-                </div>
-              </div>
-              <div className="w-full aspect-[16/10] bg-white relative overflow-hidden">
-                <div className="w-full h-full bg-contain bg-no-repeat bg-center group-hover:scale-105 transition-transform duration-700" style={{ backgroundImage: "url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773789495/portfolio/dosecare-homepage.png')" }}></div>
-              </div>
-              <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">DoseCare <span className="opacity-60 font-normal text-lg">| 团队负责人 & UX 设计师</span></h3>
-                  <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    面向老年人的用药管理应用，旨在减少漏服并让日常护理更轻松。
-                  </p>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UI</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI</span>
-                </div>
-              </div>
-            </Link>
+            {/* AI */}
+            <div className="flex flex-col gap-[40px]">
+              <p className="text-xs font-mono tracking-[0.22em] uppercase text-brand-primary/35 pb-3 border-b border-brand-primary/10">AI</p>
 
-            {/* Agrox */}
-            <Link href="/zh/projects/agrox" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
-              <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
-                <div className="flex gap-2 relative z-10">
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+              <Link href="/zh/projects/this-website" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    This Website
+                  </div>
                 </div>
-                <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
-                  Agrox
+                <div className="w-full aspect-[16/10] overflow-hidden">
+                  <img
+                    src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773849044/portfolio/projects/this-website/home-v2.png"
+                    alt="作品集首页截图"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                  />
                 </div>
-              </div>
-              <div className="w-full aspect-[16/10] bg-[#EAE3DB] relative overflow-hidden">
-                <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773757710/portfolio/agrox-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
-              </div>
-              <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Agrox <span className="opacity-60 font-normal text-lg">| UX 设计师</span></h3>
-                  <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    面向有机病虫害管理的 AI 农业机器人控制台，专注于田间监测与决策支持。
-                  </p>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">
+                      这个网站 <span className="opacity-60 font-normal text-lg">| AI 辅助开发</span>
+                    </h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      大部分页面通过与 Claude + Figma MCP 的 vibe coding 协作完成。Gemini 和 Codex 提供了备选代码路径、逻辑验证和多模型视角的压力测试。
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI-assisted Dev</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Next.js · Tailwind</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Claude · Gemini · Codex</span>
+                  </div>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX Research</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UI Design</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI / IoT</span>
-                </div>
-              </div>
-            </Link>
+              </Link>
 
-            {/* Nirvana */}
-            <Link href="/zh/projects/nirvana" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
-              <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
-                <div className="flex gap-2 relative z-10">
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+              <Link href="/zh/projects/reco" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    RECO
+                  </div>
                 </div>
-                <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
-                  Nirvana
+                <div className="w-full aspect-[16/10] bg-[#0D0D0F] relative overflow-hidden flex items-center justify-center">
+                  <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at 30% 50%, rgba(91,140,245,0.4) 0%, transparent 60%), radial-gradient(ellipse at 70% 50%, rgba(120,80,220,0.3) 0%, transparent 60%)" }}></div>
+                  <div className="flex flex-col items-center justify-center gap-3 z-10 group-hover:scale-105 transition-transform duration-700">
+                    <span className="font-mono text-[10px] sm:text-xs text-[#7AABFF] tracking-[4px] uppercase border border-[#5B8CF5]/30 bg-[#5B8CF5]/10 px-4 py-1.5 backdrop-blur-md">ACL REHAB · AI COMPANION</span>
+                    <div aria-hidden="true" className="text-4xl sm:text-5xl md:text-6xl font-sans font-bold text-white tracking-tight">RECO</div>
+                  </div>
                 </div>
-              </div>
-              <div className="w-full aspect-[16/10] bg-[#EAE3DB] relative overflow-hidden">
-                <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773760297/portfolio/nirvana-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
-              </div>
-              <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">Nirvana <span className="opacity-60 font-normal text-lg">| 团队负责人</span></h3>
-                  <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    一套汽车定制化服务设计方案，融合移动端规划、3D 可视化与 VR 预览体验。
-                  </p>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">RECO <span className="opacity-60 font-normal text-lg">| API 集成 & 前端开发</span></h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      基于 ChatGPT-4o 和 PubMed 医学数据的 ACL 康复 AI 伴侣，负责 API 层与前端开发，用于学校竞赛。
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI / LLM</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">API Integration</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Frontend</span>
+                  </div>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Service Design</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX/UI</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">VR / Unity</span>
-                </div>
-              </div>
-            </Link>
+              </Link>
 
-            {/* RECO */}
-            <Link href="/projects/reco" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
-              <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
-                <div className="flex gap-2 relative z-10">
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+              <Link href="/zh/projects/dosecare" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    DoseCare
+                  </div>
                 </div>
-                <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
-                  RECO
+                <div className="w-full aspect-[16/10] bg-white relative overflow-hidden">
+                  <div className="w-full h-full bg-contain bg-no-repeat bg-center group-hover:scale-105 transition-transform duration-700" style={{ backgroundImage: "url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773789495/portfolio/dosecare-homepage.png')" }}></div>
                 </div>
-              </div>
-              <div className="w-full aspect-[16/10] bg-[#0D0D0F] relative overflow-hidden flex items-center justify-center">
-                <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at 30% 50%, rgba(91,140,245,0.4) 0%, transparent 60%), radial-gradient(ellipse at 70% 50%, rgba(120,80,220,0.3) 0%, transparent 60%)" }}></div>
-                <div className="flex flex-col items-center justify-center gap-3 z-10 group-hover:scale-105 transition-transform duration-700">
-                  <span className="font-mono text-[10px] sm:text-xs text-[#7AABFF] tracking-[4px] uppercase border border-[#5B8CF5]/30 bg-[#5B8CF5]/10 px-4 py-1.5 backdrop-blur-md">ACL REHAB · AI COMPANION</span>
-                  <h3 className="text-4xl sm:text-5xl md:text-6xl font-sans font-bold text-white tracking-tight">RECO</h3>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">DoseCare <span className="opacity-60 font-normal text-lg">| 团队负责人 & UX 设计师</span></h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      面向老年人的用药管理应用，旨在减少漏服并让日常护理更轻松。
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UI</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI</span>
+                  </div>
                 </div>
-              </div>
-              <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">RECO <span className="opacity-60 font-normal text-lg">| API 集成 & 前端开发</span></h3>
-                  <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    基于 ChatGPT-4o 和 PubMed 医学数据的 ACL 康复 AI 伴侣，负责 API 层与前端开发，用于学校竞赛。
-                  </p>
-                </div>
-                <div className="flex flex-wrap gap-2">
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI / LLM</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">API Integration</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Frontend</span>
-                </div>
-              </div>
-            </Link>
+              </Link>
+            </div>
 
-            {/* This Website */}
-            <Link href="/projects/this-website" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
-              <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
-                <div className="flex gap-2 relative z-10">
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
-                  <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+            {/* UX */}
+            <div className="flex flex-col gap-[40px]">
+              <p className="text-xs font-mono tracking-[0.22em] uppercase text-brand-primary/35 pb-3 border-b border-brand-primary/10">UX</p>
+
+              <Link href="/zh/projects/nest-thermostat" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    Nest Thermostat
+                  </div>
                 </div>
-                <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
-                  This Website
+                <div className="w-full aspect-[16/10] bg-[#1E1E1E] relative overflow-hidden">
+                  <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773760252/portfolio/nest-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
                 </div>
-              </div>
-              <div className="w-full aspect-[16/10] overflow-hidden">
-                <img
-                  src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773849044/portfolio/projects/this-website/home-v2.png"
-                  alt="作品集首页截图"
-                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
-                />
-              </div>
-              <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
-                <div className="flex flex-col gap-2">
-                  <h3 className="text-2xl font-bold font-sans text-brand-primary">
-                    这个网站 <span className="opacity-60 font-normal text-lg">| AI 辅助开发</span>
-                  </h3>
-                  <p className="text-[16px] md:text-[18px] font-sans text-brand-primary/80 leading-relaxed">
-                    大部分页面通过与 Claude + Figma MCP 的 vibe coding 协作完成。Gemini 和 Codex 提供了备选代码路径、逻辑验证和多模型视角的压力测试。
-                  </p>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">Nest Thermostat 重设计 <span className="opacity-60 font-normal text-lg">| 项目负责人 & UX 设计师</span></h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      对 Nest 恒温器应用进行重设计，聚焦于更清晰的日程设置交互和更易用的控制体验。
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX/UI Design</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Interaction</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Usability Testing</span>
+                  </div>
                 </div>
-                <div className="flex flex-wrap gap-2">
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI-assisted Dev</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Next.js · Tailwind</span>
-                  <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Claude · Gemini · Codex</span>
+              </Link>
+
+              <Link href="/zh/projects/nirvana" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    Nirvana
+                  </div>
                 </div>
-              </div>
-            </Link>
+                <div className="w-full aspect-[16/10] bg-[#EAE3DB] relative overflow-hidden">
+                  <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773760297/portfolio/nirvana-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
+                </div>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">Nirvana <span className="opacity-60 font-normal text-lg">| 团队负责人</span></h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      一套汽车定制化服务设计方案，融合移动端规划、3D 可视化与 VR 预览体验。
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Service Design</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX/UI</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">VR / Unity</span>
+                  </div>
+                </div>
+              </Link>
+
+              <Link href="/zh/projects/agrox" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    Agrox
+                  </div>
+                </div>
+                <div className="w-full aspect-[16/10] bg-[#EAE3DB] relative overflow-hidden">
+                  <div className="w-full h-full bg-[url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773757710/portfolio/agrox-homepage.png')] bg-cover bg-[position:right_center] group-hover:scale-105 transition-transform duration-700"></div>
+                </div>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">Agrox <span className="opacity-60 font-normal text-lg">| UX 设计师</span></h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      面向有机病虫害管理的 AI 农业机器人控制台，专注于田间监测与决策支持。
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UX Research</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">UI Design</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI / IoT</span>
+                  </div>
+                </div>
+              </Link>
+            </div>
 
           </div>
         </section>
