@@ -231,7 +231,7 @@ export default function AssemblyLineYProject() {
         </section>
 
       </main>
-      <NextProject href="/projects/nest-thermostat" title="Nest Thermostat Redesign" role="Project Lead & UX Design" theme="dark" />
+      <NextProject href="/projects/tireswap" title="TireSwap VR" role="VR Developer & Designer" theme="dark" />
     </div>
   );
 }

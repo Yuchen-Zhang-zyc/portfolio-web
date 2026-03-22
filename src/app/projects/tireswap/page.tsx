@@ -289,7 +289,7 @@ export default function TireSwapVRProject() {
         </section>
 
       </main>
-      <NextProject href="/projects/assembly-line-y" title="Assembly Line Y" role="VR Developer & Designer" theme="dark" />
+      <NextProject href="/projects/nest-thermostat" title="Nest Thermostat Redesign" role="Project Lead & UX Design" theme="dark" />
     </div>
   );
 }
