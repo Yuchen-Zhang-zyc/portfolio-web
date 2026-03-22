@@ -1,7 +1,4 @@
-"use client";
-
 import Link from "next/link";
-import { useState } from "react";
 
 interface NextProjectProps {
   href: string;
@@ -12,34 +9,21 @@ interface NextProjectProps {
 
 export default function NextProject({ href, title, role, theme = "light" }: NextProjectProps) {
   const isDark = theme === "dark";
-  const [hovered, setHovered] = useState(false);
 
-  const bg       = isDark ? (hovered ? "#1C1B19" : "#111110") : (hovered ? "#E6E5DF" : "#F0EFEA");
-  const border   = isDark ? "rgba(255,255,255,0.08)" : "rgba(0,0,0,0.08)";
+  const vars = {
+    "--np-bg":          isDark ? "#111110"                : "#F0EFEA",
+    "--np-bg-hover":    isDark ? "#1C1B19"                : "#E6E5DF",
+    "--np-border":      isDark ? "rgba(255,255,255,0.08)" : "rgba(0,0,0,0.08)",
+    "--np-title":       isDark ? "#FFFFFF"                : "#111110",
+    "--np-arrow-hover": isDark ? "rgba(255,255,255,0.8)"  : "rgba(0,0,0,0.6)",
+  } as React.CSSProperties;
+
   const labelCol = isDark ? "rgba(255,255,255,0.38)" : "rgba(0,0,0,0.38)";
-  const titleCol = isDark ? "#FFFFFF" : "#111110";
   const roleCol  = isDark ? "rgba(255,255,255,0.5)"  : "rgba(0,0,0,0.5)";
-  const arrowCol = hovered
-    ? (isDark ? "rgba(255,255,255,0.8)" : "rgba(0,0,0,0.6)")
-    : (isDark ? "rgba(255,255,255,0.28)" : "rgba(0,0,0,0.22)");
+  const arrowCol = isDark ? "rgba(255,255,255,0.28)" : "rgba(0,0,0,0.22)";
 
   return (
-    <Link
-      href={href}
-      onMouseEnter={() => setHovered(true)}
-      onMouseLeave={() => setHovered(false)}
-      style={{
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "space-between",
-        padding: "44px 48px",
-        background: bg,
-        borderTop: `1px solid ${border}`,
-        textDecoration: "none",
-        transition: "background 0.22s ease",
-        cursor: "pointer",
-      }}
-    >
+    <Link href={href} className="np-link" style={vars}>
       <div style={{ display: "flex", flexDirection: "column", gap: 5 }}>
         <span style={{
           fontSize: 10,
@@ -53,7 +37,6 @@ export default function NextProject({ href, title, role, theme = "light" }: Next
         <span style={{
           fontSize: 22,
           fontWeight: 600,
-          color: titleCol,
           lineHeight: 1.2,
         }}>
           {title}
@@ -67,7 +50,7 @@ export default function NextProject({ href, title, role, theme = "light" }: Next
       </div>
 
       <span
-        aria-hidden="true"
+        className="np-arrow"
         style={{
           fontSize: 26,
           color: arrowCol,
@@ -75,8 +58,8 @@ export default function NextProject({ href, title, role, theme = "light" }: Next
           flexShrink: 0,
           marginLeft: 24,
           transition: "transform 0.22s ease, color 0.22s ease",
-          transform: hovered ? "translateX(8px)" : "translateX(0)",
         }}
+        aria-hidden="true"
       >
         →
       </span>
