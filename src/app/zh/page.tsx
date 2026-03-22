@@ -171,7 +171,7 @@ export default function HomeZh() {
                 </div>
               </Link>
 
-              <Link href="/projects/tireswap" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+              <Link href="/zh/projects/tireswap" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
                 <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
                   <div className="flex gap-2 relative z-10">
                     <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
