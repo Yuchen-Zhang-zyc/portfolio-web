@@ -77,6 +77,14 @@ const CSS = `
 
   /* Pullquote */
   .reco-pullquote { border-left: 2px solid #5B8CF5; padding-left: 24px; margin: 40px 0; font-size: 18px; font-weight: 300; font-style: italic; color: rgba(240,238,233,0.65); line-height: 1.65; }
+
+  /* HiFi gallery */
+  .reco-hifi-scroll { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 16px; margin-top: 40px; scrollbar-width: thin; scrollbar-color: rgba(255,255,255,0.15) transparent; }
+  .reco-hifi-scroll::-webkit-scrollbar { height: 4px; }
+  .reco-hifi-scroll::-webkit-scrollbar-track { background: transparent; }
+  .reco-hifi-scroll::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.15); border-radius: 2px; }
+  .reco-hifi-frame { flex-shrink: 0; width: 220px; border-radius: 28px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); background: #111114; box-shadow: 0 12px 32px rgba(0,0,0,0.35); }
+  .reco-hifi-frame img { width: 100%; height: auto; display: block; }
 `;
 
 export default function RecoPage() {
@@ -197,19 +205,35 @@ export default function RecoPage() {
                 </div>
               ))}
             </div>
-
-            <img
-              src="https://res.cloudinary.com/dj13he2xu/image/upload/v1773758102/portfolio/projects/reco/features.jpg"
-              alt="RECO feature mockups — VITA AI companion, Smartphone IMU rehabilitation, and home screen widgets"
-              className="reco-feature-img"
-            />
           </div>
         </section>
 
-        {/* 04 My Contribution */}
+        {/* 04 HiFi Prototype */}
+        <section className="reco-section" id="hifi">
+          <div className="reco-container">
+            <div className="reco-eyebrow">04 — HiFi Prototype</div>
+            <h2 className="reco-h2">BoKnee — the companion in action.</h2>
+            <p style={{ fontSize: 15, color: "rgba(240,238,233,0.6)", lineHeight: 1.8, maxWidth: 600 }}>
+              High-fidelity screens showing VITA&apos;s emotional check-in flow, mood tracking, and the app&apos;s visual language — warm, approachable, and designed to feel more companion than clinical tool.
+            </p>
+            <div className="reco-hifi-scroll">
+              {[1,2,3,4,5,6,7,8,9].map((n) => (
+                <div className="reco-hifi-frame" key={n}>
+                  <img
+                    src={`/projects/reco/hifi-${n}.png`}
+                    alt={`BoKnee HiFi screen ${n}`}
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* 05 My Contribution */}
         <section className="reco-section" id="contribution">
           <div className="reco-container">
-            <div className="reco-eyebrow">04 — My Contribution</div>
+            <div className="reco-eyebrow">05 — My Contribution</div>
             <div style={{ marginBottom: 16 }}>
               <span className="reco-role-badge">
                 <span className="reco-role-dot" />
@@ -255,10 +279,10 @@ export default function RecoPage() {
           </div>
         </section>
 
-        {/* 05 Tech Stack */}
+        {/* 06 Tech Stack */}
         <section className="reco-section" id="tech">
           <div className="reco-container">
-            <div className="reco-eyebrow">05 — Tech Stack</div>
+            <div className="reco-eyebrow">06 — Tech Stack</div>
             <h2 className="reco-h2">What we built with.</h2>
             <div style={{ marginTop: 32 }}>
               <div className="reco-stack">
@@ -282,11 +306,11 @@ export default function RecoPage() {
           </div>
         </section>
 
-        {/* 06 Reflection */}
+        {/* 07 Reflection */}
         <section className="reco-section" id="reflection">
           <div className="reco-container">
             <div style={{ maxWidth: 680 }}>
-              <div className="reco-eyebrow">06 — Reflection</div>
+              <div className="reco-eyebrow">07 — Reflection</div>
               <h2 className="reco-h2">What I learned from building with AI APIs.</h2>
               <ul style={{ listStyle: "none", padding: 0, margin: 0 }}>
                 {[

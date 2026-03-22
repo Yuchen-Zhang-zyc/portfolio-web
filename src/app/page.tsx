@@ -177,6 +177,38 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
+              <Link href="/projects/tireswap" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    TireSwap VR
+                  </div>
+                </div>
+                <div className="w-full aspect-[16/10] bg-[#0A0C10] relative overflow-hidden flex items-center justify-center">
+                  <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\' opacity=\'0.04\'/%3E%3C/svg%3E')] mix-blend-overlay"></div>
+                  <div className="flex flex-col items-center justify-center gap-4 z-10 group-hover:scale-105 transition-transform duration-700">
+                    <span className="font-mono text-[10px] sm:text-xs text-[#9BB4D4] tracking-[4px] uppercase border border-[#9BB4D4]/30 bg-[#9BB4D4]/10 px-4 py-1.5 backdrop-blur-md">VR TRAINING</span>
+                    <div aria-hidden="true" className="text-4xl sm:text-5xl md:text-6xl font-sans font-bold text-[#E8EDF3] tracking-tight">TireSwap <span className="italic font-light text-[#9BB4D4]">VR</span></div>
+                  </div>
+                </div>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">TireSwap VR <span className="opacity-60 font-normal text-lg">| VR Developer & Designer</span></h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      A hands-on VR tire change simulation set in a realistic garage workshop, teaching the complete procedure step by step with in-world guidance and procedural validation.
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">VR / XR</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Procedural Training</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Unity XR</span>
+                  </div>
+                </div>
+              </Link>
             </div>
 
             {/* UX */}
