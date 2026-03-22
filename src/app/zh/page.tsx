@@ -205,6 +205,35 @@ export default function HomeZh() {
                 </div>
               </Link>
 
+              <Link href="/zh/projects/dosecare" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    DoseCare
+                  </div>
+                </div>
+                <div className="w-full aspect-[16/10] bg-white relative overflow-hidden">
+                  <div className="w-full h-full bg-contain bg-no-repeat bg-center group-hover:scale-105 transition-transform duration-700" style={{ backgroundImage: "url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773789495/portfolio/dosecare-homepage.png')" }}></div>
+                </div>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">DoseCare <span className="opacity-60 font-normal text-lg">| 团队负责人 & UX 设计师</span></h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      面向老年人的用药管理应用，旨在减少漏服并让日常护理更轻松。
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">HealthTech</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Accessibility</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">User Research</span>
+                  </div>
+                </div>
+              </Link>
+
               <Link href="/zh/projects/agrox" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
                 <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
                   <div className="flex gap-2 relative z-10">
@@ -267,35 +296,6 @@ export default function HomeZh() {
             {/* AI */}
             <div className="flex flex-col gap-[40px]">
               <p className="text-xs font-mono tracking-[0.22em] uppercase text-brand-primary/35 pb-3 border-b border-brand-primary/10">AI</p>
-
-              <Link href="/zh/projects/dosecare" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
-                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
-                  <div className="flex gap-2 relative z-10">
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
-                    DoseCare
-                  </div>
-                </div>
-                <div className="w-full aspect-[16/10] bg-white relative overflow-hidden">
-                  <div className="w-full h-full bg-contain bg-no-repeat bg-center group-hover:scale-105 transition-transform duration-700" style={{ backgroundImage: "url('https://res.cloudinary.com/dj13he2xu/image/upload/v1773789495/portfolio/dosecare-homepage.png')" }}></div>
-                </div>
-                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
-                  <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-bold font-sans text-brand-primary">DoseCare <span className="opacity-60 font-normal text-lg">| 团队负责人 & UX 设计师</span></h3>
-                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
-                      面向老年人的用药管理应用，旨在减少漏服并让日常护理更轻松。
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">HealthTech</span>
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Accessibility</span>
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">User Research</span>
-                  </div>
-                </div>
-              </Link>
 
               <Link href="/zh/projects/this-website" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
                 <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
