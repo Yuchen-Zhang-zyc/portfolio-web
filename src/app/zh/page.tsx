@@ -421,7 +421,7 @@ export default function HomeZh() {
                     具有计算机科学背景的产品设计师，专注于人机交互、XR 体验与交互设计。目前就读于 SCAD 交互设计 MFA，寻求 2026 年夏季实习机会。
                   </p>
                 </div>
-                <a href="/Yuchen_Zhang_Resume_AI_XR.pdf" download className="inline-flex items-center justify-center rounded-full px-5 py-3 bg-brand-primary text-white text-sm font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
+                <a href="/张宇辰_简历.pdf" download className="inline-flex items-center justify-center rounded-full px-5 py-3 bg-brand-primary text-white text-sm font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
                   下载简历
                 </a>
               </div>
