@@ -62,10 +62,26 @@ export default function TopNav() {
         if (!el) return;
 
         setActiveSection(id);
-        el.scrollIntoView({
-            behavior: "smooth",
-            block: "start",
-        });
+
+        const start = window.scrollY;
+        const target = el.getBoundingClientRect().top + window.scrollY;
+        const distance = target - start;
+        const duration = Math.min(900, Math.max(400, Math.abs(distance) * 0.4));
+        let startTime: number | null = null;
+
+        // Cubic ease-in-out
+        const ease = (t: number) =>
+            t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
+
+        const step = (timestamp: number) => {
+            if (!startTime) startTime = timestamp;
+            const elapsed = timestamp - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            window.scrollTo(0, start + distance * ease(progress));
+            if (progress < 1) requestAnimationFrame(step);
+        };
+
+        requestAnimationFrame(step);
     };
 
     if (isProjectPage) {
