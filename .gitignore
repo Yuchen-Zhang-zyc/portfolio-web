@@ -47,3 +47,13 @@ public/**/*.jpg
 public/**/*.jpeg
 public/**/*.webp
 public/**/*.gif
+
+# AI tool directories
+.cursor/
+.windsurf/
+.gemini/
+.trae/
+.qoder/
+.roo/
+.continue/
+.claude/
