@@ -330,6 +330,39 @@ export default function HomeZh() {
             <div className="flex flex-col gap-[40px]">
               <p className="text-xs font-mono tracking-[0.22em] uppercase text-brand-primary/35 pb-3 border-b border-brand-primary/10">AI</p>
 
+              <Link href="/zh/projects/reco" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    RECO
+                  </div>
+                </div>
+                <div className="w-full aspect-[16/10] bg-[#0D0D0F] relative overflow-hidden flex items-center justify-center">
+                  <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at 30% 50%, rgba(91,140,245,0.4) 0%, transparent 60%), radial-gradient(ellipse at 70% 50%, rgba(120,80,220,0.3) 0%, transparent 60%)" }}></div>
+                  <div className="flex flex-col items-center justify-center gap-3 z-10 group-hover:scale-105 transition-transform duration-700">
+                    <span className="font-mono text-[10px] sm:text-xs text-[#7AABFF] tracking-[4px] uppercase border border-[#5B8CF5]/30 bg-[#5B8CF5]/10 px-4 py-1.5 backdrop-blur-md">ACL REHAB · AI COMPANION</span>
+                    <div aria-hidden="true" className="text-4xl sm:text-5xl md:text-6xl font-sans font-bold text-white tracking-tight">RECO</div>
+                  </div>
+                </div>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">RECO <span className="opacity-60 font-normal text-lg">| API 集成 & 前端开发</span></h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      基于 ChatGPT-4o 和 PubMed 医学数据的 ACL 康复 AI 伴侣；在 48 小时校园黑客松中完成 API 与前端，团队获荣誉提名（Honorable Mention）。
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">HealthTech</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI / LLM</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Medical API</span>
+                  </div>
+                </div>
+              </Link>
+
               <Link href="/zh/projects/this-website" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
                 <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
                   <div className="flex gap-2 relative z-10">
@@ -361,39 +394,6 @@ export default function HomeZh() {
                     <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Next.js · React</span>
                     <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI-assisted Dev</span>
                     <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Design System</span>
-                  </div>
-                </div>
-              </Link>
-
-              <Link href="/zh/projects/reco" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
-                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
-                  <div className="flex gap-2 relative z-10">
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
-                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
-                  </div>
-                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
-                    RECO
-                  </div>
-                </div>
-                <div className="w-full aspect-[16/10] bg-[#0D0D0F] relative overflow-hidden flex items-center justify-center">
-                  <div className="absolute inset-0 opacity-30" style={{ background: "radial-gradient(ellipse at 30% 50%, rgba(91,140,245,0.4) 0%, transparent 60%), radial-gradient(ellipse at 70% 50%, rgba(120,80,220,0.3) 0%, transparent 60%)" }}></div>
-                  <div className="flex flex-col items-center justify-center gap-3 z-10 group-hover:scale-105 transition-transform duration-700">
-                    <span className="font-mono text-[10px] sm:text-xs text-[#7AABFF] tracking-[4px] uppercase border border-[#5B8CF5]/30 bg-[#5B8CF5]/10 px-4 py-1.5 backdrop-blur-md">ACL REHAB · AI COMPANION</span>
-                    <div aria-hidden="true" className="text-4xl sm:text-5xl md:text-6xl font-sans font-bold text-white tracking-tight">RECO</div>
-                  </div>
-                </div>
-                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
-                  <div className="flex flex-col gap-2">
-                    <h3 className="text-2xl font-bold font-sans text-brand-primary">RECO <span className="opacity-60 font-normal text-lg">| API 集成 & 前端开发</span></h3>
-                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
-                      基于 ChatGPT-4o 和 PubMed 医学数据的 ACL 康复 AI 伴侣，负责 API 层与前端开发，用于学校竞赛。
-                    </p>
-                  </div>
-                  <div className="flex flex-wrap gap-2">
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">HealthTech</span>
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">AI / LLM</span>
-                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Medical API</span>
                   </div>
                 </div>
               </Link>
