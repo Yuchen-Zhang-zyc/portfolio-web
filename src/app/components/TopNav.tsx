@@ -90,9 +90,9 @@ export default function TopNav() {
                                   ? pathname.startsWith("/projects") || pathname.startsWith("/zh/projects")
                                   : false;
 
-                        const className = `liquid-glass-chip relative flex items-center justify-center rounded-full px-3 py-2 md:px-4 md:py-2.5 min-w-0 flex-1 min-[480px]:flex-none min-[480px]:min-w-[80px] md:min-w-[96px] transition-all duration-300 ${
+                        const className = `relative flex items-center justify-center rounded-full px-3 py-2 md:px-4 md:py-2.5 min-w-0 flex-1 min-[480px]:flex-none min-[480px]:min-w-[80px] md:min-w-[96px] transition-all duration-300 ${
                             isActive
-                                ? "liquid-glass-chip-active text-brand-primary"
+                                ? "liquid-glass-chip liquid-glass-chip-active text-brand-primary"
                                 : "text-brand-primary/72 hover:text-brand-primary"
                         }`;
 
