@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
+import { useLenis } from "./LenisProvider";
 
 const navItemsEn = [
     { id: "about", href: "/#about", label: "About" },
@@ -19,6 +20,7 @@ const navItemsZh = [
 export default function TopNav() {
     const pathname = usePathname();
     const router = useRouter();
+    const lenis = useLenis();
     const [activeSection, setActiveSection] = useState<string>("");
 
     const isZh = pathname === "/zh" || pathname.startsWith("/zh/");
@@ -63,25 +65,11 @@ export default function TopNav() {
 
         setActiveSection(id);
 
-        const start = window.scrollY;
-        const target = el.getBoundingClientRect().top + window.scrollY;
-        const distance = target - start;
-        const duration = Math.min(900, Math.max(400, Math.abs(distance) * 0.4));
-        let startTime: number | null = null;
-
-        // Cubic ease-in-out
-        const ease = (t: number) =>
-            t < 0.5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2;
-
-        const step = (timestamp: number) => {
-            if (!startTime) startTime = timestamp;
-            const elapsed = timestamp - startTime;
-            const progress = Math.min(elapsed / duration, 1);
-            window.scrollTo(0, start + distance * ease(progress));
-            if (progress < 1) requestAnimationFrame(step);
-        };
-
-        requestAnimationFrame(step);
+        if (lenis) {
+            lenis.scrollTo(el, { offset: 0, duration: 1.4 });
+        } else {
+            el.scrollIntoView({ behavior: "smooth" });
+        }
     };
 
     if (isProjectPage) {
