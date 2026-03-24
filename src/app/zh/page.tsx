@@ -182,12 +182,12 @@ export default function HomeZh() {
                     TireSwap VR
                   </div>
                 </div>
-                <div className="w-full aspect-[16/10] bg-[#0A0C10] relative overflow-hidden flex items-center justify-center">
-                  <div className="absolute inset-0 opacity-20 bg-[url('data:image/svg+xml,%3Csvg viewBox=\'0 0 256 256\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cfilter id=\'noise\'%3E%3CfeTurbulence type=\'fractalNoise\' baseFrequency=\'0.9\' numOctaves=\'4\' stitchTiles=\'stitch\'/%3E%3C/filter%3E%3Crect width=\'100%25\' height=\'100%25\' filter=\'url(%23noise)\' opacity=\'0.04\'/%3E%3C/svg%3E')] mix-blend-overlay"></div>
-                  <div className="flex flex-col items-center justify-center gap-4 z-10 group-hover:scale-105 transition-transform duration-700">
-                    <span className="font-mono text-[10px] sm:text-xs text-[#9BB4D4] tracking-[4px] uppercase border border-[#9BB4D4]/30 bg-[#9BB4D4]/10 px-4 py-1.5 backdrop-blur-md">VR TRAINING</span>
-                    <div aria-hidden="true" className="text-4xl sm:text-5xl md:text-6xl font-sans font-bold text-[#E8EDF3] tracking-tight">TireSwap <span className="italic font-light text-[#9BB4D4]">VR</span></div>
-                  </div>
+                <div className="w-full aspect-[16/10] relative overflow-hidden">
+                  <img
+                    src="https://res.cloudinary.com/dj13he2xu/image/upload/v1774361693/portfolio/projects/tireswap/garage1.png"
+                    alt="TireSwap VR 车库环境"
+                    className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
+                  />
                 </div>
                 <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
                   <div className="flex flex-col gap-2">
