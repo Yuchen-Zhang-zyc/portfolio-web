@@ -184,7 +184,7 @@ export default function HomeZh() {
                 </div>
                 <div className="w-full aspect-[16/10] relative overflow-hidden">
                   <img
-                    src="https://res.cloudinary.com/dj13he2xu/image/upload/v1774361693/portfolio/projects/tireswap/garage1.png"
+                    src="https://res.cloudinary.com/dj13he2xu/image/upload/v1774361807/portfolio/projects/tireswap/garage.png"
                     alt="TireSwap VR 车库环境"
                     className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                   />
