@@ -118,7 +118,7 @@ export default function TireSwapVRProjectZh() {
                   </div>
                 </div>
                 <div className="bg-[#000] flex items-center justify-center">
-                  <img src="/projects/tireswap/slide3-img0.png" alt="TireSwap VR 修理厂环境" className="w-full h-full object-contain" />
+                  <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1774235432/portfolio/projects/tireswap/slide3-img0.png" alt="TireSwap VR 修理厂环境" className="w-full h-full object-contain" />
                 </div>
               </div>
             </div>
@@ -203,7 +203,7 @@ export default function TireSwapVRProjectZh() {
             </p>
           </div>
           <div className="lg:col-span-8 rounded-[20px] border border-white/8 bg-white overflow-hidden">
-            <img src="/projects/tireswap/slide3-img2.png" alt="修理厂平面布局草图" className="w-full h-auto block" />
+            <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1774235432/portfolio/projects/tireswap/slide3-img2.png" alt="修理厂平面布局草图" className="w-full h-auto block" />
           </div>
         </section>
 
@@ -234,7 +234,7 @@ export default function TireSwapVRProjectZh() {
             </p>
           </div>
           <div className="lg:col-span-8 rounded-[20px] border border-white/8 bg-[#1C1F26] overflow-hidden">
-            <img src="/projects/tireswap/slide6-img1.png" alt="Unity Prefab 库——螺母、轮胎、轮辋、工具和 XR 可交互物体" className="w-full h-auto block" />
+            <img src="https://res.cloudinary.com/dj13he2xu/image/upload/v1774235433/portfolio/projects/tireswap/slide6-img1.png" alt="Unity Prefab 库——螺母、轮胎、轮辋、工具和 XR 可交互物体" className="w-full h-auto block" />
           </div>
         </section>
 

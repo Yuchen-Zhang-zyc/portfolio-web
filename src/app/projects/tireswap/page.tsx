@@ -119,7 +119,7 @@ export default function TireSwapVRProject() {
                 </div>
                 <div className="bg-[#000] flex items-center justify-center">
                   <img
-                    src="/projects/tireswap/slide3-img0.png"
+                    src="https://res.cloudinary.com/dj13he2xu/image/upload/v1774235432/portfolio/projects/tireswap/slide3-img0.png"
                     alt="TireSwap VR garage workshop environment"
                     className="w-full h-full object-contain"
                   />
@@ -208,7 +208,7 @@ export default function TireSwapVRProject() {
           </div>
           <div className="lg:col-span-8 rounded-[20px] border border-white/8 bg-white overflow-hidden">
             <img
-              src="/projects/tireswap/slide3-img2.png"
+              src="https://res.cloudinary.com/dj13he2xu/image/upload/v1774235432/portfolio/projects/tireswap/slide3-img2.png"
               alt="Automotive garage bay floor plan sketch"
               className="w-full h-auto block"
             />
@@ -243,7 +243,7 @@ export default function TireSwapVRProject() {
           </div>
           <div className="lg:col-span-8 rounded-[20px] border border-white/8 bg-[#1C1F26] overflow-hidden">
             <img
-              src="/projects/tireswap/slide6-img1.png"
+              src="https://res.cloudinary.com/dj13he2xu/image/upload/v1774235433/portfolio/projects/tireswap/slide6-img1.png"
               alt="Unity prefab library — bolts, tires, rims, tools, and XR interactables"
               className="w-full h-auto block"
             />
