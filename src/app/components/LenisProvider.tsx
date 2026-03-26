@@ -2,6 +2,7 @@
 
 import Lenis from "lenis";
 import { createContext, useContext, useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 const LenisContext = createContext<Lenis | null>(null);
 
@@ -11,6 +12,11 @@ export function useLenis() {
 
 export default function LenisProvider({ children }: { children: React.ReactNode }) {
     const [lenis, setLenis] = useState<Lenis | null>(null);
+    const pathname = usePathname();
+
+    useEffect(() => {
+        if (lenis) lenis.scrollTo(0, { immediate: true });
+    }, [pathname, lenis]);
 
     useEffect(() => {
         const instance = new Lenis({
