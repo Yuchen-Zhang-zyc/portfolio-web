@@ -47,7 +47,7 @@ export default function NestThermostatProjectZh() {
       {/* ══ HERO ══ */}
       <div className="hero">
         <span className="hero-label">UX / 产品重设计 · SCAD · 2026</span>
-        <h1>简化智能<br />温度<em>控制。</em></h1>
+        <h1 style={{ lineHeight: 1.05 }}>简化智能<br />温度<em>控制。</em></h1>
         <p className="hero-sub">对 Nest 恒温器生态系统的全面重设计——消除认知摩擦，让系统状态一目了然，统一跨设备体验。</p>
 
         <div className="hero-images" style={{ position: 'relative' }}>
