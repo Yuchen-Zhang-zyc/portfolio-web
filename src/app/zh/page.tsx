@@ -88,12 +88,6 @@ export default function HomeZh() {
               </p>
             </div>
 
-            {/* Fact strip */}
-            <div className="flex flex-wrap gap-x-6 gap-y-2 pt-2 text-[13px] font-mono text-brand-primary/45 uppercase tracking-[0.1em]">
-              <span>计算机科学学士 → 交互设计艺术硕士</span>
-              <span className="text-brand-primary/20">·</span>
-              <span>SCAD — 预计 2026 年 12 月</span>
-            </div>
           </div>
         </section>
 

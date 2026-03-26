@@ -95,12 +95,6 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Fact strip */}
-            <div className="flex flex-wrap gap-x-6 gap-y-2 pt-2 text-[13px] font-mono text-brand-primary/45 uppercase tracking-[0.1em]">
-              <span>B.S. CS → M.F.A. Interaction Design</span>
-              <span className="text-brand-primary/20">·</span>
-              <span>SCAD — Expected Dec 2026</span>
-            </div>
           </div>
         </section>
 
