@@ -74,17 +74,17 @@ export default function HomeZh() {
           <div className="md:col-span-8 flex flex-col gap-8">
             {/* Pull quote */}
             <p className="text-[26px] md:text-[32px] font-semibold leading-[1.35] tracking-[-0.02em] text-brand-primary font-sans">
-              瓶颈不再是技术能力本身，<br className="hidden sm:block" />
-              而是<span className="italic font-serif font-normal text-brand-secondary">人与机器之间<br className="hidden sm:block" />那个空间。</span>
+              技术已经到了。
+              <span className="italic font-serif font-normal text-brand-secondary">体验还没有。</span>
             </p>
 
             {/* Body */}
             <div className="flex flex-col gap-4 text-[16px] md:text-[17px] text-brand-primary/70 leading-[1.75] font-body max-w-[580px]">
               <p>
-                我最初学的是计算机科学，写出能跑的代码——但总觉得少了什么。当 AI 飞速发展，我意识到真正的问题不是如何构建更智能的模型。
+                我学的是计算机科学，亲眼看着 AI 从研究课题变成真正能改变人们生活和工作方式的东西。但这些潜力大多被锁在那些没有为真实用户设计的界面背后。
               </p>
               <p>
-                于是我转向设计。不是为了逃离技术，而是为了塑造人与 AI 协作的方式。这条路还没有既定的剧本——这正是它吸引我的地方。
+                填补这个落差，是我想做的事。我在向 AI 产品方向走，用设计作为切入点，去构建让人们真正感受到技术革命的产品——而不只是听说它。
               </p>
             </div>
 
@@ -93,8 +93,6 @@ export default function HomeZh() {
               <span>计算机科学学士 → 交互设计艺术硕士</span>
               <span className="text-brand-primary/20">·</span>
               <span>SCAD — 预计 2026 年 12 月</span>
-              <span className="text-brand-primary/20">·</span>
-              <span>寻求 2026 年夏季实习</span>
             </div>
           </div>
         </section>

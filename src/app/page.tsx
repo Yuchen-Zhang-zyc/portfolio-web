@@ -81,17 +81,17 @@ export default function Home() {
           <div className="md:col-span-8 flex flex-col gap-8">
             {/* Pull quote */}
             <p className="text-[26px] md:text-[32px] font-semibold leading-[1.35] tracking-[-0.02em] text-brand-primary font-sans">
-              The bottleneck wasn&apos;t capability.<br className="hidden sm:block" /> It was the{" "}
-              <span className="italic font-serif font-normal text-brand-secondary">space between<br className="hidden sm:block" /> humans and machines.</span>
+              The technology is here.{" "}
+              <span className="italic font-serif font-normal text-brand-secondary">The experience isn&apos;t.</span>
             </p>
 
             {/* Body */}
             <div className="flex flex-col gap-4 text-[16px] md:text-[17px] text-brand-primary/70 leading-[1.75] font-body max-w-[580px]">
               <p>
-                I started in computer science, writing code that worked — but felt incomplete. When I saw how fast AI was advancing, I realized the real problem wasn&apos;t building smarter models.
+                I studied computer science and watched AI go from a research topic to something that could genuinely change how people live and work. But most of that potential stays locked behind interfaces that aren&apos;t built for real people.
               </p>
               <p>
-                So I crossed over to design. Not to escape technology, but to shape how people and AI learn to work together. There&apos;s no established playbook yet — and that&apos;s exactly why it interests me.
+                That gap is what I want to close. I&apos;m moving toward AI product — using design as the entry point to build products that let people actually feel the technology revolution, not just read about it.
               </p>
             </div>
 
@@ -100,8 +100,6 @@ export default function Home() {
               <span>B.S. CS → M.F.A. Interaction Design</span>
               <span className="text-brand-primary/20">·</span>
               <span>SCAD — Expected Dec 2026</span>
-              <span className="text-brand-primary/20">·</span>
-              <span>Seeking Summer 2026 Internship</span>
             </div>
           </div>
         </section>
