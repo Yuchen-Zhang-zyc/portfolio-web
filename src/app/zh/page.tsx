@@ -32,7 +32,7 @@ export default function HomeZh() {
               <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">01</span>
               <div className="flex items-start md:items-center justify-center md:justify-center gap-0 md:gap-3 min-w-0 text-center">
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
-                <span className="min-w-0 mx-auto">你好，我是 Yuchen</span>
+                <span className="min-w-0 mx-auto">你好，我是宇辰</span>
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&gt;</span>
               </div>
             </div>
@@ -74,17 +74,17 @@ export default function HomeZh() {
           <div className="md:col-span-8 flex flex-col gap-8">
             {/* Pull quote */}
             <p className="text-[26px] md:text-[32px] font-semibold leading-[1.35] tracking-[-0.02em] text-brand-primary font-sans">
-              技术已经到了。<br />
-              <span className="italic font-serif font-normal text-brand-secondary">体验还没有。</span>
+              技术近在咫尺，<br />
+              <span className="italic font-serif font-normal text-brand-secondary">体验仍有鸿沟。</span>
             </p>
 
             {/* Body */}
             <div className="flex flex-col gap-4 text-[16px] md:text-[17px] text-brand-primary/70 leading-[1.75] font-body max-w-[580px]">
               <p>
-                我学的是计算机科学，亲眼看着 AI 从研究课题变成真正能改变人们生活和工作方式的东西。但这些潜力大多被锁在那些没有为真实用户设计的界面背后。
+                出身计算机专业，我亲历了 AI 从实验室的算法演进，跨越成为重塑未来的核心力量。然而，技术虽已破局，体验却仍有缺位：生硬的交互逻辑，往往将巨大的技术潜能阻隔在了普通人的生活之外。
               </p>
               <p>
-                填补这个落差，是我想做的事。我在向 AI 产品方向走，用设计作为切入点，去构建让人们真正感受到技术革命的产品——而不只是听说它。
+                我正致力于投身 AI 产品化的浪潮。通过"设计"这一关键切口，我试图打破复杂技术与真实用户间的壁垒，打造真正"以人为本"的产品——让前沿技术不再只是报纸上的宏大叙事，而是每个人手中温润且强大的生产力工具。
               </p>
             </div>
 
@@ -103,7 +103,7 @@ export default function HomeZh() {
             <div className="capability-card capability-card-primary p-7 md:p-8 rounded-[18px]">
               <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">人机协作设计</h3>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/78">
-                <li className="flex gap-2"><span className="opacity-45">✦</span> 设计人与 AI 协作的工作流，而非只是界面</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 设计人机协作工作流，而非只是界面</li>
                 <li className="flex gap-2"><span className="opacity-45">✦</span> 为新兴 AI 产品定义交互模式</li>
               </ul>
             </div>
