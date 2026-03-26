@@ -869,7 +869,7 @@ export default function NirvanaPageZh() {
         </div>
       </section>
 
-      <NextProject href="/zh/projects/reco" title="RECO" role="UX 设计师" theme="dark" />
+      <NextProject href="/zh/projects/assembly-line-y" title="Assembly Line Y" role="VR 开发者 & 设计师" theme="dark" />
     </div>
   );
 }

@@ -286,7 +286,7 @@ export default function TireSwapVRProject() {
         </section>
 
       </main>
-      <NextProject href="/projects/nest-thermostat" title="Nest Thermostat Redesign" role="Project Lead & UX Design" theme="dark" />
+      <NextProject href="/projects/reco" title="RECO" role="API Integration & Frontend" theme="dark" />
     </div>
   );
 }

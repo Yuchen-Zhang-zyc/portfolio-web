@@ -277,7 +277,7 @@ export default function TireSwapVRProjectZh() {
         </section>
 
       </main>
-      <NextProject href="/zh/projects/nest-thermostat" title="Nest 恒温器重设计" role="项目负责人 & UX 设计师" theme="dark" />
+      <NextProject href="/zh/projects/reco" title="RECO" role="API 集成 & 前端开发" theme="dark" />
     </div>
   );
 }
