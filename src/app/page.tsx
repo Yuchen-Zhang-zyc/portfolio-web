@@ -82,7 +82,7 @@ export default function Home() {
             {/* Pull quote */}
             <p className="text-[26px] md:text-[32px] font-semibold leading-[1.35] tracking-[-0.02em] text-brand-primary font-sans">
               The technology is here.{" "}
-              <span className="italic font-normal text-brand-primary/70">The experience isn&apos;t.</span>
+              <span className="italic font-serif font-normal text-brand-secondary">The experience isn&apos;t.</span>
             </p>
 
             {/* Body */}
