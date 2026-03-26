@@ -81,7 +81,7 @@ export default function Home() {
           <div className="md:col-span-8 flex flex-col gap-8">
             {/* Pull quote */}
             <p className="text-[26px] md:text-[32px] font-semibold leading-[1.35] tracking-[-0.02em] text-brand-primary font-sans">
-              The technology is here.{" "}
+              The technology is here.<br />
               <span className="italic font-serif font-normal text-brand-secondary">The experience isn&apos;t.</span>
             </p>
 

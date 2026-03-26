@@ -74,7 +74,7 @@ export default function HomeZh() {
           <div className="md:col-span-8 flex flex-col gap-8">
             {/* Pull quote */}
             <p className="text-[26px] md:text-[32px] font-semibold leading-[1.35] tracking-[-0.02em] text-brand-primary font-sans">
-              技术已经到了。
+              技术已经到了。<br />
               <span className="italic font-serif font-normal text-brand-secondary">体验还没有。</span>
             </p>
 
