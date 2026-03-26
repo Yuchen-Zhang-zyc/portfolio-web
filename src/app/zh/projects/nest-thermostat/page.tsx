@@ -46,9 +46,9 @@ export default function NestThermostatProjectZh() {
 
       {/* ══ HERO ══ */}
       <div className="hero">
-        <span className="hero-label">UX / 产品重设计 · SCAD · 2026</span>
+        <span className="hero-label">UX / 产品重新设计 · SCAD · 2026</span>
         <h1 style={{ lineHeight: 1.05 }}>简化智能<br />温度<em>控制。</em></h1>
-        <p className="hero-sub">对 Nest 恒温器生态系统的全面重设计——消除认知摩擦，让系统状态一目了然，统一跨设备体验。</p>
+        <p className="hero-sub">对 Nest 恒温器生态系统的全面重新设计——消除认知摩擦，让系统状态一目了然，统一跨设备体验。</p>
 
         <div className="hero-images" style={{ position: 'relative' }}>
           <div className="hero-glow hero-glow-heat" aria-hidden="true"></div>
@@ -60,7 +60,7 @@ export default function NestThermostatProjectZh() {
           <div className="mi"><div className="ml">角色</div><div className="mv">UX 设计师</div></div>
           <div className="mi"><div className="ml">周期</div><div className="mv">10 周</div></div>
           <div className="mi"><div className="ml">工具</div><div className="mv">Figma · Protopie</div></div>
-          <div className="mi"><div className="ml">类型</div><div className="mv">交互重设计</div></div>
+          <div className="mi"><div className="ml">类型</div><div className="mv">交互重新设计</div></div>
         </div>
       </div>
 
@@ -113,7 +113,7 @@ export default function NestThermostatProjectZh() {
         <div className="wrap">
           <div className="reveal"><div className="eyebrow">03 — 现有设计</div></div>
           <div className="reveal d1"><h2 className="ttl">当前体验<br />是什么样的。</h2></div>
-          <div className="reveal d2"><p className="bod">在重设计之前，我们记录了当前 Nest 在硬件和手机端的体验——也就是用户今天正在与之挣扎的界面。</p></div>
+          <div className="reveal d2"><p className="bod">在重新设计之前，我们记录了当前 Nest 在硬件和手机端的体验——也就是用户今天正在与之挣扎的界面。</p></div>
 
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '24px', marginTop: '64px' }} className="reveal d1">
 
@@ -184,13 +184,13 @@ export default function NestThermostatProjectZh() {
         <div className="wrap">
           <div className="reveal"><div className="eyebrow">04 — 关键洞察</div></div>
           <div className="reveal d1"><h2 className="ttl">研究揭示了什么。</h2></div>
-          <div className="reveal d2"><p className="bod">三条洞察决定了本次重设计的每一个设计决策——它们都指向同一个方向：让系统消化复杂性，而不是转嫁给用户。</p></div>
+          <div className="reveal d2"><p className="bod">三条洞察决定了本次重新设计的每一个设计决策——它们都指向同一个方向：让系统消化复杂性，而不是转嫁给用户。</p></div>
 
           <div className="insight-row">
             <div className="insight-card reveal d1">
               <span className="insight-n">1</span>
-              <h3>用户要的是结果，不是系统模式</h3>
-              <p>人们用舒适体验来思考——"我想暖和一点"——而不是 HVAC 运行逻辑。界面必须完全匹配这种心智模型。</p>
+              <h3>用户要的是结果，而不是系统模式</h3>
+              <p>人们在意的是舒适结果——“我想更暖和一点”——而不是 HVAC 的运行逻辑。界面需要与这种心智模型完全对齐。</p>
             </div>
             <div className="insight-card reveal d2">
               <span className="insight-n">2</span>
@@ -221,14 +221,14 @@ export default function NestThermostatProjectZh() {
                 <div className="pr-idx">01</div>
                 <div className="pr-body">
                   <h3>早期决策，系统处理其余</h3>
-                  <p>用户提供意图——一个目标温度。系统判断制热或制冷。无需选择模式，无需设置阈值。</p>
+                  <p>用户给出意图——一个目标温度。系统自动判断需要制热还是制冷；无需选择模式，也无需设置阈值。</p>
                 </div>
               </div>
               <div className="pr-item">
                 <div className="pr-idx">02</div>
                 <div className="pr-body">
                   <h3>状态即内容</h3>
-                  <p>系统状态——当前温度、活跃模式、省电状态——是最关键的信息。视觉层级必须反映这一点。</p>
+                  <p>系统状态——当前温度、活跃模式、节能状态——是最关键的信息。视觉层级必须让这些信息一眼可读。</p>
                 </div>
               </div>
               <div className="pr-item">
@@ -322,7 +322,7 @@ export default function NestThermostatProjectZh() {
                 <span className="ft-tag">07 — 初版高保真 · 01</span>
                 <h2 className="ft-title">智能温度输入</h2>
                 <p className="ft-body">以单一目标温度取代双阈值模型。系统读取当前温度，自动判断需要制热还是制冷并执行——无需用户理解工作原理。</p>
-                <div className="ft-result"><span className="arrow">→</span><span>用户完全专注于自己期望的结果，运营复杂性被编码到系统中，而非界面上。</span></div>
+                <div className="ft-result"><span className="arrow">→</span><span>用户完全专注于自己期望的结果，运行复杂性被编码到系统中，而非界面上。</span></div>
               </div>
               <div className="reveal d1">
                 <div className="duo">
@@ -396,7 +396,7 @@ export default function NestThermostatProjectZh() {
       <section className="section alt bordered" id="testing">
         <div className="wrap">
           <div className="reveal"><div className="eyebrow">08 — 评估性研究</div></div>
-          <div className="reveal d1"><h2 className="ttl">与真实用户<br />测试重设计。</h2></div>
+          <div className="reveal d1"><h2 className="ttl">与真实用户<br />测试重新设计。</h2></div>
           <div className="reveal d2"><p className="bod">对 6 名具有数字素养的参与者进行有主持的可用性研究，跨恒温器硬件原型和手机应用，共评估 9 项任务。</p></div>
 
           <div style={{ display: 'flex', gap: '10px', flexWrap: 'wrap', marginTop: '40px' }} className="reveal d1">
@@ -460,8 +460,8 @@ export default function NestThermostatProjectZh() {
               {[
                 { id: '01', scope: '恒温器 · T2', title: '保存排程后无确认反馈', stat: '33% 的用户不确定排程是否已设置成功。', fix: '添加清晰的确认状态——视觉提示、动画，或返回显示已更新排程的主页。' },
                 { id: '02', scope: '恒温器 · T3', title: '时间→温度切换不明确', stat: '50% 的用户无法重新找到之前设置的时间；50% 被步骤切换弄混。', fix: '进入时自动聚焦到上次设置的时间。为时间编辑到温度编辑的切换添加过渡动画。' },
-                { id: '03', scope: '应用 · T2', title: '点击与拖动手势不易发现', stat: '用户不知道如何与排程时间段交互。', fix: '在首次进入时提供即时视觉手势提示："长按添加 · 拖动调整"。' },
-                { id: '04', scope: '应用 · T3', title: '模式自定义入口隐藏', stat: '83% 的用户因入口提示不清晰而无法找到编辑模式的位置。', fix: '在模式卡片上添加"点击"引导提示，让编辑入口一目了然。' },
+                { id: '03', scope: '应用 · T2', title: '点击与拖动手势不易发现', stat: '用户不知道如何与排程时间段交互。', fix: '在首次进入时提供即时视觉手势提示：“长按添加 · 拖动调整”。' },
+                { id: '04', scope: '应用 · T3', title: '模式自定义入口隐藏', stat: '83% 的用户因入口提示不清晰而无法找到编辑模式的位置。', fix: '在模式卡片上加入“点击”引导提示，让编辑入口一眼可见。' },
                 { id: '05', scope: '应用 · T4', title: '将模式应用到日期不清晰', stat: '66% 的用户对右上角图标感到困惑，不知道如何将模式分配到特定日期。', fix: '在模式分配前增加明确的日期选择步骤，支持单日和多日视图。' },
                 { id: '06', scope: '应用 · T6', title: '计时器与排程模式混淆', stat: '50% 的用户将计时器功能与重复排程混淆。', fix: '让用户直接设置计时时长，无需先选择模式。A/B 测试：75% 用户更偏好这种直接流程。' },
               ].map((ins) => (
@@ -524,7 +524,7 @@ export default function NestThermostatProjectZh() {
         <div className="wrap">
           <div className="reveal"><div className="eyebrow">09 — 设计迭代</div></div>
           <div className="reveal d1"><h2 className="ttl">我们改了什么<br />以及为什么。</h2></div>
-          <div className="reveal d2"><p className="bod">可用性研究的发现直接推动了最终版本前的四项关键设计改动。</p></div>
+          <div className="reveal d2"><p className="bod">可用性研究的发现直接推动了终版前的四项关键设计改动。</p></div>
 
           <div style={{ display: 'flex', flexDirection: 'column', marginTop: '64px' }}>
             {[
@@ -535,7 +535,7 @@ export default function NestThermostatProjectZh() {
               },
               {
                 num: '02',
-                before: { img: 'https://res.cloudinary.com/dj13he2xu/image/upload/v1773847851/portfolio/projects/nest-thermostat/02before-r3.png', alt: '改前：时间到温度切换不清晰', desc: '在硬件恒温器上，50% 的用户被"设置时间"到"设置温度"的突然跳转弄混，且保存排程后缺乏清晰的视觉确认。' },
+                before: { img: 'https://res.cloudinary.com/dj13he2xu/image/upload/v1773847851/portfolio/projects/nest-thermostat/02before-r3.png', alt: '改前：时间到温度切换不清晰', desc: '在硬件恒温器上，50% 的用户会因从“设置时间”切换到“设置温度”的突兀跳转而感到困惑；此外，在保存排程后缺少清晰的视觉确认。' },
                 after: { img: 'https://res.cloudinary.com/dj13he2xu/image/upload/v1773847851/portfolio/projects/nest-thermostat/02after-r3.png', alt: '改后：平滑过渡与确认状态', desc: '重新设计硬件 UI，使其与手机应用的组件逻辑保持一致。增加了时间到温度的流畅空间过渡，并引入明确的视觉确认状态，让系统反馈即时可理解。' },
               },
               {
@@ -545,7 +545,7 @@ export default function NestThermostatProjectZh() {
               },
               {
                 num: '04',
-                before: { img: 'https://res.cloudinary.com/dj13he2xu/image/upload/v1773847854/portfolio/projects/nest-thermostat/04before-r3.png', alt: '改前：先选模式的计时流程', desc: '用户必须先选择具体"模式"才能设置计时时长，给一个快速任务增加了不必要的摩擦。' },
+                before: { img: 'https://res.cloudinary.com/dj13he2xu/image/upload/v1773847854/portfolio/projects/nest-thermostat/04before-r3.png', alt: '改前：先选模式的计时流程', desc: '用户需要先选择具体“模式”才能设置计时时长，本应快速完成的任务因此增加了不必要的摩擦。' },
                 after: { img: 'https://res.cloudinary.com/dj13he2xu/image/upload/v1773847855/portfolio/projects/nest-thermostat/04after-r3.png', alt: '改后：直接计时流程', desc: '根据 A/B 测试结果（75% 用户偏好）实现了直接计时流程。用户现在可以立即设置时长，临时覆盖与长期排程的区分更清晰。' },
               },
             ].map((iter, idx) => (
@@ -567,18 +567,18 @@ export default function NestThermostatProjectZh() {
         </div>
       </section>
 
-      {/* ══ 第 10 节：最终设计 ══ */}
+      {/* ══ 第 10 节：终版设计 ══ */}
       <section className="section alt bordered" id="finaldesign">
         <div className="wrap">
           <div style={{ textAlign: 'center', marginBottom: '72px' }}>
-            <div className="reveal"><div className="eyebrow" style={{ justifyContent: 'center' }}>10 — 最终设计</div></div>
-            <div className="reveal d1"><h2 className="ttl">重设计后的<br />完整体验。</h2></div>
-            <div className="reveal d2"><p className="bod" style={{ margin: '0 auto', textAlign: 'center' }}>经过迭代，最终设计解决了全部四个摩擦点——并在硬件与手机端建立了统一的交互模型。</p></div>
+            <div className="reveal"><div className="eyebrow" style={{ justifyContent: 'center' }}>10 — 终版设计</div></div>
+            <div className="reveal d1"><h2 className="ttl">重新设计后的<br />完整体验。</h2></div>
+            <div className="reveal d2"><p className="bod" style={{ margin: '0 auto', textAlign: 'center' }}>经过迭代，终版设计解决了全部四个摩擦点——并在硬件与手机端建立了统一的交互模型。</p></div>
           </div>
 
           <div className="feature-inner reveal d1" style={{ marginBottom: '80px' }}>
             <div>
-              <span className="ft-tag">最终 · 温度控制</span>
+              <span className="ft-tag">终版 · 温度控制</span>
               <h2 className="ft-title">单一输入。<br />自动模式。</h2>
               <p className="ft-body">一个目标温度。系统自动检测是需要制热还是制冷——无需双阈值决策，无需手动选模式。</p>
             </div>
@@ -590,7 +590,7 @@ export default function NestThermostatProjectZh() {
 
           <div className="feature-inner rev reveal d2" style={{ marginBottom: '80px' }}>
             <div>
-              <span className="ft-tag">最终 · 排程</span>
+              <span className="ft-tag">终版 · 排程</span>
               <h2 className="ft-title">纵向时间轴。<br />带上下文的事件。</h2>
               <p className="ft-body">可复用的命名事件现在内联显示温度信息。一次定义，全周应用——一眼即可看到完整上下文。</p>
             </div>
@@ -602,7 +602,7 @@ export default function NestThermostatProjectZh() {
 
           <div className="feature-inner rev reveal d2" style={{ marginBottom: '80px' }}>
             <div>
-              <span className="ft-tag">最终 · 事件</span>
+              <span className="ft-tag">终版 · 事件</span>
               <h2 className="ft-title">命名事件。<br />跨天复用。</h2>
               <p className="ft-body">定义早晨、工作、睡眠等事件——每个事件包含名称、图标、温度和时间表。可应用到任意一天，无需重复输入。</p>
             </div>
@@ -614,7 +614,7 @@ export default function NestThermostatProjectZh() {
 
           <div className="feature-inner reveal d1">
             <div>
-              <span className="ft-tag">最终 · 省电模式</span>
+              <span className="ft-tag">终版 · 省电模式</span>
               <h2 className="ft-title">节能效果<br />可视可感。</h2>
               <p className="ft-body">省电模式以美元和百分比实时显示节省金额——有用、透明，并与用户行为直接关联。</p>
             </div>
@@ -708,7 +708,7 @@ export default function NestThermostatProjectZh() {
                 <span style={{ fontSize: '56px', fontWeight: 800, letterSpacing: '-0.05em', lineHeight: 1, color: '#6DCF9E' }}>82.5</span>
                 <span style={{ fontSize: '14px', color: 'var(--gray)' }}>/ 100</span>
               </div>
-              <p style={{ fontSize: '13px', color: 'var(--gray)', lineHeight: 1.6 }}>高于平均水平——评级"良好"。明确的日期选择、手势提示和直接计时流程解决了大部分摩擦。</p>
+              <p style={{ fontSize: '13px', color: 'var(--gray)', lineHeight: 1.6 }}>高于平均水平——评级“良好”。明确的日期选择、手势提示和直接计时流程解决了大部分摩擦。</p>
               <div style={{ marginTop: '16px', padding: '12px 16px', background: 'rgba(109,207,158,0.07)', borderRadius: '10px', border: '1px solid rgba(109,207,158,0.15)' }}>
                 <span style={{ fontSize: '13px', fontWeight: 700, color: '#6DCF9E' }}>+35.0 分提升</span>
               </div>
@@ -788,7 +788,7 @@ export default function NestThermostatProjectZh() {
 
       {/* 页脚 */}
       <footer className="nest-footer">
-        <span className="f-logo"><em>nest</em> 重设计</span>
+        <span className="f-logo"><em>nest</em> 重新设计</span>
         <span className="f-note">张宇晨 · MFA 交互设计 · SCAD · 2026</span>
       </footer>
 
