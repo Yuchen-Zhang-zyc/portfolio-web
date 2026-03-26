@@ -30,6 +30,7 @@ body {
 @layer utilities {
   .animate-blob {
     animation: blob 15s infinite alternate ease-in-out;
+    will-change: transform;
   }
   .animation-delay-2000 {
     animation-delay: 2s;
@@ -40,6 +41,7 @@ body {
 
   .liquid-glass-nav {
     overflow: hidden;
+    will-change: backdrop-filter;
     background:
       linear-gradient(180deg, rgba(255,255,255,0.48) 0%, rgba(255,255,255,0.2) 100%),
       linear-gradient(135deg, rgba(255,255,255,0.34) 0%, rgba(171,187,238,0.16) 45%, rgba(196,168,214,0.14) 100%);
@@ -203,6 +205,24 @@ body {
     .np-link { padding: 32px 24px; }
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-blob { animation: none; }
+  * { transition-duration: 0.01ms !important; animation-duration: 0.01ms !important; }
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(36px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.hero-line {
+  animation: fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+.hero-line-1 { animation-delay: 0.1s; }
+.hero-line-2 { animation-delay: 0.25s; }
+.hero-line-3 { animation-delay: 0.4s; }
+.hero-scroll { animation: fadeInUp 0.9s cubic-bezier(0.16, 1, 0.3, 1) 0.6s both; }
 
 @keyframes blob {
   0% {

@@ -59,7 +59,7 @@ const CSS = `
   /* Screen placeholder */
   .dc-screen { background: #FFFFFF; border: 1px solid #E4E0DB; height: 320px; display: flex; align-items: center; justify-content: center; font-family: var(--font-dm-mono, 'DM Mono', monospace); font-size: 12px; color: #9B9690; margin: 20px 0; }
   .dc-screen-tall { height: 380px; }
-  .dc-screen-row { display: flex; flex-wrap: wrap; gap: 16px; margin: 20px 0; align-items: flex-end; }
+  .dc-screen-row { display: flex; flex-wrap: wrap; gap: 16px; margin: 20px 0; align-items: center; }
   .dc-screen-img { flex-shrink: 0; }
   .dc-screen-img img { height: 380px; width: auto; display: block; border-radius: 12px; }
 
@@ -351,6 +351,7 @@ const screenGroups = [
   {
     name: "Home & Confirmation",
     desc: "The single source of truth for today's doses",
+    noWrap: true,
     bullets: [
       "Today-only dose feed — one task at a time, no future complexity",
       "Confirm or skip directly from the feed, no extra navigation",
@@ -359,8 +360,9 @@ const screenGroups = [
     images: [
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757727/portfolio/projects/dosecare/Home/Dynamic-Island-1.png", alt: "DoseCare dynamic island notification" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757728/portfolio/projects/dosecare/Home/Dynamic-Island-2.png", alt: "DoseCare dynamic island expanded" },
-      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760254/portfolio/projects/dosecare/Home/home-2.png", alt: "DoseCare home screen" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760253/portfolio/projects/dosecare/Home/Home-1.png", alt: "DoseCare home variant" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760254/portfolio/projects/dosecare/Home/home-2.png", alt: "DoseCare home screen" },
+      { src: "/projects/dosecare/Apple-Watch-Ultra.png", alt: "DoseCare Apple Watch Ultra — Home & Confirmation", imgStyle: { height: "240px", width: "auto" } },
     ],
   },
   {
@@ -391,10 +393,10 @@ const screenGroups = [
       "DOSE TAG pairing for physical confirmation without unlocking the phone",
     ],
     images: [
-      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760259/portfolio/projects/dosecare/Onboard/Add-Medicine.png", alt: "Step 1 — Find Your Medicine" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760257/portfolio/projects/dosecare/Onboard/Add-Medicine-2.png", alt: "Step 1 — Find Your Medicine" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760256/portfolio/projects/dosecare/Onboard/Add-Medicine-1-2.png", alt: "Scan prescription" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757753/portfolio/projects/dosecare/Onboard/Confirm-2.png", alt: "Step 2 — Confirm Medicine" },
-      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760257/portfolio/projects/dosecare/Onboard/Add-Medicine-2.png", alt: "Step 3 — Set Time" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760259/portfolio/projects/dosecare/Onboard/Add-Medicine.png", alt: "Step 3 — Set Time" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757763/portfolio/projects/dosecare/Onboard/Tag-6.png", alt: "Step 4 — Add Tag" },
     ],
   },
@@ -587,7 +589,7 @@ function IADiagram() {
 function JourneyMap() {
   const W = 860;
   const H = 260;
-  const PAD_L = 48;
+  const PAD_L = 72;
   const PAD_R = 32;
   const PAD_T = 24;
   const PAD_B = 72;
@@ -650,14 +652,14 @@ function JourneyMap() {
       </div>
       <svg
         viewBox={`0 0 ${W} ${H}`}
-        width="100%"
-        style={{ display: "block", overflow: "hidden" }}
+        width={W}
+        style={{ display: "block", overflow: "visible" }}
         aria-label="User journey map showing Mrs. Eleanor's emotional experience before and after DoseCare. Before: consistently negative and declining. After: improving trajectory from stage 3 onwards."
         role="img"
       >
         {/* Y-axis labels */}
         <text x={PAD_L - 8} y={PAD_T + 14} textAnchor="end" fontSize="9" fill="#9B9690" fontFamily="var(--font-dm-mono,'DM Mono',monospace)">POSITIVE</text>
-        <text x={PAD_L - 8} y={PAD_T + innerH + 18} textAnchor="end" fontSize="9" fill="#9B9690" fontFamily="var(--font-dm-mono,'DM Mono',monospace)">NEGATIVE</text>
+        <text x={PAD_L - 8} y={PAD_T + innerH - 4} textAnchor="end" fontSize="9" fill="#9B9690" fontFamily="var(--font-dm-mono,'DM Mono',monospace)">NEGATIVE</text>
 
         {/* Neutral axis */}
         <line x1={PAD_L} y1={neutral} x2={W - PAD_R} y2={neutral} stroke="#E4E0DB" strokeWidth="1" />
@@ -1132,10 +1134,10 @@ export default function DoseCarePage() {
                   <span className="dc-screen-group-desc">{group.desc}</span>
                 </div>
                 {"images" in group && group.images ? (
-                  <div className="dc-screen-row">
-                    {(group.images as { src: string; alt: string }[]).map((img) => (
+                  <div className="dc-screen-row" style={"noWrap" in group && group.noWrap ? { flexWrap: "nowrap", overflowX: "auto" } : undefined}>
+                    {(group.images as { src: string; alt: string; imgStyle?: React.CSSProperties }[]).map((img) => (
                       <div className="dc-screen-img" key={img.src}>
-                        <img src={img.src} alt={img.alt} />
+                        <img src={img.src} alt={img.alt} style={img.imgStyle} />
                       </div>
                     ))}
                   </div>

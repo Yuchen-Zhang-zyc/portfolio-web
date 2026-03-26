@@ -22,7 +22,7 @@ const CSS = `
     overflow: hidden;
   }
   .ag-page-bg { position: fixed; top: 0; left: 0; right: 0; bottom: 0; z-index: 0; pointer-events: none; overflow: hidden; }
-  .ag-page-bg::before, .ag-page-bg::after { content: ''; position: absolute; border-radius: 50%; filter: blur(100px); opacity: 0.6; }
+  .ag-page-bg::before, .ag-page-bg::after { content: ''; position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.6; will-change: transform; transform: translateZ(0); }
   .ag-page-bg::before { width: 80vw; height: 80vw; max-width: 800px; max-height: 800px; background: #E0F2FE; top: -10%; left: -10%; }
   .ag-page-bg::after { width: 60vw; height: 60vw; max-width: 600px; max-height: 600px; background: #D1FAE5; bottom: -10%; right: -10%; }
   .ag-container { max-width: 1100px; margin: 0 auto; padding: 0 40px; position: relative; z-index: 1; }

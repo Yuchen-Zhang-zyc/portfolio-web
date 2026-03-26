@@ -59,7 +59,7 @@ const CSS = `
   /* Screen placeholder */
   .dc-screen { background: #FFFFFF; border: 1px solid #E4E0DB; height: 320px; display: flex; align-items: center; justify-content: center; font-family: var(--font-dm-mono, 'DM Mono', monospace); font-size: 12px; color: #9B9690; margin: 20px 0; }
   .dc-screen-tall { height: 380px; }
-  .dc-screen-row { display: flex; flex-wrap: wrap; gap: 16px; margin: 20px 0; align-items: flex-end; }
+  .dc-screen-row { display: flex; flex-wrap: wrap; gap: 16px; margin: 20px 0; align-items: center; }
   .dc-screen-img { flex-shrink: 0; }
   .dc-screen-img img { height: 380px; width: auto; display: block; border-radius: 12px; }
 
@@ -351,6 +351,7 @@ const screenGroups = [
   {
     name: "首页与确认",
     desc: "今日服药的唯一信息来源",
+    noWrap: true,
     bullets: [
       "仅显示今日服药——一次一个任务，不展示未来复杂性",
       "直接在清单中确认或跳过，无需额外导航",
@@ -359,8 +360,9 @@ const screenGroups = [
     images: [
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757727/portfolio/projects/dosecare/Home/Dynamic-Island-1.png", alt: "DoseCare Dynamic Island 通知" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757728/portfolio/projects/dosecare/Home/Dynamic-Island-2.png", alt: "DoseCare Dynamic Island 展开" },
-      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760254/portfolio/projects/dosecare/Home/home-2.png", alt: "DoseCare 首页" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760253/portfolio/projects/dosecare/Home/Home-1.png", alt: "DoseCare 首页变体" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760254/portfolio/projects/dosecare/Home/home-2.png", alt: "DoseCare 首页" },
+      { src: "/projects/dosecare/Apple-Watch-Ultra.png", alt: "DoseCare Apple Watch Ultra — 首页与确认", imgStyle: { height: "240px", width: "auto" } },
     ],
   },
   {
@@ -391,10 +393,10 @@ const screenGroups = [
       "DOSE TAG 配对，无需解锁手机即可完成物理确认",
     ],
     images: [
-      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760259/portfolio/projects/dosecare/Onboard/Add-Medicine.png", alt: "第 1 步——找到你的药物" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760257/portfolio/projects/dosecare/Onboard/Add-Medicine-2.png", alt: "第 1 步——找到你的药物" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760256/portfolio/projects/dosecare/Onboard/Add-Medicine-1-2.png", alt: "扫描处方" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757753/portfolio/projects/dosecare/Onboard/Confirm-2.png", alt: "第 2 步——确认药物" },
-      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760257/portfolio/projects/dosecare/Onboard/Add-Medicine-2.png", alt: "第 3 步——设置时间" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760259/portfolio/projects/dosecare/Onboard/Add-Medicine.png", alt: "第 3 步——设置时间" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757763/portfolio/projects/dosecare/Onboard/Tag-6.png", alt: "第 4 步——添加标签" },
     ],
   },
@@ -587,7 +589,7 @@ function IADiagram() {
 function JourneyMap() {
   const W = 860;
   const H = 260;
-  const PAD_L = 48;
+  const PAD_L = 72;
   const PAD_R = 32;
   const PAD_T = 24;
   const PAD_B = 72;
@@ -647,13 +649,13 @@ function JourneyMap() {
       </div>
       <svg
         viewBox={`0 0 ${W} ${H}`}
-        width="100%"
-        style={{ display: "block", overflow: "hidden" }}
+        width={W}
+        style={{ display: "block", overflow: "visible" }}
         aria-label="用户旅程图，展示 Eleanor 女士使用 DoseCare 前后的情感体验。使用前：持续负面并呈下降趋势。使用后：从第 3 阶段开始呈改善轨迹。"
         role="img"
       >
         <text x={PAD_L - 8} y={PAD_T + 14} textAnchor="end" fontSize="9" fill="#9B9690" fontFamily="var(--font-dm-mono,'DM Mono',monospace)">正面</text>
-        <text x={PAD_L - 8} y={PAD_T + innerH + 18} textAnchor="end" fontSize="9" fill="#9B9690" fontFamily="var(--font-dm-mono,'DM Mono',monospace)">负面</text>
+        <text x={PAD_L - 8} y={PAD_T + innerH - 4} textAnchor="end" fontSize="9" fill="#9B9690" fontFamily="var(--font-dm-mono,'DM Mono',monospace)">负面</text>
 
         <line x1={PAD_L} y1={neutral} x2={W - PAD_R} y2={neutral} stroke="#E4E0DB" strokeWidth="1" />
 
@@ -1116,10 +1118,10 @@ export default function DoseCarePageZh() {
                   <span className="dc-screen-group-desc">{group.desc}</span>
                 </div>
                 {"images" in group && group.images ? (
-                  <div className="dc-screen-row">
-                    {(group.images as { src: string; alt: string }[]).map((img) => (
+                  <div className="dc-screen-row" style={"noWrap" in group && group.noWrap ? { flexWrap: "nowrap", overflowX: "auto" } : undefined}>
+                    {(group.images as { src: string; alt: string; imgStyle?: React.CSSProperties }[]).map((img) => (
                       <div className="dc-screen-img" key={img.src}>
-                        <img src={img.src} alt={img.alt} />
+                        <img src={img.src} alt={img.alt} style={img.imgStyle} />
                       </div>
                     ))}
                   </div>

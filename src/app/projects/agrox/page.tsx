@@ -4,6 +4,7 @@ import Link from "next/link";
 
 import React from "react";
 import NextProject from "../../components/NextProject";
+import CountUp from "../../components/CountUp";
 
 const CSS = `
   /* Base Variables - Glassmorphism / Spatial UI */
@@ -42,8 +43,10 @@ const CSS = `
     content: '';
     position: absolute;
     border-radius: 50%;
-    filter: blur(100px);
+    filter: blur(80px);
     opacity: 0.6;
+    will-change: transform;
+    transform: translateZ(0);
   }
 
   .ag-page-bg::before {
@@ -515,11 +518,11 @@ export default function AgroxProject() {
             </div>
             <div className="ag-glass-grid" style={{ gridTemplateColumns: "1fr 1fr", gap: "24px", marginBottom: 0, alignSelf: "center" }}>
               <div className="ag-glass-card ag-card-stat">
-                <div className="ag-stat-num">4</div>
+                <div className="ag-stat-num"><CountUp target={4} /></div>
                 <div className="ag-stat-label">Farms at Forsyth Park<br/>Farmers Market</div>
               </div>
               <div className="ag-glass-card ag-card-stat">
-                <div className="ag-stat-num">1</div>
+                <div className="ag-stat-num"><CountUp target={1} duration={800} /></div>
                 <div className="ag-stat-label">Farm in<br/>South Carolina</div>
               </div>
             </div>

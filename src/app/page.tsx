@@ -1,16 +1,27 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Link from "next/link";
+import FadeUp from "./components/FadeUp";
 
 export default function Home() {
+  const heroRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
     if (typeof window === "undefined") return;
-
-    // Let the browser restore scroll position naturally on back navigation.
     if ("scrollRestoration" in window.history) {
       window.history.scrollRestoration = "auto";
     }
+  }, []);
+
+  useEffect(() => {
+    const onScroll = () => {
+      if (heroRef.current) {
+        heroRef.current.style.transform = `translateY(${window.scrollY * 0.15}px)`;
+      }
+    };
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
   return (
     <div className="flex flex-col w-full min-h-screen font-body relative overflow-x-hidden">
@@ -33,9 +44,9 @@ export default function Home() {
         {/* 01 Hero Section */}
         <section className="relative w-full min-h-screen flex flex-col items-center justify-center pt-20 md:pt-24 text-brand-primary">
           <h1 className="sr-only">Yuchen Zhang — UX / Product Designer for AI and XR</h1>
-          <div className="font-sans font-medium text-[24px] min-[480px]:text-[28px] md:text-[40px] lg:text-[48px] leading-[1.08] tracking-[-0.035em] flex flex-col gap-4 md:gap-4 text-brand-primary w-full max-w-5xl mx-auto items-center">
+          <div ref={heroRef} className="font-sans font-medium text-[24px] min-[480px]:text-[28px] md:text-[40px] lg:text-[48px] leading-[1.08] tracking-[-0.035em] flex flex-col gap-4 md:gap-4 text-brand-primary w-full max-w-5xl mx-auto items-center">
 
-            <div className="grid grid-cols-[24px_minmax(0,1fr)] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full max-w-[320px] min-[480px]:max-w-[380px] md:max-w-none text-left md:text-center">
+            <div className="hero-line hero-line-1 grid grid-cols-[24px_minmax(0,1fr)] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full max-w-[320px] min-[480px]:max-w-[380px] md:max-w-none text-left md:text-center">
               <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">01</span>
               <div className="flex items-start md:items-center justify-center md:justify-center gap-0 md:gap-3 min-w-0 text-center">
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
@@ -44,7 +55,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid grid-cols-[24px_minmax(0,1fr)] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full max-w-[320px] min-[480px]:max-w-[380px] md:max-w-none text-left md:text-center">
+            <div className="hero-line hero-line-2 grid grid-cols-[24px_minmax(0,1fr)] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full max-w-[320px] min-[480px]:max-w-[380px] md:max-w-none text-left md:text-center">
               <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">02</span>
               <div className="flex items-start md:items-center justify-center md:justify-center gap-0 md:gap-3 min-w-0 text-center">
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
@@ -53,7 +64,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="grid grid-cols-[24px_minmax(0,1fr)] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full max-w-[320px] min-[480px]:max-w-[380px] md:max-w-none text-left md:text-center">
+            <div className="hero-line hero-line-3 grid grid-cols-[24px_minmax(0,1fr)] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full max-w-[320px] min-[480px]:max-w-[380px] md:max-w-none text-left md:text-center">
               <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">03</span>
               <div className="flex items-start md:items-center justify-center md:justify-center gap-0 md:gap-3 min-w-0 text-center">
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
@@ -64,7 +75,7 @@ export default function Home() {
 
           </div>
 
-          <a href="#about" aria-label="Scroll to About section" className="absolute bottom-12 md:bottom-16 flex flex-col items-center gap-2 opacity-40 hover:opacity-70 transition-opacity text-brand-primary">
+          <a href="#about" aria-label="Scroll to About section" className="hero-scroll absolute bottom-12 md:bottom-16 flex flex-col items-center gap-2 opacity-40 hover:opacity-70 transition-opacity text-brand-primary">
             <span className="text-[10px] font-mono tracking-[0.22em] uppercase">Scroll</span>
             <span className="text-base leading-none">↓</span>
           </a>
@@ -78,7 +89,7 @@ export default function Home() {
               About me
             </h2>
           </div>
-          <div className="md:col-span-8 flex flex-col gap-8">
+          <FadeUp className="md:col-span-8 flex flex-col gap-8">
             {/* Pull quote */}
             <p className="text-[26px] md:text-[32px] font-semibold leading-[1.35] tracking-[-0.02em] text-brand-primary font-sans">
               The technology is here.<br />
@@ -95,7 +106,7 @@ export default function Home() {
               </p>
             </div>
 
-          </div>
+          </FadeUp>
         </section>
 
         {/* 03 Capabilities */}
@@ -107,37 +118,45 @@ export default function Home() {
             </h2>
           </div>
           <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-[20px] md:gap-[24px]">
-            <div className="capability-card capability-card-primary p-7 md:p-8 rounded-[18px]">
-              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">Human-AI Design</h3>
-              <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/75">
-                <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Design human-AI workflows, not just interfaces</li>
-                <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Define interaction patterns for emerging AI products</li>
-              </ul>
-            </div>
+            <FadeUp delay={0}>
+              <div className="capability-card capability-card-primary p-7 md:p-8 rounded-[18px]">
+                <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">Human-AI Design</h3>
+                <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/75">
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Design human-AI workflows, not just interfaces</li>
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Define interaction patterns for emerging AI products</li>
+                </ul>
+              </div>
+            </FadeUp>
 
-            <div className="capability-card p-7 md:p-8 rounded-[18px]">
-              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">UX & Interaction</h3>
-              <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/75">
-                <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Build end-to-end flows from research to prototype</li>
-                <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Design state-driven interactions with clear feedback</li>
-              </ul>
-            </div>
+            <FadeUp delay={80}>
+              <div className="capability-card p-7 md:p-8 rounded-[18px]">
+                <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">UX & Interaction</h3>
+                <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/75">
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Build end-to-end flows from research to prototype</li>
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Design state-driven interactions with clear feedback</li>
+                </ul>
+              </div>
+            </FadeUp>
 
-            <div className="capability-card p-7 md:p-8 rounded-[18px]">
-              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">Systems Thinking</h3>
-              <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/75">
-                <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Turn ambiguous problems into structured product decisions</li>
-                <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Map user flows, edge cases, and system logic</li>
-              </ul>
-            </div>
+            <FadeUp delay={160}>
+              <div className="capability-card p-7 md:p-8 rounded-[18px]">
+                <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">Systems Thinking</h3>
+                <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/75">
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Turn ambiguous problems into structured product decisions</li>
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Map user flows, edge cases, and system logic</li>
+                </ul>
+              </div>
+            </FadeUp>
 
-            <div className="capability-card p-7 md:p-8 rounded-[18px]">
-              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">Prototyping with Code</h3>
-              <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/75">
-                <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Translate concepts into functional prototypes</li>
-                <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Bridge design intent and technical feasibility</li>
-              </ul>
-            </div>
+            <FadeUp delay={240}>
+              <div className="capability-card p-7 md:p-8 rounded-[18px]">
+                <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">Prototyping with Code</h3>
+                <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/75">
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Translate concepts into functional prototypes</li>
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Bridge design intent and technical feasibility</li>
+                </ul>
+              </div>
+            </FadeUp>
           </div>
         </section>
 
@@ -155,7 +174,8 @@ export default function Home() {
             <div className="flex flex-col gap-[40px]">
               <p className="text-xs font-mono tracking-[0.22em] uppercase text-brand-primary/35 pb-3 border-b border-brand-primary/10">XR</p>
 
-              <Link href="/projects/assembly-line-y" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+              <FadeUp delay={0}>
+              <Link href="/projects/assembly-line-y" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
                 <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
                   <div className="flex gap-2 relative z-10">
                     <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
@@ -187,7 +207,9 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
-              <Link href="/projects/tireswap" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+              </FadeUp>
+              <FadeUp delay={100}>
+              <Link href="/projects/tireswap" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
                 <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
                   <div className="flex gap-2 relative z-10">
                     <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
@@ -219,13 +241,15 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
+              </FadeUp>
             </div>
 
             {/* UX */}
             <div className="flex flex-col gap-[40px]">
               <p className="text-xs font-mono tracking-[0.22em] uppercase text-brand-primary/35 pb-3 border-b border-brand-primary/10">UX</p>
 
-              <Link href="/projects/nest-thermostat" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+              <FadeUp delay={0}>
+              <Link href="/projects/nest-thermostat" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
                 <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
                   <div className="flex gap-2 relative z-10">
                     <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
@@ -253,8 +277,9 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
-
-              <Link href="/projects/dosecare" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+              </FadeUp>
+              <FadeUp delay={100}>
+              <Link href="/projects/dosecare" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
                 <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
                   <div className="flex gap-2 relative z-10">
                     <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
@@ -282,8 +307,9 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
-
-              <Link href="/projects/agrox" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+              </FadeUp>
+              <FadeUp delay={200}>
+              <Link href="/projects/agrox" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
                 <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
                   <div className="flex gap-2 relative z-10">
                     <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
@@ -311,8 +337,9 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
-
-              <Link href="/projects/nirvana" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+              </FadeUp>
+              <FadeUp delay={300}>
+              <Link href="/projects/nirvana" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
                 <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
                   <div className="flex gap-2 relative z-10">
                     <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
@@ -340,13 +367,15 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
+              </FadeUp>
             </div>
 
             {/* AI */}
             <div className="flex flex-col gap-[40px]">
               <p className="text-xs font-mono tracking-[0.22em] uppercase text-brand-primary/35 pb-3 border-b border-brand-primary/10">AI</p>
 
-              <Link href="/projects/reco" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+              <FadeUp delay={0}>
+              <Link href="/projects/reco" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
                 <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
                   <div className="flex gap-2 relative z-10">
                     <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
@@ -378,8 +407,9 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
-
-              <Link href="/projects/this-website" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-all duration-500">
+              </FadeUp>
+              <FadeUp delay={100}>
+              <Link href="/projects/this-website" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
                 <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
                   <div className="flex gap-2 relative z-10">
                     <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
@@ -413,6 +443,7 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
+              </FadeUp>
             </div>
 
           </div>
