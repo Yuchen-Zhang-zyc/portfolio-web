@@ -75,7 +75,7 @@ export default function HomeZh() {
             {/* Pull quote */}
             <p className="text-[26px] md:text-[32px] font-semibold leading-[1.35] tracking-[-0.02em] text-brand-primary font-sans">
               技术已经到了。
-              <span className="italic text-brand-secondary" style={{ textShadow: "0 0 18px rgba(255,255,255,0.8), 0 1px 4px rgba(255,255,255,0.6)" }}>体验还没有。</span>
+              <span className="italic font-normal text-brand-primary/70">体验还没有。</span>
             </p>
 
             {/* Body */}
