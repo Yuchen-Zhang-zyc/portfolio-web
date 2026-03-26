@@ -86,10 +86,6 @@ export default function RecoPage() {
       <style>{CSS}</style>
       <div className="reco-page">
 
-        {/* Back link */}
-        <div className="relative z-20" style={{ padding: "14px 48px" }}>
-          <Link href="/" style={{ fontSize: 12, color: "rgba(27,42,107,0.5)", textDecoration: "none", fontFamily: "monospace", letterSpacing: "0.06em" }}>← Home</Link>
-        </div>
 
         {/* 01 Hero */}
         <section className="reco-section reco-section-first" id="main-content">

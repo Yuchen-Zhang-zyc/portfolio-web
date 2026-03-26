@@ -725,10 +725,6 @@ export default function DoseCarePage() {
 
         <a className="dc-skip" href="#main-content">Skip to main content</a>
 
-        {/* ── Back link ── */}
-        <div className="relative z-20" style={{ padding: "14px 48px" }}>
-          <Link href="/" style={{ fontSize: 12, color: "#9B9690", textDecoration: "none", fontFamily: "var(--font-dm-mono,'DM Mono',monospace)", letterSpacing: "0.06em" }}>← Home</Link>
-        </div>
 
         {/* ── Nav ── */}
         <nav className={`dc-nav${scrolled ? " scrolled" : ""}`} aria-label="DoseCare case study">

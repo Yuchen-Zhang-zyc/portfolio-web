@@ -262,10 +262,6 @@ export default function NirvanaPage() {
 
       <a href="#research" className="nv-skip">Skip to main content</a>
 
-      {/* ── Back link ── */}
-      <div className="relative z-20" style={{ padding: "14px 48px" }}>
-        <Link href="/" style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", textDecoration: "none", fontFamily: "monospace", letterSpacing: "0.06em" }}>← Home</Link>
-      </div>
 
       {/* ── Sticky Subnav ── */}
       <nav className="nv-subnav" aria-label="Case study sections">

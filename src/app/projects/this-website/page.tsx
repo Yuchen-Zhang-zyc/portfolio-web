@@ -5,10 +5,6 @@ export default function ThisWebsiteProject() {
   return (
     <div className="min-h-screen bg-[#ECEEF5] text-[#1B2A6B]">
 
-      {/* Back link */}
-      <div className="relative z-20" style={{ padding: "14px 48px" }}>
-        <Link href="/" style={{ fontSize: 12, color: "rgba(27,42,107,0.5)", textDecoration: "none", fontFamily: "monospace", letterSpacing: "0.06em" }}>← Home</Link>
-      </div>
 
       <div className="max-w-[1100px] mx-auto px-6 md:px-12 lg:px-20 pb-10 md:pb-12">
 
@@ -158,7 +154,6 @@ export default function ThisWebsiteProject() {
 
       </div>
 
-      <NextProject href="/" title="Back to all projects" role="" theme="light" />
     </div>
   );
 }
