@@ -362,7 +362,7 @@ const screenGroups = [
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757728/portfolio/projects/dosecare/Home/Dynamic-Island-2.png", alt: "DoseCare Dynamic Island 展开" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760253/portfolio/projects/dosecare/Home/Home-1.png", alt: "DoseCare 首页变体" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760254/portfolio/projects/dosecare/Home/home-2.png", alt: "DoseCare 首页" },
-      { src: "/projects/dosecare/Apple-Watch-Ultra.png", alt: "DoseCare Apple Watch Ultra — 首页与确认", imgStyle: { height: "240px", width: "auto" } },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1774491245/portfolio/projects/dosecare/Apple-Watch-Ultra.png", alt: "DoseCare Apple Watch Ultra — 首页与确认", imgStyle: { height: "240px", width: "auto" } },
     ],
   },
   {

@@ -92,11 +92,17 @@ const CSS = `
   .dc-problem-num { font-family: var(--font-dm-mono, 'DM Mono', monospace); font-size: 10px; color: #2B5EE8; flex-shrink: 0; padding-top: 2px; }
 
   /* Persona */
-  .dc-persona { background: #FFFFFF; border: 1px solid #E4E0DB; margin-top: 24px; }
-  .dc-persona-header { background: #2B5EE8; padding: 12px 16px; }
-  .dc-persona-name { font-size: 14px; font-weight: 600; color: #FFFFFF; }
-  .dc-persona-sub { font-family: var(--font-dm-mono, 'DM Mono', monospace); font-size: 10px; color: rgba(255,255,255,0.65); margin-top: 2px; }
-  .dc-persona-quote { padding: 14px 16px; font-size: 14px; font-style: italic; color: #4A4740; border-bottom: 1px solid #E4E0DB; line-height: 1.6; }
+  .dc-persona { margin-top: 24px; border: 1px solid #E4E0DB; }
+  .dc-persona-header { padding: 14px 18px; background: #2B5EE8; }
+  .dc-persona-header-dark { background: #4A4740; }
+  .dc-persona-name { font-size: 15px; font-weight: 600; color: #FFFFFF; }
+  .dc-persona-sub { font-family: var(--font-dm-mono, 'DM Mono', monospace); font-size: 10px; color: rgba(255,255,255,0.6); margin-top: 3px; }
+  .dc-persona-quote { padding: 16px 18px; font-size: 14px; font-style: italic; color: #4A4740; line-height: 1.7; border-bottom: 1px solid #E4E0DB; }
+  .dc-persona-details { display: flex; flex-direction: column; }
+  .dc-persona-detail-row { display: flex; flex-direction: column; gap: 4px; padding: 12px 18px; border-bottom: 1px solid #E4E0DB; }
+  .dc-persona-detail-row:last-child { border-bottom: none; }
+  .dc-persona-detail-label { font-family: var(--font-dm-mono, 'DM Mono', monospace); font-size: 9px; text-transform: uppercase; letter-spacing: 0.12em; color: #9B9690; }
+  .dc-persona-detail-value { font-size: 13px; color: #4A4740; line-height: 1.65; }
 
   /* Insights */
   .dc-insight-row { position: relative; border-top: 1px solid #E4E0DB; padding: 28px 0 28px 20px; display: flex; gap: 28px; align-items: flex-start; }
@@ -360,9 +366,9 @@ const screenGroups = [
     images: [
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757727/portfolio/projects/dosecare/Home/Dynamic-Island-1.png", alt: "DoseCare dynamic island notification" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757728/portfolio/projects/dosecare/Home/Dynamic-Island-2.png", alt: "DoseCare dynamic island expanded" },
-      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760253/portfolio/projects/dosecare/Home/Home-1.png", alt: "DoseCare home variant" },
-      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760254/portfolio/projects/dosecare/Home/home-2.png", alt: "DoseCare home screen" },
-      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1774491245/portfolio/projects/dosecare/Apple-Watch-Ultra.png", alt: "DoseCare Apple Watch Ultra — Home & Confirmation", imgStyle: { height: "240px", width: "auto" } },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1775921056/portfolio/projects/dosecare/Home/Home-new-1.png", alt: "DoseCare home screen 1" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1775921059/portfolio/projects/dosecare/Home/Home-new-2.png", alt: "DoseCare home screen 2" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1775921060/portfolio/projects/dosecare/Home/Home-new-3.png", alt: "DoseCare home screen 3" },
     ],
   },
   {
@@ -374,7 +380,6 @@ const screenGroups = [
       "Refill flow connects directly to doctor or pharmacy in one tap",
     ],
     images: [
-      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757734/portfolio/projects/dosecare/Med/Medication-List.png", alt: "DoseCare medication list" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757733/portfolio/projects/dosecare/Med/Medication-List-6.png", alt: "DoseCare medication list variant" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757732/portfolio/projects/dosecare/Med/Medication-Info-2.png", alt: "DoseCare medication info" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757731/portfolio/projects/dosecare/Med/Medication-Enter-Time-2.png", alt: "DoseCare enter time" },
@@ -849,7 +854,7 @@ export default function DoseCarePage() {
                   {[
                     { label: "Methods", value: "Semi-structured interviews (patients + caregivers), secondary research (doctor perspective), affinity mapping + tag synthesis" },
                     { label: "Participants", value: "9 total · patients + caregivers · primary: 65+ adults with chronic conditions" },
-                    { label: "Session length", value: "45–60 minutes each" },
+                    { label: "Session length", value: "10–20 minutes each" },
                     { label: "Notes", value: "129 notes tagged and grouped into themes" },
                     { label: "Focus areas", value: "Current routines, missed-dose causes, caregiver verification, doctor communication patterns" },
                     { label: "Key finding", value: "Adherence is not a scheduling problem — it is a confidence problem" },
@@ -869,18 +874,16 @@ export default function DoseCarePage() {
                     <div className="dc-persona-name">Mrs. Eleanor</div>
                     <div className="dc-persona-sub">71 · Lives alone · Son is remote caregiver</div>
                   </div>
-                  <div className="dc-persona-quote">
-                    &ldquo;I&apos;ve taken so many pills I can&apos;t always remember if I already took today&apos;s.&rdquo;
-                  </div>
-                  <div className="dc-table" role="table" aria-label="Eleanor persona details">
+                  <p className="dc-persona-quote">&ldquo;I&apos;ve taken so many pills I can&apos;t always remember if I already took today&apos;s.&rdquo;</p>
+                  <div className="dc-persona-details">
                     {[
                       { label: "Situation", value: "Manages 6 medications daily. Previously tried Perx but abandoned it mid-setup." },
                       { label: "Goals", value: "Stay independent, feel certain she's managing her health correctly, avoid involving her son unless necessary." },
                       { label: "Frustrations", value: "Can't remember if she already took a dose. Too many notifications she's learned to dismiss. App entry felt medical and overwhelming." },
                     ].map((r) => (
-                      <div className="dc-row" role="row" key={r.label}>
-                        <div className="dc-label" role="rowheader">{r.label}</div>
-                        <div className="dc-value" role="cell">{r.value}</div>
+                      <div className="dc-persona-detail-row" key={r.label}>
+                        <span className="dc-persona-detail-label">{r.label}</span>
+                        <span className="dc-persona-detail-value">{r.value}</span>
                       </div>
                     ))}
                   </div>
@@ -888,21 +891,19 @@ export default function DoseCarePage() {
 
                 {/* Secondary Persona */}
                 <div className="dc-persona" style={{ marginTop: 16 }} aria-label="Secondary persona: Michael">
-                  <div className="dc-persona-header" style={{ background: "#4A4740" }}>
+                  <div className="dc-persona-header dc-persona-header-dark">
                     <div className="dc-persona-name">Michael</div>
                     <div className="dc-persona-sub">44 · Eleanor&apos;s son · Remote caregiver</div>
                   </div>
-                  <div className="dc-persona-quote">
-                    &ldquo;I call her every day just to make sure she&apos;s taken her medication. I can&apos;t always tell if she actually has.&rdquo;
-                  </div>
-                  <div className="dc-table" role="table" aria-label="Michael persona details">
+                  <p className="dc-persona-quote">&ldquo;I call her every day just to make sure she&apos;s taken her medication. I can&apos;t always tell if she actually has.&rdquo;</p>
+                  <div className="dc-persona-details">
                     {[
                       { label: "Primary need", value: "Exception-based visibility — know when something is wrong, not a full daily log." },
                       { label: "Core tension", value: "Wants to support his mother without making her feel monitored or incapable." },
                     ].map((r) => (
-                      <div className="dc-row" role="row" key={r.label}>
-                        <div className="dc-label" role="rowheader">{r.label}</div>
-                        <div className="dc-value" role="cell">{r.value}</div>
+                      <div className="dc-persona-detail-row" key={r.label}>
+                        <span className="dc-persona-detail-label">{r.label}</span>
+                        <span className="dc-persona-detail-value">{r.value}</span>
                       </div>
                     ))}
                   </div>
@@ -1101,24 +1102,63 @@ export default function DoseCarePage() {
           </div>
         </section>
 
-        {/* ── 10 Information Architecture ── */}
+        {/* ── 10 Redesign Pivot ── */}
+        <section className="dc-section" id="pivot">
+          <div className="dc-container">
+            <div className="dc-prose">
+              <div className="dc-eyebrow">10 — Redesign Decision</div>
+              <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 600, letterSpacing: "-0.02em", color: "#1C1A16", marginBottom: 24 }}>
+                The project found its real problem statement
+              </h2>
+              <p style={{ fontSize: 15, color: "#4A4740", lineHeight: 1.8, marginBottom: 20 }}>
+                After completing the first round of usability testing on v1, I received structured feedback from my professor that reframed how I understood the problem. The issues weren&apos;t isolated — they pointed to a deeper misalignment between the design and the core user need.
+              </p>
+              <p style={{ fontSize: 15, color: "#4A4740", lineHeight: 1.8, marginBottom: 20 }}>
+                The v1 architecture was built around medication scheduling and reminders. But the feedback made clear that the real unmet need wasn&apos;t reminding users to take their medication — it was confirming whether they actually did. No feature in v1 addressed this. The confirmation gap existed, and the structure wasn&apos;t designed to solve it.
+              </p>
+              <p style={{ fontSize: 15, color: "#4A4740", lineHeight: 1.8, marginBottom: 32 }}>
+                At the same time, several other problems surfaced. The information architecture organized content around medication management as a whole, which dispersed attention across too many touchpoints. For users 65+, this created unnecessary cognitive load. Accessibility was also insufficient — text sizes, contrast ratios, and touch targets didn&apos;t meet the needs of the target demographic in practice.
+              </p>
+              <ul className="dc-problem-list" aria-label="Reasons for full redesign">
+                {[
+                  "Confirmation was the primary unmet need — v1 had no flow built around it",
+                  "IA dispersed attention across too many touchpoints, increasing cognitive load for 65+ users",
+                  "Text sizes, contrast ratios, and touch targets were insufficient for the target demographic",
+                ].map((item, i) => (
+                  <li className="dc-problem-item" key={i}>
+                    <span className="dc-problem-num" aria-hidden="true">0{i + 1}</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p style={{ fontSize: 15, color: "#4A4740", lineHeight: 1.8, marginTop: 32, marginBottom: 20 }}>
+                These weren&apos;t problems I could patch. Fixing confirmation would require making it the primary interaction — not a secondary action buried in navigation. That meant rethinking the IA from the ground up, which opened the space to introduce NFC-based physical confirmation, AI-powered adherence insights, and a multi-role ecosystem connecting patients and caregivers.
+              </p>
+              <blockquote className="dc-pullquote">
+                &ldquo;The full redesign wasn&apos;t a setback. It was the moment the project found its real problem statement.&rdquo;
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
+        {/* ── 11 Information Architecture ── */}
         <section className="dc-section" id="ia">
           <div className="dc-container">
-            <div className="dc-eyebrow">10 — Information Architecture</div>
+            <div className="dc-eyebrow">11 — Information Architecture</div>
             <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 600, letterSpacing: "-0.02em", color: "#1C1A16", marginBottom: 8 }}>
-              Final app structure
+              Rebuilt from the ground up
             </h2>
             <p style={{ fontSize: 15, color: "#9B9690", marginBottom: 32 }}>
-              Patient app — 5 tabs. Refined after usability testing.
+              Patient app — 5 tabs. Redesigned after testing exposed structural misalignment with the core user need.
             </p>
             <IADiagram />
           </div>
         </section>
 
-        {/* ── 11 Final Design ── */}
+        {/* ── 12 Final Design ── */}
         <section className="dc-section" id="final-design">
           <div className="dc-container">
-            <div className="dc-eyebrow">11 — Final Design</div>
+            <div className="dc-eyebrow">12 — Final Design</div>
             <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 600, letterSpacing: "-0.02em", color: "#1C1A16", marginBottom: 48 }}>
               High-fidelity screens
             </h2>
@@ -1150,11 +1190,11 @@ export default function DoseCarePage() {
           </div>
         </section>
 
-        {/* ── 10 Reflection ── */}
+        {/* ── 13 Reflection ── */}
         <section className="dc-section" id="outcomes">
           <div className="dc-container">
             <div className="dc-prose">
-            <div className="dc-eyebrow">12 — Reflection</div>
+            <div className="dc-eyebrow">13 — Reflection</div>
             <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 600, letterSpacing: "-0.02em", color: "#1C1A16", marginBottom: 32 }}>
               Outcomes &amp; Reflection
             </h2>

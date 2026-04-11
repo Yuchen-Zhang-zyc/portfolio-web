@@ -203,7 +203,7 @@ export default function RecoPage() {
               {[1,2,3,4,5,6,7,8,9].map((n) => (
                 <div className="reco-hifi-frame" key={n}>
                   <img
-                    src={`/projects/reco/hifi-${n}.png`}
+                    src={`https://res.cloudinary.com/dj13he2xu/image/upload/portfolio/projects/reco/hifi-${n}.png`}
                     alt={`BoKnee HiFi screen ${n}`}
                     loading="lazy"
                   />
