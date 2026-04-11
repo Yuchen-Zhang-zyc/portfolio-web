@@ -92,11 +92,17 @@ const CSS = `
   .dc-problem-num { font-family: var(--font-dm-mono, 'DM Mono', monospace); font-size: 10px; color: #2B5EE8; flex-shrink: 0; padding-top: 2px; }
 
   /* Persona */
-  .dc-persona { background: #FFFFFF; border: 1px solid #E4E0DB; margin-top: 24px; }
-  .dc-persona-header { background: #2B5EE8; padding: 12px 16px; }
-  .dc-persona-name { font-size: 14px; font-weight: 600; color: #FFFFFF; }
-  .dc-persona-sub { font-family: var(--font-dm-mono, 'DM Mono', monospace); font-size: 10px; color: rgba(255,255,255,0.65); margin-top: 2px; }
-  .dc-persona-quote { padding: 14px 16px; font-size: 14px; font-style: italic; color: #4A4740; border-bottom: 1px solid #E4E0DB; line-height: 1.6; }
+  .dc-persona { margin-top: 24px; border: 1px solid #E4E0DB; }
+  .dc-persona-header { padding: 14px 18px; background: #2B5EE8; }
+  .dc-persona-header-dark { background: #4A4740; }
+  .dc-persona-name { font-size: 15px; font-weight: 600; color: #FFFFFF; }
+  .dc-persona-sub { font-family: var(--font-dm-mono, 'DM Mono', monospace); font-size: 10px; color: rgba(255,255,255,0.6); margin-top: 3px; }
+  .dc-persona-quote { padding: 16px 18px; font-size: 14px; font-style: italic; color: #4A4740; line-height: 1.7; border-bottom: 1px solid #E4E0DB; }
+  .dc-persona-details { display: flex; flex-direction: column; }
+  .dc-persona-detail-row { display: flex; flex-direction: column; gap: 4px; padding: 12px 18px; border-bottom: 1px solid #E4E0DB; }
+  .dc-persona-detail-row:last-child { border-bottom: none; }
+  .dc-persona-detail-label { font-family: var(--font-dm-mono, 'DM Mono', monospace); font-size: 9px; text-transform: uppercase; letter-spacing: 0.12em; color: #9B9690; }
+  .dc-persona-detail-value { font-size: 13px; color: #4A4740; line-height: 1.65; }
 
   /* Insights */
   .dc-insight-row { position: relative; border-top: 1px solid #E4E0DB; padding: 28px 0 28px 20px; display: flex; gap: 28px; align-items: flex-start; }
@@ -360,9 +366,9 @@ const screenGroups = [
     images: [
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757727/portfolio/projects/dosecare/Home/Dynamic-Island-1.png", alt: "DoseCare Dynamic Island 通知" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757728/portfolio/projects/dosecare/Home/Dynamic-Island-2.png", alt: "DoseCare Dynamic Island 展开" },
-      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760253/portfolio/projects/dosecare/Home/Home-1.png", alt: "DoseCare 首页变体" },
-      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773760254/portfolio/projects/dosecare/Home/home-2.png", alt: "DoseCare 首页" },
-      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1774491245/portfolio/projects/dosecare/Apple-Watch-Ultra.png", alt: "DoseCare Apple Watch Ultra — 首页与确认", imgStyle: { height: "240px", width: "auto" } },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1775921056/portfolio/projects/dosecare/Home/Home-new-1.png", alt: "DoseCare 首页 1" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1775921059/portfolio/projects/dosecare/Home/Home-new-2.png", alt: "DoseCare 首页 2" },
+      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1775921060/portfolio/projects/dosecare/Home/Home-new-3.png", alt: "DoseCare 首页 3" },
     ],
   },
   {
@@ -374,7 +380,6 @@ const screenGroups = [
       "补药流程一键直达医生或药房",
     ],
     images: [
-      { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757734/portfolio/projects/dosecare/Med/Medication-List.png", alt: "DoseCare 药物列表" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757733/portfolio/projects/dosecare/Med/Medication-List-6.png", alt: "DoseCare 药物列表变体" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757732/portfolio/projects/dosecare/Med/Medication-Info-2.png", alt: "DoseCare 药物信息" },
       { src: "https://res.cloudinary.com/dj13he2xu/image/upload/v1773757731/portfolio/projects/dosecare/Med/Medication-Enter-Time-2.png", alt: "DoseCare 设置时间" },
@@ -837,7 +842,7 @@ export default function DoseCarePageZh() {
                   {[
                     { label: "方法", value: "半结构化访谈（患者 + 护理人员）、二手研究（医生视角）、亲和图 + 标签综合分析" },
                     { label: "参与者", value: "共 9 人 · 患者 + 护理人员 · 主要受访者：患有慢性病的 65 岁以上成人" },
-                    { label: "访谈时长", value: "每次 45–60 分钟" },
+                    { label: "访谈时长", value: "每次 10–20 分钟" },
                     { label: "笔记", value: "129 条笔记，标记并归纳为主题" },
                     { label: "关注领域", value: "现有日常习惯、漏服原因、护理人员核实方式、医患沟通模式" },
                     { label: "核心发现", value: "服药依从性不是调度问题——而是信心问题" },
@@ -857,18 +862,16 @@ export default function DoseCarePageZh() {
                     <div className="dc-persona-name">Eleanor 女士</div>
                     <div className="dc-persona-sub">71 岁 · 独居 · 儿子为远程护理人员</div>
                   </div>
-                  <div className="dc-persona-quote">
-                    &ldquo;我吃了这么多年的药，有时真的记不清今天的药吃了没有。&rdquo;
-                  </div>
-                  <div className="dc-table" role="table" aria-label="Eleanor 用户画像详情">
+                  <p className="dc-persona-quote">&ldquo;我吃了这么多年的药，有时真的记不清今天的药吃了没有。&rdquo;</p>
+                  <div className="dc-persona-details">
                     {[
                       { label: "现状", value: "每天管理 6 种药物。曾尝试使用 Perx，但在注册中途放弃。" },
                       { label: "目标", value: "保持独立，确信自己在正确管理健康，尽量不麻烦儿子。" },
                       { label: "痛点", value: "不确定是否已经服过某次药。太多通知让她学会了习惯性忽视。应用录入感觉像填写医疗表格，让她不知所措。" },
                     ].map((r) => (
-                      <div className="dc-row" role="row" key={r.label}>
-                        <div className="dc-label" role="rowheader">{r.label}</div>
-                        <div className="dc-value" role="cell">{r.value}</div>
+                      <div className="dc-persona-detail-row" key={r.label}>
+                        <span className="dc-persona-detail-label">{r.label}</span>
+                        <span className="dc-persona-detail-value">{r.value}</span>
                       </div>
                     ))}
                   </div>
@@ -876,21 +879,19 @@ export default function DoseCarePageZh() {
 
                 {/* Secondary Persona */}
                 <div className="dc-persona" style={{ marginTop: 16 }} aria-label="次要用户画像：Michael">
-                  <div className="dc-persona-header" style={{ background: "#4A4740" }}>
+                  <div className="dc-persona-header dc-persona-header-dark">
                     <div className="dc-persona-name">Michael</div>
                     <div className="dc-persona-sub">44 岁 · Eleanor 的儿子 · 远程护理人员</div>
                   </div>
-                  <div className="dc-persona-quote">
-                    &ldquo;我每天都要给她打电话确认她吃药了。但我真的没办法判断她到底有没有吃。&rdquo;
-                  </div>
-                  <div className="dc-table" role="table" aria-label="Michael 用户画像详情">
+                  <p className="dc-persona-quote">&ldquo;我每天都要给她打电话确认她吃药了。但我真的没办法判断她到底有没有吃。&rdquo;</p>
+                  <div className="dc-persona-details">
                     {[
                       { label: "核心需求", value: "只在出现异常时收到通知——而非完整的每日记录。" },
                       { label: "核心矛盾", value: "想支持母亲，但不希望让她感到被监视或被认为无能。" },
                     ].map((r) => (
-                      <div className="dc-row" role="row" key={r.label}>
-                        <div className="dc-label" role="rowheader">{r.label}</div>
-                        <div className="dc-value" role="cell">{r.value}</div>
+                      <div className="dc-persona-detail-row" key={r.label}>
+                        <span className="dc-persona-detail-label">{r.label}</span>
+                        <span className="dc-persona-detail-value">{r.value}</span>
                       </div>
                     ))}
                   </div>
@@ -1089,24 +1090,63 @@ export default function DoseCarePageZh() {
           </div>
         </section>
 
-        {/* ── 10 Information Architecture ── */}
+        {/* ── 10 Redesign Pivot ── */}
+        <section className="dc-section" id="pivot">
+          <div className="dc-container">
+            <div className="dc-prose">
+              <div className="dc-eyebrow">10 — 重新设计的决策</div>
+              <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 600, letterSpacing: "-0.02em", color: "#1C1A16", marginBottom: 24 }}>
+                项目找到了真正的问题所在
+              </h2>
+              <p style={{ fontSize: 15, color: "#4A4740", lineHeight: 1.8, marginBottom: 20 }}>
+                完成第一轮 v1 可用性测试后，我收到了导师的系统性反馈，这些反馈让我重新理解了问题的本质。这些问题并非孤立存在——它们指向了设计与核心用户需求之间更深层的错位。
+              </p>
+              <p style={{ fontSize: 15, color: "#4A4740", lineHeight: 1.8, marginBottom: 20 }}>
+                v1 的信息架构建立在药物排程与提醒的逻辑上。但反馈清楚地表明，真正未被满足的需求不是提醒用户服药——而是确认用户是否真的服了药。v1 中没有任何功能解决了这个问题。确认缺口确实存在，而整个架构并非为解决它而设计。
+              </p>
+              <p style={{ fontSize: 15, color: "#4A4740", lineHeight: 1.8, marginBottom: 32 }}>
+                与此同时，其他问题也浮现出来。v1 的信息架构将内容围绕整体药物管理进行组织，导致注意力分散在过多的触点上。对于 65 岁以上的用户而言，这带来了不必要的认知负担。无障碍性也存在不足——文字大小、对比度和点击目标区域在实践中无法满足目标用户群体的需求。
+              </p>
+              <ul className="dc-problem-list" aria-label="完全重新设计的原因">
+                {[
+                  "确认是首要的未满足需求——v1 没有围绕它构建任何流程",
+                  "信息架构将注意力分散在过多触点，加重了 65+ 用户的认知负担",
+                  "文字大小、对比度和点击目标区域不足以满足目标用户群体的实际需求",
+                ].map((item, i) => (
+                  <li className="dc-problem-item" key={i}>
+                    <span className="dc-problem-num" aria-hidden="true">0{i + 1}</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <p style={{ fontSize: 15, color: "#4A4740", lineHeight: 1.8, marginTop: 32, marginBottom: 20 }}>
+                这些不是能靠修补解决的问题。要真正解决确认缺口，就必须让它成为核心交互——而不是埋藏在导航深处的次要操作。这意味着要从头重构信息架构，也正是在这个过程中，引入了基于 NFC 的实体确认、AI 驱动的服药洞察，以及连接患者与护理人员的多角色生态系统。
+              </p>
+              <blockquote className="dc-pullquote">
+                &ldquo;完全重新设计不是一次挫折，而是项目找到真正问题所在的时刻。&rdquo;
+              </blockquote>
+            </div>
+          </div>
+        </section>
+
+        {/* ── 11 Information Architecture ── */}
         <section className="dc-section" id="ia">
           <div className="dc-container">
-            <div className="dc-eyebrow">10 — 信息架构</div>
+            <div className="dc-eyebrow">11 — 信息架构</div>
             <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 600, letterSpacing: "-0.02em", color: "#1C1A16", marginBottom: 8 }}>
-              最终应用结构
+              从零开始重构
             </h2>
             <p style={{ fontSize: 15, color: "#9B9690", marginBottom: 32 }}>
-              患者端应用——5 个标签页。经可用性测试后优化。
+              患者端应用——5 个标签页。测试揭示结构性错位后全面重新设计。
             </p>
             <IADiagram />
           </div>
         </section>
 
-        {/* ── 11 Final Design ── */}
+        {/* ── 12 Final Design ── */}
         <section className="dc-section" id="final-design">
           <div className="dc-container">
-            <div className="dc-eyebrow">11 — 最终设计</div>
+            <div className="dc-eyebrow">12 — 最终设计</div>
             <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 600, letterSpacing: "-0.02em", color: "#1C1A16", marginBottom: 48 }}>
               高保真界面
             </h2>
@@ -1138,11 +1178,11 @@ export default function DoseCarePageZh() {
           </div>
         </section>
 
-        {/* ── 12 Reflection ── */}
+        {/* ── 13 Reflection ── */}
         <section className="dc-section" id="outcomes">
           <div className="dc-container">
             <div className="dc-prose">
-            <div className="dc-eyebrow">12 — 项目反思</div>
+            <div className="dc-eyebrow">13 — 项目反思</div>
             <h2 style={{ fontSize: "clamp(24px, 3vw, 36px)", fontWeight: 600, letterSpacing: "-0.02em", color: "#1C1A16", marginBottom: 32 }}>
               成果与反思
             </h2>
