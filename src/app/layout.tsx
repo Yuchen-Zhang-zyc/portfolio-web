@@ -13,8 +13,8 @@ const dmSans = DM_Sans({ subsets: ["latin"], weight: ["300", "400", "500", "600"
 const dmMono = DM_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-dm-mono" });
 
 export const metadata: Metadata = {
-  title: "Yuchen | Human-AI Interaction Designer",
-  description: "Human-AI Interaction Designer & Researcher",
+  title: "Yuchen | Product Designer · Systems Thinker",
+  description: "Product Designer with a CS background. I think systems-first — designing AI-native tools and complex products.",
 };
 
 export default function RootLayout({

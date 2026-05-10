@@ -41,7 +41,7 @@ export default function HomeZh() {
               <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">02</span>
               <div className="flex items-start md:items-center justify-center md:justify-center gap-0 md:gap-3 min-w-0 text-center">
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
-                <span className="min-w-0 max-w-[14ch] min-[480px]:max-w-none mx-auto">AI 与 XR 产品设计师</span>
+                <span className="min-w-0 max-w-[14ch] min-[480px]:max-w-none mx-auto">产品设计师 · 系统思考者</span>
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&gt;</span>
               </div>
             </div>
@@ -50,7 +50,7 @@ export default function HomeZh() {
               <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">03</span>
               <div className="flex items-start md:items-center justify-center md:justify-center gap-0 md:gap-3 min-w-0 text-center">
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
-                <span className="min-w-0 max-w-[15ch] min-[480px]:max-w-none mx-auto">我设计人与 AI 之间的体验</span>
+                <span className="min-w-0 max-w-[18ch] min-[480px]:max-w-none mx-auto">把复杂系统拆解成真正好用的产品</span>
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&gt;</span>
               </div>
             </div>
@@ -74,17 +74,17 @@ export default function HomeZh() {
           <div className="md:col-span-8 flex flex-col gap-8">
             {/* Pull quote */}
             <p className="text-[26px] md:text-[32px] font-semibold leading-[1.35] tracking-[-0.02em] text-brand-primary font-sans">
-              技术近在咫尺，<br />
-              <span className="italic font-serif font-normal text-brand-secondary">体验仍有鸿沟。</span>
+              产品很少败在表面，<br />
+              <span className="italic font-serif font-normal text-brand-secondary">它们败在底下的系统里。</span>
             </p>
 
             {/* Body */}
             <div className="flex flex-col gap-4 text-[16px] md:text-[17px] text-brand-primary/70 leading-[1.75] font-body max-w-[580px]">
               <p>
-                出身计算机专业，我亲历了 AI 从实验室的算法演进，跨越成为重塑未来的核心力量。然而，技术虽已破局，体验却仍有缺位：生硬的交互逻辑，往往将巨大的技术潜能阻隔在了普通人的生活之外。
+                我是一名以系统思维为起点的设计师。计算机科学的背景让我习惯从产品的"骨架"看起——状态、流程、反馈回路、边缘情况——而不只是停留在屏幕表面。
               </p>
               <p>
-                我正致力于投身 AI 产品化的浪潮。通过"设计"这一关键切口，我试图打破复杂技术与真实用户间的壁垒，打造真正"以人为本"的产品——让前沿技术不再只是报纸上的宏大叙事，而是每个人手中温润且强大的生产力工具。
+                我被复杂问题吸引，也愿意花时间一层层把它们拆开。AI 原生产品本就是复杂系统的集合：模型、上下文、信任、容错、与人协作的接力。表面设计无法让它们真正运转——你需要把整个系统都设计出来，并亲手让它跑起来。
               </p>
             </div>
 
@@ -101,34 +101,34 @@ export default function HomeZh() {
           </div>
           <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-[20px] md:gap-[24px]">
             <div className="capability-card capability-card-primary p-7 md:p-8 rounded-[18px]">
-              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">人机协作设计</h3>
+              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">系统设计</h3>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/78">
-                <li className="flex gap-2"><span className="opacity-45">✦</span> 设计人机协作工作流，而非只是界面</li>
-                <li className="flex gap-2"><span className="opacity-45">✦</span> 为新兴 AI 产品定义交互模式</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 梳理状态、流程、反馈回路与边缘情况</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 把模糊的复杂性转化为结构化的产品决策</li>
               </ul>
             </div>
 
             <div className="capability-card p-7 md:p-8 rounded-[18px]">
-              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">UX 与交互设计</h3>
+              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">AI 产品设计</h3>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/78">
-                <li className="flex gap-2"><span className="opacity-45">✦</span> 从研究到原型完整构建端到端流程</li>
-                <li className="flex gap-2"><span className="opacity-45">✦</span> 设计具有清晰反馈的状态驱动交互</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 设计 AI 工作流——信任、错误恢复、人机接力——而不只是界面</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 把模型行为翻译成用户能读懂的产品时刻</li>
               </ul>
             </div>
 
             <div className="capability-card p-7 md:p-8 rounded-[18px]">
-              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">系统思维</h3>
+              <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">研究到规范</h3>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/78">
-                <li className="flex gap-2"><span className="opacity-45">✦</span> 将模糊问题转化为结构化产品决策</li>
-                <li className="flex gap-2"><span className="opacity-45">✦</span> 梳理用户流程、边界情况与系统逻辑</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 从用户研究到高保真原型的端到端流程</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 交付可落地的规范——状态、逻辑、跨设备行为</li>
               </ul>
             </div>
 
             <div className="capability-card p-7 md:p-8 rounded-[18px]">
               <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">代码原型</h3>
               <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/78">
-                <li className="flex gap-2"><span className="opacity-45">✦</span> 将设计概念转化为可运行的原型</li>
-                <li className="flex gap-2"><span className="opacity-45">✦</span> 衔接设计意图与技术可行性</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 用 Cursor、Claude Code、Figma MCP 构建可运行的原型</li>
+                <li className="flex gap-2"><span className="opacity-45">✦</span> 通过代码衔接设计意图与技术可行性</li>
               </ul>
             </div>
           </div>
@@ -426,9 +426,9 @@ export default function HomeZh() {
               <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
                 <div className="max-w-[640px] flex flex-col gap-4">
                   <p className="text-sm font-mono uppercase tracking-[0.18em] text-brand-primary/50">张宇辰</p>
-                  <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-brand-primary">AI、XR 与交互设计方向 UX / 产品设计师</h3>
+                  <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-brand-primary">产品设计师 · 面向 AI 原生与复杂产品的系统思考者</h3>
                   <p className="text-[16px] md:text-[18px] leading-[1.75] text-brand-primary/76">
-                    具有计算机科学背景的产品设计师，专注于人机交互、XR 体验与交互设计。目前就读于 SCAD 交互设计 MFA，寻求 2026 年夏季实习机会。
+                    拥有计算机科学背景的产品设计师，以系统思维为出发点——为 AI 原生产品和复杂系统设计状态、流程与边缘情况。目前就读于 SCAD 交互设计 MFA，寻求 2026 年夏季实习机会。
                   </p>
                 </div>
                 <a href="/张宇辰_简历.pdf" download className="inline-flex items-center justify-center rounded-full px-5 py-3 bg-brand-primary text-white text-sm font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
@@ -502,7 +502,7 @@ export default function HomeZh() {
           </div>
           <div className="flex flex-col items-start md:items-end gap-1">
             <span className="text-base font-medium text-brand-primary">张宇辰</span>
-            <span className="text-xs font-mono text-brand-primary/40">UX / 产品设计师 · © 2026</span>
+            <span className="text-xs font-mono text-brand-primary/40">产品设计师 · 系统思考者 · © 2026</span>
             <span className="text-xs font-mono text-brand-primary/25">Built with vibe coding + Claude</span>
           </div>
         </div>

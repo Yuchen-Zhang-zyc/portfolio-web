@@ -43,7 +43,7 @@ export default function Home() {
 
         {/* 01 Hero Section */}
         <section className="relative w-full min-h-screen flex flex-col items-center justify-center pt-20 md:pt-24 text-brand-primary">
-          <h1 className="sr-only">Yuchen Zhang — UX / Product Designer for AI and XR</h1>
+          <h1 className="sr-only">Yuchen Zhang — Product Designer and Systems Thinker for AI-native Tools</h1>
           <div ref={heroRef} className="font-sans font-medium text-[24px] min-[480px]:text-[28px] md:text-[40px] lg:text-[48px] leading-[1.08] tracking-[-0.035em] flex flex-col gap-4 md:gap-4 text-brand-primary w-full max-w-5xl mx-auto items-center">
 
             <div className="hero-line hero-line-1 grid grid-cols-[24px_minmax(0,1fr)] items-start gap-x-3 md:flex md:items-center md:justify-center md:gap-3 w-full max-w-[320px] min-[480px]:max-w-[380px] md:max-w-none text-left md:text-center">
@@ -59,7 +59,7 @@ export default function Home() {
               <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">02</span>
               <div className="flex items-start md:items-center justify-center md:justify-center gap-0 md:gap-3 min-w-0 text-center">
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
-                <span className="min-w-0 max-w-[14ch] min-[480px]:max-w-none mx-auto">UX / Product Designer for AI and XR</span>
+                <span className="min-w-0 max-w-[14ch] min-[480px]:max-w-none mx-auto">Designer · Systems thinker</span>
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&gt;</span>
               </div>
             </div>
@@ -68,7 +68,7 @@ export default function Home() {
               <span className="text-[10px] md:text-sm font-mono w-6 text-left md:text-right select-none opacity-60 pt-1 md:pt-0 shrink-0">03</span>
               <div className="flex items-start md:items-center justify-center md:justify-center gap-0 md:gap-3 min-w-0 text-center">
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&lt;</span>
-                <span className="min-w-0 max-w-[15ch] min-[480px]:max-w-none mx-auto">I design human-AI experiences</span>
+                <span className="min-w-0 max-w-[18ch] min-[480px]:max-w-none mx-auto">I untangle complex systems into tools people can actually use</span>
                 <span className="hidden md:inline font-light font-mono opacity-70 shrink-0">&gt;</span>
               </div>
             </div>
@@ -92,17 +92,17 @@ export default function Home() {
           <FadeUp className="md:col-span-8 flex flex-col gap-8">
             {/* Pull quote */}
             <p className="text-[26px] md:text-[32px] font-semibold leading-[1.35] tracking-[-0.02em] text-brand-primary font-sans">
-              The technology is here.<br />
-              <span className="italic font-serif font-normal text-brand-secondary">The experience isn&apos;t.</span>
+              Most products don&apos;t fail at the surface.<br />
+              <span className="italic font-serif font-normal text-brand-secondary">They fail in the system underneath.</span>
             </p>
 
             {/* Body */}
             <div className="flex flex-col gap-4 text-[16px] md:text-[17px] text-brand-primary/70 leading-[1.75] font-body max-w-[580px]">
               <p>
-                I studied computer science and watched AI go from a research topic to something that could genuinely change how people live and work. But most of that potential stays locked behind interfaces that aren&apos;t built for real people.
+                I&apos;m a designer who thinks systems-first. With a background in computer science, I see products as the systems they really are — states, flows, feedback loops, edge cases — and design across all of them, not just the screens.
               </p>
               <p>
-                That gap is what I want to close. I&apos;m moving toward AI product — using design as the entry point to build products that let people actually feel the technology revolution, not just read about it.
+                I&apos;m drawn to complex problems and the patience it takes to untangle them. AI-native products are full of that complexity: models, context, trust, recovery, escalation. Surface design alone can&apos;t make them work. You have to design the whole system — and ship it.
               </p>
             </div>
 
@@ -120,30 +120,30 @@ export default function Home() {
           <div className="md:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-[20px] md:gap-[24px]">
             <FadeUp delay={0}>
               <div className="capability-card capability-card-primary p-7 md:p-8 rounded-[18px]">
-                <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">Human-AI Design</h3>
+                <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">Systems Design</h3>
                 <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/75">
-                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Design human-AI workflows, not just interfaces</li>
-                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Define interaction patterns for emerging AI products</li>
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Map states, flows, feedback loops, and edge cases</li>
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Turn ambiguous complexity into structured product decisions</li>
                 </ul>
               </div>
             </FadeUp>
 
             <FadeUp delay={80}>
               <div className="capability-card p-7 md:p-8 rounded-[18px]">
-                <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">UX & Interaction</h3>
+                <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">AI Product Design</h3>
                 <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/75">
-                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Build end-to-end flows from research to prototype</li>
-                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Design state-driven interactions with clear feedback</li>
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Design AI workflows — trust, escalation, recovery — not just interfaces</li>
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Translate model behavior into legible product moments</li>
                 </ul>
               </div>
             </FadeUp>
 
             <FadeUp delay={160}>
               <div className="capability-card p-7 md:p-8 rounded-[18px]">
-                <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">Systems Thinking</h3>
+                <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">Research to Specification</h3>
                 <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/75">
-                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Turn ambiguous problems into structured product decisions</li>
-                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Map user flows, edge cases, and system logic</li>
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Build end-to-end flows from user research to high-fidelity prototype</li>
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Ship implementation-ready specs — states, logic, cross-device behavior</li>
                 </ul>
               </div>
             </FadeUp>
@@ -152,8 +152,8 @@ export default function Home() {
               <div className="capability-card p-7 md:p-8 rounded-[18px]">
                 <h3 className="text-[19px] md:text-xl font-bold mb-5 text-brand-primary">Prototyping with Code</h3>
                 <ul className="flex flex-col gap-3 text-[15px] leading-relaxed text-brand-primary/75">
-                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Translate concepts into functional prototypes</li>
-                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Bridge design intent and technical feasibility</li>
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Functional prototypes built with Cursor, Claude Code, and Figma MCP</li>
+                  <li className="flex gap-2"><span className="opacity-45" aria-hidden="true">✦</span> Bridge design intent and technical feasibility through code</li>
                 </ul>
               </div>
             </FadeUp>
@@ -463,12 +463,12 @@ export default function Home() {
               <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
                 <div className="max-w-[640px] flex flex-col gap-4">
                   <p className="text-sm font-mono uppercase tracking-[0.18em] text-brand-primary/50">Yuchen Zhang</p>
-                  <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-brand-primary">UX / Product Designer for AI, XR, and Interaction Design</h3>
+                  <h3 className="text-3xl md:text-4xl font-bold tracking-tight text-brand-primary">Product Designer · Systems thinker for AI-native and complex products</h3>
                   <p className="text-[16px] md:text-[18px] leading-[1.75] text-brand-primary/75">
-                    Product designer with a background in Computer Science, focused on human-AI interaction, XR experiences, and interaction design. Currently pursuing an MFA in Interactive Design at SCAD and seeking Summer 2026 internship opportunities.
+                    Designer with a background in Computer Science. I think systems-first — designing across states, flows, and edge cases for AI-native tools and complex products. Currently pursuing an MFA in Interactive Design at SCAD, seeking Summer 2026 internship opportunities.
                   </p>
                 </div>
-                <a href="/Yuchen_Zhang_Resume_AI_XR.pdf" download className="inline-flex items-center justify-center rounded-full px-5 py-3 bg-brand-primary text-white text-sm font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
+                <a href="/Yuchen_Zhang_Resume.pdf" download className="inline-flex items-center justify-center rounded-full px-5 py-3 bg-brand-primary text-white text-sm font-medium hover:opacity-90 transition-opacity whitespace-nowrap">
                   Download Resume
                 </a>
               </div>
@@ -539,7 +539,7 @@ export default function Home() {
           </div>
           <div className="flex flex-col items-start md:items-end gap-1">
             <span className="text-base font-medium text-brand-primary">Yuchen Zhang</span>
-            <span className="text-xs font-mono text-brand-primary/40">UX / Product Designer · © 2026</span>
+            <span className="text-xs font-mono text-brand-primary/40">Product Designer · Systems thinker · © 2026</span>
             <span className="text-xs font-mono text-brand-primary/25">Built with vibe coding + Claude</span>
           </div>
         </div>
