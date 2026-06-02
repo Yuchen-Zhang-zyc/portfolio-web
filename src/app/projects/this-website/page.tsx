@@ -1,8 +1,8 @@
-import Link from "next/link";
 import NextProject from "../../components/NextProject";
 
 export default function ThisWebsiteProject() {
   return (
+    <>
     <div className="min-h-screen bg-[#ECEEF5] text-[#1B2A6B]">
 
 
@@ -46,7 +46,7 @@ export default function ThisWebsiteProject() {
         {/* Overview stats */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-20">
           {[
-            { num: '8', label: 'Project pages' },
+            { num: '9', label: 'Project pages' },
             { num: '3', label: 'AI tools used' },
             { num: '2', label: 'Weeks building' },
             { num: '100%', label: 'Vibe coded' },
@@ -155,5 +155,7 @@ export default function ThisWebsiteProject() {
       </div>
 
     </div>
+    <NextProject href="/projects/ixds709" title="Paper Systems Universe" role="Systems Design & Data Visualization" theme="light" />
+    </>
   );
 }

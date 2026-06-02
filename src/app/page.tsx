@@ -370,6 +370,82 @@ export default function Home() {
               </FadeUp>
             </div>
 
+            {/* Systems */}
+            <div className="flex flex-col gap-[40px]">
+              <p className="text-xs font-mono tracking-[0.22em] uppercase text-brand-primary/35 pb-3 border-b border-brand-primary/10">Systems</p>
+
+              <FadeUp delay={0}>
+              <Link href="/projects/ixds709" className="w-full bg-[#FAFAFA]/90 backdrop-blur-2xl rounded-[16px] overflow-hidden shadow-[0_20px_60px_rgba(27,42,107,0.08)] border border-white/60 flex flex-col group cursor-pointer hover:-translate-y-1 transition-transform duration-300">
+                <div className="h-10 w-full bg-[#F3F4F6] border-b border-black/5 flex items-center px-4 relative">
+                  <div className="flex gap-2 relative z-10">
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FF5F56] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#FFBD2E] border border-black/10"></div>
+                    <div className="w-[12px] h-[12px] rounded-full bg-[#27C93F] border border-black/10"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center font-sans text-xs font-medium text-brand-secondary/70">
+                    IXDS 709 — Systems Universe
+                  </div>
+                </div>
+                {/* Thumbnail: paper + iceberg rings */}
+                <div className="w-full aspect-[16/10] bg-[#F7F3EC] relative overflow-hidden flex items-center justify-center group-hover:scale-[1.02] transition-transform duration-700">
+                  {/* concentric iceberg-layer rings */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    {[180, 140, 100, 64, 32].map((size, i) => (
+                      <span
+                        key={i}
+                        className="absolute rounded-full border"
+                        style={{
+                          width: size,
+                          height: size,
+                          borderColor: ["#C7BDAD","#ABA08C","#837860","#514838","#211C15"][i],
+                          opacity: [0.35, 0.45, 0.55, 0.65, 0.80][i],
+                        }}
+                      />
+                    ))}
+                    {/* scattered nodes */}
+                    {[
+                      {cx:50,cy:30,r:90,c:"#837860"},{cx:130,cy:60,r:90,c:"#514838"},
+                      {cx:170,cy:110,r:90,c:"#ABA08C"},{cx:70,cy:130,r:90,c:"#837860"},
+                      {cx:110,cy:20,r:90,c:"#C7BDAD"},{cx:40,cy:80,r:90,c:"#211C15"},
+                      {cx:150,cy:40,r:90,c:"#ABA08C"},{cx:90,cy:150,r:90,c:"#514838"},
+                    ].map((d,i)=>(
+                      <span
+                        key={i}
+                        className="absolute rounded-full"
+                        style={{
+                          width:5,height:5,
+                          background:d.c,
+                          left:`calc(50% + ${d.cx - 95}px)`,
+                          top:`calc(50% + ${d.cy - 95}px)`,
+                          opacity:0.7,
+                        }}
+                      />
+                    ))}
+                  </div>
+                  {/* label */}
+                  <div className="relative z-10 flex flex-col items-center gap-3 select-none">
+                    <span className="font-mono text-[10px] tracking-[3px] uppercase text-[#6E6557] border border-[#C7BDAD] px-3 py-1">Systems Universe</span>
+                    <span className="font-bold text-[#211C15] text-3xl tracking-tight" style={{fontFamily:"var(--font-display,system-ui)"}}>IXDS 709</span>
+                    <span className="font-mono text-[10px] text-[#A99F8F]">88 vars · 15 loops · 3 clusters</span>
+                  </div>
+                </div>
+                <div className="p-6 md:p-8 flex flex-col gap-4 bg-[#FAFAFA]/90">
+                  <div className="flex flex-col gap-2">
+                    <h3 className="text-2xl font-bold font-sans text-brand-primary">IXDS 709 Systems Universe <span className="opacity-60 font-normal text-lg">| Researcher & Designer</span></h3>
+                    <p className="text-[16px] md:text-[18px] font-body text-brand-primary/75 leading-relaxed">
+                      An immersive 3D causal loop diagram of how AI is reshaping trust, skill, and assessment in art + design education — 88 variables, 15 feedback loops, and the fix that makes it worse.
+                    </p>
+                  </div>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Systems Thinking</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">Causal Loop Diagram</span>
+                    <span className="text-sm font-sans bg-black/5 text-brand-primary/60 px-4 py-1.5 rounded-full uppercase tracking-wider">3D Visualization</span>
+                  </div>
+                </div>
+              </Link>
+              </FadeUp>
+            </div>
+
             {/* AI */}
             <div className="flex flex-col gap-[40px]">
               <p className="text-xs font-mono tracking-[0.22em] uppercase text-brand-primary/35 pb-3 border-b border-brand-primary/10">AI</p>

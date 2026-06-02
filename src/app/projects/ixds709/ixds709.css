@@ -1,0 +1,841 @@
+/* =============================================================
+   IXDS 709 — Paper Systems Universe  (LIGHT · near-monochrome)
+   Scoped to .ixds709-page so the paper+ink theme applies only
+   inside this case study, not the whole portfolio site.
+   ============================================================= */
+
+/* ── Root tokens ────────────────────────────────────────── */
+.ixds709-page {
+  /* ground */
+  --ix-bg:        #F7F3EC;   /* warm paper */
+  --ix-bg-fog:    #F2ECE2;   /* depth fog target (distant nodes fade into paper) */
+  --ix-surface:   #FCFAF5;   /* raised cards/panels */
+  --ix-line:      #E0D8CB;   /* hairline borders */
+
+  /* ink */
+  --ix-ink:       #211C15;   /* warm near-black — primary */
+  --ix-ink-muted: #6E6557;
+  --ix-ink-faint: #A99F8F;   /* captions, faint web, dimmed nodes */
+
+  /* the ONE accent (sparingly: focus + key signal) */
+  --ix-accent:    #3A4A8C;   /* muted indigo */
+
+  /* iceberg DEPTH = single warm-gray VALUE ramp */
+  --ix-layer-mental:     #211C15;  /* MM core — darkest */
+  --ix-layer-structures: #514838;
+  --ix-layer-patterns:   #837860;
+  --ix-layer-events:     #ABA08C;  /* surface — lightest fill */
+  --ix-layer-boundary:   #C7BDAD;  /* outline-only */
+
+  /* edges */
+  --ix-edge:       #211C15;
+  --ix-edge-faint: #C7BDAD;
+
+  /* control clusters */
+  --ix-cluster-1: #5A4A3A;
+  --ix-cluster-2: #4A5A4A;
+  --ix-cluster-3: #3A4A5A;
+
+  /* depth / motion */
+  --ix-fog-near: 30;
+  --ix-fog-far:  90;
+  --ix-orbit-speed: 0.04;
+
+  /* page chrome */
+  --ix-hero-height: 100vh;
+
+  /* ── UI chrome tokens ────────────────────────────────── */
+  --ix-ui-text:     13px;
+  --ix-ui-text-sm:  11px;
+  --ix-ui-radius:   10px;
+  --ix-ui-pad-y:    9px;
+  --ix-ui-pad-x:    16px;
+  --ix-popover-pad: 6px;
+  --ix-popover-item-pad-y: 8px;
+  --ix-popover-item-pad-x: 12px;
+  --ix-glass-bg:    rgba(252, 250, 245, 0.90);
+  --ix-glass-blur:  16px;
+
+  /* overrides for the paper ground */
+  background: var(--ix-bg);
+  color: var(--ix-ink);
+  font-family: var(--font-body, 'Inter', system-ui, sans-serif);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* ── Hero ───────────────────────────────────────────────── */
+.ixds709-page .hero {
+  position: relative;
+  height: var(--ix-hero-height);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 24px;
+}
+
+.ixds709-page .hero-label {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ix-ink-muted);
+  margin-bottom: 24px;
+}
+
+.ixds709-page .hero h1 {
+  font-family: var(--font-display, 'IBM Plex Sans Condensed', system-ui, sans-serif);
+  font-size: clamp(48px, 8vw, 88px);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 0.94;
+  color: var(--ix-ink);
+  margin: 0 0 20px;
+  max-width: 900px;
+}
+
+.ixds709-page .hero h1 em {
+  font-style: normal;
+  color: var(--ix-accent);
+}
+
+.ixds709-page .hero-sub {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--ix-ink-muted);
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+/* ── Universe stage ─────────────────────────────────────── */
+.ixds709-page .universe-stage {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.ixds709-page .universe-stage canvas {
+  display: block;
+}
+
+/* ── Floating control panel (kept for reference, replaced by bottom-bar) ── */
+.ixds709-page .control-panel {
+  position: absolute;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+  padding: var(--ix-popover-pad) 8px;
+  background: var(--ix-glass-bg);
+  backdrop-filter: blur(var(--ix-glass-blur));
+  -webkit-backdrop-filter: blur(var(--ix-glass-blur));
+  border: 1px solid var(--ix-line);
+  border-radius: 14px;
+  box-shadow: 0 4px 20px rgba(33, 28, 21, 0.06);
+  z-index: 10;
+}
+
+.ixds709-page .control-btn {
+  padding: var(--ix-ui-pad-y) var(--ix-ui-pad-x);
+  border: none;
+  background: transparent;
+  color: var(--ix-ink-muted);
+  font-family: var(--font-dm-mono, monospace);
+  font-size: var(--ix-ui-text);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  border-radius: var(--ix-ui-radius);
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s;
+  white-space: nowrap;
+}
+
+.ixds709-page .control-btn:hover {
+  background: var(--ix-line);
+  color: var(--ix-ink);
+}
+
+.ixds709-page .control-btn.active {
+  background: var(--ix-ink);
+  color: var(--ix-bg);
+}
+
+/* ── Layer key panel (top-right) ────────────────────────── */
+.ixds709-page .layer-key-panel {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: var(--ix-glass-bg);
+  backdrop-filter: blur(var(--ix-glass-blur));
+  -webkit-backdrop-filter: blur(var(--ix-glass-blur));
+  border: 1px solid var(--ix-line);
+  border-radius: 12px;
+  padding: var(--ix-ui-pad-y) var(--ix-ui-pad-x);
+  box-shadow: 0 4px 20px rgba(33, 28, 21, 0.06);
+  z-index: 10;
+}
+
+.ixds709-page .layer-key-title {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ix-ink-faint);
+  margin-bottom: 8px;
+}
+
+/* ── Legend / loop picker ───────────────────────────────── */
+.ixds709-page .legend {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  max-width: 240px;
+  background: var(--ix-surface);
+  border: 1px solid var(--ix-line);
+  border-radius: 14px;
+  padding: 16px;
+  font-size: 12px;
+  color: var(--ix-ink-muted);
+  z-index: 10;
+  box-shadow: 0 4px 20px rgba(33, 28, 21, 0.06);
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+.ixds709-page .legend h3 {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ix-ink-faint);
+  margin: 0 0 12px;
+}
+
+.ixds709-page .legend-loops {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ixds709-page .legend-loop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--ix-ink);
+  transition: background 0.15s;
+  border: none;
+  background: transparent;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+}
+
+.ixds709-page .legend-loop:hover {
+  background: var(--ix-line);
+}
+
+.ixds709-page .legend-loop.active {
+  background: var(--ix-ink);
+  color: var(--ix-bg);
+}
+
+.ixds709-page .legend-loop .loop-type {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 10px;
+  font-weight: 600;
+  width: 18px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.ixds709-page .legend-loop .loop-name {
+  flex: 1;
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ── Layer key ──────────────────────────────────────────── */
+.ixds709-page .layer-key {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 1px solid var(--ix-line);
+}
+
+.ixds709-page .layer-key-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--ix-ink-faint);
+}
+
+.ixds709-page .layer-key-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* ── Focused info bar ───────────────────────────────────── */
+.ixds709-page .focus-info {
+  position: absolute;
+  bottom: 88px;
+  left: 24px;
+  padding: var(--ix-ui-pad-y) var(--ix-ui-pad-x);
+  background: var(--ix-glass-bg);
+  backdrop-filter: blur(var(--ix-glass-blur));
+  -webkit-backdrop-filter: blur(var(--ix-glass-blur));
+  border: 1px solid var(--ix-line);
+  border-radius: var(--ix-ui-radius);
+  font-family: var(--font-dm-mono, monospace);
+  font-size: var(--ix-ui-text);
+  color: var(--ix-ink);
+  z-index: 10;
+  box-shadow: 0 4px 20px rgba(33, 28, 21, 0.06);
+  max-width: 340px;
+}
+
+.ixds709-page .focus-info .fi-label {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+.ixds709-page .focus-info .fi-detail {
+  font-size: var(--ix-ui-text-sm);
+  color: var(--ix-ink-muted);
+}
+
+/* ── Node list panel — left side ────────────────────────── */
+.ixds709-page .node-list-panel {
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translateY(-50%);
+  width: 260px;
+  max-height: calc(100vh - 160px);
+  background: var(--ix-glass-bg);
+  backdrop-filter: blur(var(--ix-glass-blur));
+  -webkit-backdrop-filter: blur(var(--ix-glass-blur));
+  border: 1px solid var(--ix-line);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(33, 28, 21, 0.08);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+}
+
+.ixds709-page .nlp-header {
+  padding: 12px 14px 10px;
+  border-bottom: 1px solid var(--ix-line);
+  flex-shrink: 0;
+}
+
+.ixds709-page .nlp-title-row {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 4px;
+}
+
+.ixds709-page .nlp-title {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: var(--ix-ui-text-sm);
+  font-weight: 600;
+  color: var(--ix-ink);
+  line-height: 1.35;
+}
+
+.ixds709-page .nlp-type-badge {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 9px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+.ixds709-page .nlp-type-badge.r  { background: rgba(208,90,80,0.12); color: #8B2E26; }
+.ixds709-page .nlp-type-badge.b  { background: rgba(58,74,140,0.12); color: #2A3870; }
+.ixds709-page .nlp-type-badge.fc { background: rgba(201,162,39,0.15); color: #7A5E10; }
+.ixds709-page .nlp-type-badge.hm { background: rgba(33,28,21,0.08);  color: var(--ix-ink-muted); }
+
+.ixds709-page .nlp-meta {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 10px;
+  color: var(--ix-ink-faint);
+  line-height: 1.4;
+}
+
+.ixds709-page .nlp-desc {
+  font-size: 11px;
+  color: var(--ix-ink-muted);
+  line-height: 1.55;
+  margin-top: 6px;
+  padding-top: 6px;
+  border-top: 1px solid var(--ix-line);
+}
+
+.ixds709-page .nlp-list {
+  overflow-y: auto;
+  padding: 6px;
+}
+
+.ixds709-page .nlp-item {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  padding: 6px 8px;
+  border-radius: 7px;
+  cursor: default;
+  transition: background 0.1s;
+}
+
+.ixds709-page .nlp-item:hover,
+.ixds709-page .nlp-item.active {
+  background: var(--ix-line);
+}
+
+.ixds709-page .nlp-id {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 10px;
+  font-weight: 600;
+  color: var(--ix-ink-muted);
+  flex-shrink: 0;
+  min-width: 36px;
+}
+
+.ixds709-page .nlp-name {
+  font-size: 12px;
+  color: var(--ix-ink);
+  line-height: 1.4;
+}
+
+/* ── Utility icon panel — bottom-right ──────────────────── */
+.ixds709-page .utility-panel {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 20;
+}
+
+.ixds709-page .utility-btn {
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--ix-line);
+  border-radius: 10px;
+  background: var(--ix-glass-bg);
+  backdrop-filter: blur(var(--ix-glass-blur));
+  -webkit-backdrop-filter: blur(var(--ix-glass-blur));
+  color: var(--ix-ink-muted);
+  cursor: pointer;
+  box-shadow: 0 2px 12px rgba(33, 28, 21, 0.06);
+  transition: background 0.12s, color 0.12s, border-color 0.12s;
+}
+
+.ixds709-page .utility-btn:hover {
+  background: var(--ix-line);
+  color: var(--ix-ink);
+  border-color: var(--ix-ink-faint);
+}
+
+.ixds709-page .utility-btn.active {
+  background: var(--ix-ink);
+  color: var(--ix-bg);
+  border-color: var(--ix-ink);
+}
+
+/* ── Bottom macOS-style bar ─────────────────────────────── */
+.ixds709-page .bottom-bar {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 8px;
+  background: var(--ix-glass-bg);
+  backdrop-filter: saturate(1.4) blur(var(--ix-glass-blur));
+  -webkit-backdrop-filter: saturate(1.4) blur(var(--ix-glass-blur));
+  border: 1px solid var(--ix-line);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(33, 28, 21, 0.08), 0 1px 4px rgba(33, 28, 21, 0.04);
+  z-index: 20;
+  white-space: nowrap;
+}
+
+.ixds709-page .bar-divider {
+  width: 1px;
+  height: 20px;
+  background: var(--ix-line);
+  margin: 0 4px;
+  flex-shrink: 0;
+}
+
+.ixds709-page .bar-tab {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: var(--ix-ui-pad-y) var(--ix-ui-pad-x);
+  border: none;
+  background: transparent;
+  color: var(--ix-ink-muted);
+  font-family: var(--font-dm-mono, monospace);
+  font-size: var(--ix-ui-text);
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  border-radius: var(--ix-ui-radius);
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+}
+
+.ixds709-page .bar-tab:hover {
+  background: var(--ix-line);
+  color: var(--ix-ink);
+}
+
+.ixds709-page .bar-tab.active {
+  background: var(--ix-ink);
+  color: var(--ix-bg);
+}
+
+.ixds709-page .bar-tab .bar-count {
+  font-size: var(--ix-ui-text-sm);
+  opacity: 0.55;
+  font-weight: 400;
+}
+
+/* ── Bar tab tooltips ───────────────────────────────────── */
+.ixds709-page .bar-tab-wrap {
+  position: relative;
+}
+
+.ixds709-page .bar-tip {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 220px;
+  background: var(--ix-glass-bg);
+  backdrop-filter: blur(var(--ix-glass-blur));
+  -webkit-backdrop-filter: blur(var(--ix-glass-blur));
+  border: 1px solid var(--ix-line);
+  border-radius: 10px;
+  padding: 10px 12px;
+  box-shadow: 0 6px 24px rgba(33, 28, 21, 0.10);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.15s;
+  z-index: 40;
+}
+
+.ixds709-page .bar-tab-wrap:hover .bar-tip {
+  opacity: 1;
+}
+
+.ixds709-page .bar-tip-title {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--ix-ink);
+  margin-bottom: 4px;
+}
+
+.ixds709-page .bar-tip-body {
+  font-size: 11px;
+  color: var(--ix-ink-muted);
+  line-height: 1.5;
+}
+
+/* ── Bar popovers ───────────────────────────────────────── */
+.ixds709-page .bar-section {
+  position: relative;
+}
+
+.ixds709-page .bar-popover {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 280px;
+  background: var(--ix-surface);
+  border: 1px solid var(--ix-line);
+  border-radius: 12px;
+  padding: var(--ix-popover-pad);
+  box-shadow: 0 8px 32px rgba(33, 28, 21, 0.10), 0 2px 8px rgba(33, 28, 21, 0.06);
+  z-index: 30;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.ixds709-page .popover-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: var(--ix-popover-item-pad-y) var(--ix-popover-item-pad-x);
+  border: none;
+  background: transparent;
+  color: var(--ix-ink);
+  font-family: inherit;
+  font-size: var(--ix-ui-text);
+  border-radius: 7px;
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: background 0.1s;
+}
+
+.ixds709-page .popover-item:hover {
+  background: var(--ix-line);
+}
+
+.ixds709-page .popover-item.active {
+  background: var(--ix-ink);
+  color: var(--ix-bg);
+}
+
+.ixds709-page .popover-item .pi-type {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 9px;
+  font-weight: 700;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+  opacity: 0.6;
+}
+
+.ixds709-page .popover-item.active .pi-type { opacity: 0.7; }
+
+.ixds709-page .popover-item .pi-id {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: var(--ix-ui-text-sm);
+  font-weight: 600;
+  color: var(--ix-ink-muted);
+  flex-shrink: 0;
+  min-width: 32px;
+}
+
+.ixds709-page .popover-item.active .pi-id { color: var(--ix-bg); opacity: 0.7; }
+
+.ixds709-page .popover-item .pi-name {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ── SSR fallback ───────────────────────────────────────── */
+.ixds709-page .universe-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background: var(--ix-bg);
+  color: var(--ix-ink-faint);
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 14px;
+}
+
+/* ── Hero stats row ─────────────────────────────────────── */
+.ixds709-page .hero-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px 10px;
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  color: var(--ix-ink-faint);
+  margin-top: 28px;
+}
+
+.ixds709-page .hero-meta-dot { opacity: 0.4; }
+
+/* ── Hero scroll indicator ───────────────────────────────── */
+.ixds709-page .ix-hero-down {
+  position: absolute;
+  bottom: 48px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: var(--ix-ink-faint);
+  text-decoration: none;
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  transition: color 0.18s;
+  white-space: nowrap;
+}
+.ixds709-page .ix-hero-down:hover { color: var(--ix-ink-muted); }
+
+/* ── Story section ───────────────────────────────────────── */
+.ixds709-page .ix-story {
+  background: var(--ix-bg);
+  border-top: 1px solid var(--ix-line);
+}
+
+.ixds709-page .ix-story-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 96px 24px;
+}
+
+.ixds709-page .ix-story-label {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ix-ink-faint);
+  margin: 0 0 48px;
+}
+
+.ixds709-page .ix-beats {
+  display: flex;
+  flex-direction: column;
+}
+
+.ixds709-page .ix-beat {
+  display: grid;
+  grid-template-columns: 48px 1fr;
+  gap: 0 24px;
+  padding: 28px 0;
+  border-bottom: 1px solid var(--ix-line);
+}
+
+.ixds709-page .ix-beat:first-child { border-top: 1px solid var(--ix-line); }
+
+.ixds709-page .ix-beat-id {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: var(--ix-ink-faint);
+  padding-top: 4px;
+}
+
+.ixds709-page .ix-beat-body h3 {
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--ix-ink);
+  line-height: 1.35;
+  margin: 0 0 10px;
+}
+
+.ixds709-page .ix-beat-body p {
+  font-size: 15px;
+  line-height: 1.78;
+  color: var(--ix-ink-muted);
+  margin: 0;
+  max-width: 640px;
+}
+
+/* ── Credibility section ─────────────────────────────────── */
+.ixds709-page .ix-cred {
+  background: var(--ix-surface);
+  border-top: 1px solid var(--ix-line);
+  border-bottom: 1px solid var(--ix-line);
+}
+
+.ixds709-page .ix-cred-inner {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.ixds709-page .ix-cred-label {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--ix-ink-faint);
+  margin: 0 0 20px;
+}
+
+.ixds709-page .ix-cred-body {
+  font-size: 15px;
+  line-height: 1.78;
+  color: var(--ix-ink-muted);
+  margin: 0 0 36px;
+  max-width: 640px;
+}
+
+.ixds709-page .ix-cred-body code {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 12px;
+  color: var(--ix-ink);
+  background: var(--ix-line);
+  padding: 1px 5px;
+  border-radius: 4px;
+}
+
+.ixds709-page .ix-cred-counts {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 600px) {
+  .ixds709-page .ix-cred-counts { grid-template-columns: repeat(4, 1fr); }
+}
+
+.ixds709-page .ix-cred-count {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ixds709-page .ix-cred-num {
+  font-family: var(--font-display, 'IBM Plex Sans Condensed', system-ui, sans-serif);
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--ix-ink);
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+
+.ixds709-page .ix-cred-unit {
+  font-family: var(--font-dm-mono, monospace);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ix-ink-faint);
+}
+
+/* ── Motion ─────────────────────────────────────────────── */
+@media (prefers-reduced-motion) {
+  .ixds709-page {
+    --ix-orbit-speed: 0;
+  }
+}

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Space_Grotesk, JetBrains_Mono, DM_Serif_Display, Inter, DM_Sans, DM_Mono } from "next/font/google";
+import { Space_Grotesk, JetBrains_Mono, DM_Serif_Display, Inter, DM_Sans, DM_Mono, IBM_Plex_Sans_Condensed, IBM_Plex_Mono } from "next/font/google";
 import "./globals.css";
 import TopNav from "./components/TopNav";
 import BfcacheRepaint from "./components/BfcacheRepaint";
@@ -11,6 +11,8 @@ const dmSerifDisplay = DM_Serif_Display({ weight: "400", subsets: ["latin"], var
 const inter = Inter({ subsets: ["latin"], variable: "--font-body" });
 const dmSans = DM_Sans({ subsets: ["latin"], weight: ["300", "400", "500", "600"], variable: "--font-dm-sans" });
 const dmMono = DM_Mono({ subsets: ["latin"], weight: ["400", "500"], variable: "--font-dm-mono" });
+const ibmPlexSansCondensed = IBM_Plex_Sans_Condensed({ weight: ["400", "500", "600", "700"], subsets: ["latin"], variable: "--font-display" });
+const ibmPlexMono = IBM_Plex_Mono({ weight: ["400", "500", "600"], subsets: ["latin"], variable: "--font-ibm-mono" });
 
 export const metadata: Metadata = {
   title: "Yuchen | Product Designer · Systems Thinker",
@@ -28,7 +30,7 @@ export default function RootLayout({
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script src="https://mcp.figma.com/mcp/html-to-design/capture.js" async></script>
       </head>
-      <body className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} ${dmSerifDisplay.variable} ${inter.variable} ${dmSans.variable} ${dmMono.variable} font-body antialiased bg-brand-bg text-brand-primary min-h-screen flex flex-col`}>
+      <body suppressHydrationWarning className={`${spaceGrotesk.variable} ${jetbrainsMono.variable} ${dmSerifDisplay.variable} ${inter.variable} ${dmSans.variable} ${dmMono.variable} ${ibmPlexSansCondensed.variable} ${ibmPlexMono.variable} font-body antialiased bg-brand-bg text-brand-primary min-h-screen flex flex-col`}>
         <LenisProvider>
           <BfcacheRepaint />
           <TopNav />
